@@ -2,6 +2,7 @@ package com.zenken.freshers.user;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.WebElement;
@@ -83,11 +84,10 @@ public class CommonParts extends BaseTest{
 		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		WebElement icon = utils.getIcon();
-		WebElement profile = utils.getProfile();
-		WebElement logout = utils.getLogOut();
 		utils.hoverOver(icon);
-		Assert.assertTrue(profile.isDisplayed(), "Profile is not displayed");
-		Assert.assertTrue(logout.isDisplayed(), "Log Out is not displayed");
+		List<WebElement> elements = utils.getDropdownOptions();
+		Assert.assertTrue(elements.get(0).isDisplayed(), "Profile is not displayed");
+		Assert.assertTrue(elements.get(1).isDisplayed(), "Log Out is not displayed");
 	}
 	
 	@Test

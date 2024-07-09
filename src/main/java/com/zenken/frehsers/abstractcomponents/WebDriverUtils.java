@@ -1,5 +1,8 @@
 package com.zenken.frehsers.abstractcomponents;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -118,14 +121,12 @@ public class WebDriverUtils {
 		return icon;
 	}
 	
-	public WebElement getProfile()
+	public List<WebElement> getDropdownOptions()
 	{
-		return profile;
-	}
-	
-	public WebElement getLogOut()
-	{
-		return logout;
+		List<WebElement> elements = new ArrayList<>();
+		elements.add(profile);
+		elements.add(logout);
+		return elements;
 	}
 	
 	public void clickProfile()
