@@ -51,6 +51,7 @@
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
                     <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1214330357\testng-customsuite.xml</span>
+                    <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1086830084\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,6 +94,7 @@
                 <ul>
                   <li>
                     <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -159,6 +161,7 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.CommonParts" class="method navigator-link" hash-for-method="verifyTermsPDFPostLogIn">verifyTermsPDFPostLogIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="sample">sample</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -177,6 +180,7 @@
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.zenken.freshers.user.CommonParts</span>
+              <span class="class-name">com.zenken.freshers.user.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -261,6 +265,9 @@
                   <a name="verifyTermsPDFPostLogIn">
                   </a> <!-- verifyTermsPDFPostLogIn -->
                   <span class="method-name">verifyTermsPDFPostLogIn</span>
+                  <a name="sample">
+                  </a> <!-- sample -->
+                  <span class="method-name">sample</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,6 +276,7 @@
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1214330357\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1086830084\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -278,6 +286,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.zenken.freshers.user.CommonParts&quot;/&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;sample&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Login --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -366,11 +379,17 @@ data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifyCopyrightMark')
 data.setCell(11, 2, 'com.zenken.freshers.user.CommonParts')
 data.setCell(11, 3, 2642);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'sample')
+data.setCell(0, 2, 'com.zenken.freshers.user.Login')
+data.setCell(0, 3, 1093);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -397,6 +416,7 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.zenken.freshers.user.CommonParts</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zenken.freshers.user.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
@@ -540,6 +560,12 @@ return data;
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
                 <span class="method-start">85101 ms</span>
+                <span class="method-name">sample</span>
+                <span class="method-start">5516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6612 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
