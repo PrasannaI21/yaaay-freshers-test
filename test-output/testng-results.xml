@@ -2,24 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-04T15:29:08 IST" name="Default suite" finished-at="2024-07-04T15:29:15 IST" duration-ms="6867">
+  <suite started-at="2024-07-17T11:53:15 IST" name="Default suite" finished-at="2024-07-17T11:53:18 IST" duration-ms="3302">
     <groups>
     </groups>
-    <test started-at="2024-07-04T15:29:08 IST" name="Default test" finished-at="2024-07-04T15:29:15 IST" duration-ms="6867">
-      <class name="com.zenken.freshers.user.Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.zenken.freshers.user.Login@368247b9]" started-at="2024-07-04T15:29:08 IST" name="setup" finished-at="2024-07-04T15:29:14 IST" duration-ms="5515" status="PASS">
+    <test started-at="2024-07-17T11:53:15 IST" name="Default test" finished-at="2024-07-17T11:53:18 IST" duration-ms="3302">
+      <class name="com.zenken.freshers.user.Registration">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Registration@117159c0]" started-at="2024-07-17T11:53:15 IST" name="setup" finished-at="2024-07-17T11:53:16 IST" duration-ms="1334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Registration.verifyTexts()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sample()[pri:0, instance:com.zenken.freshers.user.Login@368247b9]" started-at="2024-07-04T15:29:14 IST" name="sample" finished-at="2024-07-04T15:29:15 IST" duration-ms="1093" status="PASS">
+        <test-method is-config="true" signature="setUpTest(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Registration@117159c0]" started-at="2024-07-17T11:53:16 IST" name="setUpTest" finished-at="2024-07-17T11:53:18 IST" duration-ms="1715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Registration.verifyTexts()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sample -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@368247b9]" started-at="2024-07-04T15:29:15 IST" name="tearDown" finished-at="2024-07-04T15:29:15 IST" duration-ms="193" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyTexts()[pri:0, instance:com.zenken.freshers.user.Registration@117159c0]" started-at="2024-07-17T11:53:18 IST" name="verifyTexts" finished-at="2024-07-17T11:53:18 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTexts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Registration@117159c0]" started-at="2024-07-17T11:53:18 IST" name="tearDown" finished-at="2024-07-17T11:53:18 IST" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Login -->
+      </class> <!-- com.zenken.freshers.user.Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

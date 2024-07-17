@@ -1,13 +1,13 @@
 package com.zenken.freshers.user;
 
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
+import java.util.Properties;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
@@ -15,41 +15,43 @@ import com.zenken.freshers.testcomponents.BaseTest;
 
 public class CommonParts extends BaseTest{
 	
-	WebDriverUtils utils = new WebDriverUtils(driver);
+	WebDriverUtils utils;
+	Properties properties;
+	
+	@BeforeMethod
+	public void setUpTest() throws IOException
+	{
+		navigateTo("/");
+		utils = new WebDriverUtils(driver);
+		properties = getProperties();
+	}
 
 	@Test
 	public void verifyHeaderImage()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		WebElement headerImage = utils.getHeaderImage();
 		Assert.assertTrue(headerImage.isDisplayed(), "Logo is not displayed");
 		String imgSrc = utils.getImageAttribute();
 		//リンクの日付が動的に変わるので、固定な部分を取得
-		String expectedSrcPart = "/build/assets/yaaay-freshers-logo-zenken-pc-BYTdvblZ.svg";
+		String expectedSrcPart = properties.getProperty("imagePath");
 		Assert.assertTrue(imgSrc.contains(expectedSrcPart), "Image source does not contain the expected path");
 	}
 	
 	@Test
 	public void verifyAltText()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		String imgAlt = utils.getAltAttribute();
-		String expectedAlt = "Yaaay Freshers by Zenken";
+		String expectedAlt = properties.getProperty("alt");
 		Assert.assertEquals(imgAlt, expectedAlt, "Image alt is not as expected");
 	}
 	
 	@Test
 	public void verifyTermsPDF()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.clickTerms();
-		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+		ArrayList<String> tabs = utils.switchTabs(1);
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
-		driver.switchTo().window(tabs.get(1));
-		String expectedPdfUrl = "https://cdn-freshers.dspf-dev.com/docs/user/Yaaay%20Freshers%20General%20Terms%20and%20Conditions%20of%20Use_20240522.pdf";
+		String expectedPdfUrl = properties.getProperty("terms");
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertEquals(currentUrl, expectedPdfUrl, "The opened URL is not the expected PDF URL.");
 	}
@@ -57,13 +59,10 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyPolicy()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.clickPolicy();
-		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+		ArrayList<String> tabs = utils.switchTabs(1);
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
-		driver.switchTo().window(tabs.get(1));
-		String expectedPdfUrl = "https://www.zenken.co.jp/en/privacypolicy/";
+		String expectedPdfUrl = properties.getProperty("policy");
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertEquals(currentUrl, expectedPdfUrl, "The opened URL is not the expected PDF URL.");
 	}
@@ -71,17 +70,13 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyCopyrightMark()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		WebElement copyright = utils.getCopyrightMark();
-		Assert.assertEquals(copyright.getText(), "© Zenken Corporation");
+		Assert.assertEquals(copyright.getText(), properties.getProperty("copyright"));
 	}
 	
 	@Test
 	public void verifyDropdown()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		WebElement icon = utils.getIcon();
 		utils.hoverOver(icon);
@@ -93,66 +88,55 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyProfileClick()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		WebElement icon = utils.getIcon();
 		utils.hoverOver(icon);
 		utils.clickProfile();
 		String currentUrl = driver.getCurrentUrl();
-		String expectedUrl = "https://freshers.dspf-dev.com/mypage/profile/";
+		String expectedUrl = properties.getProperty("url2");
 		Assert.assertEquals(currentUrl, expectedUrl, "Profile page did not load");
 	}
 	
 	@Test
 	public void verifyLogOut()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		WebElement icon = utils.getIcon();
 		utils.hoverOver(icon);
 		utils.clickLogOut();
 		String currentUrl = driver.getCurrentUrl();
-		String expectedUrl = "https://freshers.dspf-dev.com/login/";
+		String expectedUrl = properties.getProperty("url");
 		Assert.assertEquals(currentUrl, expectedUrl, "Could not log out");
 	}
 	
 	@Test
 	public void verifyHeaderImagePostLogIn()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		WebElement headerImage = utils.getHeaderImage();
 		Assert.assertTrue(headerImage.isDisplayed(), "Logo is not displayed");
 		String imgSrc = utils.getImageAttribute();
-		String expectedSrcPart = "/build/assets/yaaay-freshers-logo-zenken-pc-BYTdvblZ.svg";
+		String expectedSrcPart = properties.getProperty("imagePath");
 		Assert.assertTrue(imgSrc.contains(expectedSrcPart), "Image source does not contain the expected path");
 	}
 	
 	@Test
 	public void verifyAltTextPostLogIn()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		String imgAlt = utils.getAltAttribute();
-		String expectedAlt = "Yaaay Freshers by Zenken";
+		String expectedAlt = properties.getProperty("alt");
 		Assert.assertEquals(imgAlt, expectedAlt, "Image alt is not as expected");
 	}
 	
 	@Test
 	public void verifyTermsPDFPostLogIn()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		utils.clickTerms();
-		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+		ArrayList<String> tabs = utils.switchTabs(1);
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
-		driver.switchTo().window(tabs.get(1));
-		String expectedPdfUrl = "https://cdn-freshers.dspf-dev.com/docs/user/Yaaay%20Freshers%20General%20Terms%20and%20Conditions%20of%20Use_20240522.pdf";
+		String expectedPdfUrl = properties.getProperty("terms");
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertEquals(currentUrl, expectedPdfUrl, "The opened URL is not the expected PDF URL.");
 	}
@@ -160,14 +144,11 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyPolicyPostLogIn()
 	{
-		utils = new WebDriverUtils(driver);
-		utils.goToUser();
 		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
 		utils.clickPolicy();
-		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+		ArrayList<String> tabs = utils.switchTabs(1);
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
-		driver.switchTo().window(tabs.get(1));
-		String expectedPdfUrl = "https://www.zenken.co.jp/en/privacypolicy/";
+		String expectedPdfUrl = properties.getProperty("policy");
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertEquals(currentUrl, expectedPdfUrl, "The opened URL is not the expected PDF URL.");
 	}

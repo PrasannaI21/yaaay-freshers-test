@@ -1,5 +1,6 @@
 package com.zenken.frehsers.abstractcomponents;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.zenken.freshers.pages.user.LoginPage;
 
@@ -20,7 +24,6 @@ public class WebDriverUtils {
 	public String password = "Kajibyw6.";
 	public String domain = "freshers.dspf-dev.com";
 	public String url;
-	String subDomain;
 	
 	public WebDriverUtils(WebDriver driver)
 	{
@@ -49,16 +52,28 @@ public class WebDriverUtils {
 	@FindBy(xpath="//a[contains(.,'Log')]")
 	WebElement logout;
 	
-	public String formUrl(String subDomain)
-	{
-		url = "https://" + username + ":" + password + "@" + domain + subDomain;
-		return url;
-	}
+//	public String formUrl(String subDomain)
+//	{
+//		url = "https://" + username + ":" + password + "@" + domain + subDomain;
+//		return url;
+//	}
+//	
+//	public void goToUser()
+//	{
+//		String url = formUrl("/");
+//		driver.get(url);
+//	}
+//	
+//	public void goToUserReg()
+//	{
+//		String url = formUrl("/register");
+//		driver.get(url);
+//	}
 	
-	public void goToUser()
+	public void waitUntilElementAppears(WebElement element)
 	{
-		String url = formUrl("/");
-		driver.get(url);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
 	public WebElement getHeaderImage()
@@ -82,6 +97,12 @@ public class WebDriverUtils {
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", ele);
+	}
+	
+	public void openInNewTab(String link)
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.open(arguments[0])", link);
 	}
 	
 	public void clickTerms()
@@ -137,6 +158,29 @@ public class WebDriverUtils {
 	public void clickLogOut()
 	{
 		logout.click();
+	}
+	
+	//選択とテキスト取得のメソッドを分ける必要があるかも
+	public void selectDropdown(WebElement ele, String text)
+	{
+		Select select = new Select(ele);
+		select.selectByVisibleText(text);
+//		String selectedText = select.getFirstSelectedOption().getText();
+//		return selectedText;
+	}
+	
+	public String getDropdownText(WebElement ele)
+	{
+		Select select = new Select(ele);
+		String selectedText = select.getFirstSelectedOption().getText();
+		return selectedText;
+	}
+	
+	public ArrayList<String> switchTabs(int i)
+	{
+		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(i));
+		return tabs;
 	}
 	
 }
