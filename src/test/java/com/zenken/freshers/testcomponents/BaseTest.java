@@ -87,7 +87,8 @@ public class BaseTest {
 	{
 		String testName = getCurrentTestMethod();
 		return testName.equals("verifyUserRegistration") || testName.equals("verifyEmail") || testName.equals("verifyEmailPageTitle")
-				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend");
+				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend") || testName.equals("verifyPasswordReset")
+				|| testName.equals("verifyPasswordResetCompleteHeadline");
 	}
 	
 }

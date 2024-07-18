@@ -54,7 +54,7 @@ public class Registration extends BaseTest{
 	public void verifyTitle()
 	{
 		String title = register.getTitle();
-		Assert.assertEquals(title, properties.getProperty("titleRegister"), "Title is incorrect");
+		Assert.assertEquals(title, properties.getProperty("title1"), "Title is incorrect");
 	}
 	
 	@Test

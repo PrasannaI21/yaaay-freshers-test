@@ -20,11 +20,6 @@ public class WebDriverUtils {
 
 	WebDriver driver;
 	
-	public String username = "yaaayfreshersuser";
-	public String password = "Kajibyw6.";
-	public String domain = "freshers.dspf-dev.com";
-	public String url;
-	
 	public WebDriverUtils(WebDriver driver)
 	{
 		this.driver = driver;
@@ -51,24 +46,6 @@ public class WebDriverUtils {
 	
 	@FindBy(xpath="//a[contains(.,'Log')]")
 	WebElement logout;
-	
-//	public String formUrl(String subDomain)
-//	{
-//		url = "https://" + username + ":" + password + "@" + domain + subDomain;
-//		return url;
-//	}
-//	
-//	public void goToUser()
-//	{
-//		String url = formUrl("/");
-//		driver.get(url);
-//	}
-//	
-//	public void goToUserReg()
-//	{
-//		String url = formUrl("/register");
-//		driver.get(url);
-//	}
 	
 	public void waitUntilElementAppears(WebElement element)
 	{
@@ -160,13 +137,10 @@ public class WebDriverUtils {
 		logout.click();
 	}
 	
-	//選択とテキスト取得のメソッドを分ける必要があるかも
 	public void selectDropdown(WebElement ele, String text)
 	{
 		Select select = new Select(ele);
 		select.selectByVisibleText(text);
-//		String selectedText = select.getFirstSelectedOption().getText();
-//		return selectedText;
 	}
 	
 	public String getDropdownText(WebElement ele)
@@ -181,6 +155,15 @@ public class WebDriverUtils {
 		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(i));
 		return tabs;
+	}
+	
+	public String extractLinkFromMail(String url, String emailBody)
+	{
+		String urlStart = url;
+		int startIndex = emailBody.indexOf(urlStart);
+		int endIndex = emailBody.indexOf("\n", startIndex);
+		String link = emailBody.substring(startIndex, endIndex);
+		return link;
 	}
 	
 }
