@@ -2,7 +2,9 @@ package com.zenken.frehsers.abstractcomponents;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -143,6 +145,12 @@ public class WebDriverUtils {
 		select.selectByVisibleText(text);
 	}
 	
+	public void selectDropdownByIndex(WebElement ele, int index)
+	{
+		Select select = new Select(ele);
+		select.selectByIndex(index);
+	}
+	
 	public String getDropdownText(WebElement ele)
 	{
 		Select select = new Select(ele);
@@ -164,6 +172,39 @@ public class WebDriverUtils {
 		int endIndex = emailBody.indexOf("\n", startIndex);
 		String link = emailBody.substring(startIndex, endIndex);
 		return link;
+	}
+	
+	public String getPageTitle()
+	{
+		String title = driver.getTitle();
+		return title;
+	}
+	
+	public boolean getState(WebElement ele, WebElement ele2)
+	{
+		ele.click();
+		boolean state = ele2.isEnabled();
+		return state;
+	}
+	
+	public Map<String, Boolean> getDropdownTextBoxStates(WebElement dropdown, WebElement textBox)
+	{
+		Map<String, Boolean> optionsStateMap = new LinkedHashMap<>();
+		Select select = new Select(dropdown);
+		int numberOfOptions = select.getOptions().size();
+		for(int i=0; i<numberOfOptions; i++)
+		{
+			select.selectByIndex(i);
+			String optionText = select.getOptions().get(i).getText();
+			boolean isTextBoxActive = textBox.isEnabled();
+			optionsStateMap.put(optionText, isTextBoxActive);
+		}
+		return optionsStateMap;
+	}
+	
+	public void clearText(WebElement ele)
+	{
+		ele.clear();
 	}
 	
 }

@@ -31,7 +31,6 @@ public class Registration extends BaseTest{
 	ApiClient apiClient;
 	Email email;
 	
-	final String API_KEY = "84fa369d242b8ea5933abb2a33a9072ac70f0035acae3779bf269630026da472";
 	final Long TIMEOUT_MILLIS = 30000L;
 	InboxControllerApi inboxControllerApi;
 	WaitForControllerApi waitForControllerApi;
@@ -44,7 +43,7 @@ public class Registration extends BaseTest{
 		verifyEmail = new VerifyEmailPage(driver);
 		properties = getProperties();
 		apiClient = new ApiClient();
-		apiClient.setApiKey(API_KEY);
+		apiClient.setApiKey(properties.getProperty("API_KEY"));
 		inboxControllerApi = new InboxControllerApi(apiClient);
 		waitForControllerApi = new WaitForControllerApi(apiClient);
 		setCurrentTestMethod(method.getName());

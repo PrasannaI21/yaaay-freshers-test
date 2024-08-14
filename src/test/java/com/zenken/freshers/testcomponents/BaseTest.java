@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -41,10 +42,12 @@ public class BaseTest {
 		if(!reuseBrowserSession)
 		{
 			//セッションを再利用しない場合のみにWebDriverを初期化
+//			WebDriverManager.edgedriver().setup();
 			WebDriverManager.chromedriver().setup();
+//			driver = new EdgeDriver();
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 		}
 	}
 	

@@ -17,6 +17,8 @@ public class CommonParts extends BaseTest{
 	
 	WebDriverUtils utils;
 	Properties properties;
+	String email;
+	String password;
 	
 	@BeforeMethod
 	public void setUpTest() throws IOException
@@ -24,6 +26,8 @@ public class CommonParts extends BaseTest{
 		navigateTo("/");
 		utils = new WebDriverUtils(driver);
 		properties = getProperties();
+		email = properties.getProperty("email");
+		password = properties.getProperty("password");
 	}
 
 	@Test
@@ -77,7 +81,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyDropdown()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		WebElement icon = utils.getIcon();
 		utils.hoverOver(icon);
 		List<WebElement> elements = utils.getDropdownOptions();
@@ -88,7 +92,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyProfileClick()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		WebElement icon = utils.getIcon();
 		utils.hoverOver(icon);
 		utils.clickProfile();
@@ -100,7 +104,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyLogOut()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		WebElement icon = utils.getIcon();
 		utils.hoverOver(icon);
 		utils.clickLogOut();
@@ -112,7 +116,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyHeaderImagePostLogIn()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		WebElement headerImage = utils.getHeaderImage();
 		Assert.assertTrue(headerImage.isDisplayed(), "Logo is not displayed");
 		String imgSrc = utils.getImageAttribute();
@@ -123,7 +127,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyAltTextPostLogIn()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		String imgAlt = utils.getAltAttribute();
 		String expectedAlt = properties.getProperty("alt");
 		Assert.assertEquals(imgAlt, expectedAlt, "Image alt is not as expected");
@@ -132,7 +136,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyTermsPDFPostLogIn()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		utils.clickTerms();
 		ArrayList<String> tabs = utils.switchTabs(1);
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
@@ -144,7 +148,7 @@ public class CommonParts extends BaseTest{
 	@Test
 	public void verifyPolicyPostLogIn()
 	{
-		utils.loginUser("prasanna.inamdar@zenken.co.jp", "Freshers123#");
+		utils.loginUser(email, password);
 		utils.clickPolicy();
 		ArrayList<String> tabs = utils.switchTabs(1);
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
