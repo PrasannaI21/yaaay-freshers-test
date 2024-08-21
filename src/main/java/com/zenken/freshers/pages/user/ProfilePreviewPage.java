@@ -1,5 +1,6 @@
 package com.zenken.freshers.pages.user;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -24,19 +25,31 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	WebElement headline;
 	
 	@FindBy(xpath="(//img[@alt='Edit icon'])[2]")
-	WebElement informationEdit;
+	public WebElement informationEdit;
+	
+	@FindBy(xpath="(//img[@alt='Edit icon'])[3]")
+	public WebElement preferenceEdit;
 	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
 	
 	@FindBy(css="[class*=ellipsis]:nth-of-type(2)")
-	WebElement basicInformationSection;
+	public WebElement basicInformationSection;
+	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(3)")
+	public WebElement jobPrefSection;
 	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
-	WebElement basicInformationAnchor;
+	public WebElement basicInformationAnchor;
+	
+	@FindBy(xpath="//a[contains(.,'Job')]")
+	public WebElement jobPrefAnchor;
 	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
-	WebElement basicInformationTitle;
+	public WebElement basicInformationTitle;
+	
+	@FindBy(xpath="(//div[contains(.,'Job')])[7]")
+	public WebElement jobPrefTitle;
 	
 	@FindBy(xpath="(//div[@class='u-pt-10'])[1]")
 	WebElement firstName;
@@ -89,6 +102,18 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="(//div[@class='u-pt-10 uk-text-truncate'])[2]")
 	WebElement hobby;
 	
+	@FindBy(xpath="//h3[contains(.,'First P')]/following-sibling::div[@class='u-pt-10']")
+	WebElement firstPref;
+	
+	@FindBy(xpath="//h3[contains(.,'Second')]/following-sibling::div[@class='u-pt-10']")
+	WebElement secondPref;
+	
+	@FindBy(xpath="//h3[contains(.,'Third')]/following-sibling::div[@class='u-pt-10']")
+	WebElement thirdPref;
+	
+	@FindBy(xpath="//h3[text()='Other']/following-sibling::div[@class='u-pt-10']")
+	List<WebElement> otherPref;
+	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
 	
@@ -103,9 +128,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		return text;
 	}
 	
-	public String clickEdit()
+	public String clickEdit(WebElement element)
 	{
-		clickByJavaScript(informationEdit);
+		clickByJavaScript(element);
 		String url = driver.getCurrentUrl();
 		return url;
 	}
@@ -122,20 +147,20 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		return driver.getCurrentUrl();
 	}
 	
-	public boolean getSectionDisplay()
+	public boolean getSectionDisplay(WebElement ele)
 	{
-		return basicInformationSection.isDisplayed();
+		return ele.isDisplayed();
 	}
 	
-	public String getAnchorLinkAttribute()
+	public String getAnchorLinkAttribute(WebElement ele)
 	{
-		String attribute = basicInformationAnchor.getAttribute("class");
+		String attribute = ele.getAttribute("class");
 		return attribute;
 	}
 	
-	public String getTitleValue()
+	public String getTitleValue(WebElement ele)
 	{
-		return basicInformationTitle.getText();
+		return ele.getText();
 	}
 	
 	public String getFirstNameValue()
@@ -221,6 +246,32 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	public String getHobbyValue()
 	{
 		return hobby.getText();
+	}
+	
+	public String getFirstPrefValue()
+	{
+		return firstPref.getText();
+	}
+	
+	public String getSecondPrefValue()
+	{
+		return secondPref.getText();
+	}
+	
+	public String getThirdPrefValue()
+	{
+		return thirdPref.getText();
+	}
+	
+	public List<String> getOtherPrefValues()
+	{
+		List<String> texts = new ArrayList<>();
+		for(int i=0;i<otherPref.size();i++)
+		{
+			String text = otherPref.get(i).getText();
+			texts.add(text);
+		}
+		return texts;
 	}
 	
 	//Method to check if the required mark is present and displayed

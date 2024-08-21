@@ -36,7 +36,7 @@ public class BasicInformation extends BaseTest{
 		else {
 			profilePreview.login("prasanna.inamdar@zenken.co.jp", "Password_1");
 		}
-		url = profilePreview.clickEdit();
+		url = profilePreview.clickEdit(profilePreview.informationEdit);
 		state = editBasicInfo.isSectionComplete();
 		properties = getProperties();
 	}
@@ -148,9 +148,9 @@ public class BasicInformation extends BaseTest{
 		editBasicInfo.clickCancel();
 		String url = profilePreview.getPageUrl();
 		Assert.assertTrue(url.contains("#BasicInformation"), "The URL does not contain the expected anchor");
-		boolean state = profilePreview.getSectionDisplay();
+		boolean state = profilePreview.getSectionDisplay(profilePreview.basicInformationSection);
 		Assert.assertTrue(state, "Basic Information section is not displayed on the page");
-		String attribute = profilePreview.getAnchorLinkAttribute();
+		String attribute = profilePreview.getAnchorLinkAttribute(profilePreview.basicInformationAnchor);
 		Assert.assertTrue(attribute.contains("current"), "The correct tab is not selected");
 	}
 	
@@ -412,23 +412,23 @@ public class BasicInformation extends BaseTest{
 		}
 	}
 	
-	private void assertTextBoxStates(Map<String, Boolean> states)
-	{
-		int numberOfOptions = states.size();
-		int currentIndex = 1;
-		for(Map.Entry<String, Boolean> entry : states.entrySet())
-		{
-			if(currentIndex < numberOfOptions)
-			{
-				Assert.assertFalse(entry.getValue(), "TextBox should be inactive for option: " + entry.getKey());
-			}
-			else
-			{
-				Assert.assertTrue(entry.getValue(), "TextBox should be active for option: " + entry.getKey());
-			}
-			currentIndex++;
-		}
-	}
+//	private void assertTextBoxStates(Map<String, Boolean> states)
+//	{
+//		int numberOfOptions = states.size();
+//		int currentIndex = 1;
+//		for(Map.Entry<String, Boolean> entry : states.entrySet())
+//		{
+//			if(currentIndex < numberOfOptions)
+//			{
+//				Assert.assertFalse(entry.getValue(), "TextBox should be inactive for option: " + entry.getKey());
+//			}
+//			else
+//			{
+//				Assert.assertTrue(entry.getValue(), "TextBox should be active for option: " + entry.getKey());
+//			}
+//			currentIndex++;
+//		}
+//	}
 	
 	private void redirectionAssertions(String parameter, Boolean state)
 	{
@@ -441,16 +441,16 @@ public class BasicInformation extends BaseTest{
 			Assert.assertTrue(alert.equals(properties.getProperty("alert5")), "Alert text is not correct");
 		}
 		if(state){
-			Assert.assertTrue(profilePreview.getTitleValue().contains(properties.getProperty("error16")));
+			Assert.assertTrue(profilePreview.getTitleValue(profilePreview.basicInformationTitle).contains(properties.getProperty("error16")));
 		}
 		else{
-			Assert.assertFalse(profilePreview.getTitleValue().contains(properties.getProperty("error16")));
+			Assert.assertFalse(profilePreview.getTitleValue(profilePreview.basicInformationTitle).contains(properties.getProperty("error16")));
 		}
 		String url = profilePreview.getPageUrl();
 		Assert.assertTrue(url.contains(parameter), "The URL does not contain the expected anchor");
-		boolean state2 = profilePreview.getSectionDisplay();
+		boolean state2 = profilePreview.getSectionDisplay(profilePreview.informationEdit);
 		Assert.assertTrue(state2, parameter+" section is not displayed on the page");
-		String attribute = profilePreview.getAnchorLinkAttribute();
+		String attribute = profilePreview.getAnchorLinkAttribute(profilePreview.basicInformationAnchor);
 		Assert.assertTrue(attribute.contains("current"), "The correct tab is not selected");
 	}
 }

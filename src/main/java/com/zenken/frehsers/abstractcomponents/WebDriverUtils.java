@@ -49,6 +49,9 @@ public class WebDriverUtils {
 	@FindBy(xpath="//a[contains(.,'Log')]")
 	WebElement logout;
 	
+	@FindBy(css="[class=u-c-red]")
+	List<WebElement> requiredToApplyMarks;
+	
 	public void waitUntilElementAppears(WebElement element)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -205,6 +208,11 @@ public class WebDriverUtils {
 	public void clearText(WebElement ele)
 	{
 		ele.clear();
+	}
+	
+	public boolean isSectionComplete()
+	{
+		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
 	}
 	
 }

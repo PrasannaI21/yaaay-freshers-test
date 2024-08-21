@@ -5,11 +5,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
+import java.util.Map;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -92,6 +94,24 @@ public class BaseTest {
 		return testName.equals("verifyUserRegistration") || testName.equals("verifyEmail") || testName.equals("verifyEmailPageTitle")
 				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend") || testName.equals("verifyPasswordReset")
 				|| testName.equals("verifyPasswordResetCompleteHeadline");
+	}
+	
+	public void assertTextBoxStates(Map<String, Boolean> states)
+	{
+		int numberOfOptions = states.size();
+		int currentIndex = 1;
+		for(Map.Entry<String, Boolean> entry : states.entrySet())
+		{
+			if(currentIndex < numberOfOptions)
+			{
+				Assert.assertFalse(entry.getValue(), "TextBox should be inactive for option: " + entry.getKey());
+			}
+			else
+			{
+				Assert.assertTrue(entry.getValue(), "TextBox should be active for option: " + entry.getKey());
+			}
+			currentIndex++;
+		}
 	}
 	
 }

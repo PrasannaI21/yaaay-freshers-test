@@ -476,9 +476,9 @@ public class EditBasicInformationPage extends WebDriverUtils{
 		clickByJavaScript(interest3);
 	}
 	
-	public boolean isSectionComplete()
-	{
-		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
+//	public boolean isSectionComplete()
+//	{
+//		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
 //		try {
 //			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 //			List<WebElement> marks = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("[class*=card] [class=u-c-red]")));
@@ -487,6 +487,6 @@ public class EditBasicInformationPage extends WebDriverUtils{
 //		catch(TimeoutException e) {
 //			return false;
 //		}
-	}
+//	}
 	
 }
