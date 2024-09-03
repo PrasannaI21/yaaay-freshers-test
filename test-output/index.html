@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1721741637\testng-customsuite.xml</span>
+                    <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse-380248287\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">28 methods, 1 failed,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for setting same password as previous&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for setting same password as previous", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,62 +117,137 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCancelRedirection">verifyCancelRedirection</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid password: No special characters&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid password: No special characters", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCharExceedFirstPref">verifyCharExceedFirstPref</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify successful login&quot;, &quot;Login functionality&quot;)">runScenario("Verify successful login", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCharExceedSecondPref">verifyCharExceedSecondPref</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that page displayed is correct after password reset&quot;, &quot;Login functionality&quot;)">runScenario("Verify that page displayed is correct after password reset", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCharExceedThirdPref">verifyCharExceedThirdPref</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that password reset link in the mail works&quot;, &quot;Login functionality&quot;)">runScenario("Verify that password reset link in the mail works", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyFirstPreferenceStates">verifyFirstPreferenceStates</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify headline of forgot password page&quot;, &quot;Login functionality&quot;)">runScenario("Verify headline of forgot password page", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyJobPreferenceUrl">verifyJobPreferenceUrl</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify title of forgot password page&quot;, &quot;Login functionality&quot;)">runScenario("Verify title of forgot password page", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyPlaceholders">verifyPlaceholders</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid credentials&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid credentials", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyPreferencesOtherValue">verifyPreferencesOtherValue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid password: No numbers&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid password: No numbers", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyPreferencesValues">verifyPreferencesValues</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that password reset mail is sent&quot;, &quot;Login functionality&quot;)">runScenario("Verify that password reset mail is sent", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyRequiredToApplyTexts">verifyRequiredToApplyTexts</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Create an Account link&quot;, &quot;Login functionality&quot;)">runScenario("Verify Create an Account link", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifySecondPreferenceStates">verifySecondPreferenceStates</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify 見出し of the page&quot;, &quot;Login functionality&quot;)">runScenario("Verify 見出し of the page", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyThirdPreferenceStates">verifyThirdPreferenceStates</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Forgot your password? link&quot;, &quot;Login functionality&quot;)">runScenario("Verify Forgot your password? link", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid email on forgot password page&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid email on forgot password page", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid password: No upper case characters&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid password: No upper case characters", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid email&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid email", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify title (of tab) of the page&quot;, &quot;Login functionality&quot;)">runScenario("Verify title (of tab) of the page", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verfiy that same mail cannot be sent within one minute&quot;, &quot;Login functionality&quot;)">runScenario("Verfiy that same mail cannot be sent within one minute", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that password can be reset&quot;, &quot;Login functionality&quot;)">runScenario("Verify that password can be reset", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that Reset Password mail is delivered&quot;, &quot;Login functionality&quot;)">runScenario("Verify that Reset Password mail is delivered", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify redirection to login page after password is reset&quot;, &quot;Login functionality&quot;)">runScenario("Verify redirection to login page after password is reset", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for non-existent email on forgot password page&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for non-existent email on forgot password page", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for blank password&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for blank password", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid password: less than 8 characters&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid password: less than 8 characters", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for invalid token&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for invalid token", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for blank email&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for blank email", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation error for blank email on forgot password page&quot;, &quot;Login functionality&quot;)">runScenario("Verify validation error for blank email on forgot password page", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="features.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify successful login after password is reset&quot;, &quot;Login functionality&quot;)">runScenario("Verify successful login after password is reset", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -173,94 +262,307 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zenken.freshers.user.JobPreferences</span>
+              <img src="failed.png"/>
+              <span class="class-name">features.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCancelRedirection">
-                  </a> <!-- verifyCancelRedirection -->
-                  <span class="method-name">verifyCancelRedirection</span>
+                  <a name="runScenario(&quot;Verify validation error for setting same password as previous&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for setting same password as previous", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for setting same password as previous","Login functionality")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.LoginSteps.i_get_same_password_error(LoginSteps.java:347)
+	at ✽.I get error for same password as previous(file:///C:/Users/prasa/eclipse-workspace/YaaayFreshers/src/test/java/features/Login.feature:166)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">features.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for invalid password: No special characters&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid password: No special characters", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid password: No special characters","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCharExceedFirstPref">
-                  </a> <!-- verifyCharExceedFirstPref -->
-                  <span class="method-name">verifyCharExceedFirstPref</span>
+                  <a name="runScenario(&quot;Verify successful login&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify successful login", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify successful login","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCharExceedSecondPref">
-                  </a> <!-- verifyCharExceedSecondPref -->
-                  <span class="method-name">verifyCharExceedSecondPref</span>
+                  <a name="runScenario(&quot;Verify that page displayed is correct after password reset&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify that page displayed is correct after password reset", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that page displayed is correct after password reset","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCharExceedThirdPref">
-                  </a> <!-- verifyCharExceedThirdPref -->
-                  <span class="method-name">verifyCharExceedThirdPref</span>
+                  <a name="runScenario(&quot;Verify that password reset link in the mail works&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify that password reset link in the mail works", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that password reset link in the mail works","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFirstPreferenceStates">
-                  </a> <!-- verifyFirstPreferenceStates -->
-                  <span class="method-name">verifyFirstPreferenceStates</span>
+                  <a name="runScenario(&quot;Verify headline of forgot password page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify headline of forgot password page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify headline of forgot password page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyJobPreferenceUrl">
-                  </a> <!-- verifyJobPreferenceUrl -->
-                  <span class="method-name">verifyJobPreferenceUrl</span>
+                  <a name="runScenario(&quot;Verify title of forgot password page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify title of forgot password page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify title of forgot password page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPlaceholders">
-                  </a> <!-- verifyPlaceholders -->
-                  <span class="method-name">verifyPlaceholders</span>
+                  <a name="runScenario(&quot;Verify validation error for invalid credentials&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid credentials", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid credentials","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPreferencesOtherValue">
-                  </a> <!-- verifyPreferencesOtherValue -->
-                  <span class="method-name">verifyPreferencesOtherValue</span>
+                  <a name="runScenario(&quot;Verify validation error for invalid password: No numbers&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid password: No numbers", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid password: No numbers","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPreferencesValues">
-                  </a> <!-- verifyPreferencesValues -->
-                  <span class="method-name">verifyPreferencesValues</span>
+                  <a name="runScenario(&quot;Verify that password reset mail is sent&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify that password reset mail is sent", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that password reset mail is sent","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyRequiredToApplyTexts">
-                  </a> <!-- verifyRequiredToApplyTexts -->
-                  <span class="method-name">verifyRequiredToApplyTexts</span>
+                  <a name="runScenario(&quot;Verify Create an Account link&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify Create an Account link", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Create an Account link","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySecondPreferenceStates">
-                  </a> <!-- verifySecondPreferenceStates -->
-                  <span class="method-name">verifySecondPreferenceStates</span>
+                  <a name="runScenario(&quot;Verify 見出し of the page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify 見出し of the page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify 見出し of the page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyThirdPreferenceStates">
-                  </a> <!-- verifyThirdPreferenceStates -->
-                  <span class="method-name">verifyThirdPreferenceStates</span>
+                  <a name="runScenario(&quot;Verify Forgot your password? link&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify Forgot your password? link", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Forgot your password? link","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for invalid email on forgot password page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid email on forgot password page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid email on forgot password page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for invalid password: No upper case characters&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid password: No upper case characters", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid password: No upper case characters","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for invalid email&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid email", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid email","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify title (of tab) of the page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify title (of tab) of the page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify title (of tab) of the page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verfiy that same mail cannot be sent within one minute&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verfiy that same mail cannot be sent within one minute", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verfiy that same mail cannot be sent within one minute","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that password can be reset&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify that password can be reset", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that password can be reset","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that Reset Password mail is delivered&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify that Reset Password mail is delivered", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that Reset Password mail is delivered","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify redirection to login page after password is reset&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify redirection to login page after password is reset", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify redirection to login page after password is reset","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for non-existent email on forgot password page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for non-existent email on forgot password page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for non-existent email on forgot password page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for blank password&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for blank password", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for blank password","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for invalid password: less than 8 characters&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid password: less than 8 characters", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid password: less than 8 characters","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for invalid token&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for invalid token", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for invalid token","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for blank email&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for blank email", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for blank email","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation error for blank email on forgot password page&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify validation error for blank email on forgot password page", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation error for blank email on forgot password page","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify successful login after password is reset&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Verify successful login after password is reset", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify successful login after password is reset","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -268,7 +570,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1721741637\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse-380248287\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -277,7 +579,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.JobPreferences&quot;/&gt;
+      &lt;class name=&quot;features.TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -301,6 +603,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -317,60 +627,124 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(28);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyFirstPreferenceStates')
-data.setCell(0, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(0, 3, 7144);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'features.TestRunner')
+data.setCell(0, 3, 8587);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyThirdPreferenceStates')
-data.setCell(1, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(1, 3, 5971);
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'features.TestRunner')
+data.setCell(1, 3, 8084);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySecondPreferenceStates')
-data.setCell(2, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(2, 3, 5872);
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'features.TestRunner')
+data.setCell(2, 3, 8066);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyRequiredToApplyTexts')
-data.setCell(3, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(3, 3, 5682);
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'features.TestRunner')
+data.setCell(3, 3, 8033);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyPreferencesOtherValue')
-data.setCell(4, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(4, 3, 5193);
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'features.TestRunner')
+data.setCell(4, 3, 7441);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyPreferencesValues')
-data.setCell(5, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(5, 3, 4096);
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'features.TestRunner')
+data.setCell(5, 3, 7303);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyCharExceedThirdPref')
-data.setCell(6, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(6, 3, 2718);
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'features.TestRunner')
+data.setCell(6, 3, 7033);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyCharExceedFirstPref')
-data.setCell(7, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(7, 3, 2539);
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'features.TestRunner')
+data.setCell(7, 3, 5974);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyCharExceedSecondPref')
-data.setCell(8, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(8, 3, 2462);
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'features.TestRunner')
+data.setCell(8, 3, 5912);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyCancelRedirection')
-data.setCell(9, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(9, 3, 2100);
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'features.TestRunner')
+data.setCell(9, 3, 5904);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyPlaceholders')
-data.setCell(10, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(10, 3, 98);
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'features.TestRunner')
+data.setCell(10, 3, 5725);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyJobPreferenceUrl')
-data.setCell(11, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(11, 3, 2);
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'features.TestRunner')
+data.setCell(11, 3, 5660);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'features.TestRunner')
+data.setCell(12, 3, 5610);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'features.TestRunner')
+data.setCell(13, 3, 5428);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'features.TestRunner')
+data.setCell(14, 3, 5319);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'features.TestRunner')
+data.setCell(15, 3, 4819);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'features.TestRunner')
+data.setCell(16, 3, 4694);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'features.TestRunner')
+data.setCell(17, 3, 4603);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'features.TestRunner')
+data.setCell(18, 3, 4563);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'features.TestRunner')
+data.setCell(19, 3, 4528);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'features.TestRunner')
+data.setCell(20, 3, 4397);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'features.TestRunner')
+data.setCell(21, 3, 4292);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'features.TestRunner')
+data.setCell(22, 3, 3445);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'features.TestRunner')
+data.setCell(23, 3, 3441);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'features.TestRunner')
+data.setCell(24, 3, 3334);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'features.TestRunner')
+data.setCell(25, 3, 3175);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'features.TestRunner')
+data.setCell(26, 3, 921);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'features.TestRunner')
+data.setCell(27, 3, 34);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -396,199 +770,129 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.JobPreferences</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCancelRedirection())</span>
+              <div class="chronological-class-name">features.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@df432ec)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">1591 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyCancelRedirection</span>
-                <span class="method-start">10180 ms</span>
+                <span class="method-name">runScenario("Verify title (of tab) of the page", "Login functionality")</span>
+                <span class="method-start">540 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12280 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCharExceedFirstPref())</span>
-                <span class="method-start">12527 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">13425 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCharExceedFirstPref</span>
-                <span class="method-start">22858 ms</span>
+                <span class="method-name">runScenario("Verify successful login", "Login functionality")</span>
+                <span class="method-start">3988 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25397 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCharExceedSecondPref())</span>
-                <span class="method-start">25564 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">26251 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCharExceedSecondPref</span>
-                <span class="method-start">35460 ms</span>
+                <span class="method-name">runScenario("Verify 見出し of the page", "Login functionality")</span>
+                <span class="method-start">11023 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">37923 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCharExceedThirdPref())</span>
-                <span class="method-start">38093 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">38931 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCharExceedThirdPref</span>
-                <span class="method-start">47221 ms</span>
+                <span class="method-name">runScenario("Verify Forgot your password? link", "Login functionality")</span>
+                <span class="method-start">15627 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">49939 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyFirstPreferenceStates())</span>
-                <span class="method-start">50156 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">50962 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyFirstPreferenceStates</span>
-                <span class="method-start">61192 ms</span>
+                <span class="method-name">runScenario("Verify Create an Account link", "Login functionality")</span>
+                <span class="method-start">18962 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">68361 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyJobPreferenceUrl())</span>
-                <span class="method-start">68618 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">69427 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyJobPreferenceUrl</span>
-                <span class="method-start">78276 ms</span>
+                <span class="method-name">runScenario("Verify validation error for invalid email", "Login functionality")</span>
+                <span class="method-start">24391 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">78278 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyPlaceholders())</span>
-                <span class="method-start">78449 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">79891 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyPlaceholders</span>
-                <span class="method-start">88435 ms</span>
+                <span class="method-name">runScenario("Verify validation error for blank email", "Login functionality")</span>
+                <span class="method-start">28685 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">88534 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyPreferencesOtherValue())</span>
-                <span class="method-start">88722 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">89424 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyPreferencesOtherValue</span>
-                <span class="method-start">97255 ms</span>
+                <span class="method-name">runScenario("Verify validation error for blank password", "Login functionality")</span>
+                <span class="method-start">34660 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">102450 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyPreferencesValues())</span>
-                <span class="method-start">102689 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">103488 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyPreferencesValues</span>
-                <span class="method-start">113886 ms</span>
+                <span class="method-name">runScenario("Verify validation error for invalid credentials", "Login functionality")</span>
+                <span class="method-start">39980 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">117983 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyRequiredToApplyTexts())</span>
-                <span class="method-start">118232 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">118996 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyRequiredToApplyTexts</span>
-                <span class="method-start">126980 ms</span>
+                <span class="method-name">runScenario("Verify title of forgot password page", "Login functionality")</span>
+                <span class="method-start">44378 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">132662 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifySecondPreferenceStates())</span>
-                <span class="method-start">132873 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">133763 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifySecondPreferenceStates</span>
-                <span class="method-start">141843 ms</span>
+                <span class="method-name">runScenario("Verify headline of forgot password page", "Login functionality")</span>
+                <span class="method-start">50039 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">147721 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyThirdPreferenceStates())</span>
-                <span class="method-start">147994 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">148881 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyThirdPreferenceStates</span>
-                <span class="method-start">156919 ms</span>
+                <span class="method-name">runScenario("Verify that password reset mail is sent", "Login functionality")</span>
+                <span class="method-start">53481 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">162890 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verfiy that same mail cannot be sent within one minute", "Login functionality")</span>
+                <span class="method-start">62068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that Reset Password mail is delivered", "Login functionality")</span>
+                <span class="method-start">69371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that password reset link in the mail works", "Login functionality")</span>
+                <span class="method-start">74066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that password can be reset", "Login functionality")</span>
+                <span class="method-start">77242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that page displayed is correct after password reset", "Login functionality")</span>
+                <span class="method-start">84684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify redirection to login page after password is reset", "Login functionality")</span>
+                <span class="method-start">84719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify successful login after password is reset", "Login functionality")</span>
+                <span class="method-start">85640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for blank email on forgot password page", "Login functionality")</span>
+                <span class="method-start">91552 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for non-existent email on forgot password page", "Login functionality")</span>
+                <span class="method-start">96080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for invalid email on forgot password page", "Login functionality")</span>
+                <span class="method-start">100645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for invalid password: less than 8 characters", "Login functionality")</span>
+                <span class="method-start">105464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for invalid password: No numbers", "Login functionality")</span>
+                <span class="method-start">113548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for invalid password: No upper case characters", "Login functionality")</span>
+                <span class="method-start">121614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for invalid password: No special characters", "Login functionality")</span>
+                <span class="method-start">127341 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify validation error for invalid token", "Login functionality")</span>
+                <span class="method-start">135374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify validation error for setting same password as previous", "Login functionality")</span>
+                <span class="method-start">141278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">146888 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

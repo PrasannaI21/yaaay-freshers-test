@@ -41,6 +41,17 @@ public class BaseTest {
 	public void setup(Method method) throws IOException
 	{
 		currentTestMethod.set(method.getName());
+		initializeDriver();
+	}
+	
+	public WebDriver setup()
+	{
+		initializeDriver();
+		return driver;
+	}
+	
+	public void initializeDriver()
+	{
 		if(!reuseBrowserSession)
 		{
 			//セッションを再利用しない場合のみにWebDriverを初期化

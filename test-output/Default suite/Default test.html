@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 21 15:27:22 IST 2024</td>
+<td>Started on:</td><td>Tue Sep 03 12:35:32 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>163 seconds (163224 ms)</td>
+<tr><td>Total time:</td><td>146 seconds (146913 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,35 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for setting same password as previous", "Login functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.LoginSteps.i_get_same_password_error(LoginSteps.java:347)
+	at ✽.I get error for same password as previous(file:///C:/Users/prasa/eclipse-workspace/YaaayFreshers/src/test/java/features/Login.feature:166)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1254893565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1254893565'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.LoginSteps.i_get_same_password_error(LoginSteps.java:347)
+	at ✽.I get error for same password as previous(file:///C:/Users/prasa/eclipse-workspace/YaaayFreshers/src/test/java/features/Login.feature:166)
+</pre></div></td>
+<td>5</td>
+<td>features.TestRunner@45c7e403</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,65 +105,140 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyJobPreferenceUrl()'><b>verifyJobPreferenceUrl</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid password: No special characters", "Login functionality"</td>
 <td></td>
-<td>0</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>8</td>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyPlaceholders()'><b>verifyPlaceholders</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
-<td></td>
-<td>0</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyFirstPreferenceStates()'><b>verifyFirstPreferenceStates</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify successful login", "Login functionality"</td>
 <td></td>
 <td>7</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyCharExceedSecondPref()'><b>verifyCharExceedSecondPref</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that page displayed is correct after password reset", "Login functionality"</td>
 <td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>0</td>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyCharExceedFirstPref()'><b>verifyCharExceedFirstPref</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that password reset link in the mail works", "Login functionality"</td>
 <td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>3</td>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyCancelRedirection()'><b>verifyCancelRedirection</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify headline of forgot password page", "Login functionality"</td>
 <td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>3</td>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyCharExceedThirdPref()'><b>verifyCharExceedThirdPref</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyPreferencesOtherValue()'><b>verifyPreferencesOtherValue</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify title of forgot password page", "Login functionality"</td>
 <td></td>
 <td>5</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyRequiredToApplyTexts()'><b>verifyRequiredToApplyTexts</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
-<td></td>
-<td>5</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyPreferencesValues()'><b>verifyPreferencesValues</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid credentials", "Login functionality"</td>
 <td></td>
 <td>4</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifyThirdPreferenceStates()'><b>verifyThirdPreferenceStates</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid password: No numbers", "Login functionality"</td>
+<td></td>
+<td>8</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that password reset mail is sent", "Login functionality"</td>
+<td></td>
+<td>8</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Create an Account link", "Login functionality"</td>
 <td></td>
 <td>5</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>features.TestRunner@45c7e403</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.JobPreferences.verifySecondPreferenceStates()'><b>verifySecondPreferenceStates</b><br>Test class: com.zenken.freshers.user.JobPreferences</td>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify 見出し of the page", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Forgot your password? link", "Login functionality"</td>
+<td></td>
+<td>3</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid email on forgot password page", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid password: No upper case characters", "Login functionality"</td>
 <td></td>
 <td>5</td>
-<td>com.zenken.freshers.user.JobPreferences@76a4ebf2</td></tr>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid email", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify title (of tab) of the page", "Login functionality"</td>
+<td></td>
+<td>3</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verfiy that same mail cannot be sent within one minute", "Login functionality"</td>
+<td></td>
+<td>7</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that password can be reset", "Login functionality"</td>
+<td></td>
+<td>7</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that Reset Password mail is delivered", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify redirection to login page after password is reset", "Login functionality"</td>
+<td></td>
+<td>0</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for non-existent email on forgot password page", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for blank password", "Login functionality"</td>
+<td></td>
+<td>5</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid password: less than 8 characters", "Login functionality"</td>
+<td></td>
+<td>8</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for invalid token", "Login functionality"</td>
+<td></td>
+<td>5</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for blank email", "Login functionality"</td>
+<td></td>
+<td>5</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation error for blank email on forgot password page", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>features.TestRunner@45c7e403</td></tr>
+<tr>
+<td title='features.TestRunner.runScenario()'><b>runScenario</b><br>Test class: features.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify successful login after password is reset", "Login functionality"</td>
+<td></td>
+<td>5</td>
+<td>features.TestRunner@45c7e403</td></tr>
 </table><p>
 </body>
 </html>
