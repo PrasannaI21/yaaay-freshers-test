@@ -30,6 +30,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="(//img[@alt='Edit icon'])[3]")
 	public WebElement preferenceEdit;
 	
+	@FindBy(xpath="(//img[@alt='Edit icon'])[4]")
+	public WebElement fieldOfStudyEdit;
+	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
 	
@@ -39,17 +42,26 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(3)")
 	public WebElement jobPrefSection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(4)")
+	public WebElement fieldOfStudySection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
 	@FindBy(xpath="//a[contains(.,'Job')]")
 	public WebElement jobPrefAnchor;
 	
+	@FindBy(xpath="//a[contains(.,'Field')]")
+	public WebElement fieldOfStudyAnchor;
+	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
 	
 	@FindBy(xpath="(//div[contains(.,'Job')])[7]")
 	public WebElement jobPrefTitle;
+	
+	@FindBy(xpath="(//div[contains(.,'Field')])[7]")
+	public WebElement fieldOfStduyTitle;
 	
 	@FindBy(xpath="(//div[@class='u-pt-10'])[1]")
 	WebElement firstName;
@@ -113,6 +125,30 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//h3[text()='Other']/following-sibling::div[@class='u-pt-10']")
 	List<WebElement> otherPref;
+	
+	@FindBy(xpath="//h3[contains(.,'research')]/following-sibling::div[@class='u-pt-10']")
+	WebElement areaOfResearch;
+	
+	@FindBy(xpath="//h3[contains(.,'focus')]/following-sibling::div[@class='u-pt-10']")
+	WebElement field;
+	
+	@FindBy(xpath="//h3[contains(.,'Which core')]")
+	WebElement coreLabel;
+	
+	@FindBy(xpath="//h3[contains(.,'Which IT')]")
+	WebElement itLabel;
+	
+	@FindBy(xpath="//h3[contains(.,'Other (core')]")
+	WebElement coreOtherLabel;
+	
+	@FindBy(xpath="//h3[contains(.,'Other (IT')]")
+	WebElement itOtherLabel;
+	
+	@FindBy(xpath="//h3[contains(.,'Other (core')]/following-sibling::div[@class='u-pt-10']")
+	WebElement otherCoreField;
+	
+	@FindBy(xpath="//h3[contains(.,'Other (IT')]/following-sibling::div[@class='u-pt-10']")
+	WebElement otherITField;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -261,6 +297,46 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	public String getThirdPrefValue()
 	{
 		return thirdPref.getText();
+	}
+	
+	public String getAreaOfResearchValue()
+	{
+		return areaOfResearch.getText();
+	}
+	
+	public String getCoreLabel()
+	{
+		return coreLabel.getText();
+	}
+	
+	public String getITLabel()
+	{
+		return itLabel.getText();
+	}
+	
+	public String getFieldValue()
+	{
+		return field.getText();
+	}
+	
+	public String getCoreOtherLabel()
+	{
+		return coreOtherLabel.getText();
+	}
+	
+	public String getITOtherLabel()
+	{
+		return itOtherLabel.getText();
+	}
+	
+	public String getCoreOtherValue()
+	{
+		return otherCoreField.getText();
+	}
+	
+	public String getITOtherValue()
+	{
+		return otherITField.getText();
 	}
 	
 	public List<String> getOtherPrefValues()
