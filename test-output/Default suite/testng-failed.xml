@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="features.TestRunner">
+      <class name="com.zenken.freshers.user.FieldOfStudy">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="27"/>
+          <include name="verifyITFieldRequired"/>
+          <include name="setUpTest"/>
+          <include name="verifyCoreOptionSelection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- features.TestRunner -->
+      </class> <!-- com.zenken.freshers.user.FieldOfStudy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
