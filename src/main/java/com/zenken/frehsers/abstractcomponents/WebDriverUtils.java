@@ -43,6 +43,9 @@ public class WebDriverUtils {
 	@FindBy(css="[alt='Account icon']")
 	WebElement icon;
 	
+	@FindBy(css="[role='alert']")
+	WebElement alert;
+	
 	@FindBy(xpath="//a[contains(.,'Profile')]")
 	WebElement profile;
 	
@@ -122,6 +125,12 @@ public class WebDriverUtils {
 	public WebElement getIcon()
 	{
 		return icon;
+	}
+	
+	public String getAlert()
+	{
+		waitUntilElementAppears(alert);
+		return alert.getText();
 	}
 	
 	public List<WebElement> getDropdownOptions()
