@@ -5,7 +5,6 @@
     <classes>
       <class name="com.zenken.freshers.user.FieldOfStudy">
         <methods>
-          <include name="verifyITFieldRequired"/>
           <include name="setUpTest"/>
           <include name="verifyCoreOptionSelection"/>
           <include name="tearDown"/>

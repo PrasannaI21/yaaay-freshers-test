@@ -1,6 +1,7 @@
 package com.zenken.freshers.testcomponents;
 
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -8,6 +9,9 @@ import java.time.Duration;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -62,6 +66,15 @@ public class BaseTest {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 		}
+	}
+	
+	public String takeScreenshot(WebDriver driver, String fileName) throws IOException
+	{
+		TakesScreenshot screenshot = (TakesScreenshot)driver;
+		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File(System.getProperty("user.dir")+"\\reports\\"+fileName+".png");
+		FileUtils.copyFile(srcFile, destFile);
+		return System.getProperty("user.dir")+"\\reports\\"+fileName+".png";// return file path in string
 	}
 	
 	@AfterMethod

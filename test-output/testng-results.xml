@@ -1,446 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-05T15:01:06 IST" name="Default suite" finished-at="2024-09-05T15:04:33 IST" duration-ms="206624">
+  <suite started-at="2024-09-06T17:29:09 IST" name="Default suite" finished-at="2024-09-06T17:29:19 IST" duration-ms="9816">
     <groups>
     </groups>
-    <test started-at="2024-09-05T15:01:06 IST" name="Default test" finished-at="2024-09-05T15:04:33 IST" duration-ms="206624">
+    <test started-at="2024-09-06T17:29:09 IST" name="Default test" finished-at="2024-09-06T17:29:19 IST" duration-ms="9816">
       <class name="com.zenken.freshers.user.FieldOfStudy">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:07 IST" name="setup" finished-at="2024-09-05T15:01:08 IST" duration-ms="1542" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@44c03695]" started-at="2024-09-06T17:29:09 IST" name="setup" finished-at="2024-09-06T17:29:12 IST" duration-ms="2808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCancelRedirection()]]>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOptionSelection() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:08 IST" name="setUpTest" finished-at="2024-09-05T15:01:16 IST" duration-ms="7471" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@44c03695]" started-at="2024-09-06T17:29:12 IST" name="setUpTest" finished-at="2024-09-06T17:29:19 IST" duration-ms="6884" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@alt='Edit icon'])[4]"}
+  (Session info: chrome=128.0.6613.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4901a7040f65ac2c6b10f64cfda7353, findElement {using=xpath, value=(//img[@alt='Edit icon'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.119, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61771/devtoo..., se:cdpVersion: 128.0.6613.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4901a7040f65ac2c6b10f64cfda7353]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@alt='Edit icon'])[4]"}
+  (Session info: chrome=128.0.6613.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4901a7040f65ac2c6b10f64cfda7353, findElement {using=xpath, value=(//img[@alt='Edit icon'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.119, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61771/devtoo..., se:cdpVersion: 128.0.6613.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4901a7040f65ac2c6b10f64cfda7353
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+at com.zenken.frehsers.abstractcomponents.WebDriverUtils.clickByJavaScript(WebDriverUtils.java:84)
+at com.zenken.freshers.pages.user.ProfilePreviewPage.clickEdit(ProfilePreviewPage.java:169)
+at com.zenken.freshers.user.FieldOfStudy.setUpTest(FieldOfStudy.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCancelRedirection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:16 IST" name="verifyCancelRedirection" finished-at="2024-09-05T15:01:17 IST" duration-ms="1923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCancelRedirection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:17 IST" name="tearDown" finished-at="2024-09-05T15:01:18 IST" duration-ms="226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:18 IST" name="setup" finished-at="2024-09-05T15:01:18 IST" duration-ms="777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOptions()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:18 IST" name="setUpTest" finished-at="2024-09-05T15:01:27 IST" duration-ms="8302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOptions()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:27 IST" name="verifyCoreOptions" finished-at="2024-09-05T15:01:27 IST" duration-ms="250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreOptions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:27 IST" name="tearDown" finished-at="2024-09-05T15:01:27 IST" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:27 IST" name="setup" finished-at="2024-09-05T15:01:28 IST" duration-ms="772" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherCharExceedError()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:28 IST" name="setUpTest" finished-at="2024-09-05T15:01:35 IST" duration-ms="7416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOtherCharExceedError()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:35 IST" name="verifyCoreOtherCharExceedError" finished-at="2024-09-05T15:01:38 IST" duration-ms="2750" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreOtherCharExceedError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:38 IST" name="tearDown" finished-at="2024-09-05T15:01:38 IST" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:38 IST" name="setup" finished-at="2024-09-05T15:01:39 IST" duration-ms="827" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherField()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:39 IST" name="setUpTest" finished-at="2024-09-05T15:01:47 IST" duration-ms="7502" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOtherField()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:47 IST" name="verifyCoreOtherField" finished-at="2024-09-05T15:01:50 IST" duration-ms="3480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreOtherField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:50 IST" name="tearDown" finished-at="2024-09-05T15:01:50 IST" duration-ms="205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:50 IST" name="setup" finished-at="2024-09-05T15:01:51 IST" duration-ms="747" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherFieldRequired()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:01:51 IST" name="setUpTest" finished-at="2024-09-05T15:02:00 IST" duration-ms="8577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOtherFieldRequired()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:00 IST" name="verifyCoreOtherFieldRequired" finished-at="2024-09-05T15:02:01 IST" duration-ms="1635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreOtherFieldRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:01 IST" name="tearDown" finished-at="2024-09-05T15:02:02 IST" duration-ms="225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:02 IST" name="setup" finished-at="2024-09-05T15:02:02 IST" duration-ms="812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherPlaceholder()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:02 IST" name="setUpTest" finished-at="2024-09-05T15:02:10 IST" duration-ms="7525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOtherPlaceholder()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:10 IST" name="verifyCoreOtherPlaceholder" finished-at="2024-09-05T15:02:10 IST" duration-ms="151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreOtherPlaceholder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:10 IST" name="tearDown" finished-at="2024-09-05T15:02:10 IST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:10 IST" name="setup" finished-at="2024-09-05T15:02:11 IST" duration-ms="894" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherTextBoxStates()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:11 IST" name="setUpTest" finished-at="2024-09-05T15:02:19 IST" duration-ms="7484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOtherTextBoxStates()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:19 IST" name="verifyCoreOtherTextBoxStates" finished-at="2024-09-05T15:02:19 IST" duration-ms="744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreOtherTextBoxStates -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:19 IST" name="tearDown" finished-at="2024-09-05T15:02:20 IST" duration-ms="193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:20 IST" name="setup" finished-at="2024-09-05T15:02:20 IST" duration-ms="826" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyFieldOfStudyUrl()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:20 IST" name="setUpTest" finished-at="2024-09-05T15:02:27 IST" duration-ms="7010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyFieldOfStudyUrl()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:27 IST" name="verifyFieldOfStudyUrl" finished-at="2024-09-05T15:02:27 IST" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFieldOfStudyUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:27 IST" name="tearDown" finished-at="2024-09-05T15:02:28 IST" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:28 IST" name="setup" finished-at="2024-09-05T15:02:28 IST" duration-ms="836" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:28 IST" name="setUpTest" finished-at="2024-09-05T15:02:38 IST" duration-ms="9450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOptionSelection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:38 IST" name="verifyITOptionSelection" finished-at="2024-09-05T15:02:41 IST" duration-ms="3197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOptionSelection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:41 IST" name="tearDown" finished-at="2024-09-05T15:02:41 IST" duration-ms="232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:41 IST" name="setup" finished-at="2024-09-05T15:02:42 IST" duration-ms="750" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptions()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:42 IST" name="setUpTest" finished-at="2024-09-05T15:02:51 IST" duration-ms="8813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOptions()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:51 IST" name="verifyITOptions" finished-at="2024-09-05T15:02:51 IST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOptions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:51 IST" name="tearDown" finished-at="2024-09-05T15:02:51 IST" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:51 IST" name="setup" finished-at="2024-09-05T15:02:52 IST" duration-ms="909" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherCharExceedError()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:02:52 IST" name="setUpTest" finished-at="2024-09-05T15:03:02 IST" duration-ms="9966" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOtherCharExceedError()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:02 IST" name="verifyITOtherCharExceedError" finished-at="2024-09-05T15:03:06 IST" duration-ms="3554" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOtherCharExceedError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:06 IST" name="tearDown" finished-at="2024-09-05T15:03:06 IST" duration-ms="192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:06 IST" name="setup" finished-at="2024-09-05T15:03:07 IST" duration-ms="803" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherFieldRequired()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:07 IST" name="setUpTest" finished-at="2024-09-05T15:03:17 IST" duration-ms="10645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOtherFieldRequired()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:17 IST" name="verifyITOtherFieldRequired" finished-at="2024-09-05T15:03:19 IST" duration-ms="1883" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOtherFieldRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:19 IST" name="tearDown" finished-at="2024-09-05T15:03:19 IST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:19 IST" name="setup" finished-at="2024-09-05T15:03:20 IST" duration-ms="752" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherPlaceholder()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:20 IST" name="setUpTest" finished-at="2024-09-05T15:03:28 IST" duration-ms="7669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOtherPlaceholder()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:28 IST" name="verifyITOtherPlaceholder" finished-at="2024-09-05T15:03:28 IST" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOtherPlaceholder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:28 IST" name="tearDown" finished-at="2024-09-05T15:03:28 IST" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:28 IST" name="setup" finished-at="2024-09-05T15:03:29 IST" duration-ms="799" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherTextBoxStates()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:29 IST" name="setUpTest" finished-at="2024-09-05T15:03:37 IST" duration-ms="7957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOtherTextBoxStates()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:37 IST" name="verifyITOtherTextBoxStates" finished-at="2024-09-05T15:03:38 IST" duration-ms="710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOtherTextBoxStates -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:38 IST" name="tearDown" finished-at="2024-09-05T15:03:38 IST" duration-ms="157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:38 IST" name="setup" finished-at="2024-09-05T15:03:38 IST" duration-ms="760" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyResearchRequired()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:38 IST" name="setUpTest" finished-at="2024-09-05T15:03:46 IST" duration-ms="7876" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyResearchRequired()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:46 IST" name="verifyResearchRequired" finished-at="2024-09-05T15:03:48 IST" duration-ms="1722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyResearchRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:48 IST" name="tearDown" finished-at="2024-09-05T15:03:48 IST" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:48 IST" name="setup" finished-at="2024-09-05T15:03:49 IST" duration-ms="765" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherField()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:49 IST" name="setUpTest" finished-at="2024-09-05T15:03:57 IST" duration-ms="7561" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITOtherField()[pri:1, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:03:57 IST" name="verifyITOtherField" finished-at="2024-09-05T15:04:00 IST" duration-ms="3413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITOtherField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:00 IST" name="tearDown" finished-at="2024-09-05T15:04:00 IST" duration-ms="175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:00 IST" name="setup" finished-at="2024-09-05T15:04:01 IST" duration-ms="712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreFieldRequired()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:01 IST" name="setUpTest" finished-at="2024-09-05T15:04:09 IST" duration-ms="7924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreFieldRequired()[pri:2, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:09 IST" name="verifyCoreFieldRequired" finished-at="2024-09-05T15:04:11 IST" depends-on-methods="com.zenken.freshers.user.FieldOfStudy.verifyITOtherField" duration-ms="1738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCoreFieldRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:11 IST" name="tearDown" finished-at="2024-09-05T15:04:11 IST" duration-ms="174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:11 IST" name="setup" finished-at="2024-09-05T15:04:11 IST" duration-ms="747" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOptionSelection()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:11 IST" name="setUpTest" finished-at="2024-09-05T15:04:19 IST" duration-ms="7672" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCoreOptionSelection()[pri:3, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:19 IST" name="verifyCoreOptionSelection" finished-at="2024-09-05T15:04:22 IST" duration-ms="3335" status="PASS">
+        <test-method signature="verifyCoreOptionSelection()[pri:3, instance:com.zenken.freshers.user.FieldOfStudy@44c03695]" started-at="2024-09-06T17:29:19 IST" name="verifyCoreOptionSelection" finished-at="2024-09-06T17:29:19 IST" duration-ms="8" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@alt='Edit icon'])[4]"}
+  (Session info: chrome=128.0.6613.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4901a7040f65ac2c6b10f64cfda7353, findElement {using=xpath, value=(//img[@alt='Edit icon'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.119, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61771/devtoo..., se:cdpVersion: 128.0.6613.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4901a7040f65ac2c6b10f64cfda7353]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@alt='Edit icon'])[4]"}
+  (Session info: chrome=128.0.6613.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4901a7040f65ac2c6b10f64cfda7353, findElement {using=xpath, value=(//img[@alt='Edit icon'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.119, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61771/devtoo..., se:cdpVersion: 128.0.6613.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4901a7040f65ac2c6b10f64cfda7353
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+at com.zenken.frehsers.abstractcomponents.WebDriverUtils.clickByJavaScript(WebDriverUtils.java:84)
+at com.zenken.freshers.pages.user.ProfilePreviewPage.clickEdit(ProfilePreviewPage.java:169)
+at com.zenken.freshers.user.FieldOfStudy.setUpTest(FieldOfStudy.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCoreOptionSelection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:22 IST" name="tearDown" finished-at="2024-09-05T15:04:23 IST" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:23 IST" name="setup" finished-at="2024-09-05T15:04:23 IST" duration-ms="757" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITFieldRequired()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:23 IST" name="setUpTest" finished-at="2024-09-05T15:04:31 IST" duration-ms="7759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyITFieldRequired()[pri:4, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:31 IST" name="verifyITFieldRequired" finished-at="2024-09-05T15:04:33 IST" depends-on-methods="com.zenken.freshers.user.FieldOfStudy.verifyCoreOptionSelection" duration-ms="1649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyITFieldRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@7586beff]" started-at="2024-09-05T15:04:33 IST" name="tearDown" finished-at="2024-09-05T15:04:33 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@44c03695]" started-at="2024-09-06T17:29:19 IST" name="tearDown" finished-at="2024-09-06T17:29:19 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
