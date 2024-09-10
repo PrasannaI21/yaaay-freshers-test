@@ -143,7 +143,7 @@ public class FieldOfStudy extends BaseTest{
 		editField.clickSave();
 		String value = profilePreview.getAreaOfResearchValue();
 		Assert.assertTrue(value.equals("IT"), "Area of research is incorrect");
-		Assert.assertTrue(profilePreview.getITLabel().equals(properties.getProperty("itLabel")));
+		Assert.assertEquals(profilePreview.getITLabel(), properties.getProperty("itLabel"));
 		Assert.assertTrue(profilePreview.getFieldValue().equals(properties.getProperty("it7")));
 		Assert.assertFalse(profilePreview.getTitleValue(profilePreview.fieldOfStduyTitle).contains(properties.getProperty("error16")));
 		redirectionAssertions("#FieldOfStudy");

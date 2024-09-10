@@ -7,9 +7,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.zenken.freshers.user.FieldOfStudy">
-      <methods>
-      <include name="verifyITOptionSelection"/>
-      </methods>
       </class>
     </classes>
   </test> <!-- Test -->

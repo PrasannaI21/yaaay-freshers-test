@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -66,6 +67,23 @@ public class BaseTest {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 		}
+	}
+	
+	public String waitForScrollToComplete(WebDriver driver, String fileName) throws InterruptedException, IOException
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		Double lastHeight = (Double)js.executeScript("return window.pageYOffset;");
+		while(true)
+		{
+			Thread.sleep(500);
+			Double newHeight = (Double)js.executeScript("return window.pageYOffset;");
+			if(newHeight.equals(lastHeight))
+			{
+				break;
+			}
+			lastHeight = newHeight;
+		}
+		return takeScreenshot(driver, fileName);
 	}
 	
 	public String takeScreenshot(WebDriver driver, String fileName) throws IOException

@@ -10,6 +10,8 @@
         <methods>
           <include name="verifyITOptionSelection"/>
           <include name="setUpTest"/>
+          <include name="verifyITOtherField"/>
+          <include name="verifyCoreFieldRequired"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

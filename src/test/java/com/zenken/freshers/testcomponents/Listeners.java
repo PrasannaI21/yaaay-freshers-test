@@ -43,8 +43,8 @@ public class Listeners extends BaseTest implements ITestListener{
 		}
 		String filePath = null;
 		try {
-			filePath = takeScreenshot(driver, result.getMethod().getMethodName());
-		} catch (IOException e) {
+			filePath = waitForScrollToComplete(driver, result.getMethod().getMethodName());
+		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
