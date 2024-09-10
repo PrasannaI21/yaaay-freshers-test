@@ -132,7 +132,7 @@ public class FieldOfStudy extends BaseTest{
 		Assert.assertTrue(profilePreview.getFieldValue().equals(properties.getProperty("core4")));
 		Assert.assertFalse(profilePreview.getTitleValue(profilePreview.fieldOfStduyTitle).contains(properties.getProperty("error16")));
 		redirectionAssertions("#FieldOfStudy");
-		takeScreenshot(driver, "example");
+//		takeScreenshot(driver, "example");
 	}
 	
 	@Test
