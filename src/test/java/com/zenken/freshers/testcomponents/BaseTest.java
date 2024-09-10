@@ -72,11 +72,11 @@ public class BaseTest {
 	public String waitForScrollToComplete(WebDriver driver, String fileName) throws InterruptedException, IOException
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		Double lastHeight = (Double)js.executeScript("return window.pageYOffset;");
+		Number lastHeight = (Number)js.executeScript("return window.pageYOffset;");
 		while(true)
 		{
 			Thread.sleep(500);
-			Double newHeight = (Double)js.executeScript("return window.pageYOffset;");
+			Number newHeight = (Number)js.executeScript("return window.pageYOffset;");
 			if(newHeight.equals(lastHeight))
 			{
 				break;
