@@ -1,12 +1,18 @@
 package stepDefinitions;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.UUID;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.mailslurp.apis.WaitForControllerApi;
 import com.mailslurp.clients.ApiClient;
 import com.mailslurp.clients.ApiException;
@@ -348,8 +354,18 @@ public class LoginSteps extends BaseTest{
 	}
 	
 	@After
-	public void tearDown(Scenario scenario)
+	public void tearDown(Scenario scenario) throws IOException
 	{
+		if(scenario.isFailed())
+		{
+			File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			String screenshotPath = System.getProperty("user.dir")+"\\target\\screenshots\\"+scenario.getName()+".png";
+			File destFile = new File(screenshotPath);
+			FileUtils.copyFile(screenshot, destFile);
+			scenario.attach(FileUtils.readFileToByteArray(destFile), "image/png", "Failed scenario screenshot");
+			ExtentTest test = ExtentCucumberAdapter.getCurrentScenario();
+			test.fail("シナリオ失敗").addScreenCaptureFromPath(screenshotPath);
+		}
 		if(!scenario.getSourceTagNames().contains("@SkipAfterHook"))
 		{
 			if(driver != null)
