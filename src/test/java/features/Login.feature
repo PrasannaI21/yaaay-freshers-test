@@ -25,8 +25,9 @@ Background:
 Scenario: Verify title (of tab) of the page
   Then The tab title should be correct
 
+@run
   Scenario: Verify successful login
-    When I enter email "prasanna.inamdar@zenken.co.jp" and password "Password_1"
+    When I enter email "prasanna.inamdar@zenken.co.jp" and password "Password_12"
     Then I redirect to profile page
   
   Scenario: Verify 見出し of the page
@@ -39,7 +40,7 @@ Scenario: Verify title (of tab) of the page
   Scenario: Verify Create an Account link
   When I click on Create an Account link
   Then I get redirected to register page
-  
+
   Scenario: Verify validation error for invalid email
   When I enter invalid email "hey"
   And I enter password "Password_1"
@@ -93,7 +94,7 @@ Scenario: Verify title (of tab) of the page
   @SkipAfterHook
   Scenario: Verify that password can be reset
   When I open link from the mail
-  And I enter new password "Password_2"
+  And I enter new password "Password_1"
   And I click on Change Password button
   Then I redirect to reset password complete page
   
@@ -108,7 +109,7 @@ Scenario: Verify title (of tab) of the page
   
   Scenario: Verify successful login after password is reset
   When I enter email "23e51ed7-f1d2-405c-8380-67b86ca0956b@mailslurp.net" on login page
-  And I enter password "Password_2"
+  And I enter password "Password_1"
   And I click on LogIn button on login page
   Then I redirect to profile page with new password
 

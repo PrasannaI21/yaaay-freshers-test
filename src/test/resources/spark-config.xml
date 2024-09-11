@@ -1,0 +1,16 @@
+<!DOCTYPE configuration>
+<configuration>
+<theme>standard</theme>
+<reportName>テスト結果</reportName>
+<documentTitle>Freshers Automation Test Results</documentTitle>
+<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+<systemInfo>
+<item> name="OS" value="Windows 11"</item>
+<item> name="Environment" value="QA"</item>
+<item>name="Browser" value="Chrome"</item>
+</systemInfo>
+<css>
+body { font-family: 'Arial', sans-serif; }
+.brand-logo { font-size: 24px; }
+</css>
+</configuration>
