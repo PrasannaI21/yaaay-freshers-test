@@ -121,7 +121,7 @@ public class FieldOfStudy extends BaseTest{
 	}
 	
 	@Test(priority=3)
-	public void verifyCoreOptionSelection()
+	public void verifyCoreOptionSelection() throws IOException
 	{
 		editField.selectFieldDropdown(1);
 		editField.selectCoreOption(3);
@@ -132,6 +132,7 @@ public class FieldOfStudy extends BaseTest{
 		Assert.assertTrue(profilePreview.getFieldValue().equals(properties.getProperty("core4")));
 		Assert.assertFalse(profilePreview.getTitleValue(profilePreview.fieldOfStduyTitle).contains(properties.getProperty("error16")));
 		redirectionAssertions("#FieldOfStudy");
+//		takeScreenshot(driver, "example");
 	}
 	
 	@Test
@@ -142,7 +143,7 @@ public class FieldOfStudy extends BaseTest{
 		editField.clickSave();
 		String value = profilePreview.getAreaOfResearchValue();
 		Assert.assertTrue(value.equals("IT"), "Area of research is incorrect");
-		Assert.assertTrue(profilePreview.getITLabel().equals(properties.getProperty("itLabel")));
+		Assert.assertEquals(profilePreview.getITLabel(), properties.getProperty("itLabel"));
 		Assert.assertTrue(profilePreview.getFieldValue().equals(properties.getProperty("it7")));
 		Assert.assertFalse(profilePreview.getTitleValue(profilePreview.fieldOfStduyTitle).contains(properties.getProperty("error16")));
 		redirectionAssertions("#FieldOfStudy");
