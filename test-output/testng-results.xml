@@ -1,63 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T16:28:25 IST" name="Suite" finished-at="2024-09-11T16:28:34 IST" duration-ms="9423">
+  <suite started-at="2024-09-17T11:14:42 IST" name="Suite" finished-at="2024-09-17T11:17:05 IST" duration-ms="142557">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:features.TestRunner@45b4c3a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-11T16:28:25 IST" name="Test" finished-at="2024-09-11T16:28:34 IST" duration-ms="9423">
-      <class name="features.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:features.TestRunner@45b4c3a9]" started-at="2024-09-11T16:28:25 IST" name="setUpClass" finished-at="2024-09-11T16:28:25 IST" duration-ms="387" status="PASS">
+    <test started-at="2024-09-17T11:14:42 IST" name="Test" finished-at="2024-09-17T11:17:05 IST" duration-ms="142557">
+      <class name="com.zenken.freshers.user.Skills">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:14:42 IST" name="setup" finished-at="2024-09-17T11:14:45 IST" duration-ms="2549" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@f1266c6]]>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillRequiredToApply()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:features.TestRunner@45b4c3a9]" started-at="2024-09-11T16:28:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-11T16:28:33 IST" duration-ms="8401" status="FAIL">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:14:45 IST" name="setUpTest" finished-at="2024-09-17T11:14:54 IST" duration-ms="9172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillRequiredToApply()[pri:1, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:14:54 IST" name="verifySkillRequiredToApply" finished-at="2024-09-17T11:14:56 IST" duration-ms="2385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillRequiredToApply -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:14:56 IST" name="tearDown" finished-at="2024-09-17T11:14:56 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:14:56 IST" name="setup" finished-at="2024-09-17T11:14:57 IST" duration-ms="782" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify successful login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verify100SkillsAddition()]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Could not login expected [https://freshers.dspf-dev.com/mypage/profile/] but found [https://freshers.dspf-dev.com/login/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Could not login expected [https://freshers.dspf-dev.com/mypage/profile/] but found [https://freshers.dspf-dev.com/login/]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at stepDefinitions.LoginSteps.i_redirect_to_profile_page(LoginSteps.java:87)
-at ✽.I redirect to profile page(file:///C:/Users/prasa/eclipse-workspace/YaaayFreshers/src/test/java/features/Login.feature:31)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:features.TestRunner@45b4c3a9]" started-at="2024-09-11T16:28:33 IST" name="tearDownClass" finished-at="2024-09-11T16:28:34 IST" duration-ms="596" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:14:57 IST" name="setUpTest" finished-at="2024-09-17T11:15:06 IST" duration-ms="8931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- features.TestRunner -->
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verify100SkillsAddition()[pri:2, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:06 IST" name="verify100SkillsAddition" finished-at="2024-09-17T11:15:37 IST" duration-ms="31242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify100SkillsAddition -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:37 IST" name="tearDown" finished-at="2024-09-17T11:15:38 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:38 IST" name="setup" finished-at="2024-09-17T11:15:39 IST" duration-ms="838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillAddition()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:39 IST" name="setUpTest" finished-at="2024-09-17T11:15:45 IST" duration-ms="6194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillAddition()[pri:3, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:45 IST" name="verifySkillAddition" finished-at="2024-09-17T11:15:47 IST" duration-ms="2152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillAddition -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:47 IST" name="tearDown" finished-at="2024-09-17T11:15:47 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:47 IST" name="setup" finished-at="2024-09-17T11:15:48 IST" duration-ms="747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillDeleteOnEditPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:48 IST" name="setUpTest" finished-at="2024-09-17T11:15:54 IST" duration-ms="5944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillDeleteOnEditPage()[pri:4, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:54 IST" name="verifySkillDeleteOnEditPage" finished-at="2024-09-17T11:15:54 IST" depends-on-methods="com.zenken.freshers.user.Skills.verifySkillAddition" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillDeleteOnEditPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:54 IST" name="tearDown" finished-at="2024-09-17T11:15:54 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:54 IST" name="setup" finished-at="2024-09-17T11:15:55 IST" duration-ms="778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillDeleteOnPreviewPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:15:55 IST" name="setUpTest" finished-at="2024-09-17T11:16:01 IST" duration-ms="5996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillDeleteOnPreviewPage()[pri:5, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:01 IST" name="verifySkillDeleteOnPreviewPage" finished-at="2024-09-17T11:16:05 IST" duration-ms="4317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillDeleteOnPreviewPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:05 IST" name="tearDown" finished-at="2024-09-17T11:16:05 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:05 IST" name="setup" finished-at="2024-09-17T11:16:06 IST" duration-ms="758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillsUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:06 IST" name="setUpTest" finished-at="2024-09-17T11:16:12 IST" duration-ms="6060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillsUrl()[pri:6, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:12 IST" name="verifySkillsUrl" finished-at="2024-09-17T11:16:12 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillsUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:12 IST" name="tearDown" finished-at="2024-09-17T11:16:12 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:12 IST" name="setup" finished-at="2024-09-17T11:16:13 IST" duration-ms="678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifyEditSkillsPageTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:13 IST" name="setUpTest" finished-at="2024-09-17T11:16:19 IST" duration-ms="5947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyEditSkillsPageTitle()[pri:7, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:19 IST" name="verifyEditSkillsPageTitle" finished-at="2024-09-17T11:16:19 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditSkillsPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:19 IST" name="tearDown" finished-at="2024-09-17T11:16:19 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:19 IST" name="setup" finished-at="2024-09-17T11:16:20 IST" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillsPlaceholder()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:20 IST" name="setUpTest" finished-at="2024-09-17T11:16:26 IST" duration-ms="6079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillsPlaceholder()[pri:8, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:26 IST" name="verifySkillsPlaceholder" finished-at="2024-09-17T11:16:26 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillsPlaceholder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:26 IST" name="tearDown" finished-at="2024-09-17T11:16:26 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:26 IST" name="setup" finished-at="2024-09-17T11:16:27 IST" duration-ms="702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillOptionsPopulation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:27 IST" name="setUpTest" finished-at="2024-09-17T11:16:33 IST" duration-ms="6039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillOptionsPopulation()[pri:9, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:33 IST" name="verifySkillOptionsPopulation" finished-at="2024-09-17T11:16:34 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillOptionsPopulation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:34 IST" name="tearDown" finished-at="2024-09-17T11:16:34 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:34 IST" name="setup" finished-at="2024-09-17T11:16:34 IST" duration-ms="703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillSelection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:34 IST" name="setUpTest" finished-at="2024-09-17T11:16:41 IST" duration-ms="6155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillSelection()[pri:10, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:41 IST" name="verifySkillSelection" finished-at="2024-09-17T11:16:41 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:41 IST" name="tearDown" finished-at="2024-09-17T11:16:41 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:41 IST" name="setup" finished-at="2024-09-17T11:16:42 IST" duration-ms="694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillLevelSelection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:42 IST" name="setUpTest" finished-at="2024-09-17T11:16:48 IST" duration-ms="5972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillLevelSelection()[pri:11, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:48 IST" name="verifySkillLevelSelection" finished-at="2024-09-17T11:16:48 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillLevelSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:48 IST" name="tearDown" finished-at="2024-09-17T11:16:48 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:48 IST" name="setup" finished-at="2024-09-17T11:16:49 IST" duration-ms="629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillsCancel()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:49 IST" name="setUpTest" finished-at="2024-09-17T11:16:55 IST" duration-ms="6097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillsCancel()[pri:12, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:55 IST" name="verifySkillsCancel" finished-at="2024-09-17T11:16:56 IST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillsCancel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:56 IST" name="tearDown" finished-at="2024-09-17T11:16:56 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:56 IST" name="setup" finished-at="2024-09-17T11:16:57 IST" duration-ms="681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Skills.verifySkillLevelRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:16:57 IST" name="setUpTest" finished-at="2024-09-17T11:17:03 IST" duration-ms="6210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySkillLevelRequired()[pri:13, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:17:03 IST" name="verifySkillLevelRequired" finished-at="2024-09-17T11:17:04 IST" duration-ms="1718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkillLevelRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Skills@33f676f6]" started-at="2024-09-17T11:17:04 IST" name="tearDown" finished-at="2024-09-17T11:17:05 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.Skills -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

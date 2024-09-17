@@ -33,6 +33,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="(//img[@alt='Edit icon'])[4]")
 	public WebElement fieldOfStudyEdit;
 	
+	@FindBy(xpath="(//img[@alt='Edit icon'])[5]")
+	public WebElement skillsEdit;
+	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
 	
@@ -45,6 +48,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(4)")
 	public WebElement fieldOfStudySection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(5)")
+	public WebElement skillsSection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -54,6 +60,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//a[contains(.,'Field')]")
 	public WebElement fieldOfStudyAnchor;
 	
+	@FindBy(xpath="//a[contains(.,'Skills')]")
+	public WebElement skillsAnchor;
+	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
 	
@@ -62,6 +71,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="(//div[contains(.,'Field')])[7]")
 	public WebElement fieldOfStduyTitle;
+	
+	@FindBy(xpath="(//div[contains(.,'Skills')])[7]")
+	public WebElement skillsTitle;
 	
 	@FindBy(xpath="(//div[@class='u-pt-10'])[1]")
 	WebElement firstName;
@@ -149,6 +161,12 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//h3[contains(.,'Other (IT')]/following-sibling::div[@class='u-pt-10']")
 	WebElement otherITField;
+	
+	@FindBy(css="[class*=blue]")
+	List<WebElement> skills;
+	
+	@FindBy(css="dd[class*='100p']")
+	List<WebElement> skillLevels;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -345,6 +363,28 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		for(int i=0;i<otherPref.size();i++)
 		{
 			String text = otherPref.get(i).getText();
+			texts.add(text);
+		}
+		return texts;
+	}
+	
+	public List<String> getSkillsValues()
+	{
+		List<String> texts = new ArrayList<>();
+		for(int i=0;i<skills.size();i++)
+		{
+			String text = skills.get(i).getText();
+			texts.add(text);
+		}
+		return texts;
+	}
+	
+	public List<String> getSkillLevelValues()
+	{
+		List<String> texts = new ArrayList<>();
+		for(int i=0;i<skillLevels.size();i++)
+		{
+			String text = skillLevels.get(i).getText();
 			texts.add(text);
 		}
 		return texts;
