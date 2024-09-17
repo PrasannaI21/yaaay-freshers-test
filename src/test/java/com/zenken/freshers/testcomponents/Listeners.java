@@ -33,7 +33,7 @@ public class Listeners extends BaseTest implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.log(Status.FAIL, "テスト失敗");
+//		test.log(Status.FAIL, "テスト失敗");
 		test.fail(result.getThrowable());
 		try {
 			driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
