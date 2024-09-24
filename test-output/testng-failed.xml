@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.zenken.freshers.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Skills">
+      <class name="com.zenken.freshers.user.Internships">
         <methods>
-          <include name="setUpTest"/>
-          <include name="verifySkillDeleteOnPreviewPage"/>
+          <include name="verifyIntDeletePopUp"/>
           <include name="tearDown"/>
+          <include name="setUpTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Skills -->
+      </class> <!-- com.zenken.freshers.user.Internships -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -55,6 +55,12 @@ public class WebDriverUtils {
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredToApplyMarks;
 	
+	@FindBy(css="[type=submit]")
+	WebElement save;
+	
+	@FindBy(id="updateCancel")
+	WebElement cancel;
+	
 	public void waitUntilElementAppears(WebElement element)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -217,6 +223,16 @@ public class WebDriverUtils {
 	public void clearText(WebElement ele)
 	{
 		ele.clear();
+	}
+	
+	public void clickSave()
+	{
+		clickByJavaScript(save);
+	}
+	
+	public void clickCancel()
+	{
+		clickByJavaScript(cancel);
 	}
 	
 	public boolean isSectionComplete()
