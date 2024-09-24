@@ -36,6 +36,15 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="(//img[@alt='Edit icon'])[5]")
 	public WebElement skillsEdit;
 	
+	@FindBy(xpath="//a[contains(.,'Add Internship')]")
+	WebElement addIntership;
+	
+	@FindBy(xpath="//span[contains(.,'Add Internship')]")
+	WebElement addIntDisabled;
+	
+	@FindBy(xpath="//section[contains(.,'Internship')]/descendant::img[@alt='Edit icon']")
+	List<WebElement> intershipEdit;
+	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
 	
@@ -51,6 +60,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(5)")
 	public WebElement skillsSection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(6)")
+	public WebElement internshipsSection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -62,6 +74,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//a[contains(.,'Skills')]")
 	public WebElement skillsAnchor;
+	
+	@FindBy(xpath="//a[contains(.,'Internships')]")
+	public WebElement internshipsAnchor;
 	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
@@ -167,6 +182,12 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(css="dd[class*='100p']")
 	List<WebElement> skillLevels;
+	
+	@FindBy(xpath="//section[contains(.,'Internship')]/descendant::div[@class='uk-flex uk-flex-middle u-mt-10']")
+	List<WebElement> internships;
+	
+	@FindBy(xpath="//section[contains(.,'Internship')]/descendant::div[@class='uk-text-truncate u-fz-14']")
+	List<WebElement> intDetails;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -390,20 +411,64 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		return texts;
 	}
 	
+	public void clickAddInternship()
+	{
+		clickByJavaScript(addIntership);
+	}
+	
+	public String getIntDateValue()
+	{
+		if(!internships.isEmpty())
+		{
+			return internships.get(internships.size() - 1).getText();
+		}else {
+			return "No internship records found.";
+		}
+	}
+	
+	public String getIntDetailsValue()
+	{
+		if(!intDetails.isEmpty())
+		{
+			return intDetails.get(intDetails.size() - 1).getText();
+		}else {
+			return "No internship records found.";
+		}
+	}
+	
+	public String getIntDateValue(int index)
+	{
+		return internships.get(index).getText();
+	}
+	
+	public void clickIntEdit(int index)
+	{
+		clickByJavaScript(intershipEdit.get(index));
+	}
+	
+	public int getAddedIntCount()
+	{
+		return internships.size();
+	}
+	
+	public boolean isAddIntActive()
+	{
+		return addIntDisabled.isDisplayed();
+	}
+	
+	public boolean isAddIntButtonActive()
+	{
+		return addIntership.isEnabled();
+	}
+	
+	public String getIntSectionText()
+	{
+		return internshipsSection.getText();
+	}
+	
 	//Method to check if the required mark is present and displayed
 	public boolean isProfileComplete()
 	{
 		return !requiredMarks.isEmpty() && requiredMarks.get(0).isDisplayed();
-//		try
-//		{
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-//			List<WebElement> mark = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("[class=u-c-red]")));
-//			return !mark.isEmpty() && mark.get(0).isDisplayed();	
-//			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class=u-c-red]")));
-//			return true;
-//		}
-//		catch(TimeoutException e) {
-//			return false;
-//		}
 	}
 }

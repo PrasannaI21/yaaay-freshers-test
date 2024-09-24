@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Skills">
+      <class name="com.zenken.freshers.user.Internships">
         <methods>
-          <include name="setUpTest"/>
-          <include name="verifySkillDeleteOnPreviewPage"/>
+          <include name="verifyIntNewUrl"/>
           <include name="tearDown"/>
+          <include name="setUpTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Skills -->
+      </class> <!-- com.zenken.freshers.user.Internships -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
