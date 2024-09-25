@@ -152,7 +152,7 @@ public class Internships extends BaseTest{
 		Assert.assertTrue(profilePreview.getIntSectionText().contains(properties.getProperty("error22")), "Validation error for maximum internships did not occur.");
 	}
 	
-	@Test(priority=11)
+	@Test(priority=11, retryAnalyzer=com.zenken.freshers.testcomponents.Retry.class)
 	public void verifyIntDeletePopUp()
 	{
 		profilePreview.clickIntEdit(0);
