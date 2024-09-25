@@ -43,6 +43,9 @@ public class EditInternshipsPage extends WebDriverUtils{
 	@FindBy(id="descriptionCharacterCount")
 	WebElement charCount;
 	
+	@FindBy(xpath="//div[(@class='u-w-50p-pc')]")
+	WebElement startDateBox;
+	
 	@FindBy(xpath="//div[(@class='uk-form-control')]")
 	WebElement endDateBox;
 	
@@ -65,25 +68,21 @@ public class EditInternshipsPage extends WebDriverUtils{
 	
 	public void selectStartMonth(String month)
 	{
-//		selectDropdownByIndex(startMonthDd, index);
 		selectDropdown(startMonthDd, month);
 	}
 	
 	public void selectStartYear(String year)
 	{
-//		selectDropdownByIndex(startYearDd, index);
 		selectDropdown(startYearDd, year);
 	}
 	
 	public void selectEndMonth(String month)
 	{
-//		selectDropdownByIndex(endMonthDd, index);
 		selectDropdown(endMonthDd, month);
 	}
 	
 	public void selectEndYear(String year)
 	{
-//		selectDropdownByIndex(endYearDd, index);
 		selectDropdown(endYearDd, year);
 	}
 	
@@ -150,6 +149,11 @@ public class EditInternshipsPage extends WebDriverUtils{
 	public String getCharCount()
 	{
 		return charCount.getText();
+	}
+	
+	public String getStartDateBoxText()
+	{
+		return startDateBox.getText();
 	}
 	
 	public String getEndDateBoxText()

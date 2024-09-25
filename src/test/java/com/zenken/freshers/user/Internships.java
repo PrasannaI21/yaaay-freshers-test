@@ -199,6 +199,54 @@ public class Internships extends BaseTest{
 		Assert.assertTrue(internships.getEndDateBoxText().contains(properties.getProperty("error21")));
 	}
 	
+	@Test(priority=15)
+	public void verifyStartMonthRequired()
+	{
+		profilePreview.clickAddInternship();
+		internships.selectStartYear("1991");
+		internships.selectEndMonth("May");
+		internships.selectEndYear("1990");
+		internships.clickSave();
+		Assert.assertEquals(internships.getAlert(), properties.getProperty("alert3"));
+		Assert.assertTrue(internships.getStartDateBoxText().contains(properties.getProperty("error1")));
+	}
+	
+	@Test(priority=16)
+	public void verifyStartYearRequired()
+	{
+		profilePreview.clickAddInternship();
+		internships.selectStartMonth("October");
+		internships.selectEndMonth("May");
+		internships.selectEndYear("1990");
+		internships.clickSave();
+		Assert.assertEquals(internships.getAlert(), properties.getProperty("alert3"));
+		Assert.assertTrue(internships.getStartDateBoxText().contains(properties.getProperty("error1")));
+	}
+	
+	@Test(priority=17)
+	public void verifyEndMonthRequired()
+	{
+		profilePreview.clickAddInternship();
+		internships.selectStartMonth("October");
+		internships.selectStartYear("1991");
+		internships.selectEndYear("1990");
+		internships.clickSave();
+		Assert.assertEquals(internships.getAlert(), properties.getProperty("alert3"));
+		Assert.assertTrue(internships.getEndDateBoxText().contains(properties.getProperty("error1")));
+	}
+	
+	@Test(priority=18)
+	public void verifyEndYearRequired()
+	{
+		profilePreview.clickAddInternship();
+		internships.selectStartMonth("October");
+		internships.selectStartYear("1991");
+		internships.selectEndMonth("May");
+		internships.clickSave();
+		Assert.assertEquals(internships.getAlert(), properties.getProperty("alert3"));
+		Assert.assertTrue(internships.getEndDateBoxText().contains(properties.getProperty("error1")));
+	}
+	
 	private void redirectionAssertions(String parameter)
 	{
 		String alert = profilePreview.getAlertText();
