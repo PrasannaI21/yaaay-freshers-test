@@ -1,12 +1,18 @@
 package com.zenken.freshers.pages.user;
 
+import java.io.File;
+import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
 
@@ -39,11 +45,20 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//a[contains(.,'Add Internship')]")
 	WebElement addIntership;
 	
+	@FindBy(xpath="//a[contains(.,'Add Project')]")
+	WebElement addProject;
+	
 	@FindBy(xpath="//span[contains(.,'Add Internship')]")
 	WebElement addIntDisabled;
 	
+	@FindBy(xpath="//span[contains(.,'Add Project')]")
+	WebElement addProjectDisabled;
+	
 	@FindBy(xpath="//section[contains(.,'Internship')]/descendant::img[@alt='Edit icon']")
 	List<WebElement> intershipEdit;
+	
+	@FindBy(xpath="//section[contains(.,'Projects')]/descendant::img[@alt='Edit icon']")
+	List<WebElement> projectEdit;
 	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
@@ -63,6 +78,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(6)")
 	public WebElement internshipsSection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(7)")
+	public WebElement projectsSection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -77,6 +95,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//a[contains(.,'Internships')]")
 	public WebElement internshipsAnchor;
+	
+	@FindBy(xpath="//a[contains(.,'Project')]")
+	public WebElement projectsAnchor;
 	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
@@ -188,6 +209,24 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//section[contains(.,'Internship')]/descendant::div[@class='uk-text-truncate u-fz-14']")
 	List<WebElement> intDetails;
+	
+	@FindBy(xpath="//section[contains(.,'Project')]/descendant::div[@class='u-d-f u-mt-20']")
+	List<WebElement> projectTitles;
+	
+	@FindBy(xpath="//section[contains(.,'Project')]/descendant::div[@class='uk-flex uk-flex-middle u-mt-10']")
+	List<WebElement> projectDates;
+	
+	@FindBy(xpath="//section[contains(.,'Project')]/descendant::div[@class='uk-text-truncate']")
+	List<WebElement> projectDetails;
+	
+	@FindBy(css="[class*='10'] [target=_blank]")
+	List<WebElement> projectLinks;
+	
+	@FindBy(xpath="//ul[contains(@class, 'muted')]")
+	List<WebElement> projectFiles;
+	
+	@FindBy(xpath="//section[contains(.,'Project')]/ul/li/a")
+	List<WebElement> projectDlLinks;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -464,6 +503,155 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	public String getIntSectionText()
 	{
 		return internshipsSection.getText();
+	}
+	
+	public void clickAddProject()
+	{
+		clickByJavaScript(addProject);
+	}
+	
+	public String getProjectTitleValue()
+	{
+		if(!projectTitles.isEmpty())
+		{
+			return projectTitles.get(projectTitles.size() - 1).getText();
+		}else {
+			return "No project records found.";
+		}
+	}
+	
+	public String getProjectDateValue()
+	{
+		if(!projectDates.isEmpty())
+		{
+			return projectDates.get(projectDates.size() - 1).getText();
+		}else {
+			return "No project records found.";
+		}
+	}
+	
+	public String getProjectDetailsValue()
+	{
+		if(!projectDetails.isEmpty())
+		{
+			return projectDetails.get(projectDetails.size() - 1).getText();
+		}else {
+			return "No project records found.";
+		}
+	}
+	
+	public String getProjectLinkValue()
+	{
+		if(!projectLinks.isEmpty())
+		{
+			return projectLinks.get(projectLinks.size() - 1).getText();
+		}else {
+			return "No project records found.";
+		}
+	}
+	
+	public void clickProjectLink()
+	{
+		clickByJavaScript(projectLinks.get(projectLinks.size()-1));
+	}
+	
+	public String getProjectFileValue()
+	{
+		if(!projectFiles.isEmpty())
+		{
+			return projectFiles.get(projectFiles.size() - 1).getText();
+		}else {
+			return "No project records found.";
+		}
+	}
+	
+	public String getProjectDlLinkText()
+	{
+		return projectDlLinks.get(projectDlLinks.size() -1).getText();
+	}
+	
+	public void clickProjectFile()
+	{
+		clickByJavaScript(projectDlLinks.get(projectDlLinks.size() - 1));
+	}
+	
+	public String monitorDownloadLink(int maxRetries) throws InterruptedException
+	{
+		int linkCount = projectDlLinks.size();
+		int retryCount = 0;
+		while(retryCount < maxRetries)
+		{
+			driver.navigate().refresh();
+			int currentLinkCount = projectDlLinks.size();
+			if(currentLinkCount > linkCount)
+			{	
+				return projectDlLinks.get(currentLinkCount -1).getText();
+			}else {
+				retryCount++;
+				Thread.sleep(3000);
+			}
+		}
+		throw new RuntimeException("New download link did not appear after "+maxRetries+" attempts.");
+	}
+	
+	public int getFileCount()
+	{
+		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
+		int initialFileCount = downloadFolder.listFiles().length;
+		return initialFileCount;
+	}
+	
+	public boolean isFileDownloaded(int initialFileCount)
+	{
+		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		boolean isDownloaded = wait.until((ExpectedCondition<Boolean>) driver -> 
+		{int currentFileCount = downloadFolder.listFiles().length;
+		return currentFileCount > initialFileCount;});
+		return isDownloaded;
+	}
+	
+	public String getDownloadedFileName()
+	{
+		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
+		File[] files = downloadFolder.listFiles();
+		if(files != null && files.length > 0)
+		{
+			Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+			return files[0].getName();
+		}else {
+			return null;
+		}
+	}
+	
+	public void clickProjectEdit(int index)
+	{
+		clickByJavaScript(projectEdit.get(index));
+	}
+	
+	public int getAddedProjectCount()
+	{
+		return projectTitles.size();
+	}
+	
+	public boolean isAddProjectActive()
+	{
+		return addProjectDisabled.isDisplayed();
+	}
+	
+	public String getProjectSectionText()
+	{
+		return projectsSection.getText();
+	}
+	
+	public String getProjectTitleValue(int index)
+	{
+		return projectTitles.get(index).getText();
+	}
+	
+	public boolean isAddProjectButtonActive()
+	{
+		return addProject.isEnabled();
 	}
 	
 	//Method to check if the required mark is present and displayed

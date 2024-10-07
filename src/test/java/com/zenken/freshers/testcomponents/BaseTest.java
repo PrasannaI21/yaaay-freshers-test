@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
@@ -15,6 +16,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -45,17 +47,29 @@ public class BaseTest {
 	@BeforeMethod
 	public void setup(Method method) throws IOException
 	{
+		String downloadFilePath = System.getProperty("user.dir") + File.separator + "downloads";
+		File file = new File(downloadFilePath);
+		if(!file.exists())
+		{
+			file.mkdir();
+		}
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("download.default_directory", downloadFilePath);
+		prefs.put("download.prompt_for_download", false);
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("prefs", prefs);
 		currentTestMethod.set(method.getName());
-		initializeDriver();
+		initializeDriver(options);
 	}
 	
 	public WebDriver setup()
 	{
-		initializeDriver();
+		ChromeOptions options = new ChromeOptions();
+		initializeDriver(options);
 		return driver;
 	}
 	
-	public void initializeDriver()
+	public void initializeDriver(ChromeOptions options)
 	{
 		if(!reuseBrowserSession)
 		{
@@ -63,7 +77,7 @@ public class BaseTest {
 //			WebDriverManager.edgedriver().setup();
 			WebDriverManager.chromedriver().setup();
 //			driver = new EdgeDriver();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 		}
