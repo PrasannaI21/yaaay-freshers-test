@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Internships">
+      <class name="com.zenken.freshers.user.Projects">
         <methods>
-          <include name="verifyIntDeletePopUp"/>
-          <include name="tearDown"/>
+          <include name="verifyProjectAdditionWithFile"/>
           <include name="setUpTest"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Internships -->
+      </class> <!-- com.zenken.freshers.user.Projects -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
