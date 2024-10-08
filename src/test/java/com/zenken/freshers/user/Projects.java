@@ -425,6 +425,19 @@ public class Projects extends BaseTest{
 	}
 	
 	@Test(priority=32)
+	public void verifyProjectCancelNewRed()
+	{
+		profilePreview.clickAddProject();
+		projects.clickCancel();
+		String url = profilePreview.getPageUrl();
+		Assert.assertTrue(url.contains("#Projects"), "The URL does not contain the expected anchor");
+		boolean state = profilePreview.getSectionDisplay(profilePreview.projectsSection);
+		Assert.assertTrue(state, "Projects section is not displayed on the page");
+		String attribute = profilePreview.getAnchorLinkAttribute(profilePreview.projectsAnchor);
+		Assert.assertTrue(attribute.contains("current"), "The correct tab is not selected");
+	}
+	
+	@Test(priority=33)
 	public void verifyMaxFilesUpload()
 	{
 		profilePreview.clickAddProject();
@@ -440,6 +453,19 @@ public class Projects extends BaseTest{
 			projects.getProjectFileText(firstPath, fileName, path);
 		}
 		Assert.assertFalse(projects.isSelectFileActive(), "Select From Files button should be inactive");
+	}
+	
+	@Test(priority=34)
+	public void verifyProjectCancelEditRed()
+	{
+		profilePreview.clickProjectEdit(0);
+		projects.clickCancel();
+		String url = profilePreview.getPageUrl();
+		Assert.assertTrue(url.contains("#Projects"), "The URL does not contain the expected anchor");
+		boolean state = profilePreview.getSectionDisplay(profilePreview.projectsSection);
+		Assert.assertTrue(state, "Projects section is not displayed on the page");
+		String attribute = profilePreview.getAnchorLinkAttribute(profilePreview.projectsAnchor);
+		Assert.assertTrue(attribute.contains("current"), "The correct tab is not selected");
 	}
 	
 	private void redirectionAssertions(String parameter)
