@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>33/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 07 14:57:55 IST 2024</td>
+<td>Started on:</td><td>Fri Oct 11 14:57:10 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>451 seconds (451567 ms)</td>
+<tr><td>Total time:</td><td>549 seconds (549845 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,324 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile()'><b>verifyProjectAdditionWithFile</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td><div><pre>java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (1).pdf]
-	at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:180)
+<td title='com.zenken.freshers.user.Projects.verifyProjectDeletePopUp()'><b>verifyProjectDeletePopUp</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that a confirmation popup to delete the project appears</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fa3e5429416d96a6a2af67e6123777a8)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63271/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa3e5429416d96a6a2af67e6123777a8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace903904793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace903904793'><pre>java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (1).pdf]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:180)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2097538453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2097538453'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fa3e5429416d96a6a2af67e6123777a8)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63271/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa3e5429416d96a6a2af67e6123777a8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyInvalidFileSize()'><b>verifyInvalidFileSize</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for invalid size for project file occurs</td>
+<td></td>
+<td>5</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyStartYearRequired()'><b>verifyStartYearRequired</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for required to save field occurs: Start Year</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectCancelEditRed()'><b>verifyProjectCancelEditRed</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that 'Cancel' from Edit Project redirectes user to preview page</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectEndDateDdDisable()'><b>verifyProjectEndDateDdDisable</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that End Date dropdowns turn inactive</td>
+<td></td>
+<td>1</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectDetailsCharExceed()'><b>verifyProjectDetailsCharExceed</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for maximum characters occurs: Project Overview</td>
+<td></td>
+<td>4</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectLink()'><b>verifyProjectLink</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the project link can be accessed from preview page</td>
+<td></td>
+<td>28</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectCountExceed()'><b>verifyProjectCountExceed</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that 'Add project' button turns inactive once ten projects are added</td>
+<td></td>
+<td>12</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyStartMonthRequired()'><b>verifyStartMonthRequired</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for required to save field occurs: Start Month</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectLinkCharExceed()'><b>verifyProjectLinkCharExceed</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: The test verifies that validation error for maximum characters occurs: Project Link</td>
+<td></td>
+<td>3</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectAdditionWithLink()'><b>verifyProjectAdditionWithLink</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that a project is added with required to save fields, Project Overview and Link</td>
+<td></td>
+<td>5</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyEndYearRequired()'><b>verifyEndYearRequired</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for required to save field occurs: End Year</td>
+<td></td>
+<td>3</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyInvalidFileFormat()'><b>verifyInvalidFileFormat</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for invalid file format occurs</td>
+<td></td>
+<td>4</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectAddition()'><b>verifyProjectAddition</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the project is added with only required to save fields</td>
+<td></td>
+<td>4</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyEndMonthRequired()'><b>verifyEndMonthRequired</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for required to save field occurs: End Month</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectSavedData()'><b>verifyProjectSavedData</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the information saved for first project is correct</td>
+<td></td>
+<td>1</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyDefaultProjectName()'><b>verifyDefaultProjectName</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that default project name is correct</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectEditUrl()'><b>verifyProjectEditUrl</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that expected 'Project Edit' URL is displayed</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectFilesUpload()'><b>verifyProjectFilesUpload</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that multiple files with different formats are uploaded</td>
+<td></td>
+<td>12</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectPageTitle()'><b>verifyProjectPageTitle</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the Project page title is correct</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile()'><b>verifyProjectAdditionWithFile</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the project is added with file</td>
+<td></td>
+<td>20</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectDelete()'><b>verifyProjectDelete</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the project is deleted successfully</td>
+<td></td>
+<td>3</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyInvalidProjectLinkError()'><b>verifyInvalidProjectLinkError</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for invalid project link occurs</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyBeforeEndDateError()'><b>verifyBeforeEndDateError</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error occurs when end date selected is before the start date</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectCharCount()'><b>verifyProjectCharCount</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the character count for Project Overview is dynamically updated</td>
+<td></td>
+<td>30</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectFileUpload()'><b>verifyProjectFileUpload</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that a project file can be uploaded</td>
+<td></td>
+<td>4</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectTitleCharExceed()'><b>verifyProjectTitleCharExceed</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for maximum characters occurs: Project Title</td>
+<td></td>
+<td>3</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectFileDelete()'><b>verifyProjectFileDelete</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the project file is deleted</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectCancelNewRed()'><b>verifyProjectCancelNewRed</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that 'Cancel' from New Project redirectes user to preview page </td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectPlaceholders()'><b>verifyProjectPlaceholders</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that expected placeholders are displayed</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyMaxFilesUpload()'><b>verifyMaxFilesUpload</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that 'Select From Files' button turns inactive once five files are uploaded</td>
+<td></td>
+<td>17</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectsNewUrl()'><b>verifyProjectsNewUrl</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that the expected 'Project New' URL and headline are displayed</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectAdditionWithDetails()'><b>verifyProjectAdditionWithDetails</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that a project is added with required to save fields + Project Overview</td>
+<td></td>
+<td>5</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectTitleRequired()'><b>verifyProjectTitleRequired</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that validation error for required to save field occurs: Project Title</td>
+<td></td>
+<td>2</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectDeletePopUp()'><b>verifyProjectDeletePopUp</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that a confirmation popup to delete the project appears</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (39e6f9cec89c91a701def0443530a39a)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63237/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39e6f9cec89c91a701def0443530a39a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2063943188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2063943188'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (39e6f9cec89c91a701def0443530a39a)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63237/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39e6f9cec89c91a701def0443530a39a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Projects.verifyProjectDeletePopUp()'><b>verifyProjectDeletePopUp</b><br>Test class: com.zenken.freshers.user.Projects<br>Test method: This test verifies that a confirmation popup to delete the project appears</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24733ca5289b1f71d0db5f1f577d27cf)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24733ca5289b1f71d0db5f1f577d27cf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804631788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804631788'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24733ca5289b1f71d0db5f1f577d27cf)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24733ca5289b1f71d0db5f1f577d27cf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -116,172 +421,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>19</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectFileUpload()'><b>verifyProjectFileUpload</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>5</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectFileDelete()'><b>verifyProjectFileDelete</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectSavedData()'><b>verifyProjectSavedData</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectEditUrl()'><b>verifyProjectEditUrl</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>0</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyInvalidProjectLinkError()'><b>verifyInvalidProjectLinkError</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyInvalidFileSize()'><b>verifyInvalidFileSize</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>5</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyEndYearRequired()'><b>verifyEndYearRequired</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>3</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyDefaultProjectName()'><b>verifyDefaultProjectName</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>0</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectPlaceholders()'><b>verifyProjectPlaceholders</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectTitleRequired()'><b>verifyProjectTitleRequired</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectAddition()'><b>verifyProjectAddition</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>4</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectLinkCharExceed()'><b>verifyProjectLinkCharExceed</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyStartMonthRequired()'><b>verifyStartMonthRequired</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectCountExceed()'><b>verifyProjectCountExceed</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>13</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyMaxFilesUpload()'><b>verifyMaxFilesUpload</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>17</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectAdditionWithDetails()'><b>verifyProjectAdditionWithDetails</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>5</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectDelete()'><b>verifyProjectDelete</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectsNewUrl()'><b>verifyProjectsNewUrl</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>0</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectDeletePopUp()'><b>verifyProjectDeletePopUp</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyStartYearRequired()'><b>verifyStartYearRequired</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectFilesUpload()'><b>verifyProjectFilesUpload</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>13</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectTitleCharExceed()'><b>verifyProjectTitleCharExceed</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>3</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectDetailsCharExceed()'><b>verifyProjectDetailsCharExceed</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectPageTitle()'><b>verifyProjectPageTitle</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>0</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectEndDateDdDisable()'><b>verifyProjectEndDateDdDisable</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyInvalidFileFormat()'><b>verifyInvalidFileFormat</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>4</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyBeforeEndDateError()'><b>verifyBeforeEndDateError</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>2</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectLink()'><b>verifyProjectLink</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>4</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyEndMonthRequired()'><b>verifyEndMonthRequired</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>3</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectCharCount()'><b>verifyProjectCharCount</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>31</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Projects.verifyProjectAdditionWithLink()'><b>verifyProjectAdditionWithLink</b><br>Test class: com.zenken.freshers.user.Projects</td>
-<td></td>
-<td>6</td>
-<td>com.zenken.freshers.user.Projects@77659b30</td></tr>
+<td>10</td>
+<td>com.zenken.freshers.user.Projects@7b50df34</td></tr>
 </table><p>
 </body>
 </html>

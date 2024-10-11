@@ -9,32 +9,32 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import com.zenken.freshers.resources.ExtentReporter;
 
 public class Listeners extends BaseTest implements ITestListener{
 
 	ExtentReports extent = ExtentReporter.getReportObject();
 	ExtentTest test;
+	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 	
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		test = extent.createTest(result.getMethod().getMethodName());
+		String description = result.getMethod().getDescription();
+		test = extent.createTest(result.getMethod().getMethodName(), description);
+		extentTest.set(test);
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-//		test.log(Status.PASS, "テスト成功");
-		test.pass("テスト成功");
+		extentTest.get().pass("Test Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-//		test.log(Status.FAIL, "テスト失敗");
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		try {
 			driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e) {
@@ -48,13 +48,13 @@ public class Listeners extends BaseTest implements ITestListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.skip("テストスキップ");
+		extentTest.get().skip("Test Skipped");
 	}
 
 	@Override
@@ -80,6 +80,4 @@ public class Listeners extends BaseTest implements ITestListener{
 		// TODO Auto-generated method stub
 		extent.flush();
 	}
-
-	
 }

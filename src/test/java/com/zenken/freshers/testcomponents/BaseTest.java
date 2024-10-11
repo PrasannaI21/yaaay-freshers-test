@@ -17,10 +17,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -107,6 +108,11 @@ public class BaseTest {
 		File destFile = new File(System.getProperty("user.dir")+"\\reports\\"+fileName+".png");
 		FileUtils.copyFile(srcFile, destFile);
 		return System.getProperty("user.dir")+"\\reports\\"+fileName+".png";// return file path in string
+	}
+	
+	public void log(String message)
+	{
+		Listeners.extentTest.get().log(Status.INFO, message);
 	}
 	
 	@AfterMethod

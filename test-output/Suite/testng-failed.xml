@@ -8,9 +8,9 @@
     <classes>
       <class name="com.zenken.freshers.user.Projects">
         <methods>
-          <include name="verifyProjectAdditionWithFile"/>
           <include name="setUpTest"/>
           <include name="tearDown"/>
+          <include name="verifyProjectDeletePopUp"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.zenken.freshers.user.Projects -->

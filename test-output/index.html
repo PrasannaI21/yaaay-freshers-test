@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1205631541\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\prasa\eclipse-workspace\YaaayFreshers\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,214 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">36 methods, 1 failed,  2 skipped,  33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectDeletePopUp">verifyProjectDeletePopUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectDeletePopUp">verifyProjectDeletePopUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectDeletePopUp">verifyProjectDeletePopUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectCancelEditRed">verifyProjectCancelEditRed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyBeforeEndDateError">verifyBeforeEndDateError</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyDefaultProjectName">verifyDefaultProjectName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyEndMonthRequired">verifyEndMonthRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyEndYearRequired">verifyEndYearRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyInvalidFileFormat">verifyInvalidFileFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyInvalidFileSize">verifyInvalidFileSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyInvalidProjectLinkError">verifyInvalidProjectLinkError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyMaxFilesUpload">verifyMaxFilesUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAddition">verifyProjectAddition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAdditionWithDetails">verifyProjectAdditionWithDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAdditionWithFile">verifyProjectAdditionWithFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAdditionWithLink">verifyProjectAdditionWithLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectCancelEditRed">verifyProjectCancelEditRed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectCancelNewRed">verifyProjectCancelNewRed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectCharCount">verifyProjectCharCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectCountExceed">verifyProjectCountExceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectDelete">verifyProjectDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectDetailsCharExceed">verifyProjectDetailsCharExceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectEditUrl">verifyProjectEditUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectEndDateDdDisable">verifyProjectEndDateDdDisable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectFileDelete">verifyProjectFileDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectFileUpload">verifyProjectFileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectFilesUpload">verifyProjectFilesUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectLink">verifyProjectLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectLinkCharExceed">verifyProjectLinkCharExceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectPageTitle">verifyProjectPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectPlaceholders">verifyProjectPlaceholders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectSavedData">verifyProjectSavedData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectTitleCharExceed">verifyProjectTitleCharExceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectTitleRequired">verifyProjectTitleRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectsNewUrl">verifyProjectsNewUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyStartMonthRequired">verifyStartMonthRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyStartYearRequired">verifyStartYearRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +310,93 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zenken.freshers.user.Projects</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectDeletePopUp">
+                  </a> <!-- verifyProjectDeletePopUp -->
+                  <span class="method-name">verifyProjectDeletePopUp</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fa3e5429416d96a6a2af67e6123777a8)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63271/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa3e5429416d96a6a2af67e6123777a8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that a confirmation popup to delete the project appears)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.zenken.freshers.user.Projects</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectDeletePopUp">
+                  </a> <!-- verifyProjectDeletePopUp -->
+                  <span class="method-name">verifyProjectDeletePopUp</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (39e6f9cec89c91a701def0443530a39a)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63237/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39e6f9cec89c91a701def0443530a39a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that a confirmation popup to delete the project appears)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectDeletePopUp">
+                  </a> <!-- verifyProjectDeletePopUp -->
+                  <span class="method-name">verifyProjectDeletePopUp</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24733ca5289b1f71d0db5f1f577d27cf)] -&gt; css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24733ca5289b1f71d0db5f1f577d27cf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
+	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
+	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that a confirmation popup to delete the project appears)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.zenken.freshers.user.Projects</span>
@@ -126,170 +404,528 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyBeforeEndDateError">
+                  </a> <!-- verifyBeforeEndDateError -->
+                  <span class="method-name">verifyBeforeEndDateError</span>
+                  <em>
+(This test verifies that validation error occurs when end date selected is before the start date)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDefaultProjectName">
+                  </a> <!-- verifyDefaultProjectName -->
+                  <span class="method-name">verifyDefaultProjectName</span>
+                  <em>
+(This test verifies that default project name is correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEndMonthRequired">
+                  </a> <!-- verifyEndMonthRequired -->
+                  <span class="method-name">verifyEndMonthRequired</span>
+                  <em>
+(This test verifies that validation error for required to save field occurs: End Month)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEndYearRequired">
+                  </a> <!-- verifyEndYearRequired -->
+                  <span class="method-name">verifyEndYearRequired</span>
+                  <em>
+(This test verifies that validation error for required to save field occurs: End Year)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidFileFormat">
+                  </a> <!-- verifyInvalidFileFormat -->
+                  <span class="method-name">verifyInvalidFileFormat</span>
+                  <em>
+(This test verifies that validation error for invalid file format occurs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidFileSize">
+                  </a> <!-- verifyInvalidFileSize -->
+                  <span class="method-name">verifyInvalidFileSize</span>
+                  <em>
+(This test verifies that validation error for invalid size for project file occurs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidProjectLinkError">
+                  </a> <!-- verifyInvalidProjectLinkError -->
+                  <span class="method-name">verifyInvalidProjectLinkError</span>
+                  <em>
+(This test verifies that validation error for invalid project link occurs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMaxFilesUpload">
+                  </a> <!-- verifyMaxFilesUpload -->
+                  <span class="method-name">verifyMaxFilesUpload</span>
+                  <em>
+(This test verifies that 'Select From Files' button turns inactive once five files are uploaded)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectAddition">
+                  </a> <!-- verifyProjectAddition -->
+                  <span class="method-name">verifyProjectAddition</span>
+                  <em>
+(This test verifies that the project is added with only required to save fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectAdditionWithDetails">
+                  </a> <!-- verifyProjectAdditionWithDetails -->
+                  <span class="method-name">verifyProjectAdditionWithDetails</span>
+                  <em>
+(This test verifies that a project is added with required to save fields + Project Overview)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectAdditionWithFile">
+                  </a> <!-- verifyProjectAdditionWithFile -->
+                  <span class="method-name">verifyProjectAdditionWithFile</span>
+                  <em>
+(This test verifies that the project is added with file)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectAdditionWithLink">
+                  </a> <!-- verifyProjectAdditionWithLink -->
+                  <span class="method-name">verifyProjectAdditionWithLink</span>
+                  <em>
+(This test verifies that a project is added with required to save fields, Project Overview and Link)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyProjectCancelEditRed">
                   </a> <!-- verifyProjectCancelEditRed -->
                   <span class="method-name">verifyProjectCancelEditRed</span>
+                  <em>
+(This test verifies that 'Cancel' from Edit Project redirectes user to preview page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectCancelNewRed">
+                  </a> <!-- verifyProjectCancelNewRed -->
+                  <span class="method-name">verifyProjectCancelNewRed</span>
+                  <em>
+(This test verifies that 'Cancel' from New Project redirectes user to preview page )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectCharCount">
+                  </a> <!-- verifyProjectCharCount -->
+                  <span class="method-name">verifyProjectCharCount</span>
+                  <em>
+(This test verifies that the character count for Project Overview is dynamically updated)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectCountExceed">
+                  </a> <!-- verifyProjectCountExceed -->
+                  <span class="method-name">verifyProjectCountExceed</span>
+                  <em>
+(This test verifies that 'Add project' button turns inactive once ten projects are added)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectDelete">
+                  </a> <!-- verifyProjectDelete -->
+                  <span class="method-name">verifyProjectDelete</span>
+                  <em>
+(This test verifies that the project is deleted successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectDetailsCharExceed">
+                  </a> <!-- verifyProjectDetailsCharExceed -->
+                  <span class="method-name">verifyProjectDetailsCharExceed</span>
+                  <em>
+(This test verifies that validation error for maximum characters occurs: Project Overview)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectEditUrl">
+                  </a> <!-- verifyProjectEditUrl -->
+                  <span class="method-name">verifyProjectEditUrl</span>
+                  <em>
+(This test verifies that expected 'Project Edit' URL is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectEndDateDdDisable">
+                  </a> <!-- verifyProjectEndDateDdDisable -->
+                  <span class="method-name">verifyProjectEndDateDdDisable</span>
+                  <em>
+(This test verifies that End Date dropdowns turn inactive)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectFileDelete">
+                  </a> <!-- verifyProjectFileDelete -->
+                  <span class="method-name">verifyProjectFileDelete</span>
+                  <em>
+(This test verifies that the project file is deleted)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectFileUpload">
+                  </a> <!-- verifyProjectFileUpload -->
+                  <span class="method-name">verifyProjectFileUpload</span>
+                  <em>
+(This test verifies that a project file can be uploaded)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectFilesUpload">
+                  </a> <!-- verifyProjectFilesUpload -->
+                  <span class="method-name">verifyProjectFilesUpload</span>
+                  <em>
+(This test verifies that multiple files with different formats are uploaded)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectLink">
+                  </a> <!-- verifyProjectLink -->
+                  <span class="method-name">verifyProjectLink</span>
+                  <em>
+(This test verifies that the project link can be accessed from preview page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectLinkCharExceed">
+                  </a> <!-- verifyProjectLinkCharExceed -->
+                  <span class="method-name">verifyProjectLinkCharExceed</span>
+                  <em>
+(The test verifies that validation error for maximum characters occurs: Project Link)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectPageTitle">
+                  </a> <!-- verifyProjectPageTitle -->
+                  <span class="method-name">verifyProjectPageTitle</span>
+                  <em>
+(This test verifies that the Project page title is correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectPlaceholders">
+                  </a> <!-- verifyProjectPlaceholders -->
+                  <span class="method-name">verifyProjectPlaceholders</span>
+                  <em>
+(This test verifies that expected placeholders are displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectSavedData">
+                  </a> <!-- verifyProjectSavedData -->
+                  <span class="method-name">verifyProjectSavedData</span>
+                  <em>
+(This test verifies that the information saved for first project is correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectTitleCharExceed">
+                  </a> <!-- verifyProjectTitleCharExceed -->
+                  <span class="method-name">verifyProjectTitleCharExceed</span>
+                  <em>
+(This test verifies that validation error for maximum characters occurs: Project Title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectTitleRequired">
+                  </a> <!-- verifyProjectTitleRequired -->
+                  <span class="method-name">verifyProjectTitleRequired</span>
+                  <em>
+(This test verifies that validation error for required to save field occurs: Project Title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectsNewUrl">
+                  </a> <!-- verifyProjectsNewUrl -->
+                  <span class="method-name">verifyProjectsNewUrl</span>
+                  <em>
+(This test verifies that the expected 'Project New' URL and headline are displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStartMonthRequired">
+                  </a> <!-- verifyStartMonthRequired -->
+                  <span class="method-name">verifyStartMonthRequired</span>
+                  <em>
+(This test verifies that validation error for required to save field occurs: Start Month)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStartYearRequired">
+                  </a> <!-- verifyStartYearRequired -->
+                  <span class="method-name">verifyStartYearRequired</span>
+                  <em>
+(This test verifies that validation error for required to save field occurs: Start Year)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse--1205631541\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prasa\eclipse-workspace\YaaayFreshers\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.zenken.freshers.testcomponents.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Projects&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyProjectCancelEditRed&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Projects --&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.Projects&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(36);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyProjectCancelEditRed')
+data.setCell(0, 1, 'verifyProjectCharCount')
 data.setCell(0, 2, 'com.zenken.freshers.user.Projects')
-data.setCell(0, 3, 2661);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 30936);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyProjectLink')
+data.setCell(1, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(1, 3, 28923);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyProjectAdditionWithFile')
+data.setCell(2, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(2, 3, 20575);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyMaxFilesUpload')
+data.setCell(3, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(3, 3, 17955);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyProjectCountExceed')
+data.setCell(4, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(4, 3, 12983);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyProjectFilesUpload')
+data.setCell(5, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(5, 3, 12477);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyProjectDeletePopUp')
+data.setCell(6, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(6, 3, 10906);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyProjectDeletePopUp')
+data.setCell(7, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(7, 3, 10903);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyProjectDeletePopUp')
+data.setCell(8, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(8, 3, 10835);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyProjectAdditionWithLink')
+data.setCell(9, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(9, 3, 5720);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyProjectAdditionWithDetails')
+data.setCell(10, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(10, 3, 5100);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyInvalidFileSize')
+data.setCell(11, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(11, 3, 5059);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyProjectFileUpload')
+data.setCell(12, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(12, 3, 4922);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyProjectAddition')
+data.setCell(13, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(13, 3, 4368);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyProjectDetailsCharExceed')
+data.setCell(14, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(14, 3, 4325);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyInvalidFileFormat')
+data.setCell(15, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(15, 3, 4129);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyProjectDelete')
+data.setCell(16, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(16, 3, 3244);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyEndYearRequired')
+data.setCell(17, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(17, 3, 3091);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyProjectTitleCharExceed')
+data.setCell(18, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(18, 3, 3087);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyProjectLinkCharExceed')
+data.setCell(19, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(19, 3, 3036);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyBeforeEndDateError')
+data.setCell(20, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(20, 3, 2860);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyProjectFileDelete')
+data.setCell(21, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(21, 3, 2845);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyProjectTitleRequired')
+data.setCell(22, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(22, 3, 2816);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyStartMonthRequired')
+data.setCell(23, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(23, 3, 2739);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyStartYearRequired')
+data.setCell(24, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(24, 3, 2729);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyEndMonthRequired')
+data.setCell(25, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(25, 3, 2668);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyInvalidProjectLinkError')
+data.setCell(26, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(26, 3, 2396);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyProjectCancelEditRed')
+data.setCell(27, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(27, 3, 2378);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyProjectCancelNewRed')
+data.setCell(28, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(28, 3, 2074);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyProjectSavedData')
+data.setCell(29, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(29, 3, 1172);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyProjectEndDateDdDisable')
+data.setCell(30, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(30, 3, 1001);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyProjectPageTitle')
+data.setCell(31, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(31, 3, 909);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyProjectPlaceholders')
+data.setCell(32, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(32, 3, 841);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyProjectsNewUrl')
+data.setCell(33, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(33, 3, 841);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyProjectEditUrl')
+data.setCell(34, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(34, 3, 836);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifyDefaultProjectName')
+data.setCell(35, 2, 'com.zenken.freshers.user.Projects')
+data.setCell(35, 3, 44);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">33 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.zenken.freshers.user.Projects</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyDefaultProjectName</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCancelNewRed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCharCount</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectsNewUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectTitleCharExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidFileFormat</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidFileSize</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectLink</span>
-                <br/>
-                <span class="ignored-method-name">verifyBeforeEndDateError</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAdditionWithLink</span>
-                <br/>
-                <span class="ignored-method-name">verifyEndMonthRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAdditionWithDetails</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectDelete</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectDetailsCharExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAddition</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectTitleRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectSavedData</span>
-                <br/>
-                <span class="ignored-method-name">verifyMaxFilesUpload</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidProjectLinkError</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectPageTitle</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectDeletePopUp</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectFileUpload</span>
-                <br/>
-                <span class="ignored-method-name">verifyEndYearRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectFileDelete</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectLinkCharExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectFilesUpload</span>
-                <br/>
-                <span class="ignored-method-name">verifyStartYearRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCountExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyStartMonthRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectPlaceholders</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAdditionWithFile</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectEditUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectEndDateDdDisable</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -297,20 +933,582 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.zenken.freshers.user.Projects</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectCancelEditRed())</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectsNewUrl())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpTest</span>
-                <span class="method-start">1477 ms</span>
+                <span class="method-start">2032 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyProjectCancelEditRed</span>
-                <span class="method-start">8110 ms</span>
+                <span class="method-name">verifyProjectsNewUrl</span>
+                <span class="method-start">35308 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10776 ms</span>
+                <span class="method-start">36150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectPageTitle())</span>
+                <span class="method-start">36436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">37541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectPageTitle</span>
+                <span class="method-start">43554 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44464 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectPlaceholders())</span>
+                <span class="method-start">44632 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">45405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectPlaceholders</span>
+                <span class="method-start">53330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54171 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectEndDateDdDisable())</span>
+                <span class="method-start">54404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">55223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectEndDateDdDisable</span>
+                <span class="method-start">61206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAddition())</span>
+                <span class="method-start">62406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">63146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectAddition</span>
+                <span class="method-start">71078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithDetails())</span>
+                <span class="method-start">75662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">76496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectAdditionWithDetails</span>
+                <span class="method-start">82863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">87965 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithLink())</span>
+                <span class="method-start">88231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">89154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectAdditionWithLink</span>
+                <span class="method-start">95767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101493 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectLink())</span>
+                <span class="method-start">101762 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">102649 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectLink</span>
+                <span class="method-start">108601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">137525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectFileUpload())</span>
+                <span class="method-start">137780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">138656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectFileUpload</span>
+                <span class="method-start">145416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">150338 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyDefaultProjectName())</span>
+                <span class="method-start">150636 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">151455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDefaultProjectName</span>
+                <span class="method-start">158314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">158368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.Inter...)</span>
+                <span class="method-start">158543 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">159394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectAdditionWithFile</span>
+                <span class="method-start">165888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">186467 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectEditUrl())</span>
+                <span class="method-start">186820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">187744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectEditUrl</span>
+                <span class="method-start">193984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">194828 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectSavedData())</span>
+                <span class="method-start">195022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">195738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectSavedData</span>
+                <span class="method-start">203271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">204444 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectCharCount())</span>
+                <span class="method-start">204665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">205342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectCharCount</span>
+                <span class="method-start">211509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">242445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectFilesUpload())</span>
+                <span class="method-start">242826 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">243742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectFilesUpload</span>
+                <span class="method-start">249888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">262365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectFileDelete())</span>
+                <span class="method-start">262711 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">263489 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectFileDelete</span>
+                <span class="method-start">270106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">272953 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectCountExceed())</span>
+                <span class="method-start">274845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">275663 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectCountExceed</span>
+                <span class="method-start">282426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">295419 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectDeletePopUp())</span>
+                <span class="method-start">295696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">296507 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectDeletePopUp</span>
+                <span class="method-start">302751 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">313656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectDeletePopUp())</span>
+                <span class="method-start">313945 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">314668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectDeletePopUp</span>
+                <span class="method-start">320937 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">331846 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectDeletePopUp())</span>
+                <span class="method-start">332151 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">333067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyProjectDeletePopUp</span>
+                <span class="method-start">339272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">350782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectDelete())</span>
+                <span class="method-start">351068 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">351887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectDelete</span>
+                <span class="method-start">358133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">361380 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectTitleCharExceed())</span>
+                <span class="method-start">361621 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">362381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectTitleCharExceed</span>
+                <span class="method-start">370798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">373885 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyBeforeEndDateError())</span>
+                <span class="method-start">374182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">375036 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBeforeEndDateError</span>
+                <span class="method-start">388013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">390873 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectDetailsCharExceed())</span>
+                <span class="method-start">391146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">391862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectDetailsCharExceed</span>
+                <span class="method-start">405880 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">410221 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyInvalidProjectLinkError())</span>
+                <span class="method-start">410432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">411288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidProjectLinkError</span>
+                <span class="method-start">417741 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">420137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectLinkCharExceed())</span>
+                <span class="method-start">420346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">421105 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectLinkCharExceed</span>
+                <span class="method-start">427339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">430375 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectTitleRequired())</span>
+                <span class="method-start">430606 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">431441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectTitleRequired</span>
+                <span class="method-start">437682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">440500 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyStartMonthRequired())</span>
+                <span class="method-start">440744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">441600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStartMonthRequired</span>
+                <span class="method-start">447714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">450455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyStartYearRequired())</span>
+                <span class="method-start">450634 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">451483 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStartYearRequired</span>
+                <span class="method-start">457867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">460598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyEndMonthRequired())</span>
+                <span class="method-start">460839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">461743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEndMonthRequired</span>
+                <span class="method-start">467947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">470615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyEndYearRequired())</span>
+                <span class="method-start">470838 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">471565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEndYearRequired</span>
+                <span class="method-start">478388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">481479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyInvalidFileFormat())</span>
+                <span class="method-start">481790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">482608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidFileFormat</span>
+                <span class="method-start">488870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">492999 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyInvalidFileSize())</span>
+                <span class="method-start">493270 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">494101 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidFileSize</span>
+                <span class="method-start">500356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">505431 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectCancelNewRed())</span>
+                <span class="method-start">505684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">506524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectCancelNewRed</span>
+                <span class="method-start">512629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">514706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyMaxFilesUpload())</span>
+                <span class="method-start">514916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">515686 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMaxFilesUpload</span>
+                <span class="method-start">522157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">540112 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectCancelEditRed())</span>
+                <span class="method-start">540411 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">541223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectCancelEditRed</span>
+                <span class="method-start">547255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">549636 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
