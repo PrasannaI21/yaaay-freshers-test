@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">テスト結果</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 11, 2024 02:57:09 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 11, 2024 05:52:28 PM</span></a>
 </li>
 </ul>
 </div>
@@ -47,9 +47,9 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -72,10 +72,14 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Projects</a><a class="dropdown-item" href="#">Registration</a>
 </ul>
 </li>
 </ul>
@@ -83,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag=""
+          tag="Projects"
           device="">
           <div class="test-detail">
             <p class="name">verifyProjectsNewUrl</p>
             <p class="text-sm">
-              <span>2:57:45 PM</span> / <span>00:00:00:814</span>
+              <span>5:52:35 PM</span> / <span>00:00:00:876</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -97,14 +101,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">verifyProjectsNewUrl</h5>
-<span class='badge badge-success'>10.11.2024 2:57:45 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:57:46 PM</span>
-<span class='badge badge-default'>00:00:00:814</span>
+<span class='badge badge-success'>10.11.2024 5:52:35 PM</span>
+<span class='badge badge-danger'>10.11.2024 5:52:36 PM</span>
+<span class='badge badge-default'>00:00:00:876</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Projects</span></div>
 <div class="m-t-10 m-l-5">This test verifies that the expected 'Project New' URL and headline are displayed</div>
 </div>
 </div><div class="detail-body mt-4">
@@ -113,21 +118,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:57:45 PM</td>
+        <td>5:52:35 PM</td>
         <td>
           Step 1: Click on 'Add Project' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:57:46 PM</td>
+        <td>5:52:36 PM</td>
         <td>
           Step 2: Verify that URL and headline are correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:57:46 PM</td>
+        <td>5:52:36 PM</td>
         <td>
           Test Passed
         </td>
@@ -139,12 +144,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag=""
+          tag="Projects"
           device="">
           <div class="test-detail">
-            <p class="name">verifyProjectPageTitle</p>
+            <p class="name">verifyProjectEndDateDdDisable</p>
             <p class="text-sm">
-              <span>2:57:53 PM</span> / <span>00:00:00:907</span>
+              <span>5:52:43 PM</span> / <span>00:00:00:806</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -152,16 +157,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyProjectPageTitle</h5>
-<span class='badge badge-success'>10.11.2024 2:57:53 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:57:54 PM</span>
-<span class='badge badge-default'>00:00:00:907</span>
+<h5 class="test-status text-pass">verifyProjectEndDateDdDisable</h5>
+<span class='badge badge-success'>10.11.2024 5:52:43 PM</span>
+<span class='badge badge-danger'>10.11.2024 5:52:44 PM</span>
+<span class='badge badge-default'>00:00:00:806</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-10 m-l-5">This test verifies that the Project page title is correct</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Projects</span></div>
+<div class="m-t-10 m-l-5">This test verifies that End Date dropdowns turn inactive</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -169,21 +175,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:57:53 PM</td>
+        <td>5:52:43 PM</td>
         <td>
           Step 1: Click on 'Add Project' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:57:54 PM</td>
+        <td>5:52:44 PM</td>
         <td>
-          Step 2: Verify that title name is correct
+          Step 2: Select checkbox for End Date
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:52:44 PM</td>
+        <td>
+          Step 3: Verify that the dropdowns for month and year turn inactive
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:57:54 PM</td>
+        <td>5:52:44 PM</td>
         <td>
           Test Passed
         </td>
@@ -195,12 +208,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag=""
+          tag="Registration"
           device="">
           <div class="test-detail">
-            <p class="name">verifyProjectPlaceholders</p>
+            <p class="name">verifyIncorrectPassword1</p>
             <p class="text-sm">
-              <span>2:58:03 PM</span> / <span>00:00:00:841</span>
+              <span>5:52:47 PM</span> / <span>00:00:02:626</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -208,38 +221,25 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyProjectPlaceholders</h5>
-<span class='badge badge-success'>10.11.2024 2:58:03 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:58:04 PM</span>
-<span class='badge badge-default'>00:00:00:841</span>
+<h5 class="test-status text-pass">verifyIncorrectPassword1</h5>
+<span class='badge badge-success'>10.11.2024 5:52:47 PM</span>
+<span class='badge badge-danger'>10.11.2024 5:52:49 PM</span>
+<span class='badge badge-default'>00:00:02:626</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-10 m-l-5">This test verifies that expected placeholders are displayed</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Registration</span></div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:03 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:04 PM</td>
-        <td>
-          Step 2: Verify that placeholders displayed for 'Project-Title, Overview, Link' are correct
-        </td>
-      </tr>
-      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:58:04 PM</td>
+        <td>5:52:49 PM</td>
         <td>
           Test Passed
         </td>
@@ -251,12 +251,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag=""
+          tag="Registration"
           device="">
           <div class="test-detail">
-            <p class="name">verifyProjectEndDateDdDisable</p>
+            <p class="name">verifyLogInUrl</p>
             <p class="text-sm">
-              <span>2:58:11 PM</span> / <span>00:00:01:000</span>
+              <span>5:52:54 PM</span> / <span>00:00:00:742</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -264,45 +264,25 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyProjectEndDateDdDisable</h5>
-<span class='badge badge-success'>10.11.2024 2:58:11 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:58:12 PM</span>
-<span class='badge badge-default'>00:00:01:000</span>
+<h5 class="test-status text-pass">verifyLogInUrl</h5>
+<span class='badge badge-success'>10.11.2024 5:52:54 PM</span>
+<span class='badge badge-danger'>10.11.2024 5:52:55 PM</span>
+<span class='badge badge-default'>00:00:00:742</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-10 m-l-5">This test verifies that End Date dropdowns turn inactive</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Registration</span></div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:11 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:12 PM</td>
-        <td>
-          Step 2: Select checkbox for End Date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:12 PM</td>
-        <td>
-          Step 3: Verify that the dropdowns for month and year turn inactive
-        </td>
-      </tr>
-      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:58:12 PM</td>
+        <td>5:52:55 PM</td>
         <td>
           Test Passed
         </td>
@@ -314,12 +294,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="5"
           author=""
-          tag=""
+          tag="Registration"
           device="">
           <div class="test-detail">
-            <p class="name">verifyProjectAddition</p>
+            <p class="name">verifyTermsPDF</p>
             <p class="text-sm">
-              <span>2:58:21 PM</span> / <span>00:00:04:360</span>
+              <span>5:52:59 PM</span> / <span>00:00:00:692</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -327,2373 +307,25 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyProjectAddition</h5>
-<span class='badge badge-success'>10.11.2024 2:58:21 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:58:25 PM</span>
-<span class='badge badge-default'>00:00:04:360</span>
+<h5 class="test-status text-pass">verifyTermsPDF</h5>
+<span class='badge badge-success'>10.11.2024 5:52:59 PM</span>
+<span class='badge badge-danger'>10.11.2024 5:53:00 PM</span>
+<span class='badge badge-default'>00:00:00:692</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-10 m-l-5">This test verifies that the project is added with only required to save fields</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Registration</span></div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:21 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:22 PM</td>
-        <td>
-          Step 2: Enter Project Title: AI-Powered Customer Support Chatbot Development
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:22 PM</td>
-        <td>
-          Step 3: Select start month: December
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:22 PM</td>
-        <td>
-          Step 4: Select start year: 2023
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:22 PM</td>
-        <td>
-          Step 5: Select end month: March
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:22 PM</td>
-        <td>
-          Step 6: Select end year: 2024
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:22 PM</td>
-        <td>
-          Step 7: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:25 PM</td>
-        <td>
-          Step 8: Verify that expected project title and dates are displayed on profile preview page
-        </td>
-      </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:58:25 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectAdditionWithDetails</p>
-            <p class="text-sm">
-              <span>2:58:33 PM</span> / <span>00:00:05:090</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectAdditionWithDetails</h5>
-<span class='badge badge-success'>10.11.2024 2:58:33 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:58:38 PM</span>
-<span class='badge badge-default'>00:00:05:090</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that a project is added with required to save fields + Project Overview</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:33 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:33 PM</td>
-        <td>
-          Step 2: Enter Project Title: Cloud-Based Inventory Management System
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:34 PM</td>
-        <td>
-          Step 3: Select start month: April
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:34 PM</td>
-        <td>
-          Step 4: Select start year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:34 PM</td>
-        <td>
-          Step 5: Select checkbox for End Date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:34 PM</td>
-        <td>
-          Step 6: Enter Project Overview
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:36 PM</td>
-        <td>
-          Step 7: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:38 PM</td>
-        <td>
-          Step 8: Verify that expected project title, dates, and details are displayed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:58:38 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectAdditionWithLink</p>
-            <p class="text-sm">
-              <span>2:58:46 PM</span> / <span>00:00:05:720</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectAdditionWithLink</h5>
-<span class='badge badge-success'>10.11.2024 2:58:46 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:58:51 PM</span>
-<span class='badge badge-default'>00:00:05:720</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that a project is added with required to save fields, Project Overview and Link</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:46 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:46 PM</td>
-        <td>
-          Step 2: Enter Project Title: Blockchain-Based Voting System
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:47 PM</td>
-        <td>
-          Step 3: Select start month: July
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:47 PM</td>
-        <td>
-          Step 4: Select start year: 2007
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:47 PM</td>
-        <td>
-          Step 5: Select end month: November
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:47 PM</td>
-        <td>
-          Step 6: Select end year: 2007
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:47 PM</td>
-        <td>
-          Step 7: Enter Project Overview
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:48 PM</td>
-        <td>
-          Step 8: Enter Project Link: https://www.zenken.co.jp/en/
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:49 PM</td>
-        <td>
-          Step 9: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:51 PM</td>
-        <td>
-          Step 10: Verify that expected project title, dates, details, and link are displayed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:58:51 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectLink</p>
-            <p class="text-sm">
-              <span>2:58:58 PM</span> / <span>00:00:28:923</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectLink</h5>
-<span class='badge badge-success'>10.11.2024 2:58:58 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:59:27 PM</span>
-<span class='badge badge-default'>00:00:28:923</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that the project link can be accessed from preview page</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:58 PM</td>
-        <td>
-          Step 1: Click on the project link that is added
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:58:58 PM</td>
-        <td>
-          Step 2: Verify that the expected website is opened in a separate tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:59:27 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectFileUpload</p>
-            <p class="text-sm">
-              <span>2:59:35 PM</span> / <span>00:00:04:906</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectFileUpload</h5>
-<span class='badge badge-success'>10.11.2024 2:59:35 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:59:40 PM</span>
-<span class='badge badge-default'>00:00:04:906</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that a project file can be uploaded</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:35 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:36 PM</td>
-        <td>
-          Step 2: Upload a sample PDF file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:36 PM</td>
-        <td>
-          Step 3: Verify that the file is uploaded successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:40 PM</td>
-        <td>
-          Step 4: Verify that (file check in progress) is displayed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:59:40 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyDefaultProjectName</p>
-            <p class="text-sm">
-              <span>2:59:48 PM</span> / <span>00:00:00:050</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyDefaultProjectName</h5>
-<span class='badge badge-success'>10.11.2024 2:59:48 PM</span>
-<span class='badge badge-danger'>10.11.2024 2:59:48 PM</span>
-<span class='badge badge-default'>00:00:00:050</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that default project name is correct</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:48 PM</td>
-        <td>
-          Step 1: Verify that the Project Title is 'Untitled Project'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:59:48 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectAdditionWithFile</p>
-            <p class="text-sm">
-              <span>2:59:56 PM</span> / <span>00:00:20:577</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectAdditionWithFile</h5>
-<span class='badge badge-success'>10.11.2024 2:59:56 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:00:16 PM</span>
-<span class='badge badge-default'>00:00:20:577</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that the project is added with file</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:56 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:56 PM</td>
-        <td>
-          Step 2: Enter Project Title: IoT-Enabled Smart Home Automation
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:57 PM</td>
-        <td>
-          Step 3: Select start month: June
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:57 PM</td>
-        <td>
-          Step 4: Select start year: 1999
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:57 PM</td>
-        <td>
-          Step 5: Select checkbox for End Date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:59:57 PM</td>
-        <td>
-          Step 6: Upload a sample PDF file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:01 PM</td>
-        <td>
-          Step 7: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:03 PM</td>
-        <td>
-          Step 8: Verify that expected file name with file check text are displayed on preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:04 PM</td>
-        <td>
-          Step 9: Verify that expected file name with file check text are displayed on preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:14 PM</td>
-        <td>
-          Step 10: Verify that file can be downloaded from preview page after refreshing
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:00:16 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectEditUrl</p>
-            <p class="text-sm">
-              <span>3:00:24 PM</span> / <span>00:00:00:836</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectEditUrl</h5>
-<span class='badge badge-success'>10.11.2024 3:00:24 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:00:25 PM</span>
-<span class='badge badge-default'>00:00:00:836</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that expected 'Project Edit' URL is displayed</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:24 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:25 PM</td>
-        <td>
-          Step 2: Verify that user is redirected to project edit URL
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:00:25 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectSavedData</p>
-            <p class="text-sm">
-              <span>3:00:33 PM</span> / <span>00:00:01:171</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectSavedData</h5>
-<span class='badge badge-success'>10.11.2024 3:00:33 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:00:34 PM</span>
-<span class='badge badge-default'>00:00:01:171</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that the information saved for first project is correct</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:33 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:34 PM</td>
-        <td>
-          Step 2: Verify that Project Title is 'AI-Powered Customer Support Chatbot Development'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:34 PM</td>
-        <td>
-          Step 3: Verify that start month is 'December'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:34 PM</td>
-        <td>
-          Step 4: Verify that start year is '2023'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:34 PM</td>
-        <td>
-          Step 5: Verify that end month is 'March'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:34 PM</td>
-        <td>
-          Step 6: Verify that end year is '2024'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:00:34 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="14"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectCharCount</p>
-            <p class="text-sm">
-              <span>3:00:41 PM</span> / <span>00:00:30:935</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectCharCount</h5>
-<span class='badge badge-success'>10.11.2024 3:00:41 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:01:12 PM</span>
-<span class='badge badge-default'>00:00:30:935</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that the character count for Project Overview is dynamically updated</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:41 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:00:42 PM</td>
-        <td>
-          Step 2: Enter individual characters in Project Overview field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:12 PM</td>
-        <td>
-          Step 3: Verify that character count is updated and the number displayed is correct
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:01:12 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="15"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectFilesUpload</p>
-            <p class="text-sm">
-              <span>3:01:20 PM</span> / <span>00:00:12:477</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectFilesUpload</h5>
-<span class='badge badge-success'>10.11.2024 3:01:20 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:01:32 PM</span>
-<span class='badge badge-default'>00:00:12:477</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that multiple files with different formats are uploaded</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:20 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:20 PM</td>
-        <td>
-          Step 2: Upload sample files with doc, docx, and rtf formats
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:20 PM</td>
-        <td>
-          Step 3: Verify that the files are uploaded
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:01:32 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="16"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectFileDelete</p>
-            <p class="text-sm">
-              <span>3:01:40 PM</span> / <span>00:00:02:843</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectFileDelete</h5>
-<span class='badge badge-success'>10.11.2024 3:01:40 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:01:43 PM</span>
-<span class='badge badge-default'>00:00:02:843</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that the project file is deleted</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:40 PM</td>
-        <td>
-          Step 1: Click on pen icon of fourth project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:41 PM</td>
-        <td>
-          Step 2: Click on 'Delete' button for added file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:41 PM</td>
-        <td>
-          Step 3: Verify that project file is deleted
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:01:43 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="17"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectCountExceed</p>
-            <p class="text-sm">
-              <span>3:01:52 PM</span> / <span>00:00:12:982</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectCountExceed</h5>
-<span class='badge badge-success'>10.11.2024 3:01:52 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:02:05 PM</span>
-<span class='badge badge-default'>00:00:12:982</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that 'Add project' button turns inactive once ten projects are added</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:01:52 PM</td>
-        <td>
-          Step 1: Add ten projects
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:05 PM</td>
-        <td>
-          Step 2: Verify that 'Add Project' button turns inactive
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:05 PM</td>
-        <td>
-          Step 3: Verify that Validation error for maximum projects appears
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:02:05 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="18"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectDeletePopUp</p>
-            <p class="text-sm">
-              <span>3:02:13 PM</span> / <span>00:00:10:902</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">verifyProjectDeletePopUp</h5>
-<span class='badge badge-success'>10.11.2024 3:02:13 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:02:23 PM</span>
-<span class='badge badge-default'>00:00:10:902</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that a confirmation popup to delete the project appears</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:13 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:13 PM</td>
-        <td>
-          Step 2: Click on 'Delete Project' link
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>3:02:23 PM</td>
-        <td>
-          Test Skipped
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="19"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectDeletePopUp</p>
-            <p class="text-sm">
-              <span>3:02:31 PM</span> / <span>00:00:10:906</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">verifyProjectDeletePopUp</h5>
-<span class='badge badge-success'>10.11.2024 3:02:31 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:02:42 PM</span>
-<span class='badge badge-default'>00:00:10:906</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that a confirmation popup to delete the project appears</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:31 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:32 PM</td>
-        <td>
-          Step 2: Click on 'Delete Project' link
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>3:02:42 PM</td>
-        <td>
-          Test Skipped
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="20"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectDeletePopUp</p>
-            <p class="text-sm">
-              <span>3:02:49 PM</span> / <span>00:00:11:462</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">verifyProjectDeletePopUp</h5>
-<span class='badge badge-success'>10.11.2024 3:02:49 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:03:01 PM</span>
-<span class='badge badge-default'>00:00:11:462</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that a confirmation popup to delete the project appears</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='C:\Users\prasa\eclipse-workspace\YaaayFreshers\reports\verifyProjectDeletePopUp.png' src="C:\Users\prasa\eclipse-workspace\YaaayFreshers\reports\verifyProjectDeletePopUp.png">
-  
-    <div class="title">verifyProjectDeletePopUp</div>
-
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:49 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:02:50 PM</td>
-        <td>
-          Step 2: Click on 'Delete Project' link
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:03:00 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fa3e5429416d96a6a2af67e6123777a8)] -> css selector: [role=dialog]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63271/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fa3e5429416d96a6a2af67e6123777a8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.zenken.frehsers.abstractcomponents.WebDriverUtils.waitUntilElementAppears(WebDriverUtils.java:67)
-	at com.zenken.freshers.pages.user.EditProjectsPage.waitForGodDamnPopUp(EditProjectsPage.java:288)
-	at com.zenken.freshers.user.Projects.verifyProjectDeletePopUp(Projects.java:344)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="21"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectDelete</p>
-            <p class="text-sm">
-              <span>3:03:08 PM</span> / <span>00:00:03:246</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectDelete</h5>
-<span class='badge badge-success'>10.11.2024 3:03:08 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:03:11 PM</span>
-<span class='badge badge-default'>00:00:03:246</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that the project is deleted successfully</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:08 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:09 PM</td>
-        <td>
-          Step 2: Click on 'Delete Project' link
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:09 PM</td>
-        <td>
-          Step 3: Click on 'Delete' on the confirmation popup
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:11 PM</td>
-        <td>
-          Step 4: Verify that deleted project's title is not displayed on preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:03:11 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="22"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectTitleCharExceed</p>
-            <p class="text-sm">
-              <span>3:03:21 PM</span> / <span>00:00:03:087</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectTitleCharExceed</h5>
-<span class='badge badge-success'>10.11.2024 3:03:21 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:03:24 PM</span>
-<span class='badge badge-default'>00:00:03:087</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for maximum characters occurs: Project Title</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:21 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:21 PM</td>
-        <td>
-          Step 2: Enter 201 characters in Project Title field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:22 PM</td>
-        <td>
-          Step 3: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:24 PM</td>
-        <td>
-          Step 4: Verify that validation error corresponds to exceeding the 200 character limit
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:03:24 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="23"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyBeforeEndDateError</p>
-            <p class="text-sm">
-              <span>3:03:38 PM</span> / <span>00:00:02:860</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyBeforeEndDateError</h5>
-<span class='badge badge-success'>10.11.2024 3:03:38 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:03:41 PM</span>
-<span class='badge badge-default'>00:00:02:860</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when end date selected is before the start date</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:38 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:39 PM</td>
-        <td>
-          Step 2: Select start month: January
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:39 PM</td>
-        <td>
-          Step 3: Select start year: 2023
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:39 PM</td>
-        <td>
-          Step 4: Select end month: December
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:39 PM</td>
-        <td>
-          Step 5: Select end year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:39 PM</td>
-        <td>
-          Step 6: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:41 PM</td>
-        <td>
-          Step 7: Verify that validation error corresponds to end date being selected before start date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:03:41 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="24"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectDetailsCharExceed</p>
-            <p class="text-sm">
-              <span>3:03:56 PM</span> / <span>00:00:04:335</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectDetailsCharExceed</h5>
-<span class='badge badge-success'>10.11.2024 3:03:56 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:04:00 PM</span>
-<span class='badge badge-default'>00:00:04:335</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for maximum characters occurs: Project Overview</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:56 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:57 PM</td>
-        <td>
-          Step 2: Enter 5001 characters in Project Overview field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:57 PM</td>
-        <td>
-          Step 3: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Step 4: Verify that validation error corresponds to exceeding the 5000 character limit
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="25"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyInvalidProjectLinkError</p>
-            <p class="text-sm">
-              <span>3:04:08 PM</span> / <span>00:00:02:396</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyInvalidProjectLinkError</h5>
-<span class='badge badge-success'>10.11.2024 3:04:08 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:04:10 PM</span>
-<span class='badge badge-default'>00:00:02:396</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for invalid project link occurs</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:08 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:08 PM</td>
-        <td>
-          Step 2: Enter Project Link: www.google.com
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:08 PM</td>
-        <td>
-          Step 3: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:10 PM</td>
-        <td>
-          Step 4: Verify that validation error corresponds to invalid project link
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:10 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="26"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectLinkCharExceed</p>
-            <p class="text-sm">
-              <span>3:04:17 PM</span> / <span>00:00:03:036</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectLinkCharExceed</h5>
-<span class='badge badge-success'>10.11.2024 3:04:17 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:04:20 PM</span>
-<span class='badge badge-default'>00:00:03:036</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">The test verifies that validation error for maximum characters occurs: Project Link</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:17 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:18 PM</td>
-        <td>
-          Step 2: Enter valid link containing 201 characters in Project Link field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:19 PM</td>
-        <td>
-          Step 3: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:20 PM</td>
-        <td>
-          Step 4: Verify that validation error corresponds to exceeding the 200 character limit
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:20 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="27"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectTitleRequired</p>
-            <p class="text-sm">
-              <span>3:04:27 PM</span> / <span>00:00:02:817</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectTitleRequired</h5>
-<span class='badge badge-success'>10.11.2024 3:04:27 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:04:30 PM</span>
-<span class='badge badge-default'>00:00:02:817</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for required to save field occurs: Project Title</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:27 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:28 PM</td>
-        <td>
-          Step 2: Select start month: May
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:28 PM</td>
-        <td>
-          Step 3: Select start year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:29 PM</td>
-        <td>
-          Step 4: Select checkbox for End Date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:29 PM</td>
-        <td>
-          Step 5: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:30 PM</td>
-        <td>
-          Step 6: Verify that validation error corresponds to 'Required to save' for Project Title field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:30 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="28"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyStartMonthRequired</p>
-            <p class="text-sm">
-              <span>3:04:37 PM</span> / <span>00:00:02:739</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyStartMonthRequired</h5>
-<span class='badge badge-success'>10.11.2024 3:04:37 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:04:40 PM</span>
-<span class='badge badge-default'>00:00:02:739</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for required to save field occurs: Start Month</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:37 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:38 PM</td>
-        <td>
-          Step 2: Enter Project Title: Project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:38 PM</td>
-        <td>
-          Step 3: Select start year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:39 PM</td>
-        <td>
-          Step 4: Select checkbox for End Date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:39 PM</td>
-        <td>
-          Step 5: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:40 PM</td>
-        <td>
-          Step 6: Verify that validation error corresponds to 'Required to save' for start month field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:40 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="29"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyStartYearRequired</p>
-            <p class="text-sm">
-              <span>3:04:48 PM</span> / <span>00:00:02:729</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyStartYearRequired</h5>
-<span class='badge badge-success'>10.11.2024 3:04:48 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:04:50 PM</span>
-<span class='badge badge-default'>00:00:02:729</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for required to save field occurs: Start Year</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:48 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:49 PM</td>
-        <td>
-          Step 2: Enter Project Title: Project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:49 PM</td>
-        <td>
-          Step 3: Select start month: May
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:49 PM</td>
-        <td>
-          Step 4: Select checkbox for End Date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:49 PM</td>
-        <td>
-          Step 5: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:50 PM</td>
-        <td>
-          Step 6: Verify that validation error corresponds to 'Required to save' for start year field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:50 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="30"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyEndMonthRequired</p>
-            <p class="text-sm">
-              <span>3:04:58 PM</span> / <span>00:00:02:668</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyEndMonthRequired</h5>
-<span class='badge badge-success'>10.11.2024 3:04:58 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:05:00 PM</span>
-<span class='badge badge-default'>00:00:02:668</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for required to save field occurs: End Month</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:58 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:58 PM</td>
-        <td>
-          Step 2: Enter Project Title: Project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:59 PM</td>
-        <td>
-          Step 3: Select start month: May
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:59 PM</td>
-        <td>
-          Step 4: Select start year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:59 PM</td>
-        <td>
-          Step 5: Select end year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:59 PM</td>
-        <td>
-          Step 6: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:00 PM</td>
-        <td>
-          Step 7: Verify that validation error corresponds to 'Required to save' for end month field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:05:00 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="31"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyEndYearRequired</p>
-            <p class="text-sm">
-              <span>3:05:08 PM</span> / <span>00:00:03:090</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyEndYearRequired</h5>
-<span class='badge badge-success'>10.11.2024 3:05:08 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:05:11 PM</span>
-<span class='badge badge-default'>00:00:03:090</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for required to save field occurs: End Year</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:08 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:09 PM</td>
-        <td>
-          Step 2: Enter Project Title: Project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:09 PM</td>
-        <td>
-          Step 3: Select start month: May
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:09 PM</td>
-        <td>
-          Step 4: Select start year: 2022
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:10 PM</td>
-        <td>
-          Step 5: Select end month: April
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:10 PM</td>
-        <td>
-          Step 6: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:11 PM</td>
-        <td>
-          Step 7: Verify that validation error corresponds to 'Required to save' for end year field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:05:11 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="32"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyInvalidFileFormat</p>
-            <p class="text-sm">
-              <span>3:05:19 PM</span> / <span>00:00:04:129</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyInvalidFileFormat</h5>
-<span class='badge badge-success'>10.11.2024 3:05:19 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:05:23 PM</span>
-<span class='badge badge-default'>00:00:04:129</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for invalid file format occurs</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:19 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:20 PM</td>
-        <td>
-          Step 2: Upload a file in txt format
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:20 PM</td>
-        <td>
-          Step 3: Verify that validation error corresponds to file type: doc, docx, rtf, pdf
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:05:23 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="33"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyInvalidFileSize</p>
-            <p class="text-sm">
-              <span>3:05:30 PM</span> / <span>00:00:05:059</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyInvalidFileSize</h5>
-<span class='badge badge-success'>10.11.2024 3:05:30 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:05:35 PM</span>
-<span class='badge badge-default'>00:00:05:059</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for invalid size for project file occurs</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:30 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:31 PM</td>
-        <td>
-          Step 2: Upload a file having size more than 2mb
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:31 PM</td>
-        <td>
-          Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:05:35 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="34"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectCancelNewRed</p>
-            <p class="text-sm">
-              <span>3:05:42 PM</span> / <span>00:00:02:074</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectCancelNewRed</h5>
-<span class='badge badge-success'>10.11.2024 3:05:42 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:05:44 PM</span>
-<span class='badge badge-default'>00:00:02:074</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that 'Cancel' from New Project redirectes user to preview page </div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:42 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:43 PM</td>
-        <td>
-          Step 2: Click on 'Cancel' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:44 PM</td>
-        <td>
-          Step 3: Verify that user is redirected to 'Project' section of profile page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:05:44 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="35"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyMaxFilesUpload</p>
-            <p class="text-sm">
-              <span>3:05:52 PM</span> / <span>00:00:17:955</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyMaxFilesUpload</h5>
-<span class='badge badge-success'>10.11.2024 3:05:52 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:06:10 PM</span>
-<span class='badge badge-default'>00:00:17:955</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that 'Select From Files' button turns inactive once five files are uploaded</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:52 PM</td>
-        <td>
-          Step 1: Click on 'Add Project' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:05:53 PM</td>
-        <td>
-          Step 2: Upload five sample project files
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:06:10 PM</td>
-        <td>
-          Step 3: Verify that 'Select From Files' button turns inactive
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:06:10 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="36"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyProjectCancelEditRed</p>
-            <p class="text-sm">
-              <span>3:06:17 PM</span> / <span>00:00:02:379</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyProjectCancelEditRed</h5>
-<span class='badge badge-success'>10.11.2024 3:06:17 PM</span>
-<span class='badge badge-danger'>10.11.2024 3:06:19 PM</span>
-<span class='badge badge-default'>00:00:02:379</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">This test verifies that 'Cancel' from Edit Project redirectes user to preview page</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:06:17 PM</td>
-        <td>
-          Step 1: Click on pen icon for first project
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:06:18 PM</td>
-        <td>
-          Step 2: Click on 'Cancel' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:06:19 PM</td>
-        <td>
-          Step 3: Verify that user is redirected to 'Project' section of profile page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:06:19 PM</td>
+        <td>5:53:00 PM</td>
         <td>
           Test Passed
         </td>
@@ -2712,26 +344,26 @@ Session ID: fa3e5429416d96a6a2af67e6123777a8
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">org.openqa.selenium.TimeoutException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">Projects</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.TimeoutException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>Projects</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -2742,11 +374,65 @@ Session ID: fa3e5429416d96a6a2af67e6123777a8
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:02:49 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:52:35 PM</td>
 <td>
-<a href="#" class="linked" test-id='20' id='20'>verifyProjectDeletePopUp</a>
+<a href="#" class="linked" test-id='1' id='1'>verifyProjectsNewUrl</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:52:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyProjectEndDateDdDisable</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">Registration</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Registration</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:52:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>verifyIncorrectPassword1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:52:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>verifyLogInUrl</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:52:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>verifyTermsPDF</a>
 </td>
 </tr>
 </tbody>
@@ -2766,25 +452,25 @@ Session ID: fa3e5429416d96a6a2af67e6123777a8
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 11, 2024 02:57:09 PM</h3>
+<h3>Oct 11, 2024 05:52:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 11, 2024 03:06:20 PM</h3>
+<h3>Oct 11, 2024 05:53:00 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>33</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -2800,13 +486,13 @@ Session ID: fa3e5429416d96a6a2af67e6123777a8
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='91%'>
-<b>33</b> tests passed
+<div><small data-tooltip='100%'>
+<b>5</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='2%'><b>1</b> tests failed,
-<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -2823,10 +509,10 @@ Session ID: fa3e5429416d96a6a2af67e6123777a8
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='17%'><b>33</b> events passed</small></div>
+<div><small data-tooltip='50%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>1</b> events failed,
-<b data-tooltip='%'>154</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>5</b> others
 </small>
 </div>
 </div>
@@ -2842,10 +528,35 @@ Session ID: fa3e5429416d96a6a2af67e6123777a8
 </div></div>
 <script>
 var timeline = {
-"verifyProjectsNewUrl":0.814,"verifyProjectPageTitle":0.907,"verifyProjectPlaceholders":0.841,"verifyProjectEndDateDdDisable":1,"verifyProjectAddition":4.36,"verifyProjectAdditionWithDetails":5.09,"verifyProjectAdditionWithLink":5.72,"verifyProjectLink":28.923,"verifyProjectFileUpload":4.906,"verifyDefaultProjectName":0.05,"verifyProjectAdditionWithFile":20.577,"verifyProjectEditUrl":0.836,"verifyProjectSavedData":1.171,"verifyProjectCharCount":30.935,"verifyProjectFilesUpload":12.477,"verifyProjectFileDelete":2.843,"verifyProjectCountExceed":12.982,"verifyProjectDeletePopUp":10.902,"verifyProjectDeletePopUp":10.906,"verifyProjectDeletePopUp":11.462,"verifyProjectDelete":3.246,"verifyProjectTitleCharExceed":3.087,"verifyBeforeEndDateError":2.86,"verifyProjectDetailsCharExceed":4.335,"verifyInvalidProjectLinkError":2.396,"verifyProjectLinkCharExceed":3.036,"verifyProjectTitleRequired":2.817,"verifyStartMonthRequired":2.739,"verifyStartYearRequired":2.729,"verifyEndMonthRequired":2.668,"verifyEndYearRequired":3.09,"verifyInvalidFileFormat":4.129,"verifyInvalidFileSize":5.059,"verifyProjectCancelNewRed":2.074,"verifyMaxFilesUpload":17.955,"verifyProjectCancelEditRed":2.379
+"verifyProjectsNewUrl":0.876,"verifyProjectEndDateDdDisable":0.806,"verifyIncorrectPassword1":2.626,"verifyLogInUrl":0.742,"verifyTermsPDF":0.692
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Projects</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Registration</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -2869,10 +580,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 33,
-failParent: 1,
+passParent: 5,
+failParent: 0,
 warningParent: 0,
-skipParent: 2,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -2886,11 +597,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 33,
-failEvents: 1,
+passEvents: 5,
+failEvents: 0,
 warningEvents: 0,
-skipEvents: 2,
-infoEvents: 152
+skipEvents: 0,
+infoEvents: 5
 };
 </script>        </div>
       </div>

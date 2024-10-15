@@ -29,16 +29,16 @@ public class Projects extends BaseTest{
 		navigateTo("/");
 		profilePreview.login("prasanna.inamdar+user2@zenken.co.jp", "Password_1");
 		properties = getProperties();
-		if(!proDelete)
-		{
-			int addedPro = profilePreview.getAddedProjectCount();
-			for(int i=0; i<addedPro; i++)
-			{
-				profilePreview.clickProjectEdit(i*0);
-				projects.deleteProject();
-			}
-			proDelete = true;
-		}
+//		if(!proDelete)
+//		{
+//			int addedPro = profilePreview.getAddedProjectCount();
+//			for(int i=0; i<addedPro; i++)
+//			{
+//				profilePreview.clickProjectEdit(i*0);
+//				projects.deleteProject();
+//			}
+//			proDelete = true;
+//		}
 	}
 	
 	@Test(priority=1, description="This test verifies that the expected 'Project New' URL and headline are displayed")

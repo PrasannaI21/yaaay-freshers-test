@@ -21,7 +21,9 @@ public class Listeners extends BaseTest implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		String description = result.getMethod().getDescription();
+		String featureName = result.getTestClass().getRealClass().getSimpleName();
 		test = extent.createTest(result.getMethod().getMethodName(), description);
+		test.assignCategory(featureName);
 		extentTest.set(test);
 	}
 
