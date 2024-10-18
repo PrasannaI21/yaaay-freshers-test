@@ -3,14 +3,35 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Projects">
+      <class name="com.zenken.freshers.user.Certifications">
         <methods>
-          <include name="verifyInvalidFileFormat"/>
+          <include name="verifyCertAddition"/>
           <include name="setUpTest"/>
+          <include name="verifyCertDeletePopUp"/>
+          <include name="verifyCertCancelEditRed"/>
+          <include name="verifyCertNewUrl"/>
+          <include name="verifyCertDelete"/>
+          <include name="verifyCertFileDelete"/>
           <include name="tearDown"/>
+          <include name="verifyDefaultCertName"/>
+          <include name="verifyCertCharCount"/>
+          <include name="verifyCertDetailsCharExceed"/>
+          <include name="verifyCertInvalidFileSize"/>
+          <include name="verifyCertFileUpload"/>
+          <include name="verifyCertSavedData"/>
+          <include name="verifyCertPageTitle"/>
+          <include name="verifyCertEditUrl"/>
+          <include name="verifyCertNameCharExceed"/>
+          <include name="verifyCertPlaceholders"/>
+          <include name="verifyCertAdditionWithFile"/>
+          <include name="verifyCertAdditionWithDetails"/>
+          <include name="verifyCertCountExceed"/>
+          <include name="verifyCertNameRequired"/>
+          <include name="verifyCertCancelNewRed"/>
+          <include name="verifyCertInvalidFileFormat"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Projects -->
+      </class> <!-- com.zenken.freshers.user.Certifications -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,19 +6,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Projects">
-        <methods>
-          <include name="verifyProjectsNewUrl"/>
-          <include name="verifyProjectEndDateDdDisable"></include>
-        </methods>
+      <class name="com.zenken.freshers.user.Certifications">
       </class>  
-      <class name="com.zenken.freshers.user.Registration">
-        <methods>
-          <include name="verifyTermsPDF"/>
-          <include name="verifyLogInUrl"></include>
-          <include name="verifyIncorrectPassword1"></include>
-        </methods>
-      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

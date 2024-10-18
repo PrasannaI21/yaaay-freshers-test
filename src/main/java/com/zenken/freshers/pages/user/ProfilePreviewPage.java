@@ -48,17 +48,26 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//a[contains(.,'Add Project')]")
 	WebElement addProject;
 	
+	@FindBy(xpath="//a[contains(.,'Add Cert')]")
+	WebElement addCertification;
+	
 	@FindBy(xpath="//span[contains(.,'Add Internship')]")
 	WebElement addIntDisabled;
 	
 	@FindBy(xpath="//span[contains(.,'Add Project')]")
 	WebElement addProjectDisabled;
 	
+	@FindBy(xpath="//span[contains(.,'Add Cert')]")
+	WebElement addCertDisabled;
+	
 	@FindBy(xpath="//section[contains(.,'Internship')]/descendant::img[@alt='Edit icon']")
 	List<WebElement> intershipEdit;
 	
 	@FindBy(xpath="//section[contains(.,'Projects')]/descendant::img[@alt='Edit icon']")
 	List<WebElement> projectEdit;
+	
+	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::img[@alt='Edit icon']")
+	List<WebElement> certEdit;
 	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
@@ -81,6 +90,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(7)")
 	public WebElement projectsSection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(8)")
+	public WebElement certificationsSection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -98,6 +110,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//a[contains(.,'Project')]")
 	public WebElement projectsAnchor;
+	
+	@FindBy(xpath="//a[contains(.,'Certifications')]")
+	public WebElement certificationsAnchor;
 	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
@@ -227,6 +242,18 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//section[contains(.,'Project')]/ul/li/a")
 	List<WebElement> projectDlLinks;
+	
+	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::span[@class='u-fz-16 u-fw-b']")
+	List<WebElement> certNames;
+	
+	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::div[@class='uk-text-truncate u-fz-14']")
+	List<WebElement> certDetails;
+	
+	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::div[@class='u-mt-10']")
+	List<WebElement> certFiles;
+	
+	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::a[@class='link']")
+	List<WebElement> certDlLinks;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -575,23 +602,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		clickByJavaScript(projectDlLinks.get(projectDlLinks.size() - 1));
 	}
 	
-	public String monitorDownloadLink(int maxRetries) throws InterruptedException
+	public String getProjectDlLink(int maxRetries) throws InterruptedException
 	{
-		int linkCount = projectDlLinks.size();
-		int retryCount = 0;
-		while(retryCount < maxRetries)
-		{
-			driver.navigate().refresh();
-			int currentLinkCount = projectDlLinks.size();
-			if(currentLinkCount > linkCount)
-			{	
-				return projectDlLinks.get(currentLinkCount -1).getText();
-			}else {
-				retryCount++;
-				Thread.sleep(3000);
-			}
-		}
-		throw new RuntimeException("New download link did not appear after "+maxRetries+" attempts.");
+		return monitorDownloadLink(maxRetries, projectDlLinks);
 	}
 	
 	public int getFileCount()
@@ -607,7 +620,8 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		boolean isDownloaded = wait.until((ExpectedCondition<Boolean>) driver -> 
 		{int currentFileCount = downloadFolder.listFiles().length;
-		return currentFileCount > initialFileCount;});
+		String fileName = downloadFolder.listFiles()[0].getName();
+		return currentFileCount > initialFileCount && fileName.endsWith(".pdf");}); 
 		return isDownloaded;
 	}
 	
@@ -652,6 +666,75 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	public boolean isAddProjectButtonActive()
 	{
 		return addProject.isEnabled();
+	}
+	
+	public void clickAddCertification()
+	{
+		clickByJavaScript(addCertification);
+	}
+	
+	public String getCertNameValue()
+	{
+		if(!certNames.isEmpty())
+		{
+			return certNames.get(certNames.size() - 1).getText();
+		}else {
+			return "No certifications records found.";
+		}
+	}
+	
+	public String getCertDetailValue()
+	{
+		if(!certDetails.isEmpty())
+		{
+			return certDetails.get(certDetails.size() - 1).getText();
+		}else {
+			return "No certifications records found.";
+		}
+	}
+	
+	public String getCertFileValue()
+	{
+		if(!certFiles.isEmpty())
+		{
+			return certFiles.get(certFiles.size() - 1).getText();
+		}else {
+			return "No certifications records found.";
+		}
+	}
+	public String getCertDlLink(int maxRetries) throws InterruptedException
+	{
+		return monitorDownloadLink(maxRetries, certDlLinks);
+	}
+	
+	public void clickCertFile()
+	{
+		clickByJavaScript(certDlLinks.get(certDlLinks.size() - 1));
+	}
+	
+	public void clickCertEdit(int index)
+	{
+		clickByJavaScript(certEdit.get(index));
+	}
+	
+	public int getAddedCertCount()
+	{
+		return certNames.size();
+	}
+	
+	public boolean isAddCertActive()
+	{
+		return addCertDisabled.isDisplayed();
+	}
+	
+	public String getCertSectionText()
+	{
+		return certificationsSection.getText();
+	}
+	
+	public boolean isAddCertButtonActive()
+	{
+		return addCertification.isEnabled();
 	}
 	
 	//Method to check if the required mark is present and displayed

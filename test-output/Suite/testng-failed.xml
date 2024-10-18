@@ -6,14 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Projects">
+      <class name="com.zenken.freshers.user.Certifications">
         <methods>
+          <include name="verifyCertInvalidFileSize"/>
           <include name="setUpTest"/>
+          <include name="verifyCertCancelEditRed"/>
+          <include name="verifyCertDeletePopUp"/>
           <include name="tearDown"/>
-          <include name="verifyProjectsNewUrl"/>
+          <include name="verifyCertCancelNewRed"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Projects -->
+      </class> <!-- com.zenken.freshers.user.Certifications -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
