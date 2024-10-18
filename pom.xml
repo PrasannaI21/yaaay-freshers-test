@@ -38,7 +38,7 @@
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.9.1</version>
+    <version>5.9.2</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/com.mailslurp/mailslurp-client-java -->
 <dependency>

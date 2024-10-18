@@ -29,16 +29,16 @@ public class Projects extends BaseTest{
 		navigateTo("/");
 		profilePreview.login("prasanna.inamdar+user2@zenken.co.jp", "Password_1");
 		properties = getProperties();
-//		if(!proDelete)
-//		{
-//			int addedPro = profilePreview.getAddedProjectCount();
-//			for(int i=0; i<addedPro; i++)
-//			{
-//				profilePreview.clickProjectEdit(i*0);
-//				projects.deleteProject();
-//			}
-//			proDelete = true;
-//		}
+		if(!proDelete)
+		{
+			int addedPro = profilePreview.getAddedProjectCount();
+			for(int i=0; i<addedPro; i++)
+			{
+				profilePreview.clickProjectEdit(i*0);
+				projects.deleteProject();
+			}
+			proDelete = true;
+		}
 	}
 	
 	@Test(priority=1, description="This test verifies that the expected 'Project New' URL and headline are displayed")
@@ -222,13 +222,13 @@ public class Projects extends BaseTest{
 		log("Step 8: Verify that expected file name with file check text are displayed on preview page");
 		Assert.assertTrue(profilePreview.getProjectFileValue().contains("Sample_Project.pdf"));
 		Assert.assertTrue(profilePreview.getProjectFileValue().contains("(file check in progress)"));
-		log("Step 9: Verify that expected file name with file check text are displayed on preview page");
-		Assert.assertEquals(profilePreview.monitorDownloadLink(10), "Sample_Project.pdf");
+		log("Step 9: Verify that download link is displayed on preview page");
+		Assert.assertEquals(profilePreview.getProjectDlLink(10), "Sample_Project.pdf");
 		int initialCount = profilePreview.getFileCount();
+		log("Step 10: Click download link");
 		profilePreview.clickProjectFile();
-		log("Step 10: Verify that file can be downloaded from preview page after refreshing");
+		log("Step 11: Verify that file can be downloaded from preview page after refreshing");
 		Assert.assertTrue(profilePreview.isFileDownloaded(initialCount), "File was not downloaded successfully");
-		Thread.sleep(2000);//wait time to process the download
 		String downloadedFileName = profilePreview.getDownloadedFileName();
 		Assert.assertEquals(downloadedFileName, "Sample_Project.pdf");
 	}

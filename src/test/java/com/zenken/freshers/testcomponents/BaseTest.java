@@ -18,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -59,6 +60,9 @@ public class BaseTest {
 		prefs.put("download.prompt_for_download", false);
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", prefs);
+		options.addArguments("--disable-gpu");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
 		currentTestMethod.set(method.getName());
 		initializeDriver(options);
 	}
@@ -81,6 +85,7 @@ public class BaseTest {
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		}
 	}
 	
@@ -175,5 +180,6 @@ public class BaseTest {
 			currentIndex++;
 		}
 	}
+	
 	
 }

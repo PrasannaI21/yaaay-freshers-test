@@ -220,6 +220,25 @@ public class WebDriverUtils {
 		return optionsStateMap;
 	}
 	
+	public String monitorDownloadLink(int maxRetries, List<WebElement> links) throws InterruptedException
+	{
+		int linkCount = links.size();
+		int retryCount = 0;
+		while(retryCount < maxRetries)
+		{
+			driver.navigate().refresh();
+			int currentLinkCount = links.size();
+			if(currentLinkCount > linkCount)
+			{	
+				return links.get(currentLinkCount -1).getText();
+			}else {
+				retryCount++;
+				Thread.sleep(3000);
+			}
+		}
+		throw new RuntimeException("New download link did not appear after "+maxRetries+" attempts.");
+	}
+	
 	public void clearText(WebElement ele)
 	{
 		ele.clear();
