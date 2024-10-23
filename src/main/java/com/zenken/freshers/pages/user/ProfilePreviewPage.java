@@ -72,6 +72,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//section[contains(.,'Form')]/descendant::img[@alt='Edit icon']")
 	WebElement formEdit;
 	
+	@FindBy(xpath="//section[contains(.,'Set')]/descendant::img[@alt='Edit icon']")
+	WebElement settingsEdit;
+	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
 	
@@ -99,6 +102,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(9)")
 	public WebElement consentFormSection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(10)")
+	public WebElement settingsSection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -122,6 +128,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//a[contains(.,'Form')]")
 	public WebElement consentFormAnchor;
+	
+	@FindBy(xpath="//a[contains(.,'Set')]")
+	public WebElement settingsAnchor;
 	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
@@ -275,6 +284,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(css="[class='link u-d-ib']")
 	List<WebElement> consentFormDlLink;
+	
+	@FindBy(xpath="//section[contains(.,'Set')]/descendant::div[@class='u-pt-10']")
+	List<WebElement> settings;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -788,6 +800,19 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	public void clickConsentFormFile()
 	{
 		clickByJavaScript(consentFormDlLink.get(0));
+	}
+	
+	public void clickSettingsEdit()
+	{
+		clickByJavaScript(settingsEdit);
+	}
+	
+	public List<String> getSettingsValues()
+	{
+		List<String> values = new ArrayList<String>();
+		values.add(settings.get(0).getText());
+		values.add(settings.get(1).getText());
+		return values;
 	}
 	
 	//Method to check if the required mark is present and displayed
