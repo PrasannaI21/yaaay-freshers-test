@@ -69,6 +69,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::img[@alt='Edit icon']")
 	List<WebElement> certEdit;
 	
+	@FindBy(xpath="//section[contains(.,'Form')]/descendant::img[@alt='Edit icon']")
+	WebElement formEdit;
+	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
 	
@@ -93,6 +96,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(8)")
 	public WebElement certificationsSection;
 	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(9)")
+	public WebElement consentFormSection;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -114,6 +120,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//a[contains(.,'Certifications')]")
 	public WebElement certificationsAnchor;
 	
+	@FindBy(xpath="//a[contains(.,'Form')]")
+	public WebElement consentFormAnchor;
+	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
 	
@@ -125,6 +134,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="(//div[contains(.,'Skills')])[7]")
 	public WebElement skillsTitle;
+	
+	@FindBy(xpath="(//div[contains(.,'Form')])[7]")
+	public WebElement formTitle;
 	
 	@FindBy(xpath="(//div[@class='u-pt-10'])[1]")
 	WebElement firstName;
@@ -254,6 +266,15 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//section[contains(.,'Cert')]/descendant::a[@class='link']")
 	List<WebElement> certDlLinks;
+	
+	@FindBy(xpath="(//section[contains(.,'Place')]/descendant::div[@class='u-mt-10'])[1]")
+	WebElement isAgree;
+	
+	@FindBy(xpath="(//section[contains(.,'Place')]/descendant::div[@class='u-mt-10'])[2]")
+	WebElement consentForm;
+	
+	@FindBy(css="[class='link u-d-ib']")
+	List<WebElement> consentFormDlLink;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -620,8 +641,15 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		boolean isDownloaded = wait.until((ExpectedCondition<Boolean>) driver -> 
 		{int currentFileCount = downloadFolder.listFiles().length;
-		String fileName = downloadFolder.listFiles()[0].getName();
-		return currentFileCount > initialFileCount && fileName.endsWith(".pdf");}); 
+		if(currentFileCount > initialFileCount) {
+			File[] files = downloadFolder.listFiles();
+			if(files != null && files.length > 0) {
+				Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+				return files[0].getName().endsWith(".pdf");
+			}
+		}
+		return false;
+		});
 		return isDownloaded;
 	}
 	
@@ -735,6 +763,31 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	public boolean isAddCertButtonActive()
 	{
 		return addCertification.isEnabled();
+	}
+	
+	public void clickFormEdit()
+	{
+		clickByJavaScript(formEdit);
+	}
+	
+	public String getAgreementValueText()
+	{
+		return isAgree.getText();
+	}
+	
+	public String getConsentFormValueText()
+	{
+		return consentForm.getText();
+	}
+	
+	public String getConsentFormDlLink(int maxRetries) throws InterruptedException
+	{
+		return monitorDownloadLink(maxRetries, consentFormDlLink);
+	}
+	
+	public void clickConsentFormFile()
+	{
+		clickByJavaScript(consentFormDlLink.get(0));
 	}
 	
 	//Method to check if the required mark is present and displayed
