@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Settings">
+      <class name="com.zenken.freshers.user.Photo">
       </class>  
     </classes>
   </test> <!-- Test -->
