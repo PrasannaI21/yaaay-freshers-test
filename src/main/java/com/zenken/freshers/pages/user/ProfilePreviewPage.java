@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -75,8 +76,14 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(xpath="//section[contains(.,'Set')]/descendant::img[@alt='Edit icon']")
 	WebElement settingsEdit;
 	
+	@FindBy(xpath="//section[contains(.,'Photo')]/descendant::img[@alt='Edit icon']")
+	WebElement photoEdit;
+	
 	@FindBy(css="[class*='not'] [role='alert']")
 	WebElement profileAlert;
+	
+	@FindBy(css="[class*=ellipsis]:nth-of-type(1)")
+	public WebElement photoSection;
 	
 	@FindBy(css="[class*=ellipsis]:nth-of-type(2)")
 	public WebElement basicInformationSection;
@@ -105,6 +112,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	@FindBy(css="[class*=ellipsis]:nth-of-type(10)")
 	public WebElement settingsSection;
 	
+	@FindBy(xpath="//a[.='Photo']")
+	public WebElement photoAnchor;
+	
 	@FindBy(xpath="//a[contains(.,'Basic')]")
 	public WebElement basicInformationAnchor;
 	
@@ -131,6 +141,9 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//a[contains(.,'Set')]")
 	public WebElement settingsAnchor;
+	
+	@FindBy(xpath="(//div[contains(.,'Photo')])[7]")
+	public WebElement photoTitle;
 	
 	@FindBy(xpath="(//div[contains(.,'Basic')])[7]")
 	public WebElement basicInformationTitle;
@@ -287,6 +300,12 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	@FindBy(xpath="//section[contains(.,'Set')]/descendant::div[@class='u-pt-10']")
 	List<WebElement> settings;
+	
+	@FindBy(css="p[class*='pale']")
+	WebElement photoText;
+	
+	@FindBy(css="[alt='Photo of me']")
+	WebElement photoAlt;
 	
 	@FindBy(css="[class=u-c-red]")
 	List<WebElement> requiredMarks;
@@ -813,6 +832,32 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		values.add(settings.get(0).getText());
 		values.add(settings.get(1).getText());
 		return values;
+	}
+	
+	public void clickphotoEdit()
+	{
+		clickByJavaScript(photoEdit);
+	}
+	
+	public String getPhotoText()
+	{
+		return photoText.getText();
+	}
+	
+	public String monitorPhoto() throws InterruptedException
+	{
+		while(photoText.isDisplayed())
+		{
+			driver.navigate().refresh();
+			try {
+				photoText = driver.findElement(By.cssSelector("p[class*='pale']"));
+				Thread.sleep(5000);
+			}catch(Exception e) {
+				break;
+			}
+		}
+		waitUntilElementAppears(photoAlt);
+		return photoAlt.getAttribute("src");
 	}
 	
 	//Method to check if the required mark is present and displayed
