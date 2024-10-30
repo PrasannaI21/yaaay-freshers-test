@@ -24,7 +24,7 @@ public class Settings extends BaseTest{
 		settings = new EditSettingsPage(driver);
 		properties = getProperties();
 		navigateTo("/");
-		profilePreview.login("prasanna.inamdar+user2@zenken.co.jp", "Password_1");
+		profilePreview.login("prasanna.inamdar@zenken.co.jp", "Password_1");
 	}
 	
 	@Test(description="This test verifies that user is redirected to 'Settings' edit page")
