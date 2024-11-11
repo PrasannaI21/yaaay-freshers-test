@@ -52,7 +52,7 @@ public class WebDriverUtils {
 	@FindBy(xpath="//a[contains(.,'Log')]")
 	WebElement logout;
 	
-	@FindBy(css="[class=u-c-red]")
+	@FindBy(css="span [class=u-c-red]")
 	List<WebElement> requiredToApplyMarks;
 	
 	@FindBy(css="[type=submit]")

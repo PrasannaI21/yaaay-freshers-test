@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">テスト結果</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 30, 2024 05:31:04 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 11, 2024 03:36:37 PM</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Photo</a><a class="dropdown-item" href="#">JapanesePlacementConsentForm</a>
+<a class="dropdown-item" href="#">BasicInformation</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyConsentFormUrl</p>
+            <p class="name">verifyAddressValue</p>
             <p class="text-sm">
-              <span>5:31:33 PM</span> / <span>00:00:03:154</span>
+              <span>3:36:50 PM</span> / <span>00:00:03:985</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,17 +100,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyConsentFormUrl</h5>
-<span class='badge badge-success'>10.30.2024 5:31:33 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:31:36 PM</span>
-<span class='badge badge-default'>00:00:03:154</span>
+<h5 class="test-status text-pass">verifyAddressValue</h5>
+<span class='badge badge-success'>11.11.2024 3:36:50 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:36:54 PM</span>
+<span class='badge badge-default'>00:00:03:985</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that user is redirected to 'Japanese Placement Consent Form' URL</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Address' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -118,21 +118,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:33 PM</td>
+        <td>3:36:50 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:36 PM</td>
+        <td>3:36:50 PM</td>
         <td>
-          Step 2: Verify that URL and page headline are correct
+          Step 2: Enter 15 Yemen Road, Yemen! in 'Address' text box
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:51 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:54 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:54 PM</td>
+        <td>
+          Step 5: Verify that the value for 'Address' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:31:36 PM</td>
+        <td>3:36:54 PM</td>
         <td>
           Test Passed
         </td>
@@ -144,12 +165,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoUrl</p>
+            <p class="name">verifyCityValue</p>
             <p class="text-sm">
-              <span>5:31:36 PM</span> / <span>00:00:03:406</span>
+              <span>3:37:06 PM</span> / <span>00:00:03:569</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -157,17 +178,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoUrl</h5>
-<span class='badge badge-success'>10.30.2024 5:31:36 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:31:39 PM</span>
-<span class='badge badge-default'>00:00:03:406</span>
+<h5 class="test-status text-pass">verifyCityValue</h5>
+<span class='badge badge-success'>11.11.2024 3:37:06 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:37:10 PM</span>
+<span class='badge badge-default'>00:00:03:569</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that user is redirected to Photo edit page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'City/District' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -175,21 +196,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:36 PM</td>
+        <td>3:37:06 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:39 PM</td>
+        <td>3:37:06 PM</td>
         <td>
-          Step 2: Verify that URL and page headline are correct
+          Step 2: Enter Guadalajara, Mexico in 'City/District' text box
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:06 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:10 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:10 PM</td>
+        <td>
+          Step 5: Verify that the value for 'City/District' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:31:39 PM</td>
+        <td>3:37:10 PM</td>
         <td>
           Test Passed
         </td>
@@ -201,12 +243,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag="Settings"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifySetDesTexts</p>
+            <p class="name">verifyCollegeRequired</p>
             <p class="text-sm">
-              <span>5:31:37 PM</span> / <span>00:00:01:507</span>
+              <span>3:37:21 PM</span> / <span>00:00:01:842</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -214,17 +256,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySetDesTexts</h5>
-<span class='badge badge-success'>10.30.2024 5:31:37 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:31:38 PM</span>
-<span class='badge badge-default'>00:00:01:507</span>
+<h5 class="test-status text-pass">verifyCollegeRequired</h5>
+<span class='badge badge-success'>11.11.2024 3:37:21 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:37:22 PM</span>
+<span class='badge badge-default'>00:00:01:842</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Settings</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the texts describing 'Yaaay Midcareer' and 'Zenken Newsletter' are correct</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs for 'College' field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -232,28 +274,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:37 PM</td>
+        <td>3:37:21 PM</td>
         <td>
-          Step 1: Click on Settings edit icon
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:38 PM</td>
+        <td>3:37:21 PM</td>
         <td>
-          Step 2: Verify that the description  for 'Yaaay Midcareer' displayed is correct
+          Step 2: Clear existing text from the text box for 'College' and click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:38 PM</td>
+        <td>3:37:22 PM</td>
         <td>
-          Step 3: Verify that the description  for 'Zenken Newsletter' displayed is correct
+          Step 3: Verify that validation error corresponds to 'Required to save' for college field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:22 PM</td>
+        <td>
+          Step 4: Verify that 'Required to apply' text is displayed for the field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:31:38 PM</td>
+        <td>3:37:22 PM</td>
         <td>
           Test Passed
         </td>
@@ -265,12 +314,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyConsentFormTitle</p>
+            <p class="name">verifyDobValue</p>
             <p class="text-sm">
-              <span>5:31:58 PM</span> / <span>00:00:03:394</span>
+              <span>3:37:35 PM</span> / <span>00:00:03:885</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -278,17 +327,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyConsentFormTitle</h5>
-<span class='badge badge-success'>10.30.2024 5:31:58 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:32:01 PM</span>
-<span class='badge badge-default'>00:00:03:394</span>
+<h5 class="test-status text-pass">verifyDobValue</h5>
+<span class='badge badge-success'>11.11.2024 3:37:35 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:37:39 PM</span>
+<span class='badge badge-default'>00:00:03:885</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the Japanese Placement Consent Form page title is correct</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Date of Birth' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -296,21 +345,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:31:58 PM</td>
+        <td>3:37:35 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:01 PM</td>
+        <td>3:37:35 PM</td>
         <td>
-          Step 2: Verify that title name is correct
+          Step 2: Select 31 August 2014 for 'Date of Birth' dropdowns
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:35 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:38 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:39 PM</td>
+        <td>
+          Step 5: Verify that the value for 'Date of Birth' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:32:01 PM</td>
+        <td>3:37:39 PM</td>
         <td>
           Test Passed
         </td>
@@ -322,12 +392,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="5"
           author=""
-          tag="Settings"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifySetNotSelected</p>
+            <p class="name">verifyEditUrl</p>
             <p class="text-sm">
-              <span>5:32:08 PM</span> / <span>00:00:10:204</span>
+              <span>3:37:50 PM</span> / <span>00:00:00:048</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -335,17 +405,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySetNotSelected</h5>
-<span class='badge badge-success'>10.30.2024 5:32:08 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:32:18 PM</span>
-<span class='badge badge-default'>00:00:10:204</span>
+<h5 class="test-status text-pass">verifyEditUrl</h5>
+<span class='badge badge-success'>11.11.2024 3:37:50 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:37:50 PM</span>
+<span class='badge badge-default'>00:00:00:048</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Settings</span></div>
-<div class="m-t-10 m-l-5">This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are NOT selected</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that user is redirected to Basic Information edit page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -353,49 +423,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:08 PM</td>
+        <td>3:37:50 PM</td>
         <td>
-          Step 1: Click on Settings edit icon
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:10 PM</td>
+        <td>3:37:50 PM</td>
         <td>
-          Step 2: De-select checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:10 PM</td>
-        <td>
-          Step 3: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:17 PM</td>
-        <td>
-          Step 4: Verify: Snackbar, Section display, Tab selection
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:18 PM</td>
-        <td>
-          Step 5: Verify that the value for 'Yaaay Midcareer' is "Not Connected"
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:18 PM</td>
-        <td>
-          Step 6: Verify that the value for 'Zenken Newsletter' is "Unsubscribed"
+          Step 2: Verify that URL and page headline are correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:32:18 PM</td>
+        <td>3:37:50 PM</td>
         <td>
           Test Passed
         </td>
@@ -407,12 +449,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoTitle</p>
+            <p class="name">verifyEmail1Value</p>
             <p class="text-sm">
-              <span>5:32:08 PM</span> / <span>00:00:03:280</span>
+              <span>3:38:02 PM</span> / <span>00:00:04:044</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -420,17 +462,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoTitle</h5>
-<span class='badge badge-success'>10.30.2024 5:32:08 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:32:11 PM</span>
-<span class='badge badge-default'>00:00:03:280</span>
+<h5 class="test-status text-pass">verifyEmail1Value</h5>
+<span class='badge badge-success'>11.11.2024 3:38:02 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:38:06 PM</span>
+<span class='badge badge-default'>00:00:04:044</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the Photo page title is correct</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'E-mail Address 1 (Private E-mail)' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -438,21 +480,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:08 PM</td>
+        <td>3:38:02 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:11 PM</td>
+        <td>3:38:02 PM</td>
         <td>
-          Step 2: Verify that title name is correct
+          Step 2: Enter heythere@example.com in 'E-mail Address 1 (Private E-mail)' text box
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:38:03 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:38:06 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:38:06 PM</td>
+        <td>
+          Step 5: Verify that the value for Email address 1 displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:32:11 PM</td>
+        <td>3:38:06 PM</td>
         <td>
           Test Passed
         </td>
@@ -464,12 +527,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="7"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyIsCFSaved</p>
+            <p class="name">verifyEmailRequired</p>
             <p class="text-sm">
-              <span>5:32:23 PM</span> / <span>00:00:12:732</span>
+              <span>3:38:18 PM</span> / <span>00:00:01:735</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -477,17 +540,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyIsCFSaved</h5>
-<span class='badge badge-success'>10.30.2024 5:32:23 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:32:36 PM</span>
-<span class='badge badge-default'>00:00:12:732</span>
+<h5 class="test-status text-pass">verifyEmailRequired</h5>
+<span class='badge badge-success'>11.11.2024 3:38:18 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:38:20 PM</span>
+<span class='badge badge-default'>00:00:01:735</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that Consent Form is saved when checkbox is selected</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs for 'E-mail Address 1 (Private E-mail)' field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -495,42 +558,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:23 PM</td>
+        <td>3:38:18 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:26 PM</td>
+        <td>3:38:18 PM</td>
         <td>
-          Step 2: Click placement agreement checkbox
+          Step 2: Clear existing text from the text box for 'E-mail Address 1 (Private E-mail)' and click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:26 PM</td>
+        <td>3:38:20 PM</td>
         <td>
-          Step 3: Click on 'Save' button
+          Step 3: Verify that validation error corresponds to 'Required to save' for email address 1 field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:36 PM</td>
+        <td>3:38:20 PM</td>
         <td>
-          Step 4: Verify: Snackbar, Section display, Tab selection
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:36 PM</td>
-        <td>
-          Step 5: Verify that 'Yes' for 'Parent's Agreement' is displayed on preview page
+          Step 4: Verify that 'Required to apply' text is displayed for the field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:32:36 PM</td>
+        <td>3:38:20 PM</td>
         <td>
           Test Passed
         </td>
@@ -542,12 +598,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="8"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyUploadModalDisplay</p>
+            <p class="name">verifyHobbyValue</p>
             <p class="text-sm">
-              <span>5:32:39 PM</span> / <span>00:00:01:939</span>
+              <span>3:38:32 PM</span> / <span>00:00:03:901</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -555,17 +611,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyUploadModalDisplay</h5>
-<span class='badge badge-success'>10.30.2024 5:32:39 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:32:40 PM</span>
-<span class='badge badge-default'>00:00:01:939</span>
+<h5 class="test-status text-pass">verifyHobbyValue</h5>
+<span class='badge badge-success'>11.11.2024 3:38:32 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:38:36 PM</span>
+<span class='badge badge-default'>00:00:03:901</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that upload modal appears when upload icon is clicked</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'What is your hobby?' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -573,35 +629,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:39 PM</td>
+        <td>3:38:32 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:40 PM</td>
+        <td>3:38:32 PM</td>
         <td>
-          Step 2: Click on Upload Photo icon
+          Step 2: Enter description for hobby in the applicable textbox
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:40 PM</td>
+        <td>3:38:33 PM</td>
         <td>
-          Step 3: Verify that Upload modal is displayed
+          Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:40 PM</td>
+        <td>3:38:36 PM</td>
         <td>
-          Step 4: Verify that clicking on 'Cancel' closes the modal
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:38:36 PM</td>
+        <td>
+          Step 5: Verify that the value for 'What is your hobby?' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:32:40 PM</td>
+        <td>3:38:36 PM</td>
         <td>
           Test Passed
         </td>
@@ -613,12 +676,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="9"
           author=""
-          tag="Settings"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifySetSelected</p>
+            <p class="name">verifyLastNameRequired</p>
             <p class="text-sm">
-              <span>5:32:40 PM</span> / <span>00:00:23:415</span>
+              <span>3:38:48 PM</span> / <span>00:00:01:469</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -626,17 +689,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySetSelected</h5>
-<span class='badge badge-success'>10.30.2024 5:32:40 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:33:04 PM</span>
-<span class='badge badge-default'>00:00:23:415</span>
+<h5 class="test-status text-pass">verifyLastNameRequired</h5>
+<span class='badge badge-success'>11.11.2024 3:38:48 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:38:49 PM</span>
+<span class='badge badge-default'>00:00:01:469</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Settings</span></div>
-<div class="m-t-10 m-l-5">This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are selected</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs for 'Last Name' field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -644,30 +707,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:40 PM</td>
+        <td>3:38:48 PM</td>
         <td>
-          Step 1: Click on Settings edit icon
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:43 PM</td>
+        <td>3:38:48 PM</td>
         <td>
-          Step 2: Select checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter'
+          Step 2: Clear existing text from the text box for 'Last Name' and click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:43 PM</td>
+        <td>3:38:49 PM</td>
         <td>
-          Step 3: Click on 'Save' button
+          Step 3: Verify that validation error corresponds to 'Required to save' for last name field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:04 PM</td>
+        <td>3:38:49 PM</td>
         <td>
-          Step 4: Verify: Snackbar, Section display, Tab selection
+          Step 4: Verify that 'Required to apply' text is displayed for the field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:38:49 PM</td>
+        <td>
+          Test Passed
         </td>
       </tr>
   </tbody>
@@ -677,12 +747,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="10"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyConsentFormDL</p>
+            <p class="name">verifyLastNameValue</p>
             <p class="text-sm">
-              <span>5:32:58 PM</span> / <span>00:00:04:728</span>
+              <span>3:39:01 PM</span> / <span>00:00:03:706</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -690,17 +760,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyConsentFormDL</h5>
-<span class='badge badge-success'>10.30.2024 5:32:58 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:33:02 PM</span>
-<span class='badge badge-default'>00:00:04:728</span>
+<h5 class="test-status text-pass">verifyLastNameValue</h5>
+<span class='badge badge-success'>11.11.2024 3:39:01 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:39:04 PM</span>
+<span class='badge badge-default'>00:00:03:706</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that consent form can be downloaded successfully</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Last Name' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -708,28 +778,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:32:58 PM</td>
+        <td>3:39:01 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:00 PM</td>
+        <td>3:39:01 PM</td>
         <td>
-          Step 2: Click on 'Consent Form Template' link
+          Step 2: Enter White in 'Last Name' text box
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:01 PM</td>
+        <td>3:39:01 PM</td>
         <td>
-          Step 3: Verify that consent form can be downloaded
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:39:04 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:39:04 PM</td>
+        <td>
+          Step 5: Verify that the value for 'Last Name' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:02 PM</td>
+        <td>3:39:04 PM</td>
         <td>
           Test Passed
         </td>
@@ -741,12 +825,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="11"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyImageResize</p>
+            <p class="name">verifyMiddleNameValue</p>
             <p class="text-sm">
-              <span>5:33:00 PM</span> / <span>00:00:02:990</span>
+              <span>3:39:16 PM</span> / <span>00:00:03:441</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -754,17 +838,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyImageResize</h5>
-<span class='badge badge-success'>10.30.2024 5:33:00 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:33:03 PM</span>
-<span class='badge badge-default'>00:00:02:990</span>
+<h5 class="test-status text-pass">verifyMiddleNameValue</h5>
+<span class='badge badge-success'>11.11.2024 3:39:16 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:39:19 PM</span>
+<span class='badge badge-default'>00:00:03:441</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the uploaded image can be resized</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Middle Name' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -772,42 +856,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:00 PM</td>
+        <td>3:39:16 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:01 PM</td>
+        <td>3:39:16 PM</td>
         <td>
-          Step 2: Click on Upload Photo icon
+          Step 2: Enter Hartwell in 'Middle Name' text box
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:02 PM</td>
+        <td>3:39:16 PM</td>
         <td>
-          Step 3: Select an image
+          Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:02 PM</td>
+        <td>3:39:19 PM</td>
         <td>
-          Step 4: Resize the image by click-holding right edge of the crop-box and moving horizontally by 30 offset
+          Step 4: Verify: Snackbar, Section display, Tab selection
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:03 PM</td>
+        <td>3:39:19 PM</td>
         <td>
-          Step 5: Verify that image is resized by given offset
+          Step 5: Verify that the value for 'Middle Name' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:03 PM</td>
+        <td>3:39:19 PM</td>
         <td>
           Test Passed
         </td>
@@ -819,12 +903,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="12"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyImageDrag</p>
+            <p class="name">verifyNotSureStates</p>
             <p class="text-sm">
-              <span>5:33:14 PM</span> / <span>00:00:02:878</span>
+              <span>3:39:31 PM</span> / <span>00:00:00:984</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -832,17 +916,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyImageDrag</h5>
-<span class='badge badge-success'>10.30.2024 5:33:14 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:33:17 PM</span>
-<span class='badge badge-default'>00:00:02:878</span>
+<h5 class="test-status text-pass">verifyNotSureStates</h5>
+<span class='badge badge-success'>11.11.2024 3:39:31 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:39:32 PM</span>
+<span class='badge badge-default'>00:00:00:984</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the uploaded image can be dragged</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies the activation of 'If you chose "Not sure", please describe here' textbox based on the input given for corresponding field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -850,42 +934,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:14 PM</td>
+        <td>3:39:31 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:16 PM</td>
+        <td>3:39:31 PM</td>
         <td>
-          Step 2: Click on Upload Photo icon
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:16 PM</td>
-        <td>
-          Step 3: Select an image
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:17 PM</td>
-        <td>
-          Step 4: Drag the image by click-holding it and moving vertically and horizontally by 50 offset
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:17 PM</td>
-        <td>
-          Step 5: Verify that image is dragged by given offset
+          Step 2: Verify that upon selecting 'Not sure' option from 'How long would you like to work in Japan?' field, the corresponding text box turns active
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:17 PM</td>
+        <td>3:39:32 PM</td>
         <td>
           Test Passed
         </td>
@@ -897,12 +960,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="13"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyCFUploadAndDl</p>
+            <p class="name">verifyOtherMasterStates</p>
             <p class="text-sm">
-              <span>5:33:18 PM</span> / <span>00:01:02:893</span>
+              <span>3:39:44 PM</span> / <span>00:00:02:686</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -910,17 +973,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyCFUploadAndDl</h5>
-<span class='badge badge-success'>10.30.2024 5:33:18 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:34:21 PM</span>
-<span class='badge badge-default'>00:01:02:893</span>
+<h5 class="test-status text-pass">verifyOtherMasterStates</h5>
+<span class='badge badge-success'>11.11.2024 3:39:44 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:39:47 PM</span>
+<span class='badge badge-default'>00:00:02:686</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that consent form can be uploaded and can be downloaded from preview page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies the activation of 'Other (Masters)' textbox based on the input given for corresponding field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -928,91 +991,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:18 PM</td>
+        <td>3:39:44 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:22 PM</td>
+        <td>3:39:44 PM</td>
         <td>
-          Step 2: Upload consent form PDF file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:22 PM</td>
-        <td>
-          Step 3: Verify that the file is uploaded successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:35 PM</td>
-        <td>
-          Step 4: Verify that (file check in progress) is displayed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:35 PM</td>
-        <td>
-          Step 5: Verify that 'Select From Files' button turns inactive
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:35 PM</td>
-        <td>
-          Step 6: Verify that uploaded date is October 30, 2024
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:35 PM</td>
-        <td>
-          Step 7: Click on 'Save' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:43 PM</td>
-        <td>
-          Step 8: Verify: Snackbar, Section display, Tab selection
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:44 PM</td>
-        <td>
-          Step 9: Verify that expected file name with file check text and date are displayed on preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:44 PM</td>
-        <td>
-          Step 10: Verify that download link is displayed and 'Required to apply' text is not displayed on preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:10 PM</td>
-        <td>
-          Step 11: Click download link
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:15 PM</td>
-        <td>
-          Step 12: Verify that file can be downloaded from preview page after refreshing
+          Step 2: Verify that upon selecting 'Others' option from 'MCA/M.TECH BRANCH' field, the corresponding text box turns active
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:21 PM</td>
+        <td>3:39:47 PM</td>
         <td>
           Test Passed
         </td>
@@ -1024,12 +1017,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="14"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoUpload</p>
+            <p class="name">verifyPhoneValue</p>
             <p class="text-sm">
-              <span>5:33:42 PM</span> / <span>00:00:08:798</span>
+              <span>3:40:01 PM</span> / <span>00:00:05:950</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1037,17 +1030,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoUpload</h5>
-<span class='badge badge-success'>10.30.2024 5:33:42 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:33:51 PM</span>
-<span class='badge badge-default'>00:00:08:798</span>
+<h5 class="test-status text-pass">verifyPhoneValue</h5>
+<span class='badge badge-success'>11.11.2024 3:40:01 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:40:07 PM</span>
+<span class='badge badge-default'>00:00:05:950</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the image can be uploaded successfully</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Phone No. (Mobile)' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1055,63 +1048,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:42 PM</td>
+        <td>3:40:01 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:44 PM</td>
+        <td>3:40:01 PM</td>
         <td>
-          Step 2: Click on Upload Photo icon
+          Step 2: Enter 1234-567-890 in 'Phone No. (Mobile)' text box
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:44 PM</td>
+        <td>3:40:01 PM</td>
         <td>
-          Step 3: Select an image
+          Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:44 PM</td>
+        <td>3:40:06 PM</td>
         <td>
-          Step 4: Click on 'Upload' button
+          Step 4: Verify: Snackbar, Section display, Tab selection
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:49 PM</td>
+        <td>3:40:07 PM</td>
         <td>
-          Step 5: Verify: Snackbar, Section display, Tab selection
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:49 PM</td>
-        <td>
-          Step 6: Verify that 'file checking' text is displayed on preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:49 PM</td>
-        <td>
-          Step 7: Click on Photo edit button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:51 PM</td>
-        <td>
-          Step 8: Verify that 'file checking' text is displayed on Photo edit page
+          Step 5: Verify that the value for 'Phone No. (Mobile)' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:51 PM</td>
+        <td>3:40:07 PM</td>
         <td>
           Test Passed
         </td>
@@ -1123,12 +1095,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="15"
           author=""
-          tag="Settings"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifySetSelected</p>
+            <p class="name">verifyPinCodeValue</p>
             <p class="text-sm">
-              <span>5:33:51 PM</span> / <span>00:00:11:502</span>
+              <span>3:40:19 PM</span> / <span>00:00:03:840</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1136,17 +1108,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySetSelected</h5>
-<span class='badge badge-success'>10.30.2024 5:33:51 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:34:02 PM</span>
-<span class='badge badge-default'>00:00:11:502</span>
+<h5 class="test-status text-pass">verifyPinCodeValue</h5>
+<span class='badge badge-success'>11.11.2024 3:40:19 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:40:23 PM</span>
+<span class='badge badge-default'>00:00:03:840</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Settings</span></div>
-<div class="m-t-10 m-l-5">This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are selected</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Pin Code' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1154,49 +1126,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:51 PM</td>
+        <td>3:40:19 PM</td>
         <td>
-          Step 1: Click on Settings edit icon
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:53 PM</td>
+        <td>3:40:19 PM</td>
         <td>
-          Step 2: Select checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter'
+          Step 2: Enter 36976 in 'Pin Code' text box
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:33:53 PM</td>
+        <td>3:40:19 PM</td>
         <td>
           Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:02 PM</td>
+        <td>3:40:23 PM</td>
         <td>
           Step 4: Verify: Snackbar, Section display, Tab selection
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:02 PM</td>
+        <td>3:40:23 PM</td>
         <td>
-          Step 5: Verify that the value for 'Yaaay Midcareer' is "Connected"
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:02 PM</td>
-        <td>
-          Step 6: Verify that the value for 'Zenken Newsletter' is "Subscribed"
+          Step 5: Verify that the value for 'Pin code' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:02 PM</td>
+        <td>3:40:23 PM</td>
         <td>
           Test Passed
         </td>
@@ -1208,12 +1173,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="16"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoImage</p>
+            <p class="name">verifyProfileUpdate</p>
             <p class="text-sm">
-              <span>5:34:15 PM</span> / <span>00:00:51:558</span>
+              <span>3:40:34 PM</span> / <span>00:00:03:677</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1221,17 +1186,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoImage</h5>
-<span class='badge badge-success'>10.30.2024 5:34:15 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:35:07 PM</span>
-<span class='badge badge-default'>00:00:51:558</span>
+<h5 class="test-status text-pass">verifyProfileUpdate</h5>
+<span class='badge badge-success'>11.11.2024 3:40:34 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:40:37 PM</span>
+<span class='badge badge-default'>00:00:03:677</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the uploaded image is same and 'Required to apply' text is not displayed on preview and Photo edit page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the user can save mandatory fields for the Basic information section</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1239,49 +1204,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:15 PM</td>
+        <td>3:40:34 PM</td>
         <td>
-          Step 1: Refresh the page until the photo is displayed
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:03 PM</td>
+        <td>3:40:35 PM</td>
         <td>
-          Step 2: Verify that 'Required to apply' text is not displayed on preview page
+          Step 2: Fill in information for the 'required to save' fields
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:03 PM</td>
+        <td>3:40:37 PM</td>
         <td>
-          Step 3: Get src value of the image on preview page
+          Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:03 PM</td>
+        <td>3:40:37 PM</td>
         <td>
-          Step 4: Click on Photo edit button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:06 PM</td>
-        <td>
-          Step 5: Verify that src value of the image on edit page matches to that of preview page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:07 PM</td>
-        <td>
-          Step 6: Verify that 'Required to apply' text is not displayed on Photo edit page
+          Step 4: Verify: Snackbar, Section display, Tab selection
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:35:07 PM</td>
+        <td>3:40:37 PM</td>
         <td>
           Test Passed
         </td>
@@ -1293,12 +1244,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="17"
           author=""
-          tag="Settings"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifySettingsTitle</p>
+            <p class="name">verifyRedirectionForCancel</p>
             <p class="text-sm">
-              <span>5:34:23 PM</span> / <span>00:00:01:113</span>
+              <span>3:40:50 PM</span> / <span>00:00:02:848</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1306,17 +1257,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySettingsTitle</h5>
-<span class='badge badge-success'>10.30.2024 5:34:23 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:34:24 PM</span>
-<span class='badge badge-default'>00:00:01:113</span>
+<h5 class="test-status text-pass">verifyRedirectionForCancel</h5>
+<span class='badge badge-success'>11.11.2024 3:40:50 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:40:52 PM</span>
+<span class='badge badge-default'>00:00:02:848</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Settings</span></div>
-<div class="m-t-10 m-l-5">This test verifies that Settings page title is correct</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the user is redirected to preview page upon clicking on 'Cancel' button</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1324,21 +1275,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:23 PM</td>
+        <td>3:40:50 PM</td>
         <td>
-          Step 1: Click on Settings edit icon
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:24 PM</td>
+        <td>3:40:50 PM</td>
         <td>
-          Step 2: Verify that title name is correct
+          Step 2: Click on 'Cancel' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:40:52 PM</td>
+        <td>
+          Step 3: Verify: Section display, Tab selection on preview page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:24 PM</td>
+        <td>3:40:52 PM</td>
         <td>
           Test Passed
         </td>
@@ -1350,12 +1308,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="18"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyConsentFormDelete</p>
+            <p class="name">verifyRequiredToApplyTexts</p>
             <p class="text-sm">
-              <span>5:34:46 PM</span> / <span>00:00:03:532</span>
+              <span>3:41:05 PM</span> / <span>00:00:00:373</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1363,17 +1321,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyConsentFormDelete</h5>
-<span class='badge badge-success'>10.30.2024 5:34:46 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:34:49 PM</span>
-<span class='badge badge-default'>00:00:03:532</span>
+<h5 class="test-status text-pass">verifyRequiredToApplyTexts</h5>
+<span class='badge badge-success'>11.11.2024 3:41:05 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:41:05 PM</span>
+<span class='badge badge-default'>00:00:00:373</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the consent form can be deleted</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1381,35 +1339,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:46 PM</td>
+        <td>3:41:05 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:48 PM</td>
+        <td>3:41:05 PM</td>
         <td>
-          Step 2: Click on 'Delete' button for added file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:48 PM</td>
-        <td>
-          Step 3: Verify that consent form is deleted
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:49 PM</td>
-        <td>
-          Step 4: Verify that 'Select From Files' button turns active
+          Step 2: Verify that 'Required to apply' text is displayed for the fields which are not 'Required to save'
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:49 PM</td>
+        <td>3:41:05 PM</td>
         <td>
           Test Passed
         </td>
@@ -1421,12 +1365,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="19"
           author=""
-          tag="Settings"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifySettingsUrl</p>
+            <p class="name">verifySexValue</p>
             <p class="text-sm">
-              <span>5:34:47 PM</span> / <span>00:00:01:183</span>
+              <span>3:41:17 PM</span> / <span>00:00:03:427</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1434,17 +1378,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySettingsUrl</h5>
-<span class='badge badge-success'>10.30.2024 5:34:47 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:34:49 PM</span>
-<span class='badge badge-default'>00:00:01:183</span>
+<h5 class="test-status text-pass">verifySexValue</h5>
+<span class='badge badge-success'>11.11.2024 3:41:17 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:41:20 PM</span>
+<span class='badge badge-default'>00:00:03:427</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Settings</span></div>
-<div class="m-t-10 m-l-5">This test verifies that user is redirected to 'Settings' edit page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Sex' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1452,21 +1396,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:47 PM</td>
+        <td>3:41:17 PM</td>
         <td>
-          Step 1: Click on Settings edit icon
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:49 PM</td>
+        <td>3:41:17 PM</td>
         <td>
-          Step 2: Verify that URL and page headline are correct
+          Step 2: Select 'Female' option for 'Sex' field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:41:17 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:41:20 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:41:20 PM</td>
+        <td>
+          Step 5: Verify that the value for 'Sex' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:49 PM</td>
+        <td>3:41:20 PM</td>
         <td>
           Test Passed
         </td>
@@ -1478,12 +1443,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="20"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyCFReqToApply</p>
+            <p class="name">verifyTextBoxInactiveLastName</p>
             <p class="text-sm">
-              <span>5:34:59 PM</span> / <span>00:00:00:887</span>
+              <span>3:41:31 PM</span> / <span>00:00:00:094</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1491,17 +1456,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyCFReqToApply</h5>
-<span class='badge badge-success'>10.30.2024 5:34:59 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:35:00 PM</span>
-<span class='badge badge-default'>00:00:00:887</span>
+<h5 class="test-status text-pass">verifyTextBoxInactiveLastName</h5>
+<span class='badge badge-success'>11.11.2024 3:41:31 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:41:31 PM</span>
+<span class='badge badge-default'>00:00:00:094</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that 'Required to apply' text is displayed for consent form after it is deleted</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the text box for 'Last name' turns inactive after selecting the checkbox</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1509,28 +1474,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:59 PM</td>
+        <td>3:41:31 PM</td>
         <td>
-          step 1: Verify that 'Required to apply' text is displayed on preview page
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:34:59 PM</td>
+        <td>3:41:31 PM</td>
         <td>
-          Step 2: Click on Consent Form edit button
+          Step 2: Click on checkbox for 'Last Name' field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:00 PM</td>
+        <td>3:41:31 PM</td>
         <td>
-          Step 3: Verify that 'Required to apply' text is displayed on consent form edit page
+          Step 3: Verify that text box turns inactive
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:35:00 PM</td>
+        <td>3:41:31 PM</td>
         <td>
           Test Passed
         </td>
@@ -1542,12 +1507,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="21"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyAgreeCBReqToSave</p>
+            <p class="name">verifyTimeInJapanValue</p>
             <p class="text-sm">
-              <span>5:35:17 PM</span> / <span>00:00:05:131</span>
+              <span>3:41:43 PM</span> / <span>00:00:03:611</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1555,17 +1520,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyAgreeCBReqToSave</h5>
-<span class='badge badge-success'>10.30.2024 5:35:17 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:35:22 PM</span>
-<span class='badge badge-default'>00:00:05:131</span>
+<h5 class="test-status text-pass">verifyTimeInJapanValue</h5>
+<span class='badge badge-success'>11.11.2024 3:41:43 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:41:46 PM</span>
+<span class='badge badge-default'>00:00:03:611</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs for required to save field: Do your parents/guardians agree with your participation to this Japanese Placement?</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'How long would you like to work in Japan?' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1573,35 +1538,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:17 PM</td>
+        <td>3:41:43 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:19 PM</td>
+        <td>3:41:43 PM</td>
         <td>
-          Step 2: De-select the checkbox
+          Step 2: Select 10+ years for the applicable dropdown
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:19 PM</td>
+        <td>3:41:43 PM</td>
         <td>
           Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:22 PM</td>
+        <td>3:41:46 PM</td>
         <td>
-          Step 4: Verify that validation error corresponds to 'Required to save' for checkbox's field
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:41:46 PM</td>
+        <td>
+          Step 5: Verify that the value for the applicable field displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:35:22 PM</td>
+        <td>3:41:46 PM</td>
         <td>
           Test Passed
         </td>
@@ -1613,12 +1585,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="22"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoChange</p>
+            <p class="name">verifyTitleName</p>
             <p class="text-sm">
-              <span>5:35:21 PM</span> / <span>00:00:02:407</span>
+              <span>3:41:58 PM</span> / <span>00:00:00:011</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1626,17 +1598,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoChange</h5>
-<span class='badge badge-success'>10.30.2024 5:35:21 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:35:23 PM</span>
-<span class='badge badge-default'>00:00:02:407</span>
+<h5 class="test-status text-pass">verifyTitleName</h5>
+<span class='badge badge-success'>11.11.2024 3:41:58 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:41:58 PM</span>
+<span class='badge badge-default'>00:00:00:011</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the uploaded image can be changed</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the Basic Information page title is correct</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1644,42 +1616,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:21 PM</td>
+        <td>3:41:58 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:23 PM</td>
+        <td>3:41:58 PM</td>
         <td>
-          Step 2: Verify that the photo icon contains text "Change Photo"
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:23 PM</td>
-        <td>
-          Step 3: Click on Upload Photo icon
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:23 PM</td>
-        <td>
-          Step 4: Select an image
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:23 PM</td>
-        <td>
-          Step 5: Verify that 'Upload' button is active
+          Step 2: Verify that title name is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:35:23 PM</td>
+        <td>3:41:58 PM</td>
         <td>
           Test Passed
         </td>
@@ -1691,12 +1642,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="23"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoDelete</p>
+            <p class="name">verifyUsnRequired</p>
             <p class="text-sm">
-              <span>5:35:37 PM</span> / <span>00:00:08:315</span>
+              <span>3:42:10 PM</span> / <span>00:00:01:586</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1704,17 +1655,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoDelete</h5>
-<span class='badge badge-success'>10.30.2024 5:35:37 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:35:45 PM</span>
-<span class='badge badge-default'>00:00:08:315</span>
+<h5 class="test-status text-pass">verifyUsnRequired</h5>
+<span class='badge badge-success'>11.11.2024 3:42:10 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:42:12 PM</span>
+<span class='badge badge-default'>00:00:01:586</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that the image can be deleted and 'Required to apply' text is displayed on Photo edit and preview page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs for 'USN / Registration Number' field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1722,49 +1673,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:37 PM</td>
+        <td>3:42:10 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:40 PM</td>
+        <td>3:42:10 PM</td>
         <td>
-          Step 2: Click on 'Delete' button next to the image
+          Step 2: Clear existing text from the text box for 'USN / Registration Number' and click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:44 PM</td>
+        <td>3:42:12 PM</td>
         <td>
-          Step 3: Verify that the image is deleted (gray icon is displayed)
+          Step 3: Verify that validation error corresponds to 'Required to save' for usn field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:44 PM</td>
+        <td>3:42:12 PM</td>
         <td>
-          Step 4: Verify that 'Required to apply' text is displayed on edit page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:44 PM</td>
-        <td>
-          Step 5: Click on arrow-back button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:45 PM</td>
-        <td>
-          Step 5: Verify that 'Required to apply' text is displayed on preview page
+          Step 4: Verify that 'Required to apply' text is displayed for the field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:35:45 PM</td>
+        <td>3:42:12 PM</td>
         <td>
           Test Passed
         </td>
@@ -1776,12 +1713,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="24"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyCFInvalidFileFormat</p>
+            <p class="name">verifyYearRequired</p>
             <p class="text-sm">
-              <span>5:35:39 PM</span> / <span>00:00:09:988</span>
+              <span>3:42:24 PM</span> / <span>00:00:02:019</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1789,17 +1726,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyCFInvalidFileFormat</h5>
-<span class='badge badge-success'>10.30.2024 5:35:39 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:35:49 PM</span>
-<span class='badge badge-default'>00:00:09:988</span>
+<h5 class="test-status text-pass">verifyYearRequired</h5>
+<span class='badge badge-success'>11.11.2024 3:42:24 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:42:26 PM</span>
+<span class='badge badge-default'>00:00:02:019</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for invalid consent form file format occurs</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs for 'Expected Graduation Year' field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1807,28 +1744,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:39 PM</td>
+        <td>3:42:24 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:41 PM</td>
+        <td>3:42:24 PM</td>
         <td>
-          Step 2: Upload a file in doc format
+          Step 2: Clear existing text from the text box for 'Expected Graduation Year' and click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:41 PM</td>
+        <td>3:42:26 PM</td>
         <td>
-          Step 3: Verify that validation error corresponds to file type: pdf
+          Step 3: Verify that validation error corresponds to 'Required to save' for graduation year field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:42:26 PM</td>
+        <td>
+          Step 4: Verify that 'Required to apply' text is displayed for the field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:35:49 PM</td>
+        <td>3:42:26 PM</td>
         <td>
           Test Passed
         </td>
@@ -1840,12 +1784,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="25"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoInvalidFile</p>
+            <p class="name">verifyBacklogCountStates</p>
             <p class="text-sm">
-              <span>5:35:56 PM</span> / <span>00:00:06:658</span>
+              <span>3:42:37 PM</span> / <span>00:00:00:092</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1853,17 +1797,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoInvalidFile</h5>
-<span class='badge badge-success'>10.30.2024 5:35:56 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:36:03 PM</span>
-<span class='badge badge-default'>00:00:06:658</span>
+<h5 class="test-status text-pass">verifyBacklogCountStates</h5>
+<span class='badge badge-success'>11.11.2024 3:42:37 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:42:37 PM</span>
+<span class='badge badge-default'>00:00:00:092</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs for invalid file format</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies the activation of 'How many active backlogs do you have?' dropdown based on the input given for corresponding field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1871,35 +1815,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:56 PM</td>
+        <td>3:42:37 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:57 PM</td>
+        <td>3:42:37 PM</td>
         <td>
-          Step 2: Click on Upload Photo icon
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:35:57 PM</td>
-        <td>
-          Step 3: Upload a PDF file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:03 PM</td>
-        <td>
-          Step 4: Verify that validation error corresponds to invalid file format
+          Step 2: Verify that if 'Yes' is selected for 'Do you have any active backlogs?' field, the corresponding dropdown turns active
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:36:03 PM</td>
+        <td>3:42:37 PM</td>
         <td>
           Test Passed
         </td>
@@ -1911,12 +1841,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="26"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyCFInvalidFileSize</p>
+            <p class="name">verifyCountryValue</p>
             <p class="text-sm">
-              <span>5:36:03 PM</span> / <span>00:00:07:262</span>
+              <span>3:42:48 PM</span> / <span>00:00:03:454</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1924,17 +1854,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyCFInvalidFileSize</h5>
-<span class='badge badge-success'>10.30.2024 5:36:03 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:36:10 PM</span>
-<span class='badge badge-default'>00:00:07:262</span>
+<h5 class="test-status text-pass">verifyCountryValue</h5>
+<span class='badge badge-success'>11.11.2024 3:42:48 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:42:52 PM</span>
+<span class='badge badge-default'>00:00:03:454</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error for invalid size for consent form file occurs</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Country' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -1942,28 +1872,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:03 PM</td>
+        <td>3:42:48 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:04 PM</td>
+        <td>3:42:48 PM</td>
         <td>
-          Step 2: Upload a PDF file having size more than 2mb
+          Step 2: Select British Virgin Islands from 'Country' dropdown
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:04 PM</td>
+        <td>3:42:48 PM</td>
         <td>
-          Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:42:51 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:42:52 PM</td>
+        <td>
+          Step 5: Verify that the value for 'Country' displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:36:10 PM</td>
+        <td>3:42:52 PM</td>
         <td>
           Test Passed
         </td>
@@ -1975,12 +1919,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="27"
           author=""
-          tag="Photo"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyPhotoInvalidSize</p>
+            <p class="name">verifyEmail2Value</p>
             <p class="text-sm">
-              <span>5:36:19 PM</span> / <span>00:00:02:546</span>
+              <span>3:43:04 PM</span> / <span>00:00:03:635</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1988,17 +1932,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPhotoInvalidSize</h5>
-<span class='badge badge-success'>10.30.2024 5:36:19 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:36:22 PM</span>
-<span class='badge badge-default'>00:00:02:546</span>
+<h5 class="test-status text-pass">verifyEmail2Value</h5>
+<span class='badge badge-success'>11.11.2024 3:43:04 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:43:07 PM</span>
+<span class='badge badge-default'>00:00:03:635</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Photo</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when image size is more than 5MB</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'E-mail Address 2 (College E-mail)' field is displayed accordingly on preview page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -2006,35 +1950,42 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:19 PM</td>
+        <td>3:43:04 PM</td>
         <td>
-          Step 1: Click on Photo edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:22 PM</td>
+        <td>3:43:04 PM</td>
         <td>
-          Step 2: Click on Upload Photo icon
+          Step 2: Enter heythere2@example.com in 'E-mail Address 2 (College E-mail)' text box
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:22 PM</td>
+        <td>3:43:04 PM</td>
         <td>
-          Step 3: Upload a sample image having size more than 5MB
+          Step 3: Click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:22 PM</td>
+        <td>3:43:07 PM</td>
         <td>
-          Step 4: Verify that validation error corresponds to file size more than 5MB
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:07 PM</td>
+        <td>
+          Step 5: Verify that the value for Email address 2 displayed is correct
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:36:22 PM</td>
+        <td>3:43:07 PM</td>
         <td>
           Test Passed
         </td>
@@ -2046,12 +1997,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="28"
           author=""
-          tag="JapanesePlacementConsentForm"
+          tag="BasicInformation"
           device="">
           <div class="test-detail">
-            <p class="name">verifyCFCancelRed</p>
+            <p class="name">verifyFirstNameRequired</p>
             <p class="text-sm">
-              <span>5:36:22 PM</span> / <span>00:00:02:391</span>
+              <span>3:43:19 PM</span> / <span>00:00:01:594</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2059,17 +2010,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyCFCancelRed</h5>
-<span class='badge badge-success'>10.30.2024 5:36:22 PM</span>
-<span class='badge badge-danger'>10.30.2024 5:36:25 PM</span>
-<span class='badge badge-default'>00:00:02:391</span>
+<h5 class="test-status text-pass">verifyFirstNameRequired</h5>
+<span class='badge badge-success'>11.11.2024 3:43:19 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:43:20 PM</span>
+<span class='badge badge-default'>00:00:01:594</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">JapanesePlacementConsentForm</span></div>
-<div class="m-t-10 m-l-5">This test verifies that 'Cancel' from Japanese Placement Consent Form redirectes user to preview page </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs for 'First Name' field</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -2077,28 +2028,575 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:22 PM</td>
+        <td>3:43:19 PM</td>
         <td>
-          Step 1: Click on Consent Form edit button
+          Step 1: Click on Basic Information edit icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:23 PM</td>
+        <td>3:43:19 PM</td>
         <td>
-          Step 2: Click on 'Cancel' button
+          Step 2: Clear existing text from the text box for 'First Name' and click on 'Save' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:25 PM</td>
+        <td>3:43:20 PM</td>
         <td>
-          Step 3: Verify that user is redirected to 'Japanese Placement Consent Form' section of profile page
+          Step 3: Verify that validation error corresponds to 'Required to save' for first name field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:20 PM</td>
+        <td>
+          Step 4: Verify that 'Required to apply' text is displayed for the field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:36:25 PM</td>
+        <td>3:43:20 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyFirstNameValue</p>
+            <p class="text-sm">
+              <span>3:43:32 PM</span> / <span>00:00:03:340</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyFirstNameValue</h5>
+<span class='badge badge-success'>11.11.2024 3:43:32 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:43:35 PM</span>
+<span class='badge badge-default'>00:00:03:340</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'First Name' field is displayed accordingly on preview page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:32 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:32 PM</td>
+        <td>
+          Step 2: Enter Walter in 'First Name' text box
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:32 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:35 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:35 PM</td>
+        <td>
+          Step 5: Verify that the value for 'First Name' displayed is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:43:35 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyNationalityValue</p>
+            <p class="text-sm">
+              <span>3:43:47 PM</span> / <span>00:00:03:811</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyNationalityValue</h5>
+<span class='badge badge-success'>11.11.2024 3:43:47 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:43:51 PM</span>
+<span class='badge badge-default'>00:00:03:811</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'Nationality' field is displayed accordingly on preview page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:47 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:47 PM</td>
+        <td>
+          Step 2: Select Dominican (Dominican Republic) for 'Nationality' dropdown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:47 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:51 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:43:51 PM</td>
+        <td>
+          Step 5: Verify that the value for 'Nationality' displayed is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:43:51 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyOtherBachelorStates</p>
+            <p class="text-sm">
+              <span>3:44:02 PM</span> / <span>00:00:03:214</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyOtherBachelorStates</h5>
+<span class='badge badge-success'>11.11.2024 3:44:02 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:44:05 PM</span>
+<span class='badge badge-default'>00:00:03:214</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies the activation of 'Other (Bachelors)' textbox based on the input given for corresponding field</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:02 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:02 PM</td>
+        <td>
+          Step 2: Verify that upon selecting 'Others' option from 'BE/B.TECH BRANCH' field, the corresponding text box turns active
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:44:05 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyPlaceholders</p>
+            <p class="text-sm">
+              <span>3:44:17 PM</span> / <span>00:00:00:675</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyPlaceholders</h5>
+<span class='badge badge-success'>11.11.2024 3:44:17 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:44:18 PM</span>
+<span class='badge badge-default'>00:00:00:675</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the placeholders displayed are correct for all text boxes on Basic Information edit page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:17 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:18 PM</td>
+        <td>
+          Step 2: Verify that placeholders for all text boxes are correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:44:18 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyProceedOtherStates</p>
+            <p class="text-sm">
+              <span>3:44:28 PM</span> / <span>00:00:01:697</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyProceedOtherStates</h5>
+<span class='badge badge-success'>11.11.2024 3:44:28 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:44:29 PM</span>
+<span class='badge badge-default'>00:00:01:697</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies the activation of 'If you chose "Other", please describe here' textbox based on the input given for corresponding field</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:28 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:28 PM</td>
+        <td>
+          Step 2: Verify that upon selecting 'Other' option from 'When do you plan to proceed?' field, the corresponding text box turns active
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:44:29 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyStateValue</p>
+            <p class="text-sm">
+              <span>3:44:43 PM</span> / <span>00:00:04:324</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyStateValue</h5>
+<span class='badge badge-success'>11.11.2024 3:44:43 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:44:47 PM</span>
+<span class='badge badge-default'>00:00:04:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'State' field is displayed accordingly on preview page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:43 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:43 PM</td>
+        <td>
+          Step 2: Enter Texas in 'State' text box
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:43 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:47 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:47 PM</td>
+        <td>
+          Step 5: Verify that the value for 'State' displayed is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:44:47 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyTimeNotSureValue</p>
+            <p class="text-sm">
+              <span>3:44:59 PM</span> / <span>00:00:04:754</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyTimeNotSureValue</h5>
+<span class='badge badge-success'>11.11.2024 3:44:59 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:45:04 PM</span>
+<span class='badge badge-default'>00:00:04:754</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the value entered for 'If you chose "Not sure", please describe here' field is displayed accordingly on preview page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:59 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:44:59 PM</td>
+        <td>
+          Step 2: Enter description in the applicable textbox
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:45:00 PM</td>
+        <td>
+          Step 3: Click on 'Save' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:45:03 PM</td>
+        <td>
+          Step 4: Verify: Snackbar, Section display, Tab selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:45:04 PM</td>
+        <td>
+          Step 5: Verify that the value for the applicable field displayed is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:45:04 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag="BasicInformation"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifySavedData</p>
+            <p class="text-sm">
+              <span>3:45:14 PM</span> / <span>00:00:00:762</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifySavedData</h5>
+<span class='badge badge-success'>11.11.2024 3:45:14 PM</span>
+<span class='badge badge-danger'>11.11.2024 3:45:15 PM</span>
+<span class='badge badge-default'>00:00:00:762</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BasicInformation</span></div>
+<div class="m-t-10 m-l-5">This test verifies that the saved data displayed is correct</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:45:14 PM</td>
+        <td>
+          Step 1: Click on Basic Information edit icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:45:14 PM</td>
+        <td>
+          Step 2: Verify that the saved data for 'required to save' fields is displayed accordingly
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:45:15 PM</td>
         <td>
           Test Passed
         </td>
@@ -2121,22 +2619,22 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>6</span>
+<span class='badge log pass-bg'>36</span>
 </span>
-<p class="name">Settings</p>
-<p class="duration text-sm">6 tests</p>
+<p class="name">BasicInformation</p>
+<p class="duration text-sm">36 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Settings</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
+<h4>BasicInformation</h4>
+<span status="pass" class='badge log pass-bg'>36 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -2149,250 +2647,254 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:31:37 PM</td>
+<td>15:36:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>verifySetDesTexts</a>
+<a href="#" class="linked" test-id='1' id='1'>verifyAddressValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:08 PM</td>
+<td>15:37:06 PM</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>verifySetNotSelected</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyCityValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:40 PM</td>
+<td>15:37:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>verifySetSelected</a>
+<a href="#" class="linked" test-id='3' id='3'>verifyCollegeRequired</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:51 PM</td>
+<td>15:37:35 PM</td>
 <td>
-<a href="#" class="linked" test-id='15' id='15'>verifySetSelected</a>
+<a href="#" class="linked" test-id='4' id='4'>verifyDobValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:23 PM</td>
+<td>15:37:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='17' id='17'>verifySettingsTitle</a>
+<a href="#" class="linked" test-id='5' id='5'>verifyEditUrl</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:47 PM</td>
+<td>15:38:02 PM</td>
 <td>
-<a href="#" class="linked" test-id='19' id='19'>verifySettingsUrl</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>11</span>
-</span>
-<p class="name">Photo</p>
-<p class="duration text-sm">11 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>Photo</h4>
-<span status="pass" class='badge log pass-bg'>11 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:31:36 PM</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>verifyPhotoUrl</a>
+<a href="#" class="linked" test-id='6' id='6'>verifyEmail1Value</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:08 PM</td>
+<td>15:38:18 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>verifyPhotoTitle</a>
+<a href="#" class="linked" test-id='7' id='7'>verifyEmailRequired</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:39 PM</td>
+<td>15:38:32 PM</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>verifyUploadModalDisplay</a>
+<a href="#" class="linked" test-id='8' id='8'>verifyHobbyValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:00 PM</td>
+<td>15:38:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>verifyImageResize</a>
+<a href="#" class="linked" test-id='9' id='9'>verifyLastNameRequired</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:14 PM</td>
+<td>15:39:01 PM</td>
 <td>
-<a href="#" class="linked" test-id='12' id='12'>verifyImageDrag</a>
+<a href="#" class="linked" test-id='10' id='10'>verifyLastNameValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:42 PM</td>
+<td>15:39:16 PM</td>
 <td>
-<a href="#" class="linked" test-id='14' id='14'>verifyPhotoUpload</a>
+<a href="#" class="linked" test-id='11' id='11'>verifyMiddleNameValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:15 PM</td>
+<td>15:39:31 PM</td>
 <td>
-<a href="#" class="linked" test-id='16' id='16'>verifyPhotoImage</a>
+<a href="#" class="linked" test-id='12' id='12'>verifyNotSureStates</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:35:21 PM</td>
+<td>15:39:44 PM</td>
 <td>
-<a href="#" class="linked" test-id='22' id='22'>verifyPhotoChange</a>
+<a href="#" class="linked" test-id='13' id='13'>verifyOtherMasterStates</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:35:37 PM</td>
+<td>15:40:01 PM</td>
 <td>
-<a href="#" class="linked" test-id='23' id='23'>verifyPhotoDelete</a>
+<a href="#" class="linked" test-id='14' id='14'>verifyPhoneValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:35:56 PM</td>
+<td>15:40:19 PM</td>
 <td>
-<a href="#" class="linked" test-id='25' id='25'>verifyPhotoInvalidFile</a>
+<a href="#" class="linked" test-id='15' id='15'>verifyPinCodeValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:36:19 PM</td>
+<td>15:40:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='27' id='27'>verifyPhotoInvalidSize</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>11</span>
-</span>
-<p class="name">JapanesePlacementConsentForm</p>
-<p class="duration text-sm">11 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>JapanesePlacementConsentForm</h4>
-<span status="pass" class='badge log pass-bg'>11 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:31:33 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>verifyConsentFormUrl</a>
+<a href="#" class="linked" test-id='16' id='16'>verifyProfileUpdate</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:31:58 PM</td>
+<td>15:40:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>verifyConsentFormTitle</a>
+<a href="#" class="linked" test-id='17' id='17'>verifyRedirectionForCancel</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:23 PM</td>
+<td>15:41:05 PM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>verifyIsCFSaved</a>
+<a href="#" class="linked" test-id='18' id='18'>verifyRequiredToApplyTexts</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:58 PM</td>
+<td>15:41:17 PM</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>verifyConsentFormDL</a>
+<a href="#" class="linked" test-id='19' id='19'>verifySexValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:18 PM</td>
+<td>15:41:31 PM</td>
 <td>
-<a href="#" class="linked" test-id='13' id='13'>verifyCFUploadAndDl</a>
+<a href="#" class="linked" test-id='20' id='20'>verifyTextBoxInactiveLastName</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:46 PM</td>
+<td>15:41:43 PM</td>
 <td>
-<a href="#" class="linked" test-id='18' id='18'>verifyConsentFormDelete</a>
+<a href="#" class="linked" test-id='21' id='21'>verifyTimeInJapanValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:59 PM</td>
+<td>15:41:58 PM</td>
 <td>
-<a href="#" class="linked" test-id='20' id='20'>verifyCFReqToApply</a>
+<a href="#" class="linked" test-id='22' id='22'>verifyTitleName</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:35:17 PM</td>
+<td>15:42:10 PM</td>
 <td>
-<a href="#" class="linked" test-id='21' id='21'>verifyAgreeCBReqToSave</a>
+<a href="#" class="linked" test-id='23' id='23'>verifyUsnRequired</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:35:39 PM</td>
+<td>15:42:24 PM</td>
 <td>
-<a href="#" class="linked" test-id='24' id='24'>verifyCFInvalidFileFormat</a>
+<a href="#" class="linked" test-id='24' id='24'>verifyYearRequired</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:36:03 PM</td>
+<td>15:42:37 PM</td>
 <td>
-<a href="#" class="linked" test-id='26' id='26'>verifyCFInvalidFileSize</a>
+<a href="#" class="linked" test-id='25' id='25'>verifyBacklogCountStates</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:36:22 PM</td>
+<td>15:42:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='28' id='28'>verifyCFCancelRed</a>
+<a href="#" class="linked" test-id='26' id='26'>verifyCountryValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:43:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>verifyEmail2Value</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:43:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>verifyFirstNameRequired</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:43:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>verifyFirstNameValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:43:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>verifyNationalityValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>verifyOtherBachelorStates</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>verifyPlaceholders</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>verifyProceedOtherStates</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>verifyStateValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:44:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>verifyTimeNotSureValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:45:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>verifySavedData</a>
 </td>
 </tr>
 </tbody>
@@ -2412,19 +2914,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 30, 2024 05:31:04 PM</h3>
+<h3>Nov 11, 2024 03:36:37 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 30, 2024 05:36:25 PM</h3>
+<h3>Nov 11, 2024 03:45:15 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>28</h3>
+<h3>36</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -2447,7 +2949,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>28</b> tests passed
+<b>36</b> tests passed
 </small>
 </div>
 <div>
@@ -2469,10 +2971,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='18%'><b>27</b> events passed</small></div>
+<div><small data-tooltip='20%'><b>36</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>118</b> others
+<b data-tooltip='%'>139</b> others
 </small>
 </div>
 </div>
@@ -2488,7 +2990,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyConsentFormUrl":3.154,"verifyPhotoUrl":3.406,"verifySetDesTexts":1.507,"verifyConsentFormTitle":3.394,"verifySetNotSelected":10.204,"verifyPhotoTitle":3.28,"verifyIsCFSaved":12.732,"verifyUploadModalDisplay":1.939,"verifySetSelected":23.415,"verifyConsentFormDL":4.728,"verifyImageResize":2.99,"verifyImageDrag":2.878,"verifyCFUploadAndDl":62.893,"verifyPhotoUpload":8.798,"verifySetSelected":11.502,"verifyPhotoImage":51.558,"verifySettingsTitle":1.113,"verifyConsentFormDelete":3.532,"verifySettingsUrl":1.183,"verifyCFReqToApply":0.887,"verifyAgreeCBReqToSave":5.131,"verifyPhotoChange":2.407,"verifyPhotoDelete":8.315,"verifyCFInvalidFileFormat":9.988,"verifyPhotoInvalidFile":6.658,"verifyCFInvalidFileSize":7.262,"verifyPhotoInvalidSize":2.546,"verifyCFCancelRed":2.391
+"verifyAddressValue":3.985,"verifyCityValue":3.569,"verifyCollegeRequired":1.842,"verifyDobValue":3.885,"verifyEditUrl":0.048,"verifyEmail1Value":4.044,"verifyEmailRequired":1.735,"verifyHobbyValue":3.901,"verifyLastNameRequired":1.469,"verifyLastNameValue":3.706,"verifyMiddleNameValue":3.441,"verifyNotSureStates":0.984,"verifyOtherMasterStates":2.686,"verifyPhoneValue":5.95,"verifyPinCodeValue":3.84,"verifyProfileUpdate":3.677,"verifyRedirectionForCancel":2.848,"verifyRequiredToApplyTexts":0.373,"verifySexValue":3.427,"verifyTextBoxInactiveLastName":0.094,"verifyTimeInJapanValue":3.611,"verifyTitleName":0.011,"verifyUsnRequired":1.586,"verifyYearRequired":2.019,"verifyBacklogCountStates":0.092,"verifyCountryValue":3.454,"verifyEmail2Value":3.635,"verifyFirstNameRequired":1.594,"verifyFirstNameValue":3.34,"verifyNationalityValue":3.811,"verifyOtherBachelorStates":3.214,"verifyPlaceholders":0.675,"verifyProceedOtherStates":1.697,"verifyStateValue":4.324,"verifyTimeNotSureValue":4.754,"verifySavedData":0.762
 };
 </script>
 <div class="row">
@@ -2498,24 +3000,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>Settings</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>Photo</td>
-<td>11</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>JapanesePlacementConsentForm</td>
-<td>11</td>
+<td>BasicInformation</td>
+<td>36</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2548,7 +3034,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 28,
+passParent: 36,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -2565,11 +3051,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 27,
+passEvents: 36,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 118
+infoEvents: 139
 };
 </script>        </div>
       </div>

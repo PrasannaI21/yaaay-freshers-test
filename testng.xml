@@ -7,9 +7,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Photo"/>
-      <class name="com.zenken.freshers.user.Settings"/>
-      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm"/>
+      <class name="com.zenken.freshers.user.BasicInformation">
+      </class> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

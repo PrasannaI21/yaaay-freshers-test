@@ -23,6 +23,9 @@ public class EditBasicInformationPage extends WebDriverUtils{
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath="//div[.='Basic Information']")
+	WebElement headlineBI;
+	
 	@FindBy(id="firstName")
 	WebElement firstNameTb;
 	
@@ -214,6 +217,11 @@ public class EditBasicInformationPage extends WebDriverUtils{
 	
 	@FindBy(css="[class*=card] [class=u-c-red]")
 	List<WebElement> requiredToApplyMarks;
+	
+	public String getBIHeadline()
+	{
+		return headlineBI.getText();
+	}
 	
 	public List<Object> getSavedData()
 	{
