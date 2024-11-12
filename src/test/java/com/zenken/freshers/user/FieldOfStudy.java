@@ -174,7 +174,7 @@ public class FieldOfStudy extends BaseTest{
 		redirectionAssertions("#FieldOfStudy");
 		String value = profilePreview.getAreaOfResearchValue();
 		log("Step 6: Verify that the value for 'What is your main area of research and study?' is \"IT\" on preview page");
-		Assert.assertEquals(value, "ITa", "Area of research is incorrect");
+		Assert.assertEquals(value, "IT", "Area of research is incorrect");
 		Assert.assertEquals(profilePreview.getITLabel(), properties.getProperty("itLabel"));
 		log("Step 7: Verify that the value for 'Which IT field is your area of study/focus?' is \"Data Science\" on preview page");
 		Assert.assertEquals(profilePreview.getFieldValue(), properties.getProperty("it7"));
