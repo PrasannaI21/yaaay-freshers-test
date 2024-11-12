@@ -28,51 +28,70 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 		test = extent.createTest(result.getMethod().getMethodName(), description);
 		test.assignCategory(featureName);
 		extentTest.set(test);
+//		if(result.wasRetried()) {
+//			extentTest.get().log(Status.WARNING, "Test was retried");
+//		}
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		if(result.wasRetried()) {
-			extentTest.get().pass("Test passed after being retried");
-		}else {
+//		if(result.wasRetried()) {
+//			extentTest.get().pass("Test passed after being retried");
+//			extentTest.get().log(Status.WARNING, "Test was retried");
+//		}else {
 			extentTest.get().pass("Test Passed");
-		}
+//		}
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		if(!result.wasRetried())
-		{
-			extentTest.get().fail(result.getThrowable());
-			try {
-				driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			String filePath = null;
-			try {
-				filePath = waitForScrollToComplete(driver, result.getMethod().getMethodName());
-			} catch (IOException | InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
-		}else {
-			extentTest.get().log(Status.INFO, "Test failed but was retried");
+//		if(!result.wasRetried())
+//		{
+//			extentTest.get().fail(result.getThrowable());
+//			try {
+//				driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			String filePath = null;
+//			try {
+//				filePath = waitForScrollToComplete(driver, result.getMethod().getMethodName());
+//			} catch (IOException | InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+//		}else {
+//			extentTest.get().log(Status.INFO, "Test failed but was retried");
+//		}
+		extentTest.get().fail(result.getThrowable());
+		try {
+			driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		String filePath = null;
+		try {
+			filePath = waitForScrollToComplete(driver, result.getMethod().getMethodName());
+		} catch (IOException | InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		if(!result.wasRetried())
-		{
+//		if(!result.wasRetried())
+//		{
 			extentTest.get().skip("Test Skipped");
-			extentTest.get().skip(result.getThrowable());
-		}
+//			extentTest.get().skip(result.getThrowable());
+//		}
 	}
 
 	@Override

@@ -151,7 +151,7 @@ public class JobPreferences extends BaseTest{
 	public void verifyCancelRedirection()
 	{
 		log("Step 1: Click on Job Preferences edit icon");
-		log("Step 1: Click on 'Cancel' button");
+		log("Step 2: Click on 'Cancel' button");
 		editJobPref.clickCancel();
 		log("Step 3: Verify: Section display, Tab selection on preview page");
 		String url = profilePreview.getPageUrl();

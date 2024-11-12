@@ -1,289 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T17:51:17 IST" name="Suite" finished-at="2024-11-11T17:54:19 IST" duration-ms="182198">
+  <suite started-at="2024-11-12T14:20:28 IST" name="Suite" finished-at="2024-11-12T14:21:09 IST" duration-ms="41153">
     <groups>
     </groups>
-    <test started-at="2024-11-11T17:51:17 IST" name="Test" finished-at="2024-11-11T17:54:19 IST" duration-ms="182198">
-      <class name="com.zenken.freshers.user.JobPreferences">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:17 IST" name="setup" finished-at="2024-11-11T17:51:19 IST" duration-ms="1825" status="PASS">
+    <test started-at="2024-11-12T14:20:28 IST" name="Test" finished-at="2024-11-12T14:21:09 IST" duration-ms="41153">
+      <class name="com.zenken.freshers.user.FieldOfStudy">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:28 IST" name="setup" finished-at="2024-11-12T14:20:30 IST" duration-ms="1853" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCancelRedirection()]]>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:19 IST" name="testSetUp" finished-at="2024-11-11T17:51:27 IST" duration-ms="7938" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:30 IST" name="setUpTest" finished-at="2024-11-12T14:20:38 IST" duration-ms="7939" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyCancelRedirection()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:27 IST" name="verifyCancelRedirection" description="This test verifies that the user is redirected to preview page upon clicking on &#039;Cancel&#039; button on Job Preference edit page" finished-at="2024-11-11T17:51:29 IST" duration-ms="2054" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method retried="true" signature="verifyITOptionSelection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:38 IST" name="verifyITOptionSelection" description="This test verifies that an IT option can be saved and is displayed accordingly on preview page" finished-at="2024-11-12T14:20:41 IST" duration-ms="3548" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Area of research is incorrect expected [ITa] but found [IT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCancelRedirection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:29 IST" name="tearDown" finished-at="2024-11-11T17:51:29 IST" duration-ms="215" status="PASS">
+        </test-method> <!-- verifyITOptionSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:41 IST" name="tearDown" finished-at="2024-11-12T14:20:41 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:29 IST" name="setup" finished-at="2024-11-11T17:51:30 IST" duration-ms="776" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:41 IST" name="setup" finished-at="2024-11-12T14:20:42 IST" duration-ms="776" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCharExceedFirstPref()]]>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:30 IST" name="testSetUp" finished-at="2024-11-11T17:51:39 IST" duration-ms="9730" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:42 IST" name="setUpTest" finished-at="2024-11-12T14:20:51 IST" duration-ms="8668" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyCharExceedFirstPref()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:39 IST" name="verifyCharExceedFirstPref" description="The test verifies that validation error for maximum characters occurs: First Preference" finished-at="2024-11-11T17:51:43 IST" duration-ms="3260" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method retried="true" signature="verifyITOptionSelection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:51 IST" name="verifyITOptionSelection" description="This test verifies that an IT option can be saved and is displayed accordingly on preview page" finished-at="2024-11-12T14:20:54 IST" duration-ms="3176" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Area of research is incorrect expected [ITa] but found [IT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCharExceedFirstPref -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:43 IST" name="tearDown" finished-at="2024-11-11T17:51:43 IST" duration-ms="235" status="PASS">
+        </test-method> <!-- verifyITOptionSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:54 IST" name="tearDown" finished-at="2024-11-12T14:20:54 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:43 IST" name="setup" finished-at="2024-11-11T17:51:44 IST" duration-ms="774" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:54 IST" name="setup" finished-at="2024-11-12T14:20:55 IST" duration-ms="779" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCharExceedSecondPref()]]>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:44 IST" name="testSetUp" finished-at="2024-11-11T17:51:54 IST" duration-ms="10225" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:20:55 IST" name="setUpTest" finished-at="2024-11-12T14:21:04 IST" duration-ms="9558" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyCharExceedSecondPref()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:54 IST" name="verifyCharExceedSecondPref" description="The test verifies that validation error for maximum characters occurs: Second Preference" finished-at="2024-11-11T17:51:57 IST" duration-ms="3141" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOptionSelection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:21:04 IST" name="verifyITOptionSelection" description="This test verifies that an IT option can be saved and is displayed accordingly on preview page" finished-at="2024-11-12T14:21:08 IST" duration-ms="3697" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Area of research is incorrect expected [ITa] but found [IT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCharExceedSecondPref -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:57 IST" name="tearDown" finished-at="2024-11-11T17:51:57 IST" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:57 IST" name="setup" finished-at="2024-11-11T17:51:58 IST" duration-ms="775" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCharExceedThirdPref()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:51:58 IST" name="testSetUp" finished-at="2024-11-11T17:52:08 IST" duration-ms="9867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyCharExceedThirdPref()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:08 IST" name="verifyCharExceedThirdPref" description="The test verifies that validation error for maximum characters occurs: Third Preference" finished-at="2024-11-11T17:52:11 IST" duration-ms="3162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCharExceedThirdPref -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:11 IST" name="tearDown" finished-at="2024-11-11T17:52:11 IST" duration-ms="231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:11 IST" name="setup" finished-at="2024-11-11T17:52:12 IST" duration-ms="750" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyFirstPreferenceStates()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:12 IST" name="testSetUp" finished-at="2024-11-11T17:52:23 IST" duration-ms="11318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyFirstPreferenceStates()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:23 IST" name="verifyFirstPreferenceStates" description="This test verifies the activation and deactivation of First Preference text box based on the option selected from the dropdown" finished-at="2024-11-11T17:52:32 IST" duration-ms="8973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFirstPreferenceStates -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:32 IST" name="tearDown" finished-at="2024-11-11T17:52:33 IST" duration-ms="237" status="PASS">
+        </test-method> <!-- verifyITOptionSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@51bf5add]" started-at="2024-11-12T14:21:09 IST" name="tearDown" finished-at="2024-11-12T14:21:09 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:33 IST" name="setup" finished-at="2024-11-11T17:52:33 IST" duration-ms="724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyJobPreferenceUrl()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:33 IST" name="testSetUp" finished-at="2024-11-11T17:52:43 IST" duration-ms="9334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyJobPreferenceUrl()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:43 IST" name="verifyJobPreferenceUrl" description="This test verifies that user is redirected to Job Preferences edit page" finished-at="2024-11-11T17:52:43 IST" duration-ms="46" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyJobPreferenceUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:43 IST" name="tearDown" finished-at="2024-11-11T17:52:43 IST" duration-ms="200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:43 IST" name="setup" finished-at="2024-11-11T17:52:44 IST" duration-ms="776" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyPlaceholders()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:44 IST" name="testSetUp" finished-at="2024-11-11T17:52:53 IST" duration-ms="9197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyPlaceholders()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:53 IST" name="verifyPlaceholders" description="This test verifies that the placeholders displayed are correct for all text boxes on Job Preferences edit page" finished-at="2024-11-11T17:52:53 IST" duration-ms="121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPlaceholders -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:53 IST" name="tearDown" finished-at="2024-11-11T17:52:53 IST" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:53 IST" name="setup" finished-at="2024-11-11T17:52:54 IST" duration-ms="724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyPreferencesOtherValue()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:52:54 IST" name="testSetUp" finished-at="2024-11-11T17:53:04 IST" duration-ms="9815" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyPreferencesOtherValue()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:04 IST" name="verifyPreferencesOtherValue" description="This test verifies that &#039;Other&#039; values entered are displayed accordingly on preview page" finished-at="2024-11-11T17:53:09 IST" duration-ms="4940" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPreferencesOtherValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:09 IST" name="tearDown" finished-at="2024-11-11T17:53:09 IST" duration-ms="189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:09 IST" name="setup" finished-at="2024-11-11T17:53:10 IST" duration-ms="764" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyPreferencesValues()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:10 IST" name="testSetUp" finished-at="2024-11-11T17:53:19 IST" duration-ms="9534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyPreferencesValues()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:19 IST" name="verifyPreferencesValues" description="This test verifies that jon preferences can be saved and their values are displayed accordingly on preview page" finished-at="2024-11-11T17:53:24 IST" duration-ms="4357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPreferencesValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:24 IST" name="tearDown" finished-at="2024-11-11T17:53:24 IST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:24 IST" name="setup" finished-at="2024-11-11T17:53:24 IST" duration-ms="719" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyRequiredToApplyTexts()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:24 IST" name="testSetUp" finished-at="2024-11-11T17:53:35 IST" duration-ms="10083" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyRequiredToApplyTexts()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:35 IST" name="verifyRequiredToApplyTexts" description="This test verifies that &#039;Required to apply&#039; text is displayed" finished-at="2024-11-11T17:53:39 IST" duration-ms="4760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRequiredToApplyTexts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:39 IST" name="tearDown" finished-at="2024-11-11T17:53:40 IST" duration-ms="197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:40 IST" name="setup" finished-at="2024-11-11T17:53:40 IST" duration-ms="704" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifySecondPreferenceStates()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:40 IST" name="testSetUp" finished-at="2024-11-11T17:53:50 IST" duration-ms="9925" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifySecondPreferenceStates()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:50 IST" name="verifySecondPreferenceStates" description="This test verifies the activation and deactivation of Second Preference text box based on the option selected from the dropdown" finished-at="2024-11-11T17:53:59 IST" duration-ms="8646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySecondPreferenceStates -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:59 IST" name="tearDown" finished-at="2024-11-11T17:53:59 IST" duration-ms="204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:53:59 IST" name="setup" finished-at="2024-11-11T17:54:00 IST" duration-ms="759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyThirdPreferenceStates()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:54:00 IST" name="testSetUp" finished-at="2024-11-11T17:54:10 IST" duration-ms="10543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method signature="verifyThirdPreferenceStates()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:54:10 IST" name="verifyThirdPreferenceStates" description="This test verifies the activation and deactivation of Third Preference text box based on the option selected from the dropdown" finished-at="2024-11-11T17:54:19 IST" duration-ms="8534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThirdPreferenceStates -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@b86de0d]" started-at="2024-11-11T17:54:19 IST" name="tearDown" finished-at="2024-11-11T17:54:19 IST" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.JobPreferences -->
+      </class> <!-- com.zenken.freshers.user.FieldOfStudy -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

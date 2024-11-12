@@ -7,30 +7,14 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.BasicInformation">
+      <class name="com.zenken.freshers.user.FieldOfStudy">
         <methods>
-          <include name="verifyFirstNameValue"/>
-          <include name="verifyPinCodeValue"/>
-          <include name="verifyNationalityValue"/>
-          <include name="verifyStateValue"/>
-          <include name="verifySexValue"/>
-          <include name="verifyAddressValue"/>
-          <include name="verifyLastNameValue"/>
-          <include name="verifyPhoneValue"/>
-          <include name="tearDown"/>
-          <include name="verifyTimeInJapanValue"/>
-          <include name="verifyMiddleNameValue"/>
-          <include name="verifyHobbyValue"/>
-          <include name="verifyDobValue"/>
-          <include name="verifyCityValue"/>
-          <include name="verifyTimeNotSureValue"/>
-          <include name="verifyEmail2Value"/>
-          <include name="verifyCountryValue"/>
-          <include name="verifyEmail1Value"/>
+          <include name="verifyITOptionSelection"/>
           <include name="setUpTest"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.BasicInformation -->
+      </class> <!-- com.zenken.freshers.user.FieldOfStudy -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,76 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCancelRedirection">verifyCancelRedirection</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.FieldOfStudy" class="method navigator-link" hash-for-method="verifyITOptionSelection">verifyITOptionSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.FieldOfStudy" class="method navigator-link" hash-for-method="verifyITOptionSelection">verifyITOptionSelection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCharExceedFirstPref">verifyCharExceedFirstPref</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.FieldOfStudy" class="method navigator-link" hash-for-method="verifyITOptionSelection">verifyITOptionSelection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCharExceedSecondPref">verifyCharExceedSecondPref</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyCharExceedThirdPref">verifyCharExceedThirdPref</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyFirstPreferenceStates">verifyFirstPreferenceStates</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyJobPreferenceUrl">verifyJobPreferenceUrl</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyPlaceholders">verifyPlaceholders</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyPreferencesOtherValue">verifyPreferencesOtherValue</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyPreferencesValues">verifyPreferencesValues</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyRequiredToApplyTexts">verifyRequiredToApplyTexts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifySecondPreferenceStates">verifySecondPreferenceStates</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JobPreferences" class="method navigator-link" hash-for-method="verifyThirdPreferenceStates">verifyThirdPreferenceStates</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -173,122 +137,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zenken.freshers.user.JobPreferences</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.zenken.freshers.user.FieldOfStudy</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCancelRedirection">
-                  </a> <!-- verifyCancelRedirection -->
-                  <span class="method-name">verifyCancelRedirection</span>
+                  <a name="verifyITOptionSelection">
+                  </a> <!-- verifyITOptionSelection -->
+                  <span class="method-name">verifyITOptionSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
+	at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(This test verifies that the user is redirected to preview page upon clicking on 'Cancel' button on Job Preference edit page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCharExceedFirstPref">
-                  </a> <!-- verifyCharExceedFirstPref -->
-                  <span class="method-name">verifyCharExceedFirstPref</span>
-                  <em>
-(The test verifies that validation error for maximum characters occurs: First Preference)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCharExceedSecondPref">
-                  </a> <!-- verifyCharExceedSecondPref -->
-                  <span class="method-name">verifyCharExceedSecondPref</span>
-                  <em>
-(The test verifies that validation error for maximum characters occurs: Second Preference)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCharExceedThirdPref">
-                  </a> <!-- verifyCharExceedThirdPref -->
-                  <span class="method-name">verifyCharExceedThirdPref</span>
-                  <em>
-(The test verifies that validation error for maximum characters occurs: Third Preference)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyFirstPreferenceStates">
-                  </a> <!-- verifyFirstPreferenceStates -->
-                  <span class="method-name">verifyFirstPreferenceStates</span>
-                  <em>
-(This test verifies the activation and deactivation of First Preference text box based on the option selected from the dropdown)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyJobPreferenceUrl">
-                  </a> <!-- verifyJobPreferenceUrl -->
-                  <span class="method-name">verifyJobPreferenceUrl</span>
-                  <em>
-(This test verifies that user is redirected to Job Preferences edit page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPlaceholders">
-                  </a> <!-- verifyPlaceholders -->
-                  <span class="method-name">verifyPlaceholders</span>
-                  <em>
-(This test verifies that the placeholders displayed are correct for all text boxes on Job Preferences edit page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPreferencesOtherValue">
-                  </a> <!-- verifyPreferencesOtherValue -->
-                  <span class="method-name">verifyPreferencesOtherValue</span>
-                  <em>
-(This test verifies that 'Other' values entered are displayed accordingly on preview page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPreferencesValues">
-                  </a> <!-- verifyPreferencesValues -->
-                  <span class="method-name">verifyPreferencesValues</span>
-                  <em>
-(This test verifies that jon preferences can be saved and their values are displayed accordingly on preview page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRequiredToApplyTexts">
-                  </a> <!-- verifyRequiredToApplyTexts -->
-                  <span class="method-name">verifyRequiredToApplyTexts</span>
-                  <em>
-(This test verifies that 'Required to apply' text is displayed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySecondPreferenceStates">
-                  </a> <!-- verifySecondPreferenceStates -->
-                  <span class="method-name">verifySecondPreferenceStates</span>
-                  <em>
-(This test verifies the activation and deactivation of Second Preference text box based on the option selected from the dropdown)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyThirdPreferenceStates">
-                  </a> <!-- verifyThirdPreferenceStates -->
-                  <span class="method-name">verifyThirdPreferenceStates</span>
-                  <em>
-(This test verifies the activation and deactivation of Third Preference text box based on the option selected from the dropdown)                  </em>
+(This test verifies that an IT option can be saved and is displayed accordingly on preview page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.zenken.freshers.user.FieldOfStudy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyITOptionSelection">
+                  </a> <!-- verifyITOptionSelection -->
+                  <span class="method-name">verifyITOptionSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
+	at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that an IT option can be saved and is displayed accordingly on preview page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyITOptionSelection">
+                  </a> <!-- verifyITOptionSelection -->
+                  <span class="method-name">verifyITOptionSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
+	at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that an IT option can be saved and is displayed accordingly on preview page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -305,7 +223,11 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.JobPreferences&quot;/&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.FieldOfStudy&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyITOptionSelection&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.FieldOfStudy --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -345,60 +267,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyFirstPreferenceStates')
-data.setCell(0, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(0, 3, 8973);
+data.setCell(0, 1, 'verifyITOptionSelection')
+data.setCell(0, 2, 'com.zenken.freshers.user.FieldOfStudy')
+data.setCell(0, 3, 3697);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySecondPreferenceStates')
-data.setCell(1, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(1, 3, 8646);
+data.setCell(1, 1, 'verifyITOptionSelection')
+data.setCell(1, 2, 'com.zenken.freshers.user.FieldOfStudy')
+data.setCell(1, 3, 3548);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyThirdPreferenceStates')
-data.setCell(2, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(2, 3, 8534);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyPreferencesOtherValue')
-data.setCell(3, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(3, 3, 4940);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyRequiredToApplyTexts')
-data.setCell(4, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(4, 3, 4760);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyPreferencesValues')
-data.setCell(5, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(5, 3, 4357);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyCharExceedFirstPref')
-data.setCell(6, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(6, 3, 3260);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyCharExceedThirdPref')
-data.setCell(7, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(7, 3, 3162);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyCharExceedSecondPref')
-data.setCell(8, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(8, 3, 3141);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyCancelRedirection')
-data.setCell(9, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(9, 3, 2054);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyPlaceholders')
-data.setCell(10, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(10, 3, 121);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyJobPreferenceUrl')
-data.setCell(11, 2, 'com.zenken.freshers.user.JobPreferences')
-data.setCell(11, 3, 46);
+data.setCell(2, 1, 'verifyITOptionSelection')
+data.setCell(2, 2, 'com.zenken.freshers.user.FieldOfStudy')
+data.setCell(2, 3, 3176);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -413,9 +299,50 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">18 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zenken.freshers.user.FieldOfStudy</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyCoreOtherPlaceholder</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreOtherCharExceedError</span>
+                <br/>
+                <span class="ignored-method-name">verifyITOtherTextBoxStates</span>
+                <br/>
+                <span class="ignored-method-name">verifyCancelRedirection</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreOtherTextBoxStates</span>
+                <br/>
+                <span class="ignored-method-name">verifyResearchRequired</span>
+                <br/>
+                <span class="ignored-method-name">verifyITFieldRequired</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreOtherField</span>
+                <br/>
+                <span class="ignored-method-name">verifyFieldOfStudyUrl</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreOptionSelection</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreFieldRequired</span>
+                <br/>
+                <span class="ignored-method-name">verifyITOtherPlaceholder</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreOptions</span>
+                <br/>
+                <span class="ignored-method-name">verifyITOtherCharExceedError</span>
+                <br/>
+                <span class="ignored-method-name">verifyITOtherField</span>
+                <br/>
+                <span class="ignored-method-name">verifyITOptions</span>
+                <br/>
+                <span class="ignored-method-name">verifyCoreOtherFieldRequired</span>
+                <br/>
+                <span class="ignored-method-name">verifyITOtherFieldRequired</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -424,198 +351,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.JobPreferences</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zenken.freshers.user.FieldOfStudy</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCancelRedirection())</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">1825 ms</span>
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">1853 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCancelRedirection</span>
-                <span class="method-start">9763 ms</span>
+                <span class="method-name">verifyITOptionSelection</span>
+                <span class="method-start">9792 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11825 ms</span>
+                <span class="method-start">13350 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCharExceedFirstPref())</span>
-                <span class="method-start">12040 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection())</span>
+                <span class="method-start">13530 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">12819 ms</span>
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">14306 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCharExceedFirstPref</span>
-                <span class="method-start">22549 ms</span>
+                <span class="method-name">verifyITOptionSelection</span>
+                <span class="method-start">22974 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25811 ms</span>
+                <span class="method-start">26154 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCharExceedSecondPref())</span>
-                <span class="method-start">26046 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection())</span>
+                <span class="method-start">26311 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">26820 ms</span>
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">27090 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCharExceedSecondPref</span>
-                <span class="method-start">37045 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyITOptionSelection</span>
+                <span class="method-start">36649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40189 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyCharExceedThirdPref())</span>
-                <span class="method-start">40376 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">41152 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCharExceedThirdPref</span>
-                <span class="method-start">51019 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54183 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyFirstPreferenceStates())</span>
-                <span class="method-start">54414 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">55165 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyFirstPreferenceStates</span>
-                <span class="method-start">66484 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">75459 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyJobPreferenceUrl())</span>
-                <span class="method-start">75696 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">76420 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyJobPreferenceUrl</span>
-                <span class="method-start">85754 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">85801 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyPlaceholders())</span>
-                <span class="method-start">86001 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">86777 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPlaceholders</span>
-                <span class="method-start">95975 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">96098 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyPreferencesOtherValue())</span>
-                <span class="method-start">96284 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">97008 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPreferencesOtherValue</span>
-                <span class="method-start">106824 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">111764 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyPreferencesValues())</span>
-                <span class="method-start">111953 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">112718 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPreferencesValues</span>
-                <span class="method-start">122256 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">126615 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyRequiredToApplyTexts())</span>
-                <span class="method-start">126825 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">127544 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyRequiredToApplyTexts</span>
-                <span class="method-start">137627 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">142387 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifySecondPreferenceStates())</span>
-                <span class="method-start">142584 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">143288 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySecondPreferenceStates</span>
-                <span class="method-start">153213 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">161861 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JobPreferences.verifyThirdPreferenceStates())</span>
-                <span class="method-start">162065 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">162824 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyThirdPreferenceStates</span>
-                <span class="method-start">173367 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">181903 ms</span>
+                <span class="method-start">40983 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

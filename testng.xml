@@ -7,7 +7,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.JobPreferences">
+      <class name="com.zenken.freshers.user.FieldOfStudy">
+        <methods><include name="verifyITOptionSelection"></include></methods>
       </class> 
     </classes>
   </test> <!-- Test -->
