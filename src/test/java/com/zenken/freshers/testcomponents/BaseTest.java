@@ -20,12 +20,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -33,6 +33,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	public WebDriver driver;
+	public ExtentReports extent;
 	
 	public String username = "yaaayfreshersuser";
 	public String password = "Kajibyw6.";
@@ -82,6 +83,7 @@ public class BaseTest {
 //		options2.addPreference("browser.tabs.remote.autostart", false);
 		currentTestMethod.set(method.getName());
 		initializeDriver(options, options2);
+		
 	}
 	
 	public WebDriver setup() throws IOException
@@ -161,6 +163,9 @@ public class BaseTest {
 				reuseBrowserSession = true;//ブラウザを再利用するようにフラグを設定
 			}
 		}
+//		if(extent != null) {
+//			extent.flush();
+//		}
 	}
 	
 	public Properties getProperties() throws IOException

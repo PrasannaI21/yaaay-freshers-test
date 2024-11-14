@@ -2,7 +2,9 @@ package com.zenken.freshers.testcomponents;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.IConfigurationListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -18,6 +20,7 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 	ExtentReports extent = ExtentReporter.getReportObject();
 	ExtentTest test;
 	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+	private static boolean isBrowserInfoSet = false;
 	
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -27,6 +30,20 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 		test = extent.createTest(result.getMethod().getMethodName(), description);
 		test.assignCategory(featureName);
 		extentTest.set(test);
+		if(!isBrowserInfoSet) {
+			try {
+				driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			if(driver != null) {
+				Capabilities capabilities = ((RemoteWebDriver)driver).getCapabilities();
+				extent.setSystemInfo("Browser", capabilities.getBrowserName());
+				extent.setSystemInfo("Browser Version", capabilities.getBrowserVersion());
+				isBrowserInfoSet = true;
+			}
+		}
 	}
 
 	@Override
@@ -80,7 +97,6 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
