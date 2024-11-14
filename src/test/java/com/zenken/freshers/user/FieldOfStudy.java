@@ -161,14 +161,16 @@ public class FieldOfStudy extends BaseTest{
 	}
 	
 	@Test(description="This test verifies that an IT option can be saved and is displayed accordingly on preview page")
-	public void verifyITOptionSelection()
+	public void verifyITOptionSelection() throws InterruptedException
 	{
+//		Thread.sleep(2000);
 		log("Step 1: Click on Field of Study edit icon");
 		log("Step 2: Select 'IT' option from 'What is your main area of research and study?' dropdown");
 		editField.selectFieldDropdown(2);
 		log("Step 3: Click on radio button for \"Data Science\"");
 		editField.selectITOption(6);
 		log("Step 4: Click on 'Save' button");
+//		Thread.sleep(5000);
 		editField.clickSave();
 		log("Step 5: Verify: Snackbar, Section display, Tab selection");
 		redirectionAssertions("#FieldOfStudy");

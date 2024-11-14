@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,40 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.FieldOfStudy" class="method navigator-link" hash-for-method="verifyITOptionSelection">verifyITOptionSelection</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySettingsUrl">verifySettingsUrl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.FieldOfStudy" class="method navigator-link" hash-for-method="verifyITOptionSelection">verifyITOptionSelection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.FieldOfStudy" class="method navigator-link" hash-for-method="verifyITOptionSelection">verifyITOptionSelection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,76 +118,23 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.zenken.freshers.user.FieldOfStudy</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.zenken.freshers.user.Settings</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyITOptionSelection">
-                  </a> <!-- verifyITOptionSelection -->
-                  <span class="method-name">verifyITOptionSelection</span>
-                  <div class="stack-trace">java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
-	at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifySettingsUrl">
+                  </a> <!-- verifySettingsUrl -->
+                  <span class="method-name">verifySettingsUrl</span>
                   <em>
-(This test verifies that an IT option can be saved and is displayed accordingly on preview page)                  </em>
+(This test verifies that user is redirected to 'Settings' edit page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.zenken.freshers.user.FieldOfStudy</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyITOptionSelection">
-                  </a> <!-- verifyITOptionSelection -->
-                  <span class="method-name">verifyITOptionSelection</span>
-                  <div class="stack-trace">java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
-	at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(This test verifies that an IT option can be saved and is displayed accordingly on preview page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyITOptionSelection">
-                  </a> <!-- verifyITOptionSelection -->
-                  <span class="method-name">verifyITOptionSelection</span>
-                  <div class="stack-trace">java.lang.AssertionError: Area of research is incorrect expected [ITa] but found [IT]
-	at com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection(FieldOfStudy.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(This test verifies that an IT option can be saved and is displayed accordingly on preview page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -223,11 +151,11 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.FieldOfStudy&quot;&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.Settings&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyITOptionSelection&quot;/&gt;
+          &lt;include name=&quot;verifySettingsUrl&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.FieldOfStudy --&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Settings --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -267,24 +195,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyITOptionSelection')
-data.setCell(0, 2, 'com.zenken.freshers.user.FieldOfStudy')
-data.setCell(0, 3, 3547);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyITOptionSelection')
-data.setCell(1, 2, 'com.zenken.freshers.user.FieldOfStudy')
-data.setCell(1, 3, 3284);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyITOptionSelection')
-data.setCell(2, 2, 'com.zenken.freshers.user.FieldOfStudy')
-data.setCell(2, 3, 3230);
+data.setCell(0, 1, 'verifySettingsUrl')
+data.setCell(0, 2, 'com.zenken.freshers.user.Settings')
+data.setCell(0, 3, 852);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 852 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -299,47 +219,19 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">18 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.zenken.freshers.user.FieldOfStudy</span>
+              <span class="ignored-class-name">com.zenken.freshers.user.Settings</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyCoreOtherPlaceholder</span>
+                <span class="ignored-method-name">verifySetSelected</span>
                 <br/>
-                <span class="ignored-method-name">verifyCoreOtherCharExceedError</span>
+                <span class="ignored-method-name">verifySetNotSelected</span>
                 <br/>
-                <span class="ignored-method-name">verifyITOtherTextBoxStates</span>
+                <span class="ignored-method-name">verifySetDesTexts</span>
                 <br/>
-                <span class="ignored-method-name">verifyCancelRedirection</span>
-                <br/>
-                <span class="ignored-method-name">verifyCoreOtherTextBoxStates</span>
-                <br/>
-                <span class="ignored-method-name">verifyResearchRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyITFieldRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyCoreOtherField</span>
-                <br/>
-                <span class="ignored-method-name">verifyFieldOfStudyUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyCoreOptionSelection</span>
-                <br/>
-                <span class="ignored-method-name">verifyCoreFieldRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyITOtherPlaceholder</span>
-                <br/>
-                <span class="ignored-method-name">verifyCoreOptions</span>
-                <br/>
-                <span class="ignored-method-name">verifyITOtherCharExceedError</span>
-                <br/>
-                <span class="ignored-method-name">verifyITOtherField</span>
-                <br/>
-                <span class="ignored-method-name">verifyITOptions</span>
-                <br/>
-                <span class="ignored-method-name">verifyCoreOtherFieldRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyITOtherFieldRequired</span>
+                <span class="ignored-method-name">verifySettingsTitle</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -351,56 +243,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.FieldOfStudy</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection())</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsUrl() throws java.lang.InterruptedExcept...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpTest</span>
-                <span class="method-start">1203 ms</span>
+                <span class="method-start">2424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyITOptionSelection</span>
-                <span class="method-start">10440 ms</span>
+                <span class="method-name">verifySettingsUrl</span>
+                <span class="method-start">9827 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13993 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection())</span>
-                <span class="method-start">14170 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">14939 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyITOptionSelection</span>
-                <span class="method-start">24781 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">28073 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection())</span>
-                <span class="method-start">28244 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">29016 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyITOptionSelection</span>
-                <span class="method-start">37513 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">41906 ms</span>
+                <span class="method-start">10692 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

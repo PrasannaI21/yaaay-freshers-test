@@ -28,10 +28,12 @@ public class Settings extends BaseTest{
 	}
 	
 	@Test(description="This test verifies that user is redirected to 'Settings' edit page")
-	public void verifySettingsUrl()
+	public void verifySettingsUrl() throws InterruptedException
 	{
+//		Thread.sleep(3000);
 		log("Step 1: Click on Settings edit icon");
 		profilePreview.clickSettingsEdit();
+//		Thread.sleep(3000);
 		log("Step 2: Verify that URL and page headline are correct");
 		Assert.assertEquals(profilePreview.getPageUrl(), properties.getProperty("url17"));
 		Assert.assertEquals(settings.getSettingsHeadline(), "Settings");

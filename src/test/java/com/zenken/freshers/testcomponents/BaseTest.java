@@ -13,12 +13,16 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -64,26 +68,47 @@ public class BaseTest {
 		options.addArguments("--disable-gpu");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
+		FirefoxOptions options2 = new FirefoxOptions();
+//		options2.addArguments("-profile", "path_to_clean_profile_directory");
+//		options2.setCapability("marionette", true);
+//		options2.setLogLevel(FirefoxDriverLogLevel.TRACE);
+//		options2.addArguments("--headless");
+//		options2.addPreference("dom.max_script_run_time", 0);
+//		options2.addPreference("layout.css.devPixelsPerPx", "1.0");
+		options2.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+//		options2.addPreference("network.http.speculative-parallel-limit", 0);
+//		options2.addPreference("network.http.max-persistent-connections-per-server", 6);
+//		options2.addPreference("dom.webnotifications.enabled", false);
+//		options2.addPreference("browser.tabs.remote.autostart", false);
 		currentTestMethod.set(method.getName());
-		initializeDriver(options);
+		initializeDriver(options, options2);
 	}
 	
-	public WebDriver setup()
+	public WebDriver setup() throws IOException
 	{
 		ChromeOptions options = new ChromeOptions();
-		initializeDriver(options);
+		FirefoxOptions options2 = new FirefoxOptions();
+		initializeDriver(options, options2);
 		return driver;
 	}
 	
-	public void initializeDriver(ChromeOptions options)
+	public void initializeDriver(ChromeOptions options, FirefoxOptions options2) throws IOException
 	{
-		if(!reuseBrowserSession)
+		if(!reuseBrowserSession)//セッションを再利用しない場合のみにWebDriverを初期化
 		{
-			//セッションを再利用しない場合のみにWebDriverを初期化
-//			WebDriverManager.edgedriver().setup();
-			WebDriverManager.chromedriver().setup();
-//			driver = new EdgeDriver();
-			driver = new ChromeDriver(options);
+			String browser = System.getProperty("browser") != null ? System.getProperty("browser") : 
+					getProperties().getProperty("browser");
+			if(browser.equalsIgnoreCase("chrome")) {
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver(options);
+			}else if(browser.equalsIgnoreCase("firefox")) {
+				WebDriverManager.firefoxdriver().setup();
+//				System.setProperty("webdriver.gecko.driver", "C:\\Users\\prasa\\Downloads\\geckodriver-v0.35.0-win-aarch64\\geckodriver.exe");
+				driver = new FirefoxDriver(options2);
+			}else if(browser.equalsIgnoreCase("edge")) {
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver();
+			}
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
