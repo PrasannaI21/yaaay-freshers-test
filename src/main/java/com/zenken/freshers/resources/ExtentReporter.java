@@ -16,7 +16,8 @@ public class ExtentReporter {
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(reporter);	
 		extent.setSystemInfo("Tester", "プラサナ");
-		extent.setSystemInfo("Operating System", "Windows");
+		extent.setSystemInfo("Operating System", System.getProperty("os.name"));
+		extent.setSystemInfo("Java Version", System.getProperty("java.version"));
 		return extent;
 	}
 }

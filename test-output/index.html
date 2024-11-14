@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,21 +101,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySetDesTexts">verifySetDesTexts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySetNotSelected">verifySetNotSelected</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySetSelected">verifySetSelected</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySettingsTitle">verifySettingsTitle</a> <!-- method navigator-link -->
@@ -144,33 +129,6 @@
               <span class="class-name">com.zenken.freshers.user.Settings</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySetDesTexts">
-                  </a> <!-- verifySetDesTexts -->
-                  <span class="method-name">verifySetDesTexts</span>
-                  <em>
-(This test verifies that the texts describing 'Yaaay Midcareer' and 'Zenken Newsletter' are correct)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySetNotSelected">
-                  </a> <!-- verifySetNotSelected -->
-                  <span class="method-name">verifySetNotSelected</span>
-                  <em>
-(This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are NOT selected)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySetSelected">
-                  </a> <!-- verifySetSelected -->
-                  <span class="method-name">verifySetSelected</span>
-                  <em>
-(This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are selected)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifySettingsTitle">
@@ -207,7 +165,12 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Settings&quot;/&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.Settings&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifySettingsUrl&quot;/&gt;
+          &lt;include name=&quot;verifySettingsTitle&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Settings --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -247,32 +210,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySetNotSelected')
+data.setCell(0, 1, 'verifySettingsUrl')
 data.setCell(0, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(0, 3, 4507);
+data.setCell(0, 3, 1129);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySetSelected')
+data.setCell(1, 1, 'verifySettingsTitle')
 data.setCell(1, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(1, 3, 4131);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySetDesTexts')
-data.setCell(2, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(2, 3, 885);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySettingsTitle')
-data.setCell(3, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(3, 3, 863);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySettingsUrl')
-data.setCell(4, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(4, 3, 791);
+data.setCell(1, 3, 805);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -287,9 +238,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zenken.freshers.user.Settings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifySetSelected</span>
+                <br/>
+                <span class="ignored-method-name">verifySetNotSelected</span>
+                <br/>
+                <span class="ignored-method-name">verifySetDesTexts</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -300,84 +262,36 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySetDesTexts())</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsUrl() throws java.lang.InterruptedExcept...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpTest</span>
-                <span class="method-start">1452 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySetDesTexts</span>
-                <span class="method-start">10434 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">11327 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySetNotSelected())</span>
-                <span class="method-start">11581 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">12596 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySetNotSelected</span>
-                <span class="method-start">22437 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">26944 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySetSelected())</span>
-                <span class="method-start">27197 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">28067 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySetSelected</span>
-                <span class="method-start">37854 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">41989 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsTitle())</span>
-                <span class="method-start">42232 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">43162 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySettingsTitle</span>
-                <span class="method-start">53191 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54056 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsUrl() throws java.lang.InterruptedExcept...)</span>
-                <span class="method-start">54276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">55118 ms</span>
+                <span class="method-start">1531 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySettingsUrl</span>
-                <span class="method-start">64328 ms</span>
+                <span class="method-start">11064 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65121 ms</span>
+                <span class="method-start">12193 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsTitle())</span>
+                <span class="method-start">12638 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">13591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySettingsTitle</span>
+                <span class="method-start">22456 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23273 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
