@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T17:18:03 IST" name="Suite" finished-at="2024-11-14T17:18:27 IST" duration-ms="23688">
+  <suite started-at="2024-11-14T17:23:42 IST" name="Default suite" finished-at="2024-11-14T17:23:55 IST" duration-ms="13138">
     <groups>
     </groups>
-    <test started-at="2024-11-14T17:18:03 IST" name="Test" finished-at="2024-11-14T17:18:27 IST" duration-ms="23688">
+    <test started-at="2024-11-14T17:23:42 IST" name="Default test" finished-at="2024-11-14T17:23:55 IST" duration-ms="13138">
       <class name="com.zenken.freshers.user.Settings">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:03 IST" name="setup" finished-at="2024-11-14T17:18:05 IST" duration-ms="1530" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@1ff4931d]" started-at="2024-11-14T17:23:42 IST" name="setup" finished-at="2024-11-14T17:23:44 IST" duration-ms="1713" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,42 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:05 IST" name="setUpTest" finished-at="2024-11-14T17:18:14 IST" duration-ms="9533" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@1ff4931d]" started-at="2024-11-14T17:23:44 IST" name="setUpTest" finished-at="2024-11-14T17:23:54 IST" duration-ms="10144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifySettingsUrl()[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:14 IST" name="verifySettingsUrl" description="This test verifies that user is redirected to &#039;Settings&#039; edit page" finished-at="2024-11-14T17:18:15 IST" duration-ms="1129" status="PASS">
+        <test-method signature="verifySettingsUrl()[pri:0, instance:com.zenken.freshers.user.Settings@1ff4931d]" started-at="2024-11-14T17:23:54 IST" name="verifySettingsUrl" description="This test verifies that user is redirected to &#039;Settings&#039; edit page" finished-at="2024-11-14T17:23:55 IST" duration-ms="884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySettingsUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:15 IST" name="tearDown" finished-at="2024-11-14T17:18:16 IST" duration-ms="445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:16 IST" name="setup" finished-at="2024-11-14T17:18:17 IST" duration-ms="953" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Settings.verifySettingsTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:17 IST" name="setUpTest" finished-at="2024-11-14T17:18:25 IST" duration-ms="8865" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySettingsTitle()[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:25 IST" name="verifySettingsTitle" description="This test verifies that Settings page title is correct" finished-at="2024-11-14T17:18:26 IST" duration-ms="805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySettingsTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4808bc9b]" started-at="2024-11-14T17:18:26 IST" name="tearDown" finished-at="2024-11-14T17:18:27 IST" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@1ff4931d]" started-at="2024-11-14T17:23:55 IST" name="tearDown" finished-at="2024-11-14T17:23:55 IST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.zenken.freshers.user.Settings -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

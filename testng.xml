@@ -7,11 +7,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Settings">
-        <methods>
-          <include name="verifySettingsUrl"></include>
-          <include name="verifySettingsTitle"></include>
-        </methods>
+      <class name="com.zenken.freshers.user.Login">
       </class> 
     </classes>
   </test> <!-- Test -->

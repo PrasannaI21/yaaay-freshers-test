@@ -7,14 +7,24 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
     <classes>
-      <class name="com.zenken.freshers.user.Settings">
+      <class name="com.zenken.freshers.user.Login">
         <methods>
           <include name="setUpTest"/>
+          <include name="verifyPasswordResetCompleteHeadline"/>
+          <include name="verifyInvalidTokenOnResetPasswordPage"/>
           <include name="tearDown"/>
-          <include name="verifySetSelected"/>
+          <include name="verifyLogInUrl"/>
+          <include name="verifyPasswordReset"/>
+          <include name="verifyInvalidPassword1OnResetPasswordPage"/>
+          <include name="verifyInvalidPassword3OnResetPasswordPage"/>
+          <include name="verifyInvalidPassword4OnResetPasswordPage"/>
+          <include name="verifyInvalidPassword2OnResetPasswordPage"/>
+          <include name="verifyPasswordResetLink"/>
+          <include name="verifyLogInAfterPasswordChange"/>
+          <include name="verifySamePasswordOnResetPasswordPage"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Settings -->
+      </class> <!-- com.zenken.freshers.user.Login -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
