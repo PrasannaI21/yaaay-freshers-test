@@ -32,7 +32,7 @@ public class Login extends BaseTest{
 	UUID uuid;
 	String passwordResetLink;
 	String emailAddress = "23e51ed7-f1d2-405c-8380-67b86ca0956b@mailslurp.net";
-	String resetPass = "Password_1";//実行する前に現在のパスワードを確認
+	String resetPass = "Password_2";//実行する前に現在のパスワードを確認
 	
 	@BeforeMethod
 	public void setUpTest(ITestResult result) throws IOException
