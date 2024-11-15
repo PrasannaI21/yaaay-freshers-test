@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.zenken.freshers.testcomponents.Listeners"/>
+    <listener class-name="com.zenken.freshers.testcomponents.RetryListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.zenken.freshers.user.Login">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="verifyPasswordResetCompleteHeadline"/>
+          <include name="verifyInvalidTokenOnResetPasswordPage"/>
+          <include name="tearDown"/>
+          <include name="verifyLogInUrl"/>
+          <include name="verifyPasswordReset"/>
+          <include name="verifyInvalidPassword1OnResetPasswordPage"/>
+          <include name="verifyInvalidPassword3OnResetPasswordPage"/>
+          <include name="verifyInvalidPassword4OnResetPasswordPage"/>
+          <include name="verifyInvalidPassword2OnResetPasswordPage"/>
+          <include name="verifyPasswordResetLink"/>
+          <include name="verifyLogInAfterPasswordChange"/>
+          <include name="verifySamePasswordOnResetPasswordPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.zenken.freshers.user.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

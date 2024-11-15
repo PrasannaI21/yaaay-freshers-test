@@ -22,6 +22,9 @@ public class EditJobPreferencesPage extends WebDriverUtils{
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath="//div[.='Job Preferences']")
+	WebElement headlineJP;
+	
 	@FindBy(id="firstPreference")
 	WebElement firstPreferenceDd;
 	
@@ -66,6 +69,11 @@ public class EditJobPreferencesPage extends WebDriverUtils{
 	
 	@FindBy(id="updateCancel")
 	WebElement cancel;
+	
+	public String getJPHeadlineText()
+	{
+		return headlineJP.getText();
+	}
 	
 	public List<String> getPlaceholderTexts()
 	{

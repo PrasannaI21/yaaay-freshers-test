@@ -5,7 +5,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReporter {
-
+	
 	public static ExtentReports getReportObject()
 	{
 		String path = System.getProperty("user.dir")+"\\reports\\index.html";
@@ -14,9 +14,10 @@ public class ExtentReporter {
 		reporter.config().setDocumentTitle("Freshers Automation Test Results");
 		reporter.config().setTheme(Theme.STANDARD);
 		ExtentReports extent = new ExtentReports();
-		extent.attachReporter(reporter);
+		extent.attachReporter(reporter);	
 		extent.setSystemInfo("Tester", "プラサナ");
-		extent.setSystemInfo("Operating System", "Windows");
+		extent.setSystemInfo("Operating System", System.getProperty("os.name"));
+		extent.setSystemInfo("Java Version", System.getProperty("java.version"));
 		return extent;
 	}
 }

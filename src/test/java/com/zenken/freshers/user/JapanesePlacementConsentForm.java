@@ -25,7 +25,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		profilePreview = new ProfilePreviewPage(driver);
 		consentForm = new EditConsetFormPage(driver);
 		navigateTo("/");
-		profilePreview.login("prasanna.inamdar+user2@zenken.co.jp", "Password_1");
+		profilePreview.login("applied_user_26@example.com", "Password_1");
 		properties = getProperties();
 	}
 	
