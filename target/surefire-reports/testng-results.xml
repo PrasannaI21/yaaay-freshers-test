@@ -1,853 +1,427 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T17:47:00 IST" name="Suite" finished-at="2024-11-14T17:50:31 IST" duration-ms="210727">
+  <suite started-at="2024-11-18T17:21:26 IST" name="Suite" finished-at="2024-11-18T17:26:55 IST" duration-ms="328794">
     <groups>
     </groups>
-    <test started-at="2024-11-14T17:47:00 IST" name="Test" finished-at="2024-11-14T17:50:31 IST" duration-ms="210727">
-      <class name="com.zenken.freshers.user.Login">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:00 IST" name="setup" finished-at="2024-11-14T17:47:01 IST" duration-ms="1437" status="PASS">
+    <test started-at="2024-11-18T17:21:26 IST" name="Test" finished-at="2024-11-18T17:26:55 IST" duration-ms="328794">
+      <class name="com.zenken.freshers.user.Internships">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:21:26 IST" name="setup" finished-at="2024-11-18T17:21:28 IST" duration-ms="2002" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyCreateAccountUrl()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntNewUrl()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:01 IST" name="setUpTest" finished-at="2024-11-14T17:47:06 IST" duration-ms="4090" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyCreateAccountUrl()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:21:28 IST" name="setupTest" finished-at="2024-11-18T17:22:02 IST" duration-ms="33812" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCreateAccountUrl()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:06 IST" name="verifyCreateAccountUrl" finished-at="2024-11-14T17:47:07 IST" duration-ms="947" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntNewUrl()[pri:1, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:02 IST" name="verifyIntNewUrl" description="This test verifies that user is redirected to Internships (New) page" finished-at="2024-11-18T17:22:03 IST" duration-ms="953" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCreateAccountUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:07 IST" name="tearDown" finished-at="2024-11-14T17:47:08 IST" duration-ms="1295" status="PASS">
+        </test-method> <!-- verifyIntNewUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:03 IST" name="tearDown" finished-at="2024-11-18T17:22:05 IST" duration-ms="1424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:08 IST" name="setup" finished-at="2024-11-14T17:47:09 IST" duration-ms="912" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:05 IST" name="setup" finished-at="2024-11-18T17:22:06 IST" duration-ms="1031" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyCredentialsMismatch()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyInternshipPageTitle()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:09 IST" name="setUpTest" finished-at="2024-11-14T17:47:11 IST" duration-ms="2022" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyCredentialsMismatch()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:06 IST" name="setupTest" finished-at="2024-11-18T17:22:14 IST" duration-ms="8855" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyCredentialsMismatch()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:11 IST" name="verifyCredentialsMismatch" finished-at="2024-11-14T17:47:13 IST" duration-ms="2622" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyInternshipPageTitle()[pri:2, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:14 IST" name="verifyInternshipPageTitle" description="This test verifies that the Internships page title is correct" finished-at="2024-11-18T17:22:15 IST" duration-ms="998" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCredentialsMismatch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:13 IST" name="tearDown" finished-at="2024-11-14T17:47:15 IST" duration-ms="1297" status="PASS">
+        </test-method> <!-- verifyInternshipPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:15 IST" name="tearDown" finished-at="2024-11-18T17:22:17 IST" duration-ms="1379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:15 IST" name="setup" finished-at="2024-11-14T17:47:15 IST" duration-ms="801" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:17 IST" name="setup" finished-at="2024-11-18T17:22:18 IST" duration-ms="955" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyEmailRequired()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyInternshipPlaceholder()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:15 IST" name="setUpTest" finished-at="2024-11-14T17:47:19 IST" duration-ms="3835" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyEmailRequired()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:18 IST" name="setupTest" finished-at="2024-11-18T17:22:26 IST" duration-ms="8233" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyEmailRequired()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:19 IST" name="verifyEmailRequired" finished-at="2024-11-14T17:47:21 IST" duration-ms="1348" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyInternshipPlaceholder()[pri:3, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:26 IST" name="verifyInternshipPlaceholder" description="This test verifies that expected placeholder for &#039;Internship Details&#039; is displayed" finished-at="2024-11-18T17:22:27 IST" duration-ms="926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEmailRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:21 IST" name="tearDown" finished-at="2024-11-14T17:47:22 IST" duration-ms="1309" status="PASS">
+        </test-method> <!-- verifyInternshipPlaceholder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:27 IST" name="tearDown" finished-at="2024-11-18T17:22:28 IST" duration-ms="1377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:22 IST" name="setup" finished-at="2024-11-14T17:47:23 IST" duration-ms="845" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:28 IST" name="setup" finished-at="2024-11-18T17:22:29 IST" duration-ms="965" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyEmailRequiredOnForgotPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndDateDdDisable()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:23 IST" name="setUpTest" finished-at="2024-11-14T17:47:27 IST" duration-ms="3875" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyEmailRequiredOnForgotPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:29 IST" name="setupTest" finished-at="2024-11-18T17:22:38 IST" duration-ms="8467" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyEmailRequiredOnForgotPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:27 IST" name="verifyEmailRequiredOnForgotPasswordPage" finished-at="2024-11-14T17:47:29 IST" duration-ms="2207" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyEndDateDdDisable()[pri:4, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:38 IST" name="verifyEndDateDdDisable" description="This test verifies that end date dropdowns turn inactive after selecting the checkbox" finished-at="2024-11-18T17:22:39 IST" duration-ms="1053" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEmailRequiredOnForgotPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:29 IST" name="tearDown" finished-at="2024-11-14T17:47:30 IST" duration-ms="1295" status="PASS">
+        </test-method> <!-- verifyEndDateDdDisable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:39 IST" name="tearDown" finished-at="2024-11-18T17:22:40 IST" duration-ms="1330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:30 IST" name="setup" finished-at="2024-11-14T17:47:31 IST" duration-ms="825" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:40 IST" name="setup" finished-at="2024-11-18T17:22:41 IST" duration-ms="942" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyForgotPasswordPageHeadline()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyInternshipAddition()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:31 IST" name="setUpTest" finished-at="2024-11-14T17:47:35 IST" duration-ms="3981" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyForgotPasswordPageHeadline()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:41 IST" name="setupTest" finished-at="2024-11-18T17:22:50 IST" duration-ms="8789" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyForgotPasswordPageHeadline()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:35 IST" name="verifyForgotPasswordPageHeadline" finished-at="2024-11-14T17:47:36 IST" duration-ms="860" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyInternshipAddition()[pri:5, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:50 IST" name="verifyInternshipAddition" description="This test verifies that an internship is added successfully with required to save fields" finished-at="2024-11-18T17:22:54 IST" duration-ms="4149" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyForgotPasswordPageHeadline -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:36 IST" name="tearDown" finished-at="2024-11-14T17:47:37 IST" duration-ms="1287" status="PASS">
+        </test-method> <!-- verifyInternshipAddition -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:54 IST" name="tearDown" finished-at="2024-11-18T17:22:55 IST" duration-ms="1439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:37 IST" name="setup" finished-at="2024-11-14T17:47:38 IST" duration-ms="833" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:55 IST" name="setup" finished-at="2024-11-18T17:22:56 IST" duration-ms="968" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyForgotPasswordPageTitle()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntAdditionWithDetails()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:38 IST" name="setUpTest" finished-at="2024-11-14T17:47:42 IST" duration-ms="3993" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyForgotPasswordPageTitle()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:56 IST" name="setupTest" finished-at="2024-11-18T17:23:05 IST" duration-ms="8746" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyForgotPasswordPageTitle()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:42 IST" name="verifyForgotPasswordPageTitle" finished-at="2024-11-14T17:47:43 IST" duration-ms="838" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntAdditionWithDetails()[pri:6, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:05 IST" name="verifyIntAdditionWithDetails" description="This test verifies that an internship is added successfully with required to save fields along with internship details" finished-at="2024-11-18T17:23:10 IST" duration-ms="4584" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyForgotPasswordPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:43 IST" name="tearDown" finished-at="2024-11-14T17:47:44 IST" duration-ms="1293" status="PASS">
+        </test-method> <!-- verifyIntAdditionWithDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:10 IST" name="tearDown" finished-at="2024-11-18T17:23:11 IST" duration-ms="1390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:44 IST" name="setup" finished-at="2024-11-14T17:47:45 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:11 IST" name="setup" finished-at="2024-11-18T17:23:12 IST" duration-ms="994" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyForgotPasswordUrl()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntEditUrl()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:45 IST" name="setUpTest" finished-at="2024-11-14T17:47:48 IST" duration-ms="2854" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyForgotPasswordUrl()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:12 IST" name="setupTest" finished-at="2024-11-18T17:23:20 IST" duration-ms="8140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyForgotPasswordUrl()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:48 IST" name="verifyForgotPasswordUrl" finished-at="2024-11-14T17:47:49 IST" duration-ms="787" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntEditUrl()[pri:7, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:20 IST" name="verifyIntEditUrl" description="This test verifies that user is redirected to Internships (Edit) page" finished-at="2024-11-18T17:23:21 IST" duration-ms="997" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyForgotPasswordUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:49 IST" name="tearDown" finished-at="2024-11-14T17:47:50 IST" duration-ms="1257" status="PASS">
+        </test-method> <!-- verifyIntEditUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:21 IST" name="tearDown" finished-at="2024-11-18T17:23:23 IST" duration-ms="1335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:50 IST" name="setup" finished-at="2024-11-14T17:47:51 IST" duration-ms="810" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:23 IST" name="setup" finished-at="2024-11-18T17:23:23 IST" duration-ms="874" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyHeadLineText()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntSavedData()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:51 IST" name="setUpTest" finished-at="2024-11-14T17:47:54 IST" duration-ms="3839" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyHeadLineText()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:23 IST" name="setupTest" finished-at="2024-11-18T17:23:32 IST" duration-ms="8493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyHeadLineText()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:54 IST" name="verifyHeadLineText" finished-at="2024-11-14T17:47:55 IST" duration-ms="29" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntSavedData()[pri:8, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:32 IST" name="verifyIntSavedData" description="This test verifies that information saved for internship is correct" finished-at="2024-11-18T17:23:34 IST" duration-ms="1633" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeadLineText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:55 IST" name="tearDown" finished-at="2024-11-14T17:47:56 IST" duration-ms="1234" status="PASS">
+        </test-method> <!-- verifyIntSavedData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:34 IST" name="tearDown" finished-at="2024-11-18T17:23:35 IST" duration-ms="1381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:56 IST" name="setup" finished-at="2024-11-14T17:47:57 IST" duration-ms="793" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:35 IST" name="setup" finished-at="2024-11-18T17:23:36 IST" duration-ms="1116" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntCharCount()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:47:57 IST" name="setUpTest" finished-at="2024-11-14T17:48:01 IST" duration-ms="3972" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:36 IST" name="setupTest" finished-at="2024-11-18T17:23:44 IST" duration-ms="8007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:01 IST" name="verifyInvalidEmail" finished-at="2024-11-14T17:48:02 IST" duration-ms="1551" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntCharCount()[pri:9, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:44 IST" name="verifyIntCharCount" description="This test verifies that character count for &#039;Internship Details&#039; field is updated dynamically" finished-at="2024-11-18T17:24:21 IST" duration-ms="36577" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:02 IST" name="tearDown" finished-at="2024-11-14T17:48:03 IST" duration-ms="1342" status="PASS">
+        </test-method> <!-- verifyIntCharCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:21 IST" name="tearDown" finished-at="2024-11-18T17:24:22 IST" duration-ms="1354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:03 IST" name="setup" finished-at="2024-11-14T17:48:04 IST" duration-ms="759" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:22 IST" name="setup" finished-at="2024-11-18T17:24:23 IST" duration-ms="839" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmailOnForgotPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyTenIntExceed()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:04 IST" name="setUpTest" finished-at="2024-11-14T17:48:08 IST" duration-ms="4104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmailOnForgotPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:23 IST" name="setupTest" finished-at="2024-11-18T17:24:32 IST" duration-ms="8897" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidEmailOnForgotPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:08 IST" name="verifyInvalidEmailOnForgotPasswordPage" finished-at="2024-11-14T17:48:10 IST" duration-ms="2214" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyTenIntExceed()[pri:10, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:32 IST" name="verifyTenIntExceed" description="This test verifies that &#039;Add Internship&#039; button turns inactive after adding ten internships" finished-at="2024-11-18T17:24:59 IST" duration-ms="27376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidEmailOnForgotPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:10 IST" name="tearDown" finished-at="2024-11-14T17:48:12 IST" duration-ms="1334" status="PASS">
+        </test-method> <!-- verifyTenIntExceed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:59 IST" name="tearDown" finished-at="2024-11-18T17:25:00 IST" duration-ms="1353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:12 IST" name="setup" finished-at="2024-11-14T17:48:13 IST" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:00 IST" name="setup" finished-at="2024-11-18T17:25:01 IST" duration-ms="1020" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidPassword1OnResetPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntDeletePopUp()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:13 IST" name="setUpTest" finished-at="2024-11-14T17:48:15 IST" duration-ms="2119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidPassword1OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:01 IST" name="setupTest" finished-at="2024-11-18T17:25:10 IST" duration-ms="8432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidPassword1OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:15 IST" name="verifyInvalidPassword1OnResetPasswordPage" finished-at="2024-11-14T17:48:18 IST" duration-ms="3263" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntDeletePopUp()[pri:11, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:10 IST" name="verifyIntDeletePopUp" description="This test verifies that confirmation popup is displayed while deleting the internship" finished-at="2024-11-18T17:25:11 IST" duration-ms="994" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidPassword1OnResetPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:18 IST" name="tearDown" finished-at="2024-11-14T17:48:19 IST" duration-ms="1290" status="PASS">
+        </test-method> <!-- verifyIntDeletePopUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:11 IST" name="tearDown" finished-at="2024-11-18T17:25:12 IST" duration-ms="1396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:19 IST" name="setup" finished-at="2024-11-14T17:48:20 IST" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:12 IST" name="setup" finished-at="2024-11-18T17:25:13 IST" duration-ms="884" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidPassword2OnResetPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntDelete()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:20 IST" name="setUpTest" finished-at="2024-11-14T17:48:24 IST" duration-ms="3991" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidPassword2OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:13 IST" name="setupTest" finished-at="2024-11-18T17:25:22 IST" duration-ms="8692" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidPassword2OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:24 IST" name="verifyInvalidPassword2OnResetPasswordPage" finished-at="2024-11-14T17:48:27 IST" duration-ms="3329" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntDelete()[pri:12, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:22 IST" name="verifyIntDelete" description="This test verifies that internship can be deleted" finished-at="2024-11-18T17:25:25 IST" duration-ms="3301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidPassword2OnResetPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:27 IST" name="tearDown" finished-at="2024-11-14T17:48:29 IST" duration-ms="1295" status="PASS">
+        </test-method> <!-- verifyIntDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:25 IST" name="tearDown" finished-at="2024-11-18T17:25:27 IST" duration-ms="1445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:29 IST" name="setup" finished-at="2024-11-14T17:48:30 IST" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:27 IST" name="setup" finished-at="2024-11-18T17:25:28 IST" duration-ms="904" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidPassword3OnResetPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntDetailsCharExceed()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:30 IST" name="setUpTest" finished-at="2024-11-14T17:48:33 IST" duration-ms="3913" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidPassword3OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:28 IST" name="setupTest" finished-at="2024-11-18T17:25:36 IST" duration-ms="8729" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidPassword3OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:33 IST" name="verifyInvalidPassword3OnResetPasswordPage" finished-at="2024-11-14T17:48:37 IST" duration-ms="3370" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyIntDetailsCharExceed()[pri:13, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:36 IST" name="verifyIntDetailsCharExceed" description="This test verifies that validation error occurs for maximum characters occurs: Internship Details" finished-at="2024-11-18T17:25:47 IST" duration-ms="10948" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidPassword3OnResetPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:37 IST" name="tearDown" finished-at="2024-11-14T17:48:38 IST" duration-ms="1283" status="PASS">
+        </test-method> <!-- verifyIntDetailsCharExceed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:47 IST" name="tearDown" finished-at="2024-11-18T17:25:49 IST" duration-ms="1388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:38 IST" name="setup" finished-at="2024-11-14T17:48:39 IST" duration-ms="797" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:49 IST" name="setup" finished-at="2024-11-18T17:25:50 IST" duration-ms="903" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidPassword4OnResetPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndDateMismatch()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:39 IST" name="setUpTest" finished-at="2024-11-14T17:48:43 IST" duration-ms="3805" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidPassword4OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:50 IST" name="setupTest" finished-at="2024-11-18T17:25:58 IST" duration-ms="8569" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidPassword4OnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:43 IST" name="verifyInvalidPassword4OnResetPasswordPage" finished-at="2024-11-14T17:48:46 IST" duration-ms="3229" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyEndDateMismatch()[pri:14, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:58 IST" name="verifyEndDateMismatch" description="This test verifies that validation error occurs when end date selected is before the start date" finished-at="2024-11-18T17:26:01 IST" duration-ms="3301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidPassword4OnResetPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:46 IST" name="tearDown" finished-at="2024-11-14T17:48:47 IST" duration-ms="1288" status="PASS">
+        </test-method> <!-- verifyEndDateMismatch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:01 IST" name="tearDown" finished-at="2024-11-18T17:26:03 IST" duration-ms="1421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:47 IST" name="setup" finished-at="2024-11-14T17:48:48 IST" duration-ms="811" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:03 IST" name="setup" finished-at="2024-11-18T17:26:04 IST" duration-ms="883" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidTokenOnResetPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyStartMonthRequired()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:48 IST" name="setUpTest" finished-at="2024-11-14T17:48:52 IST" duration-ms="3751" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidTokenOnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:04 IST" name="setupTest" finished-at="2024-11-18T17:26:12 IST" duration-ms="8169" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidTokenOnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:52 IST" name="verifyInvalidTokenOnResetPasswordPage" finished-at="2024-11-14T17:48:55 IST" duration-ms="3331" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyStartMonthRequired()[pri:15, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:12 IST" name="verifyStartMonthRequired" description="This test verifies that validation error occurs when start month is not selected" finished-at="2024-11-18T17:26:15 IST" duration-ms="3109" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidTokenOnResetPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:55 IST" name="tearDown" finished-at="2024-11-14T17:48:56 IST" duration-ms="1280" status="PASS">
+        </test-method> <!-- verifyStartMonthRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:15 IST" name="tearDown" finished-at="2024-11-18T17:26:16 IST" duration-ms="1385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:56 IST" name="setup" finished-at="2024-11-14T17:48:57 IST" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:16 IST" name="setup" finished-at="2024-11-18T17:26:17 IST" duration-ms="951" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyNonExistentEmailOnForgotPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyStartYearRequired()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:57 IST" name="setUpTest" finished-at="2024-11-14T17:48:59 IST" duration-ms="2191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyNonExistentEmailOnForgotPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:17 IST" name="setupTest" finished-at="2024-11-18T17:26:23 IST" duration-ms="6141" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyNonExistentEmailOnForgotPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:48:59 IST" name="verifyNonExistentEmailOnForgotPasswordPage" finished-at="2024-11-14T17:49:02 IST" duration-ms="2210" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyStartYearRequired()[pri:16, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:23 IST" name="verifyStartYearRequired" description="This test verifies that validation error occurs when start year is not selected" finished-at="2024-11-18T17:26:26 IST" duration-ms="2663" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNonExistentEmailOnForgotPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:02 IST" name="tearDown" finished-at="2024-11-14T17:49:03 IST" duration-ms="1332" status="PASS">
+        </test-method> <!-- verifyStartYearRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:26 IST" name="tearDown" finished-at="2024-11-18T17:26:28 IST" duration-ms="1432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:03 IST" name="setup" finished-at="2024-11-14T17:49:04 IST" duration-ms="801" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:28 IST" name="setup" finished-at="2024-11-18T17:26:28 IST" duration-ms="884" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyPasswordRequired()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndMonthRequired()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:04 IST" name="setUpTest" finished-at="2024-11-14T17:49:08 IST" duration-ms="3865" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyPasswordRequired()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:28 IST" name="setupTest" finished-at="2024-11-18T17:26:37 IST" duration-ms="8570" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPasswordRequired()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:08 IST" name="verifyPasswordRequired" finished-at="2024-11-14T17:49:09 IST" duration-ms="1470" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyEndMonthRequired()[pri:17, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:37 IST" name="verifyEndMonthRequired" description="This test verifies that validation error occurs when end month is not selected" finished-at="2024-11-18T17:26:40 IST" duration-ms="2903" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPasswordRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:09 IST" name="tearDown" finished-at="2024-11-14T17:49:10 IST" duration-ms="1308" status="PASS">
+        </test-method> <!-- verifyEndMonthRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:40 IST" name="tearDown" finished-at="2024-11-18T17:26:41 IST" duration-ms="1393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:10 IST" name="setup" finished-at="2024-11-14T17:49:11 IST" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:41 IST" name="setup" finished-at="2024-11-18T17:26:42 IST" duration-ms="904" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifySamePasswordOnResetPasswordPage()]]>
+                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndYearRequired()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:11 IST" name="setUpTest" finished-at="2024-11-14T17:49:18 IST" duration-ms="6690" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifySamePasswordOnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:42 IST" name="setupTest" finished-at="2024-11-18T17:26:51 IST" duration-ms="8426" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySamePasswordOnResetPasswordPage()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:18 IST" name="verifySamePasswordOnResetPasswordPage" finished-at="2024-11-14T17:49:21 IST" duration-ms="3295" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyEndYearRequired()[pri:18, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:51 IST" name="verifyEndYearRequired" description="This test verifies that validation error occurs when end year is not selected" finished-at="2024-11-18T17:26:54 IST" duration-ms="2969" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySamePasswordOnResetPasswordPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:21 IST" name="tearDown" finished-at="2024-11-14T17:49:22 IST" duration-ms="1323" status="PASS">
+        </test-method> <!-- verifyEndYearRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:54 IST" name="tearDown" finished-at="2024-11-18T17:26:55 IST" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:22 IST" name="setup" finished-at="2024-11-14T17:49:23 IST" duration-ms="778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:23 IST" name="setUpTest" finished-at="2024-11-14T17:49:27 IST" duration-ms="3869" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyTitle()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:27 IST" name="verifyTitle" finished-at="2024-11-14T17:49:27 IST" duration-ms="18" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:27 IST" name="tearDown" finished-at="2024-11-14T17:49:28 IST" duration-ms="1251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:28 IST" name="setup" finished-at="2024-11-14T17:49:29 IST" duration-ms="808" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyUserLogIn()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:29 IST" name="setUpTest" finished-at="2024-11-14T17:49:33 IST" duration-ms="3899" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyUserLogIn()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyUserLogIn()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:33 IST" name="verifyUserLogIn" finished-at="2024-11-14T17:49:37 IST" duration-ms="4404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLogIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:37 IST" name="tearDown" finished-at="2024-11-14T17:49:39 IST" duration-ms="1331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:39 IST" name="setup" finished-at="2024-11-14T17:49:40 IST" duration-ms="760" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyPasswordResetMailSend()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:40 IST" name="setUpTest" finished-at="2024-11-14T17:49:42 IST" duration-ms="1965" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyPasswordResetMailSend()[pri:1, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPasswordResetMailSend()[pri:1, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:42 IST" name="verifyPasswordResetMailSend" finished-at="2024-11-14T17:49:47 IST" duration-ms="5084" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordResetMailSend -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:47 IST" name="tearDown" finished-at="2024-11-14T17:49:48 IST" duration-ms="1316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:48 IST" name="setup" finished-at="2024-11-14T17:49:49 IST" duration-ms="782" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifySameMailSendWithinMinute()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:49 IST" name="setUpTest" finished-at="2024-11-14T17:49:53 IST" duration-ms="4068" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifySameMailSendWithinMinute()[pri:2, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySameMailSendWithinMinute()[pri:2, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:53 IST" name="verifySameMailSendWithinMinute" finished-at="2024-11-14T17:49:55 IST" duration-ms="2181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySameMailSendWithinMinute -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:55 IST" name="tearDown" finished-at="2024-11-14T17:49:56 IST" duration-ms="1343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:56 IST" name="setup" finished-at="2024-11-14T17:49:57 IST" duration-ms="820" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyPasswordResetEmail() throws com.mailslurp.clients.ApiException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:49:57 IST" name="setUpTest" finished-at="2024-11-14T17:50:00 IST" duration-ms="3333" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyPasswordResetEmail()[pri:3, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPasswordResetEmail()[pri:3, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:00 IST" name="verifyPasswordResetEmail" finished-at="2024-11-14T17:50:03 IST" duration-ms="2159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordResetEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:03 IST" name="tearDown" finished-at="2024-11-14T17:50:04 IST" duration-ms="1476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:04 IST" name="setup" finished-at="2024-11-14T17:50:05 IST" duration-ms="872" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyPasswordResetLink() throws com.mailslurp.clients.ApiException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:05 IST" name="setUpTest" finished-at="2024-11-14T17:50:09 IST" duration-ms="3899" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyPasswordResetLink()[pri:4, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPasswordResetLink()[pri:4, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:09 IST" name="verifyPasswordResetLink" finished-at="2024-11-14T17:50:10 IST" duration-ms="830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordResetLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:10 IST" name="tearDown" finished-at="2024-11-14T17:50:11 IST" duration-ms="1289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:11 IST" name="setup" finished-at="2024-11-14T17:50:12 IST" duration-ms="812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyPasswordReset()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:12 IST" name="setUpTest" finished-at="2024-11-14T17:50:15 IST" duration-ms="2947" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyPasswordReset()[pri:5, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPasswordReset()[pri:5, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:15 IST" name="verifyPasswordReset" finished-at="2024-11-14T17:50:20 IST" duration-ms="4724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordReset -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="tearDown" finished-at="2024-11-14T17:50:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="setup" finished-at="2024-11-14T17:50:20 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyPasswordResetCompleteHeadline() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="setUpTest" finished-at="2024-11-14T17:50:20 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyPasswordResetCompleteHeadline()[pri:6, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPasswordResetCompleteHeadline()[pri:6, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="verifyPasswordResetCompleteHeadline" finished-at="2024-11-14T17:50:20 IST" duration-ms="50" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordResetCompleteHeadline -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="tearDown" finished-at="2024-11-14T17:50:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="setup" finished-at="2024-11-14T17:50:20 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyLogInUrl()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="setUpTest" finished-at="2024-11-14T17:50:20 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyLogInUrl()[pri:7, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyLogInUrl()[pri:7, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="verifyLogInUrl" finished-at="2024-11-14T17:50:20 IST" duration-ms="685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogInUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:20 IST" name="tearDown" finished-at="2024-11-14T17:50:22 IST" duration-ms="1266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:22 IST" name="setup" finished-at="2024-11-14T17:50:22 IST" duration-ms="829" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyLogInAfterPasswordChange() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:22 IST" name="setUpTest" finished-at="2024-11-14T17:50:26 IST" duration-ms="3792" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyLogInAfterPasswordChange()[pri:8, instance:com.zenken.freshers.user.Login@7fb4f2a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyLogInAfterPasswordChange()[pri:8, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:26 IST" name="verifyLogInAfterPasswordChange" finished-at="2024-11-14T17:50:29 IST" duration-ms="3213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogInAfterPasswordChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@7fb4f2a9]" started-at="2024-11-14T17:50:29 IST" name="tearDown" finished-at="2024-11-14T17:50:31 IST" duration-ms="1305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Login -->
+      </class> <!-- com.zenken.freshers.user.Internships -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
