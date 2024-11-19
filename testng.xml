@@ -7,7 +7,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Internships">
+      <class name="com.zenken.freshers.user.Skills">
       </class> 
     </classes>
   </test> <!-- Test -->

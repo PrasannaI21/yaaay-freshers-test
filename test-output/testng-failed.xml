@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Settings">
+      <class name="com.zenken.freshers.user.Skills">
         <methods>
           <include name="setUpTest"/>
           <include name="tearDown"/>
-          <include name="verifySettingsUrl"/>
           <include name="setup"/>
+          <include name="verifySkillsUrl"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Settings -->
+      </class> <!-- com.zenken.freshers.user.Skills -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
