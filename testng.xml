@@ -7,9 +7,11 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.CommonParts">
-        <methods><include name="verifyTermsPDF"></include></methods>
-      </class> 
+      <class name="com.zenken.freshers.user.CommonParts"/>
+      <class name="com.zenken.freshers.user.Settings"/>
+      <class name="com.zenken.freshers.user.JobPreferences"/>
+      <class name="com.zenken.freshers.user.FieldOfStudy"/>
+      <class name="com.zenken.freshers.user.Photo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

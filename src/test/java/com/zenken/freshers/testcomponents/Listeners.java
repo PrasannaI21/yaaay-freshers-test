@@ -1,6 +1,8 @@
 package com.zenken.freshers.testcomponents;
 
 import java.io.IOException;
+import java.time.Duration;
+import java.time.LocalDateTime;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +23,8 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 	ExtentTest test;
 	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 	private static boolean isBrowserInfoSet = false;
+	LocalDateTime suiteStartTime;
+	LocalDateTime suiteEndTime;
 	
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -97,11 +101,20 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
+		suiteStartTime = LocalDateTime.now();
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
+		suiteEndTime = LocalDateTime.now();
+		Duration totalDuration = Duration.between(suiteStartTime, suiteEndTime);
+		long hours = totalDuration.toHours();
+		long minutes = totalDuration.toMinutesPart();
+		long seconds = totalDuration.toSecondsPart();
+		String formattedDuration = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+		extent.setReportUsesManualConfiguration(true);
+		extent.setSystemInfo("Total Execution Time", formattedDuration);
 		extent.flush();
 	}
 
