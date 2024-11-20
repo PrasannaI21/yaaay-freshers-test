@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
@@ -71,6 +72,7 @@ public class BaseTest {
 		options.addArguments("--disable-gpu");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");
 		FirefoxOptions options2 = new FirefoxOptions();
 //		options2.addArguments("-profile", "path_to_clean_profile_directory");
 //		options2.setCapability("marionette", true);
@@ -105,6 +107,7 @@ public class BaseTest {
 			if(browser.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);
+				driver.manage().window().setSize(new Dimension(1440, 900));
 			}else if(browser.equalsIgnoreCase("firefox")) {
 				WebDriverManager.firefoxdriver().setup();
 //				System.setProperty("webdriver.gecko.driver", "C:\\Users\\prasa\\Downloads\\geckodriver-v0.35.0-win-aarch64\\geckodriver.exe");

@@ -1,427 +1,1378 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+<testng-results ignored="0" total="59" passed="59" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T17:21:26 IST" name="Suite" finished-at="2024-11-18T17:26:55 IST" duration-ms="328794">
+  <suite started-at="2024-11-20T14:28:57 GMT+05:30" name="Suite" finished-at="2024-11-20T14:37:40 GMT+05:30" duration-ms="522826">
     <groups>
     </groups>
-    <test started-at="2024-11-18T17:21:26 IST" name="Test" finished-at="2024-11-18T17:26:55 IST" duration-ms="328794">
-      <class name="com.zenken.freshers.user.Internships">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:21:26 IST" name="setup" finished-at="2024-11-18T17:21:28 IST" duration-ms="2002" status="PASS">
+    <test started-at="2024-11-20T14:28:57 GMT+05:30" name="Test" finished-at="2024-11-20T14:37:40 GMT+05:30" duration-ms="522826">
+      <class name="com.zenken.freshers.user.Photo">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:28:57 GMT+05:30" name="setup" finished-at="2024-11-20T14:28:59 GMT+05:30" duration-ms="2197" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntNewUrl()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoUrl()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:21:28 IST" name="setupTest" finished-at="2024-11-18T17:22:02 IST" duration-ms="33812" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:28:59 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:29:38 GMT+05:30" duration-ms="38979" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntNewUrl()[pri:1, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:02 IST" name="verifyIntNewUrl" description="This test verifies that user is redirected to Internships (New) page" finished-at="2024-11-18T17:22:03 IST" duration-ms="953" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoUrl()[pri:1, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:29:38 GMT+05:30" name="verifyPhotoUrl" description="This test verifies that user is redirected to Photo edit page" finished-at="2024-11-20T14:29:43 GMT+05:30" duration-ms="4835" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntNewUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:03 IST" name="tearDown" finished-at="2024-11-18T17:22:05 IST" duration-ms="1424" status="PASS">
+        </test-method> <!-- verifyPhotoUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:29:43 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:29:43 GMT+05:30" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:05 IST" name="setup" finished-at="2024-11-18T17:22:06 IST" duration-ms="1031" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:29:43 GMT+05:30" name="setup" finished-at="2024-11-20T14:29:44 GMT+05:30" duration-ms="873" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyInternshipPageTitle()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoTitle()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:06 IST" name="setupTest" finished-at="2024-11-18T17:22:14 IST" duration-ms="8855" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:29:44 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:30:17 GMT+05:30" duration-ms="32842" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyInternshipPageTitle()[pri:2, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:14 IST" name="verifyInternshipPageTitle" description="This test verifies that the Internships page title is correct" finished-at="2024-11-18T17:22:15 IST" duration-ms="998" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoTitle()[pri:2, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:17 GMT+05:30" name="verifyPhotoTitle" description="This test verifies that the Photo page title is correct" finished-at="2024-11-20T14:30:20 GMT+05:30" duration-ms="2461" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInternshipPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:15 IST" name="tearDown" finished-at="2024-11-18T17:22:17 IST" duration-ms="1379" status="PASS">
+        </test-method> <!-- verifyPhotoTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:20 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:20 GMT+05:30" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:17 IST" name="setup" finished-at="2024-11-18T17:22:18 IST" duration-ms="955" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:20 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:21 GMT+05:30" duration-ms="817" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyInternshipPlaceholder()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyUploadModalDisplay()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:18 IST" name="setupTest" finished-at="2024-11-18T17:22:26 IST" duration-ms="8233" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:21 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:30:49 GMT+05:30" duration-ms="28904" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyInternshipPlaceholder()[pri:3, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:26 IST" name="verifyInternshipPlaceholder" description="This test verifies that expected placeholder for &#039;Internship Details&#039; is displayed" finished-at="2024-11-18T17:22:27 IST" duration-ms="926" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyUploadModalDisplay()[pri:3, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:49 GMT+05:30" name="verifyUploadModalDisplay" description="This test verifies that upload modal appears when upload icon is clicked" finished-at="2024-11-20T14:30:54 GMT+05:30" duration-ms="4791" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInternshipPlaceholder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:27 IST" name="tearDown" finished-at="2024-11-18T17:22:28 IST" duration-ms="1377" status="PASS">
+        </test-method> <!-- verifyUploadModalDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:54 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:54 GMT+05:30" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:28 IST" name="setup" finished-at="2024-11-18T17:22:29 IST" duration-ms="965" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:54 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:55 GMT+05:30" duration-ms="833" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndDateDdDisable()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyImageResize()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:29 IST" name="setupTest" finished-at="2024-11-18T17:22:38 IST" duration-ms="8467" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:30:55 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:31:29 GMT+05:30" duration-ms="33530" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyEndDateDdDisable()[pri:4, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:38 IST" name="verifyEndDateDdDisable" description="This test verifies that end date dropdowns turn inactive after selecting the checkbox" finished-at="2024-11-18T17:22:39 IST" duration-ms="1053" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyImageResize()[pri:4, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:31:29 GMT+05:30" name="verifyImageResize" description="This test verifies that the uploaded image can be resized" finished-at="2024-11-20T14:31:35 GMT+05:30" duration-ms="5994" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEndDateDdDisable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:39 IST" name="tearDown" finished-at="2024-11-18T17:22:40 IST" duration-ms="1330" status="PASS">
+        </test-method> <!-- verifyImageResize -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:31:35 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:31:35 GMT+05:30" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:40 IST" name="setup" finished-at="2024-11-18T17:22:41 IST" duration-ms="942" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:31:35 GMT+05:30" name="setup" finished-at="2024-11-20T14:31:36 GMT+05:30" duration-ms="871" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyInternshipAddition()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyImageDrag()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:41 IST" name="setupTest" finished-at="2024-11-18T17:22:50 IST" duration-ms="8789" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:31:36 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:08 GMT+05:30" duration-ms="31783" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyInternshipAddition()[pri:5, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:50 IST" name="verifyInternshipAddition" description="This test verifies that an internship is added successfully with required to save fields" finished-at="2024-11-18T17:22:54 IST" duration-ms="4149" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyImageDrag()[pri:5, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:32:08 GMT+05:30" name="verifyImageDrag" description="This test verifies that the uploaded image can be dragged" finished-at="2024-11-20T14:32:14 GMT+05:30" duration-ms="6595" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInternshipAddition -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:54 IST" name="tearDown" finished-at="2024-11-18T17:22:55 IST" duration-ms="1439" status="PASS">
+        </test-method> <!-- verifyImageDrag -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:32:14 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:15 GMT+05:30" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:55 IST" name="setup" finished-at="2024-11-18T17:22:56 IST" duration-ms="968" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:32:15 GMT+05:30" name="setup" finished-at="2024-11-20T14:32:15 GMT+05:30" duration-ms="872" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntAdditionWithDetails()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoUpload()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:22:56 IST" name="setupTest" finished-at="2024-11-18T17:23:05 IST" duration-ms="8746" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:32:15 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:46 GMT+05:30" duration-ms="30140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntAdditionWithDetails()[pri:6, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:05 IST" name="verifyIntAdditionWithDetails" description="This test verifies that an internship is added successfully with required to save fields along with internship details" finished-at="2024-11-18T17:23:10 IST" duration-ms="4584" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoUpload()[pri:6, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:32:46 GMT+05:30" name="verifyPhotoUpload" description="This test verifies that the image can be uploaded successfully" finished-at="2024-11-20T14:33:05 GMT+05:30" duration-ms="19779" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntAdditionWithDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:10 IST" name="tearDown" finished-at="2024-11-18T17:23:11 IST" duration-ms="1390" status="PASS">
+        </test-method> <!-- verifyPhotoUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:33:05 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:06 GMT+05:30" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:11 IST" name="setup" finished-at="2024-11-18T17:23:12 IST" duration-ms="994" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:33:06 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:06 GMT+05:30" duration-ms="797" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntEditUrl()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoImage() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:12 IST" name="setupTest" finished-at="2024-11-18T17:23:20 IST" duration-ms="8140" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:33:06 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:33:35 GMT+05:30" duration-ms="28196" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntEditUrl()[pri:7, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:20 IST" name="verifyIntEditUrl" description="This test verifies that user is redirected to Internships (Edit) page" finished-at="2024-11-18T17:23:21 IST" duration-ms="997" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoImage()[pri:7, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:33:35 GMT+05:30" name="verifyPhotoImage" description="This test verifies that the uploaded image is same and &#039;Required to apply&#039; text is not displayed on preview and Photo edit page" finished-at="2024-11-20T14:34:19 GMT+05:30" duration-ms="44839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntEditUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:21 IST" name="tearDown" finished-at="2024-11-18T17:23:23 IST" duration-ms="1335" status="PASS">
+        </test-method> <!-- verifyPhotoImage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:19 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:20 GMT+05:30" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:23 IST" name="setup" finished-at="2024-11-18T17:23:23 IST" duration-ms="874" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:20 GMT+05:30" name="setup" finished-at="2024-11-20T14:34:20 GMT+05:30" duration-ms="859" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntSavedData()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoChange()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:23 IST" name="setupTest" finished-at="2024-11-18T17:23:32 IST" duration-ms="8493" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:20 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:34:38 GMT+05:30" duration-ms="18045" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntSavedData()[pri:8, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:32 IST" name="verifyIntSavedData" description="This test verifies that information saved for internship is correct" finished-at="2024-11-18T17:23:34 IST" duration-ms="1633" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoChange()[pri:8, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:38 GMT+05:30" name="verifyPhotoChange" description="This test verifies that the uploaded image can be changed" finished-at="2024-11-20T14:34:42 GMT+05:30" duration-ms="3888" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntSavedData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:34 IST" name="tearDown" finished-at="2024-11-18T17:23:35 IST" duration-ms="1381" status="PASS">
+        </test-method> <!-- verifyPhotoChange -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:42 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:43 GMT+05:30" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:35 IST" name="setup" finished-at="2024-11-18T17:23:36 IST" duration-ms="1116" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:43 GMT+05:30" name="setup" finished-at="2024-11-20T14:34:43 GMT+05:30" duration-ms="828" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntCharCount()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoDelete()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:36 IST" name="setupTest" finished-at="2024-11-18T17:23:44 IST" duration-ms="8007" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:34:43 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:35:04 GMT+05:30" duration-ms="20120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntCharCount()[pri:9, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:23:44 IST" name="verifyIntCharCount" description="This test verifies that character count for &#039;Internship Details&#039; field is updated dynamically" finished-at="2024-11-18T17:24:21 IST" duration-ms="36577" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoDelete()[pri:9, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:04 GMT+05:30" name="verifyPhotoDelete" description="This test verifies that the image can be deleted and &#039;Required to apply&#039; text is displayed on Photo edit and preview page" finished-at="2024-11-20T14:35:12 GMT+05:30" duration-ms="8711" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntCharCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:21 IST" name="tearDown" finished-at="2024-11-18T17:24:22 IST" duration-ms="1354" status="PASS">
+        </test-method> <!-- verifyPhotoDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:12 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:35:12 GMT+05:30" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:22 IST" name="setup" finished-at="2024-11-18T17:24:23 IST" duration-ms="839" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:12 GMT+05:30" name="setup" finished-at="2024-11-20T14:35:13 GMT+05:30" duration-ms="812" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyTenIntExceed()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoInvalidFile()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:23 IST" name="setupTest" finished-at="2024-11-18T17:24:32 IST" duration-ms="8897" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:13 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:35:33 GMT+05:30" duration-ms="20053" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyTenIntExceed()[pri:10, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:32 IST" name="verifyTenIntExceed" description="This test verifies that &#039;Add Internship&#039; button turns inactive after adding ten internships" finished-at="2024-11-18T17:24:59 IST" duration-ms="27376" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoInvalidFile()[pri:10, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:33 GMT+05:30" name="verifyPhotoInvalidFile" description="This test verifies that validation error occurs for invalid file format" finished-at="2024-11-20T14:35:37 GMT+05:30" duration-ms="3755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTenIntExceed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:24:59 IST" name="tearDown" finished-at="2024-11-18T17:25:00 IST" duration-ms="1353" status="PASS">
+        </test-method> <!-- verifyPhotoInvalidFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:37 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:35:37 GMT+05:30" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:00 IST" name="setup" finished-at="2024-11-18T17:25:01 IST" duration-ms="1020" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:37 GMT+05:30" name="setup" finished-at="2024-11-20T14:35:38 GMT+05:30" duration-ms="812" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntDeletePopUp()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoInvalidSize()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:01 IST" name="setupTest" finished-at="2024-11-18T17:25:10 IST" duration-ms="8432" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:38 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:35:57 GMT+05:30" duration-ms="19410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntDeletePopUp()[pri:11, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:10 IST" name="verifyIntDeletePopUp" description="This test verifies that confirmation popup is displayed while deleting the internship" finished-at="2024-11-18T17:25:11 IST" duration-ms="994" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPhotoInvalidSize()[pri:11, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:35:57 GMT+05:30" name="verifyPhotoInvalidSize" description="This test verifies that validation error occurs when image size is more than 5MB" finished-at="2024-11-20T14:36:00 GMT+05:30" duration-ms="2623" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntDeletePopUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:11 IST" name="tearDown" finished-at="2024-11-18T17:25:12 IST" duration-ms="1396" status="PASS">
+        </test-method> <!-- verifyPhotoInvalidSize -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@68746f22]" started-at="2024-11-20T14:36:00 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:00 GMT+05:30" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:12 IST" name="setup" finished-at="2024-11-18T17:25:13 IST" duration-ms="884" status="PASS">
+      </class> <!-- com.zenken.freshers.user.Photo -->
+      <class name="com.zenken.freshers.user.CommonParts">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:28:57 GMT+05:30" name="setup" finished-at="2024-11-20T14:28:59 GMT+05:30" duration-ms="2197" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntDelete()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyAltText()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:13 IST" name="setupTest" finished-at="2024-11-18T17:25:22 IST" duration-ms="8692" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:28:59 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:29:14 GMT+05:30" duration-ms="15088" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntDelete()[pri:12, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:22 IST" name="verifyIntDelete" description="This test verifies that internship can be deleted" finished-at="2024-11-18T17:25:25 IST" duration-ms="3301" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyAltText()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:14 GMT+05:30" name="verifyAltText" description="This test verifies that Alt text is displyaed on header" finished-at="2024-11-20T14:29:14 GMT+05:30" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:25 IST" name="tearDown" finished-at="2024-11-18T17:25:27 IST" duration-ms="1445" status="PASS">
+        </test-method> <!-- verifyAltText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:14 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:29:15 GMT+05:30" duration-ms="535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:27 IST" name="setup" finished-at="2024-11-18T17:25:28 IST" duration-ms="904" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:15 GMT+05:30" name="setup" finished-at="2024-11-20T14:29:16 GMT+05:30" duration-ms="918" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyIntDetailsCharExceed()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyAltTextPostLogIn()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:28 IST" name="setupTest" finished-at="2024-11-18T17:25:36 IST" duration-ms="8729" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:16 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:29:35 GMT+05:30" duration-ms="18687" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyIntDetailsCharExceed()[pri:13, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:36 IST" name="verifyIntDetailsCharExceed" description="This test verifies that validation error occurs for maximum characters occurs: Internship Details" finished-at="2024-11-18T17:25:47 IST" duration-ms="10948" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyAltTextPostLogIn()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:35 GMT+05:30" name="verifyAltTextPostLogIn" description="This test verifies that Alt text is displyaed on the header of the profile preview page" finished-at="2024-11-20T14:29:53 GMT+05:30" duration-ms="18431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIntDetailsCharExceed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:47 IST" name="tearDown" finished-at="2024-11-18T17:25:49 IST" duration-ms="1388" status="PASS">
+        </test-method> <!-- verifyAltTextPostLogIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:53 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:29:53 GMT+05:30" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:49 IST" name="setup" finished-at="2024-11-18T17:25:50 IST" duration-ms="903" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:53 GMT+05:30" name="setup" finished-at="2024-11-20T14:29:54 GMT+05:30" duration-ms="837" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndDateMismatch()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyCopyrightMark()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:50 IST" name="setupTest" finished-at="2024-11-18T17:25:58 IST" duration-ms="8569" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:29:54 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:30:08 GMT+05:30" duration-ms="14025" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyEndDateMismatch()[pri:14, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:25:58 IST" name="verifyEndDateMismatch" description="This test verifies that validation error occurs when end date selected is before the start date" finished-at="2024-11-18T17:26:01 IST" duration-ms="3301" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCopyrightMark()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:08 GMT+05:30" name="verifyCopyrightMark" description="This test verifies that Zenken&#039;s copyright mark is displayed on footer" finished-at="2024-11-20T14:30:08 GMT+05:30" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEndDateMismatch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:01 IST" name="tearDown" finished-at="2024-11-18T17:26:03 IST" duration-ms="1421" status="PASS">
+        </test-method> <!-- verifyCopyrightMark -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:08 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:08 GMT+05:30" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:03 IST" name="setup" finished-at="2024-11-18T17:26:04 IST" duration-ms="883" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:08 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:09 GMT+05:30" duration-ms="857" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyStartMonthRequired()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyDropdown()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:04 IST" name="setupTest" finished-at="2024-11-18T17:26:12 IST" duration-ms="8169" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:09 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:30:25 GMT+05:30" duration-ms="15879" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyStartMonthRequired()[pri:15, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:12 IST" name="verifyStartMonthRequired" description="This test verifies that validation error occurs when start month is not selected" finished-at="2024-11-18T17:26:15 IST" duration-ms="3109" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyDropdown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:25 GMT+05:30" name="verifyDropdown" description="This test verifies that the expected dropdown options are displayed" finished-at="2024-11-20T14:30:49 GMT+05:30" duration-ms="23819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStartMonthRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:15 IST" name="tearDown" finished-at="2024-11-18T17:26:16 IST" duration-ms="1385" status="PASS">
+        </test-method> <!-- verifyDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:49 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:49 GMT+05:30" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:16 IST" name="setup" finished-at="2024-11-18T17:26:17 IST" duration-ms="951" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:49 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:50 GMT+05:30" duration-ms="792" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyStartYearRequired()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyHeaderImage()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:17 IST" name="setupTest" finished-at="2024-11-18T17:26:23 IST" duration-ms="6141" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:30:50 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:31:07 GMT+05:30" duration-ms="17319" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyStartYearRequired()[pri:16, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:23 IST" name="verifyStartYearRequired" description="This test verifies that validation error occurs when start year is not selected" finished-at="2024-11-18T17:26:26 IST" duration-ms="2663" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyHeaderImage()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:07 GMT+05:30" name="verifyHeaderImage" description="This test verifies that Freshers logo is displyaed on header" finished-at="2024-11-20T14:31:07 GMT+05:30" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStartYearRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:26 IST" name="tearDown" finished-at="2024-11-18T17:26:28 IST" duration-ms="1432" status="PASS">
+        </test-method> <!-- verifyHeaderImage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:07 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:31:08 GMT+05:30" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:28 IST" name="setup" finished-at="2024-11-18T17:26:28 IST" duration-ms="884" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:08 GMT+05:30" name="setup" finished-at="2024-11-20T14:31:09 GMT+05:30" duration-ms="843" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndMonthRequired()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyHeaderImagePostLogIn()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:28 IST" name="setupTest" finished-at="2024-11-18T17:26:37 IST" duration-ms="8570" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:09 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:31:19 GMT+05:30" duration-ms="9971" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyEndMonthRequired()[pri:17, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:37 IST" name="verifyEndMonthRequired" description="This test verifies that validation error occurs when end month is not selected" finished-at="2024-11-18T17:26:40 IST" duration-ms="2903" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyHeaderImagePostLogIn()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:19 GMT+05:30" name="verifyHeaderImagePostLogIn" description="This test verifies that Freshers logo is displyaed on the header of the profile preview page" finished-at="2024-11-20T14:31:41 GMT+05:30" duration-ms="22709" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEndMonthRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:40 IST" name="tearDown" finished-at="2024-11-18T17:26:41 IST" duration-ms="1393" status="PASS">
+        </test-method> <!-- verifyHeaderImagePostLogIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:41 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:31:41 GMT+05:30" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:41 IST" name="setup" finished-at="2024-11-18T17:26:42 IST" duration-ms="904" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:41 GMT+05:30" name="setup" finished-at="2024-11-20T14:31:42 GMT+05:30" duration-ms="848" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Internships.verifyEndYearRequired()]]>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyLogOut()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:42 IST" name="setupTest" finished-at="2024-11-18T17:26:51 IST" duration-ms="8426" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:31:42 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:00 GMT+05:30" duration-ms="17495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="verifyEndYearRequired()[pri:18, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:51 IST" name="verifyEndYearRequired" description="This test verifies that validation error occurs when end year is not selected" finished-at="2024-11-18T17:26:54 IST" duration-ms="2969" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyLogOut()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:00 GMT+05:30" name="verifyLogOut" description="This test verifies that user is logged out from the account after clicking on &#039;Log Out&#039;" finished-at="2024-11-20T14:32:28 GMT+05:30" duration-ms="27994" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEndYearRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Internships@446a1e84]" started-at="2024-11-18T17:26:54 IST" name="tearDown" finished-at="2024-11-18T17:26:55 IST" duration-ms="1402" status="PASS">
+        </test-method> <!-- verifyLogOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:28 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:28 GMT+05:30" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Internships -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:28 GMT+05:30" name="setup" finished-at="2024-11-20T14:32:29 GMT+05:30" duration-ms="881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyPolicy()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:29 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:41 GMT+05:30" duration-ms="12538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPolicy()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:41 GMT+05:30" name="verifyPolicy" description="This test verifies that the link for Privacy Policy is opened in a separate tab" finished-at="2024-11-20T14:32:44 GMT+05:30" duration-ms="2213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:44 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:44 GMT+05:30" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:44 GMT+05:30" name="setup" finished-at="2024-11-20T14:32:45 GMT+05:30" duration-ms="894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyPolicyPostLogIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:45 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:58 GMT+05:30" duration-ms="12875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyPolicyPostLogIn()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:32:58 GMT+05:30" name="verifyPolicyPostLogIn" description="This test verifies that the link for Privacy Policy is opened in a separate tab from the footer of profile preview page" finished-at="2024-11-20T14:33:12 GMT+05:30" duration-ms="14720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPolicyPostLogIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:12 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:13 GMT+05:30" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:13 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:14 GMT+05:30" duration-ms="892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyProfileClick()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:14 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:33:24 GMT+05:30" duration-ms="9997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyProfileClick()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:24 GMT+05:30" name="verifyProfileClick" description="This test verifies that user is redirected to profile preview page after clicking on &#039;Profile&#039;" finished-at="2024-11-20T14:33:49 GMT+05:30" duration-ms="25127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfileClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:49 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:49 GMT+05:30" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:49 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:50 GMT+05:30" duration-ms="911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyTermsPDF()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:33:50 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:34:00 GMT+05:30" duration-ms="9730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyTermsPDF()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:34:00 GMT+05:30" name="verifyTermsPDF" description="This test verifies that Terms PDF is opened in a separate tab" finished-at="2024-11-20T14:34:00 GMT+05:30" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsPDF -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:34:00 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:01 GMT+05:30" duration-ms="1745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:34:01 GMT+05:30" name="setup" finished-at="2024-11-20T14:34:02 GMT+05:30" duration-ms="819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.CommonParts.verifyTermsPDFPostLogIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:34:02 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:34:08 GMT+05:30" duration-ms="6114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyTermsPDFPostLogIn()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:34:08 GMT+05:30" name="verifyTermsPDFPostLogIn" description="This test verifies that Terms PDF is opened in a separate tab from the footer of profile preview page" finished-at="2024-11-20T14:34:28 GMT+05:30" duration-ms="19153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsPDFPostLogIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.CommonParts@2f953efd]" started-at="2024-11-20T14:34:28 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:28 GMT+05:30" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.CommonParts -->
+      <class name="com.zenken.freshers.user.JobPreferences">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:28:57 GMT+05:30" name="setup" finished-at="2024-11-20T14:28:59 GMT+05:30" duration-ms="2315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCancelRedirection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:28:59 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:29:40 GMT+05:30" duration-ms="40434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyCancelRedirection()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:29:40 GMT+05:30" name="verifyCancelRedirection" description="This test verifies that the user is redirected to preview page upon clicking on &#039;Cancel&#039; button on Job Preference edit page" finished-at="2024-11-20T14:29:47 GMT+05:30" duration-ms="7474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelRedirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:29:47 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:29:48 GMT+05:30" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:29:48 GMT+05:30" name="setup" finished-at="2024-11-20T14:29:48 GMT+05:30" duration-ms="813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCharExceedFirstPref()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:29:48 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:30:26 GMT+05:30" duration-ms="37366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyCharExceedFirstPref()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:30:26 GMT+05:30" name="verifyCharExceedFirstPref" description="The test verifies that validation error for maximum characters occurs: First Preference" finished-at="2024-11-20T14:30:34 GMT+05:30" duration-ms="8316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCharExceedFirstPref -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:30:34 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:34 GMT+05:30" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:30:34 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:35 GMT+05:30" duration-ms="870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCharExceedSecondPref()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:30:35 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:31:13 GMT+05:30" duration-ms="38050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyCharExceedSecondPref()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:31:13 GMT+05:30" name="verifyCharExceedSecondPref" description="The test verifies that validation error for maximum characters occurs: Second Preference" finished-at="2024-11-20T14:31:21 GMT+05:30" duration-ms="8292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCharExceedSecondPref -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:31:21 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:31:22 GMT+05:30" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:31:22 GMT+05:30" name="setup" finished-at="2024-11-20T14:31:23 GMT+05:30" duration-ms="854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyCharExceedThirdPref()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:31:23 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:32:02 GMT+05:30" duration-ms="39731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyCharExceedThirdPref()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:32:02 GMT+05:30" name="verifyCharExceedThirdPref" description="The test verifies that validation error for maximum characters occurs: Third Preference" finished-at="2024-11-20T14:32:15 GMT+05:30" duration-ms="12927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCharExceedThirdPref -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:32:15 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:16 GMT+05:30" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:32:16 GMT+05:30" name="setup" finished-at="2024-11-20T14:32:16 GMT+05:30" duration-ms="841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyFirstPreferenceStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:32:16 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:32:55 GMT+05:30" duration-ms="38589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyFirstPreferenceStates()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:32:55 GMT+05:30" name="verifyFirstPreferenceStates" description="This test verifies the activation and deactivation of First Preference text box based on the option selected from the dropdown" finished-at="2024-11-20T14:33:04 GMT+05:30" duration-ms="9470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstPreferenceStates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:04 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:05 GMT+05:30" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:05 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:06 GMT+05:30" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyJobPreferenceUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:06 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:33:34 GMT+05:30" duration-ms="28893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyJobPreferenceUrl()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:34 GMT+05:30" name="verifyJobPreferenceUrl" description="This test verifies that user is redirected to Job Preferences edit page" finished-at="2024-11-20T14:33:34 GMT+05:30" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJobPreferenceUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:34 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:35 GMT+05:30" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:35 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:36 GMT+05:30" duration-ms="856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyPlaceholders()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:36 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:33:56 GMT+05:30" duration-ms="20743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyPlaceholders()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:56 GMT+05:30" name="verifyPlaceholders" description="This test verifies that the placeholders displayed are correct for all text boxes on Job Preferences edit page" finished-at="2024-11-20T14:33:56 GMT+05:30" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaceholders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:56 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:57 GMT+05:30" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:57 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:57 GMT+05:30" duration-ms="775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyPreferencesOtherValue()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:33:57 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:34:27 GMT+05:30" duration-ms="29891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyPreferencesOtherValue()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:34:27 GMT+05:30" name="verifyPreferencesOtherValue" description="This test verifies that &#039;Other&#039; values entered are displayed accordingly on preview page" finished-at="2024-11-20T14:34:37 GMT+05:30" duration-ms="10120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPreferencesOtherValue -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:34:37 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:38 GMT+05:30" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:34:38 GMT+05:30" name="setup" finished-at="2024-11-20T14:34:39 GMT+05:30" duration-ms="950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyPreferencesValues()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:34:39 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:35:03 GMT+05:30" duration-ms="24250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyPreferencesValues()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:03 GMT+05:30" name="verifyPreferencesValues" description="This test verifies that jon preferences can be saved and their values are displayed accordingly on preview page" finished-at="2024-11-20T14:35:11 GMT+05:30" duration-ms="7936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPreferencesValues -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:11 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:35:11 GMT+05:30" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:11 GMT+05:30" name="setup" finished-at="2024-11-20T14:35:12 GMT+05:30" duration-ms="859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyRequiredToApplyTexts()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:12 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:35:35 GMT+05:30" duration-ms="23568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyRequiredToApplyTexts()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:35 GMT+05:30" name="verifyRequiredToApplyTexts" description="This test verifies that &#039;Required to apply&#039; text is displayed" finished-at="2024-11-20T14:35:43 GMT+05:30" duration-ms="7510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequiredToApplyTexts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:43 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:35:43 GMT+05:30" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:43 GMT+05:30" name="setup" finished-at="2024-11-20T14:35:44 GMT+05:30" duration-ms="819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifySecondPreferenceStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:35:44 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:36:03 GMT+05:30" duration-ms="18894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifySecondPreferenceStates()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:36:03 GMT+05:30" name="verifySecondPreferenceStates" description="This test verifies the activation and deactivation of Second Preference text box based on the option selected from the dropdown" finished-at="2024-11-20T14:36:11 GMT+05:30" duration-ms="8321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySecondPreferenceStates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:36:11 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:11 GMT+05:30" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:36:11 GMT+05:30" name="setup" finished-at="2024-11-20T14:36:12 GMT+05:30" duration-ms="720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobPreferences.verifyThirdPreferenceStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:36:12 GMT+05:30" name="testSetUp" finished-at="2024-11-20T14:36:27 GMT+05:30" duration-ms="14451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="verifyThirdPreferenceStates()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:36:27 GMT+05:30" name="verifyThirdPreferenceStates" description="This test verifies the activation and deactivation of Third Preference text box based on the option selected from the dropdown" finished-at="2024-11-20T14:36:35 GMT+05:30" duration-ms="8648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThirdPreferenceStates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobPreferences@5f9edf14]" started-at="2024-11-20T14:36:35 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:35 GMT+05:30" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.JobPreferences -->
+      <class name="com.zenken.freshers.user.FieldOfStudy">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:28:57 GMT+05:30" name="setup" finished-at="2024-11-20T14:28:59 GMT+05:30" duration-ms="2197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCancelRedirection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:28:59 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:29:36 GMT+05:30" duration-ms="36572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCancelRedirection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:29:36 GMT+05:30" name="verifyCancelRedirection" description="This test verifies that the user is redirected to preview page upon clicking on &#039;Cancel&#039; button on Field of Study edit page" finished-at="2024-11-20T14:29:45 GMT+05:30" duration-ms="9621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelRedirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:29:45 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:29:46 GMT+05:30" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:29:46 GMT+05:30" name="setup" finished-at="2024-11-20T14:29:47 GMT+05:30" duration-ms="841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOptions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:29:47 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:30:25 GMT+05:30" duration-ms="38505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOptions()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:30:25 GMT+05:30" name="verifyCoreOptions" description="This test verifies that expected options are displayed for &#039;Core&#039; field" finished-at="2024-11-20T14:30:25 GMT+05:30" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:30:25 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:26 GMT+05:30" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:30:26 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:27 GMT+05:30" duration-ms="874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherCharExceedError()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:30:27 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:31:10 GMT+05:30" duration-ms="43172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOtherCharExceedError()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:31:10 GMT+05:30" name="verifyCoreOtherCharExceedError" description="The test verifies that validation error for maximum characters occurs: Other (core field)" finished-at="2024-11-20T14:31:18 GMT+05:30" duration-ms="7890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOtherCharExceedError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:31:18 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:31:18 GMT+05:30" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:31:18 GMT+05:30" name="setup" finished-at="2024-11-20T14:31:19 GMT+05:30" duration-ms="845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherField()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:31:19 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:00 GMT+05:30" duration-ms="41463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOtherField()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:32:00 GMT+05:30" name="verifyCoreOtherField" description="This test verifies that a core other option can be saved and is displayed accordingly on preview page" finished-at="2024-11-20T14:32:21 GMT+05:30" duration-ms="20663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOtherField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:32:21 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:21 GMT+05:30" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:32:21 GMT+05:30" name="setup" finished-at="2024-11-20T14:32:22 GMT+05:30" duration-ms="859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherFieldRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:32:22 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:33:00 GMT+05:30" duration-ms="38096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOtherFieldRequired()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:00 GMT+05:30" name="verifyCoreOtherFieldRequired" description="This test verifies that validation error occurs when &#039;Other (core field)&#039; is blank" finished-at="2024-11-20T14:33:05 GMT+05:30" duration-ms="5248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOtherFieldRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:05 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:06 GMT+05:30" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:06 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:07 GMT+05:30" duration-ms="969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherPlaceholder()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:07 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:33:39 GMT+05:30" duration-ms="32682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOtherPlaceholder()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:39 GMT+05:30" name="verifyCoreOtherPlaceholder" description="This test verifies that placeholder for &#039;Other (core field)&#039; text box is correct" finished-at="2024-11-20T14:33:40 GMT+05:30" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOtherPlaceholder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:40 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:33:40 GMT+05:30" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:40 GMT+05:30" name="setup" finished-at="2024-11-20T14:33:41 GMT+05:30" duration-ms="825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOtherTextBoxStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:33:41 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:34:06 GMT+05:30" duration-ms="25234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOtherTextBoxStates()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:06 GMT+05:30" name="verifyCoreOtherTextBoxStates" description="This test verifies that the text box for &#039;Other (core field)&#039; turns active/inactive based on the options selected" finished-at="2024-11-20T14:34:07 GMT+05:30" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOtherTextBoxStates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:07 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:07 GMT+05:30" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:07 GMT+05:30" name="setup" finished-at="2024-11-20T14:34:08 GMT+05:30" duration-ms="768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyFieldOfStudyUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:08 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:34:35 GMT+05:30" duration-ms="27567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyFieldOfStudyUrl()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:35 GMT+05:30" name="verifyFieldOfStudyUrl" description="This test verifies that user is redirected to Field of Study edit page" finished-at="2024-11-20T14:34:35 GMT+05:30" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFieldOfStudyUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:35 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:34:35 GMT+05:30" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:35 GMT+05:30" name="setup" finished-at="2024-11-20T14:34:36 GMT+05:30" duration-ms="912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptionSelection() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:34:36 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:35:00 GMT+05:30" duration-ms="23335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOptionSelection()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:00 GMT+05:30" name="verifyITOptionSelection" description="This test verifies that an IT option can be saved and is displayed accordingly on preview page" finished-at="2024-11-20T14:35:07 GMT+05:30" duration-ms="7783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOptionSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:07 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:35:08 GMT+05:30" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:08 GMT+05:30" name="setup" finished-at="2024-11-20T14:35:08 GMT+05:30" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOptions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:08 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:35:35 GMT+05:30" duration-ms="26700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOptions()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:35 GMT+05:30" name="verifyITOptions" description="This test verifies that expected options are displayed for &#039;IT&#039; field" finished-at="2024-11-20T14:35:35 GMT+05:30" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:35 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:35:36 GMT+05:30" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:36 GMT+05:30" name="setup" finished-at="2024-11-20T14:35:37 GMT+05:30" duration-ms="826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherCharExceedError()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:35:37 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:36:00 GMT+05:30" duration-ms="23429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOtherCharExceedError()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:00 GMT+05:30" name="verifyITOtherCharExceedError" description="The test verifies that validation error for maximum characters occurs: Other (IT field)" finished-at="2024-11-20T14:36:02 GMT+05:30" duration-ms="2378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOtherCharExceedError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:02 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:03 GMT+05:30" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:03 GMT+05:30" name="setup" finished-at="2024-11-20T14:36:03 GMT+05:30" duration-ms="856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherFieldRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:03 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:36:11 GMT+05:30" duration-ms="7291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOtherFieldRequired()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:11 GMT+05:30" name="verifyITOtherFieldRequired" description="This test verifies that validation error occurs when &#039;Other (IT field)&#039; is blank" finished-at="2024-11-20T14:36:12 GMT+05:30" duration-ms="1739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOtherFieldRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:12 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:13 GMT+05:30" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:13 GMT+05:30" name="setup" finished-at="2024-11-20T14:36:13 GMT+05:30" duration-ms="760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherPlaceholder()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:13 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:36:26 GMT+05:30" duration-ms="12704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOtherPlaceholder()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:26 GMT+05:30" name="verifyITOtherPlaceholder" description="This test verifies that placeholder for &#039;Other (IT field)&#039; text box is correct" finished-at="2024-11-20T14:36:26 GMT+05:30" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOtherPlaceholder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:26 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:27 GMT+05:30" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:27 GMT+05:30" name="setup" finished-at="2024-11-20T14:36:27 GMT+05:30" duration-ms="830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherTextBoxStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:27 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:36:35 GMT+05:30" duration-ms="7640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOtherTextBoxStates()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:35 GMT+05:30" name="verifyITOtherTextBoxStates" description="This test verifies that the text box for &#039;Other (IT field)&#039; turns active/inactive based on the options selected" finished-at="2024-11-20T14:36:36 GMT+05:30" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOtherTextBoxStates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:36 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:36 GMT+05:30" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:36 GMT+05:30" name="setup" finished-at="2024-11-20T14:36:37 GMT+05:30" duration-ms="814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyResearchRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:37 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:36:45 GMT+05:30" duration-ms="7753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyResearchRequired()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:45 GMT+05:30" name="verifyResearchRequired" description="This test verifies that validation error occurs when area of research is not selected" finished-at="2024-11-20T14:36:47 GMT+05:30" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResearchRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:47 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:36:47 GMT+05:30" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:47 GMT+05:30" name="setup" finished-at="2024-11-20T14:36:48 GMT+05:30" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITOtherField()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:48 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:36:56 GMT+05:30" duration-ms="8632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITOtherField()[pri:1, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:36:56 GMT+05:30" name="verifyITOtherField" description="This test verifies that an IT other option can be saved and is displayed accordingly on preview page" finished-at="2024-11-20T14:37:00 GMT+05:30" duration-ms="3603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITOtherField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:00 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:37:00 GMT+05:30" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:00 GMT+05:30" name="setup" finished-at="2024-11-20T14:37:01 GMT+05:30" duration-ms="814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreFieldRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:01 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:37:10 GMT+05:30" duration-ms="9116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreFieldRequired()[pri:2, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:10 GMT+05:30" name="verifyCoreFieldRequired" description="This test verifies that validation error occurs when core area of study is not selected" finished-at="2024-11-20T14:37:11 GMT+05:30" duration-ms="1601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreFieldRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:11 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:37:12 GMT+05:30" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:12 GMT+05:30" name="setup" finished-at="2024-11-20T14:37:13 GMT+05:30" duration-ms="825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyCoreOptionSelection() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:13 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:37:22 GMT+05:30" duration-ms="9850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCoreOptionSelection()[pri:3, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:22 GMT+05:30" name="verifyCoreOptionSelection" description="This test verifies that a core option can be saved and is displayed accordingly on preview page" finished-at="2024-11-20T14:37:26 GMT+05:30" duration-ms="3223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoreOptionSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:26 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:37:26 GMT+05:30" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:26 GMT+05:30" name="setup" finished-at="2024-11-20T14:37:27 GMT+05:30" duration-ms="768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.FieldOfStudy.verifyITFieldRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:27 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:37:38 GMT+05:30" duration-ms="11331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyITFieldRequired()[pri:4, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:38 GMT+05:30" name="verifyITFieldRequired" description="This test verifies that validation error occurs when IT area of study is not selected" finished-at="2024-11-20T14:37:40 GMT+05:30" duration-ms="1827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyITFieldRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.FieldOfStudy@2f01783a]" started-at="2024-11-20T14:37:40 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:37:40 GMT+05:30" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.FieldOfStudy -->
+      <class name="com.zenken.freshers.user.Settings">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:28:57 GMT+05:30" name="setup" finished-at="2024-11-20T14:28:59 GMT+05:30" duration-ms="2198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Settings.verifySetDesTexts()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:28:59 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:29:33 GMT+05:30" duration-ms="34116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySetDesTexts()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:29:33 GMT+05:30" name="verifySetDesTexts" description="This test verifies that the texts describing &#039;Yaaay Midcareer&#039; and &#039;Zenken Newsletter&#039; are correct" finished-at="2024-11-20T14:29:37 GMT+05:30" duration-ms="3861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySetDesTexts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:29:37 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:29:37 GMT+05:30" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:29:37 GMT+05:30" name="setup" finished-at="2024-11-20T14:29:38 GMT+05:30" duration-ms="796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Settings.verifySetNotSelected()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:29:38 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:30:14 GMT+05:30" duration-ms="36171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySetNotSelected()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:30:14 GMT+05:30" name="verifySetNotSelected" description="This test verifies that appropriate texts are displayed on preview page when checkboxes for &#039;Yaaay Midcareer&#039; and &#039;Zenken Newsletter&#039; are NOT selected" finished-at="2024-11-20T14:30:36 GMT+05:30" duration-ms="21890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySetNotSelected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:30:36 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:30:37 GMT+05:30" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:30:37 GMT+05:30" name="setup" finished-at="2024-11-20T14:30:37 GMT+05:30" duration-ms="812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Settings.verifySetSelected()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:30:37 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:31:14 GMT+05:30" duration-ms="36183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySetSelected()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:31:14 GMT+05:30" name="verifySetSelected" description="This test verifies that appropriate texts are displayed on preview page when checkboxes for &#039;Yaaay Midcareer&#039; and &#039;Zenken Newsletter&#039; are selected" finished-at="2024-11-20T14:31:36 GMT+05:30" duration-ms="22410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySetSelected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:31:36 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:31:36 GMT+05:30" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:31:36 GMT+05:30" name="setup" finished-at="2024-11-20T14:31:37 GMT+05:30" duration-ms="908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Settings.verifySettingsTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:31:37 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:15 GMT+05:30" duration-ms="37965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySettingsTitle()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:32:15 GMT+05:30" name="verifySettingsTitle" description="This test verifies that Settings page title is correct" finished-at="2024-11-20T14:32:17 GMT+05:30" duration-ms="2219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySettingsTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:32:17 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:18 GMT+05:30" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:32:18 GMT+05:30" name="setup" finished-at="2024-11-20T14:32:18 GMT+05:30" duration-ms="861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Settings.verifySettingsUrl() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:32:18 GMT+05:30" name="setUpTest" finished-at="2024-11-20T14:32:53 GMT+05:30" duration-ms="35066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifySettingsUrl()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:32:53 GMT+05:30" name="verifySettingsUrl" description="This test verifies that user is redirected to &#039;Settings&#039; edit page" finished-at="2024-11-20T14:32:58 GMT+05:30" duration-ms="4062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySettingsUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@2bdd8394]" started-at="2024-11-20T14:32:58 GMT+05:30" name="tearDown" finished-at="2024-11-20T14:32:58 GMT+05:30" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.Settings -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

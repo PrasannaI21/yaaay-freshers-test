@@ -10,8 +10,8 @@
       <class name="com.zenken.freshers.user.CommonParts"/>
       <class name="com.zenken.freshers.user.Settings"/>
       <class name="com.zenken.freshers.user.JobPreferences"/>
-      <class name="com.zenken.freshers.user.FieldOfStudy"/>
       <class name="com.zenken.freshers.user.Photo"/>
+      <class name="com.zenken.freshers.user.FieldOfStudy"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
