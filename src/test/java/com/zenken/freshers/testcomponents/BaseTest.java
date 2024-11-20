@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
@@ -69,10 +70,7 @@ public class BaseTest {
 		}
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", prefs);
-		options.addArguments("--disable-gpu");
-		options.addArguments("--no-sandbox");
-		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--headless");
+		options.addArguments("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
 		FirefoxOptions options2 = new FirefoxOptions();
 //		options2.addArguments("-profile", "path_to_clean_profile_directory");
 //		options2.setCapability("marionette", true);
@@ -104,17 +102,24 @@ public class BaseTest {
 		{
 			String browser = System.getProperty("browser") != null ? System.getProperty("browser") : 
 					getProperties().getProperty("browser");
-			if(browser.equalsIgnoreCase("chrome")) {
+			if(browser.contains("chrome")) {
 				WebDriverManager.chromedriver().setup();
+				if(browser.contains("headless")) {
+					options.addArguments("--headless");
+				}
 				driver = new ChromeDriver(options);
 				driver.manage().window().setSize(new Dimension(1440, 900));
 			}else if(browser.equalsIgnoreCase("firefox")) {
 				WebDriverManager.firefoxdriver().setup();
 //				System.setProperty("webdriver.gecko.driver", "C:\\Users\\prasa\\Downloads\\geckodriver-v0.35.0-win-aarch64\\geckodriver.exe");
 				driver = new FirefoxDriver(options2);
-			}else if(browser.equalsIgnoreCase("edge")) {
+			}else if(browser.contains("edge")) {
+				EdgeOptions options3 = new EdgeOptions();
 				WebDriverManager.edgedriver().setup();
-				driver = new EdgeDriver();
+				if(browser.contains("headless")) {
+					options3.addArguments("--headless");
+				}				
+				driver = new EdgeDriver(options3);
 			}
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
