@@ -7,7 +7,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Skills">
+      <class name="com.zenken.freshers.user.CommonParts">
+        <methods><include name="verifyTermsPDF"></include></methods>
       </class> 
     </classes>
   </test> <!-- Test -->

@@ -9,11 +9,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
 import com.zenken.freshers.pages.user.EditSkillsPage;
 import com.zenken.freshers.pages.user.ProfilePreviewPage;
 import com.zenken.freshers.testcomponents.BaseTest;
-import com.zenken.freshers.testcomponents.Listeners;
 
 public class Skills extends BaseTest{
 
