@@ -63,7 +63,9 @@ public class BaseTest {
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("download.default_directory", downloadFilePath);
 		prefs.put("download.prompt_for_download", false);
-		prefs.put("plugins.always_open_pdf_externally", true);
+		if(method.getName().equals("verifyConsentFormDL")) {
+			prefs.put("plugins.always_open_pdf_externally", true);
+		}
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", prefs);
 		options.addArguments("--disable-gpu");
