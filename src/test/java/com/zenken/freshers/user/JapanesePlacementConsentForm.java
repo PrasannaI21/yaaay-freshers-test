@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -65,13 +66,27 @@ public class JapanesePlacementConsentForm extends BaseTest{
 	
 	@Test(priority=4, description="This test verifies that consent form can be downloaded successfully"
 			)
-	public void verifyConsentFormDL()
+	public void verifyConsentFormDL() throws IOException
 	{
+		String browser = System.getProperty("browser") != null ? System.getProperty("browser") : 
+			getProperties().getProperty("browser");		
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		int initialCount = profilePreview.getFileCount();
 		log("Step 2: Click on 'Consent Form Template' link");
 		consentForm.clickConsentFormLink();
+        if(browser.contains("edge")) {
+        	consentForm.switchToPdf();
+    		String pdfurl = driver.getCurrentUrl();
+    		JavascriptExecutor js = (JavascriptExecutor) driver;
+    		String jsScript = "var link = document.createElement('a');" +
+                    "link.href = arguments[0];" +
+                    "link.download = 'Consent form template.pdf';" +
+                    "document.body.appendChild(link);" +
+                    "link.click();" +
+                    "document.body.removeChild(link);";
+    		js.executeScript(jsScript, pdfurl);
+		}
 		log("Step 3: Verify that consent form can be downloaded");
 		Assert.assertTrue(profilePreview.isFileDownloaded(initialCount), "File was not downloaded successfully");
 		String downloadedFileName = profilePreview.getDownloadedFileName();
@@ -84,29 +99,29 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		log("Step 2: Upload consent form PDF file");
-		consentForm.uploadFile("C:\\Users\\prasa\\Downloads\\Sample_Project.pdf");
+		consentForm.uploadFile(System.getProperty("user.dir")+"\\test-data\\sample-cform.pdf");
 		log("Step 3: Verify that the file is uploaded successfully");
 		Assert.assertTrue(consentForm.isProgressBarDisplayed(), "Progress bar is not displayed");
 		Assert.assertTrue(consentForm.isUploadComplete(), "File upload did not complete successfully");
-		Assert.assertTrue(consentForm.getFileNameText().contains("Sample_Project.pdf"));
+		Assert.assertTrue(consentForm.getFileNameText().contains("sample-cform.pdf"));
 		log("Step 4: Verify that (file check in progress) is displayed");
 		Assert.assertTrue(consentForm.getFileNameText().contains("(file check in progress)"));
 		log("Step 5: Verify that 'Select From Files' button turns inactive");
 		Assert.assertFalse(consentForm.isSelectFileActive(), "Select From Files button should be inactive");
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, yyyy");
 		String date = LocalDate.now().format(formatter);
-		log("Step 6: Verify that uploaded date is "+ date);
+		log("Step 6: Verify that uploaded date is "+date);
 		Assert.assertTrue(consentForm.getFileNameText().contains("Uploaded on: "+date), "The displayed date does not match today's date");
 		log("Step 7: Click on 'Save' button");
 		consentForm.clickSave();
 		log("Step 8: Verify: Snackbar, Section display, Tab selection");
 		redirectionAssertions("#JapanesePlacementConsentForm");
 		log("Step 9: Verify that expected file name with file check text and date are displayed on preview page");
-		Assert.assertTrue(profilePreview.getConsentFormValueText().contains("Sample_Project.pdf"));
+		Assert.assertTrue(profilePreview.getConsentFormValueText().contains("sample-cform.pdf"));
 		Assert.assertTrue(profilePreview.getConsentFormValueText().contains("(file check in progress)"));
 		Assert.assertTrue(profilePreview.getConsentFormValueText().contains("Uploaded on: "+date), "The displayed date does not match today's date on preview page");
 		log("Step 10: Verify that download link is displayed and 'Required to apply' text is not displayed on preview page");
-		Assert.assertEquals(profilePreview.getConsentFormDlLink(10), "Sample_Project.pdf");
+		Assert.assertEquals(profilePreview.getConsentFormDlLink(10), "sample-cform.pdf");
 		Assert.assertFalse(profilePreview.formTitle.getText().contains(properties.getProperty("error16")));
 		int initialCount = profilePreview.getFileCount();
 		log("Step 11: Click download link");
@@ -114,7 +129,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 12: Verify that file can be downloaded from preview page after refreshing");
 		Assert.assertTrue(profilePreview.isFileDownloaded(initialCount), "File was not downloaded successfully");
 		String downloadedFileName = profilePreview.getDownloadedFileName();
-		Assert.assertEquals(downloadedFileName, "Sample_Project.pdf");
+		Assert.assertEquals(downloadedFileName, "sample-cform.pdf");
 	}
 	
 	@Test(priority=6, description="This test verifies that the consent form can be deleted")
@@ -161,7 +176,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		log("Step 2: Upload a file in doc format");
-		consentForm.uploadFile("C:\\Users\\prasa\\Downloads\\file-sample-doc.doc");
+		consentForm.uploadFile(System.getProperty("user.dir")+"\\test-data\\file-sample-doc.doc");
 		log("Step 3: Verify that validation error corresponds to file type: pdf");
 		Assert.assertTrue(consentForm.getCFErrorText().contains(properties.getProperty("error29")));
 	}
@@ -172,7 +187,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		log("Step 2: Upload a PDF file having size more than 2mb");
-		consentForm.uploadFile("C:\\Users\\prasa\\Downloads\\samplepdf-above2mb.pdf");
+		consentForm.uploadFile(System.getProperty("user.dir")+"\\test-data\\samplepdf-above2mb.pdf");
 		log("Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes");
 		Assert.assertTrue(consentForm.getCFErrorText().contains(properties.getProperty("error27")));
 	}

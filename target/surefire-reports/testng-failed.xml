@@ -3,74 +3,17 @@
 <suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="com.zenken.freshers.testcomponents.Listeners"/>
-    <listener class-name="com.zenken.freshers.testcomponents.RetryListener"/>
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
     <classes>
-      <class name="com.zenken.freshers.user.JobPreferences">
-        <methods>
-          <include name="verifyPreferencesOtherValue"/>
-          <include name="verifyPlaceholders"/>
-          <include name="verifyPreferencesValues"/>
-          <include name="verifyFirstPreferenceStates"/>
-          <include name="verifyRequiredToApplyTexts"/>
-          <include name="tearDown"/>
-          <include name="verifyJobPreferenceUrl"/>
-          <include name="testSetUp"/>
-          <include name="verifySecondPreferenceStates"/>
-          <include name="verifyThirdPreferenceStates"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.zenken.freshers.user.JobPreferences -->
-      <class name="com.zenken.freshers.user.Photo">
+      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm">
         <methods>
           <include name="setUpTest"/>
-          <include name="verifyPhotoUpload"/>
+          <include name="verifyConsentFormDL"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Photo -->
-      <class name="com.zenken.freshers.user.Settings">
-        <methods>
-          <include name="setUpTest"/>
-          <include name="tearDown"/>
-          <include name="verifySettingsUrl"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.zenken.freshers.user.Settings -->
-      <class name="com.zenken.freshers.user.CommonParts">
-        <methods>
-          <include name="setUpTest"/>
-          <include name="verifyTermsPDFPostLogIn"/>
-          <include name="verifyPolicyPostLogIn"/>
-          <include name="tearDown"/>
-          <include name="verifyTermsPDF"/>
-          <include name="setup"/>
-          <include name="verifyProfileClick"/>
-        </methods>
-      </class> <!-- com.zenken.freshers.user.CommonParts -->
-      <class name="com.zenken.freshers.user.FieldOfStudy">
-        <methods>
-          <include name="verifyITOptionSelection"/>
-          <include name="verifyITOptions"/>
-          <include name="verifyResearchRequired"/>
-          <include name="setUpTest"/>
-          <include name="verifyCoreOtherTextBoxStates"/>
-          <include name="verifyITOtherField"/>
-          <include name="verifyCoreFieldRequired"/>
-          <include name="verifyITOtherFieldRequired"/>
-          <include name="tearDown"/>
-          <include name="verifyCoreOtherPlaceholder"/>
-          <include name="verifyITOtherCharExceedError"/>
-          <include name="verifyFieldOfStudyUrl"/>
-          <include name="verifyCoreOtherFieldRequired"/>
-          <include name="verifyITFieldRequired"/>
-          <include name="verifyCoreOptionSelection"/>
-          <include name="verifyITOtherTextBoxStates"/>
-          <include name="verifyITOtherPlaceholder"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.zenken.freshers.user.FieldOfStudy -->
+      </class> <!-- com.zenken.freshers.user.JapanesePlacementConsentForm -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

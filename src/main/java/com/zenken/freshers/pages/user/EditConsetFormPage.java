@@ -133,4 +133,9 @@ public class EditConsetFormPage extends WebDriverUtils{
 		return error.getText();
 	}
 	
+	public void switchToPdf()
+	{
+		switchTabs(1);
+	}
+	
 }

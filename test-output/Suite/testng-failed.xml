@@ -3,18 +3,17 @@
 <suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.zenken.freshers.testcomponents.Listeners"/>
-    <listener class-name="com.zenken.freshers.testcomponents.RetryListener"/>
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Skills">
+      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm">
         <methods>
           <include name="setUpTest"/>
+          <include name="verifyConsentFormDL"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifySkillsUrl"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Skills -->
+      </class> <!-- com.zenken.freshers.user.JapanesePlacementConsentForm -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

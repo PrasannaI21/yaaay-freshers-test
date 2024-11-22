@@ -66,8 +66,8 @@ public class Photo extends BaseTest{
 		profilePreview.clickphotoEdit();
 		log("Step 2: Click on Upload Photo icon");
 		photo.clickUploadPhoto();
-		log("Step 3: Select an image");
-		photo.uploadPhoto("C:\\Users\\prasa\\Downloads\\Sample Photo.png");
+		log("Step 3: Upload an image");
+		photo.uploadPhoto(System.getProperty("user.dir")+"\\test-data\\Sample Photo.png");
 		String initialStyle = photo.getCropBoxStyle();
 		log("Step 4: Resize the image by click-holding right edge of the crop-box and moving horizontally by 30 offset");
 		photo.resizePhoto();
@@ -85,7 +85,7 @@ public class Photo extends BaseTest{
 		log("Step 2: Click on Upload Photo icon");
 		photo.clickUploadPhoto();
 		log("Step 3: Select an image");
-		photo.uploadPhoto("C:\\Users\\prasa\\Downloads\\Sample Photo.png");
+		photo.uploadPhoto(System.getProperty("user.dir")+"\\test-data\\Sample Photo.png");
 		String initialStyle = photo.getCropBoxStyle();
 		log("Step 4: Drag the image by click-holding it and moving vertically and horizontally by 50 offset");
 		photo.dragPhoto();
@@ -103,7 +103,7 @@ public class Photo extends BaseTest{
 		log("Step 2: Click on Upload Photo icon");
 		photo.clickUploadPhoto();
 		log("Step 3: Select an image");
-		photo.uploadPhoto("C:\\Users\\prasa\\Downloads\\Sample Photo.png");
+		photo.uploadPhoto(System.getProperty("user.dir")+"\\test-data\\Sample Photo.png");
 		log("Step 4: Click on 'Upload' button");
 		photo.clickModalUpload();
 		log("Step 5: Verify: Snackbar, Section display, Tab selection");
@@ -146,7 +146,7 @@ public class Photo extends BaseTest{
 		log("Step 3: Click on Upload Photo icon");
 		photo.clickUploadPhoto();
 		log("Step 4: Select an image");
-		photo.uploadPhoto("C:\\Users\\prasa\\Downloads\\Sample Photo.png");
+		photo.uploadPhoto(System.getProperty("user.dir")+"\\test-data\\Sample Photo.png");
 		log("Step 5: Verify that 'Upload' button is active");
 		Assert.assertTrue(photo.isUploadBtActive(), "Upload button should be active");
 	}
@@ -177,7 +177,7 @@ public class Photo extends BaseTest{
 		log("Step 2: Click on Upload Photo icon");
 		photo.clickUploadPhoto();
 		log("Step 3: Upload a PDF file");
-		photo.uploadPhoto("C:\\Users\\prasa\\Downloads\\Sample_Project.pdf");
+		photo.uploadPhoto(System.getProperty("user.dir")+"\\test-data\\Sample_Project.pdf");
 		photo.clickModalUpload();
 		log("Step 4: Verify that validation error corresponds to invalid file format");
 		Assert.assertEquals(photo.getAlert(), properties.getProperty("alert6"));
@@ -191,7 +191,7 @@ public class Photo extends BaseTest{
 		log("Step 2: Click on Upload Photo icon");
 		photo.clickUploadPhoto();
 		log("Step 3: Upload a sample image having size more than 5MB");
-		photo.uploadPhoto("C:\\Users\\prasa\\Downloads\\Sample-png-image-5mb.png");
+		photo.uploadPhoto(System.getProperty("user.dir")+"\\test-data\\Sample-png-image-5mb.png");
 		photo.clickModalUpload();
 		log("Step 4: Verify that validation error corresponds to file size more than 5MB");
 		Assert.assertTrue(photo.getPopUpText().contains(properties.getProperty("error30")));

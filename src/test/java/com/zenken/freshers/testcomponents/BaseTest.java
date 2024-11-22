@@ -69,6 +69,8 @@ public class BaseTest {
 			prefs.put("plugins.always_open_pdf_externally", true);
 		}
 		ChromeOptions options = new ChromeOptions();
+		EdgeOptions edgeOptions = new EdgeOptions();
+		edgeOptions.setExperimentalOption("prefs", prefs);
 		options.setExperimentalOption("prefs", prefs);
 		options.addArguments("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
 		FirefoxOptions options2 = new FirefoxOptions();
@@ -84,7 +86,7 @@ public class BaseTest {
 //		options2.addPreference("dom.webnotifications.enabled", false);
 //		options2.addPreference("browser.tabs.remote.autostart", false);
 		currentTestMethod.set(method.getName());
-		initializeDriver(options, options2);
+		initializeDriver(options, options2, edgeOptions);
 		
 	}
 	
@@ -92,11 +94,13 @@ public class BaseTest {
 	{
 		ChromeOptions options = new ChromeOptions();
 		FirefoxOptions options2 = new FirefoxOptions();
-		initializeDriver(options, options2);
+		EdgeOptions edgeOptions = new EdgeOptions();
+//		Map<String, Object> prefs = new HashMap<String, Object>();
+		initializeDriver(options, options2, edgeOptions);
 		return driver;
 	}
 	
-	public void initializeDriver(ChromeOptions options, FirefoxOptions options2) throws IOException
+	public void initializeDriver(ChromeOptions options, FirefoxOptions options2, EdgeOptions edgeOptions) throws IOException
 	{
 		if(!reuseBrowserSession)//セッションを再利用しない場合のみにWebDriverを初期化
 		{
@@ -114,12 +118,11 @@ public class BaseTest {
 //				System.setProperty("webdriver.gecko.driver", "C:\\Users\\prasa\\Downloads\\geckodriver-v0.35.0-win-aarch64\\geckodriver.exe");
 				driver = new FirefoxDriver(options2);
 			}else if(browser.contains("edge")) {
-				EdgeOptions options3 = new EdgeOptions();
 				WebDriverManager.edgedriver().setup();
 				if(browser.contains("headless")) {
-					options3.addArguments("--headless");
+					edgeOptions.addArguments("--headless");
 				}				
-				driver = new EdgeDriver(options3);
+				driver = new EdgeDriver(edgeOptions);
 			}
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));

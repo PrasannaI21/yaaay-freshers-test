@@ -110,7 +110,7 @@ public class Certifications extends BaseTest{
 		log("Step 1: Click on 'Add Certification' button");
 		profilePreview.clickAddCertification();
 		log("Step 2: Upload a sample PDF file");
-		certification.uploadFile("C:\\Users\\prasa\\Downloads\\Sample_Project.pdf");
+		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\Sample_Project.pdf");
 		log("Step 3: Verify that the file is uploaded successfully");
 		Assert.assertTrue(certification.isProgressBarDisplayed(), "Progress bar is not displayed");
 		Assert.assertTrue(certification.isUploadComplete(), "File upload did not complete successfully");
@@ -136,23 +136,23 @@ public class Certifications extends BaseTest{
 		log("Step 2: Enter 'Certification Name'");
 		certification.enterCertName("Microsoft Certified: Azure Fundamentals");
 		log("Step 3: Upload a sample PDF file");
-		certification.uploadFile("C:\\Users\\prasa\\Downloads\\Sample_Project.pdf");
+		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\Sample_Project-pdf.pdf");
 		certification.getFileNameText();
 		log("Step 4: Click on 'Save' button");
 		certification.clickSave();
 		redirectionAssertions("#Certifications");
 		log("Step 5: Verify that expected file name with file check text are displayed on preview page");
-		Assert.assertTrue(profilePreview.getCertFileValue().contains("Sample_Project.pdf"));
+		Assert.assertTrue(profilePreview.getCertFileValue().contains("Sample_Project-pdf.pdf"));
 		Assert.assertTrue(profilePreview.getCertFileValue().contains("(file check in progress)"));
 		log("Step 6: Verify that download link is displayed on preview page");
-		Assert.assertEquals(profilePreview.getCertDlLink(10), "Sample_Project.pdf");
+		Assert.assertEquals(profilePreview.getCertDlLink(10), "Sample_Project-pdf.pdf");
 		int initialCount = profilePreview.getFileCount();
 		log("Step 7: Click download link");
 		profilePreview.clickCertFile();
 		log("Step 8: Verify that file can be downloaded from preview page after refreshing");
 		Assert.assertTrue(profilePreview.isFileDownloaded(initialCount), "File was not downloaded successfully");
 		String downloadedFileName = profilePreview.getDownloadedFileName();
-		Assert.assertEquals(downloadedFileName, "Sample_Project.pdf");
+		Assert.assertEquals(downloadedFileName, "Sample_Project-pdf.pdf");
 	}
 	
 	@Test(priority=9, description="This test verifies that expected 'Certification Edit' URL is displayed")
@@ -301,7 +301,7 @@ public class Certifications extends BaseTest{
 		log("Step 1: Click on 'Add Certification' button");
 		profilePreview.clickAddCertification();
 		log("Step 2: Upload a file in doc format");
-		certification.uploadFile("C:\\Users\\prasa\\Downloads\\file-sample-doc.doc");
+		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\file-sample-doc.doc");
 		log("Step 3: Verify that validation error corresponds to file type: pdf");
 		Assert.assertTrue(certification.getCertFileErrorText().contains(properties.getProperty("error29")));
 	}
@@ -312,7 +312,7 @@ public class Certifications extends BaseTest{
 		log("Step 1: Click on 'Add Certification' button");
 		profilePreview.clickAddCertification();
 		log("Step 2: Upload a PDF file having size more than 2mb");
-		certification.uploadFile("C:\\Users\\prasa\\Downloads\\samplepdf-above2mb.pdf");
+		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\samplepdf-above2mb.pdf");
 		log("Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes");
 		Assert.assertTrue(certification.getCertFileErrorText().contains(properties.getProperty("error27")));
 	}
