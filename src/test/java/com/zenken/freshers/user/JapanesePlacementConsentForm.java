@@ -140,7 +140,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 2: Click on 'Delete' button for added file");
 		consentForm.clickCFDelete();
 		log("Step 3: Verify that consent form is deleted");
-		Assert.assertTrue(consentForm.isCFDeleted("Sample_Project.pdf"), "Consent form file should have been deleted");
+		Assert.assertTrue(consentForm.isCFDeleted("sample-cform.pdf"), "Consent form file should have been deleted");
 		log("Step 4: Verify that 'Select From Files' button turns active");
 		Assert.assertTrue(consentForm.isSelectFileActive(), "'Select From Files' button should turn active");
 	}

@@ -1,32 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="8" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-22T13:50:42 IST" name="Suite" finished-at="2024-11-22T13:50:53 IST" duration-ms="11141">
+  <suite started-at="2024-11-22T15:59:46 IST" name="Suite" finished-at="2024-11-22T16:02:14 IST" duration-ms="148347">
     <groups>
     </groups>
-    <test started-at="2024-11-22T13:50:42 IST" name="Test" finished-at="2024-11-22T13:50:53 IST" duration-ms="11141">
-      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@389b0789]" started-at="2024-11-22T13:50:42 IST" name="setup" finished-at="2024-11-22T13:50:44 IST" duration-ms="1952" status="PASS">
+    <test started-at="2024-11-22T15:59:46 IST" name="Test" finished-at="2024-11-22T16:02:14 IST" duration-ms="148347">
+      <class name="com.zenken.freshers.user.Projects">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T15:59:46 IST" name="setup" finished-at="2024-11-22T15:59:48 IST" duration-ms="1930" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyConsentFormDL() throws java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@389b0789]" started-at="2024-11-22T13:50:44 IST" name="setUpTest" finished-at="2024-11-22T13:50:51 IST" duration-ms="7416" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T15:59:48 IST" name="setUpTest" finished-at="2024-11-22T16:00:03 IST" duration-ms="14720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifyConsentFormDL()[pri:4, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@389b0789]" started-at="2024-11-22T13:50:51 IST" name="verifyConsentFormDL" description="This test verifies that consent form can be downloaded successfully" finished-at="2024-11-22T13:50:52 IST" duration-ms="1447" status="PASS">
+        <test-method retried="true" signature="verifyProjectAdditionWithFile()[pri:11, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:00:03 IST" name="verifyProjectAdditionWithFile" description="This test verifies that the project is added with file" finished-at="2024-11-22T16:00:42 IST" duration-ms="38875" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sample_Project.pdf] but found [Sample_Project (1).pdf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (1).pdf]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:233)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyConsentFormDL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@389b0789]" started-at="2024-11-22T13:50:52 IST" name="tearDown" finished-at="2024-11-22T13:50:53 IST" duration-ms="258" status="PASS">
+        </test-method> <!-- verifyProjectAdditionWithFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:00:42 IST" name="tearDown" finished-at="2024-11-22T16:00:42 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:00:42 IST" name="setup" finished-at="2024-11-22T16:00:43 IST" duration-ms="1174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:00:43 IST" name="setUpTest" finished-at="2024-11-22T16:00:51 IST" duration-ms="7744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method retried="true" signature="verifyProjectAdditionWithFile()[pri:11, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:00:51 IST" name="verifyProjectAdditionWithFile" description="This test verifies that the project is added with file" finished-at="2024-11-22T16:01:27 IST" duration-ms="36015" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sample_Project.pdf] but found [Sample_Project (2).pdf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (2).pdf]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:233)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProjectAdditionWithFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:01:27 IST" name="tearDown" finished-at="2024-11-22T16:01:27 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:01:27 IST" name="setup" finished-at="2024-11-22T16:01:28 IST" duration-ms="1101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:01:28 IST" name="setUpTest" finished-at="2024-11-22T16:01:35 IST" duration-ms="6969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyProjectAdditionWithFile()[pri:11, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:01:35 IST" name="verifyProjectAdditionWithFile" description="This test verifies that the project is added with file" finished-at="2024-11-22T16:02:14 IST" duration-ms="38471" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sample_Project.pdf] but found [Sample_Project (3).pdf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (3).pdf]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:233)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProjectAdditionWithFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Projects@5e17553a]" started-at="2024-11-22T16:02:14 IST" name="tearDown" finished-at="2024-11-22T16:02:14 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.Projects -->
+      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T15:59:46 IST" name="setup" finished-at="2024-11-22T15:59:48 IST" duration-ms="1935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyConsentFormDelete()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T15:59:48 IST" name="setUpTest" finished-at="2024-11-22T16:00:03 IST" duration-ms="14640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyConsentFormDelete()[pri:6, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:03 IST" name="verifyConsentFormDelete" description="This test verifies that the consent form can be deleted" finished-at="2024-11-22T16:00:07 IST" duration-ms="4101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConsentFormDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:07 IST" name="tearDown" finished-at="2024-11-22T16:00:07 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:07 IST" name="setup" finished-at="2024-11-22T16:00:08 IST" duration-ms="1226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyCFInvalidFileFormat()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:08 IST" name="setUpTest" finished-at="2024-11-22T16:00:19 IST" duration-ms="11051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCFInvalidFileFormat()[pri:9, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:19 IST" name="verifyCFInvalidFileFormat" description="This test verifies that validation error for invalid consent form file format occurs" finished-at="2024-11-22T16:00:24 IST" duration-ms="4743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCFInvalidFileFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:24 IST" name="tearDown" finished-at="2024-11-22T16:00:24 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:24 IST" name="setup" finished-at="2024-11-22T16:00:25 IST" duration-ms="1199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyCFInvalidFileSize()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:25 IST" name="setUpTest" finished-at="2024-11-22T16:00:34 IST" duration-ms="8906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyCFInvalidFileSize()[pri:10, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:34 IST" name="verifyCFInvalidFileSize" description="This test verifies that validation error for invalid size for consent form file occurs" finished-at="2024-11-22T16:00:41 IST" duration-ms="6584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCFInvalidFileSize -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JapanesePlacementConsentForm@11d8ae8b]" started-at="2024-11-22T16:00:41 IST" name="tearDown" finished-at="2024-11-22T16:00:41 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

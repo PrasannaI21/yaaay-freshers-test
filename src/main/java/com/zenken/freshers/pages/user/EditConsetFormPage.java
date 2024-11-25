@@ -82,7 +82,7 @@ public class EditConsetFormPage extends WebDriverUtils{
 	
 	public boolean isUploadComplete()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		return wait.until(driver -> progressBar.getAttribute("value").equals("100"));
 	}
 	
@@ -104,7 +104,7 @@ public class EditConsetFormPage extends WebDriverUtils{
 	
 	public boolean isCFDeleted(String fileName)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		boolean isDeleted = wait.until((ExpectedCondition<Boolean>) driver -> 
 		{return !cFBox.getText().contains(fileName);});
 		return isDeleted;

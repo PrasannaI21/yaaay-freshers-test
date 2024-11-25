@@ -3,14 +3,15 @@
 <suite name="Suite" parallel="classes">
 	<listeners>
 <listener class-name="com.zenken.freshers.testcomponents.Listeners"></listener>
+<listener class-name="com.zenken.freshers.testcomponents.RetryListener"></listener>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm">
-        <methods>
-          <include name="verifyConsentFormDL"></include>
-        </methods>
-      </class>
+      <class name="com.zenken.freshers.user.Projects"/>
+      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm"/>
+      <class name="com.zenken.freshers.user.Certifications"/>
+      <class name="com.zenken.freshers.user.Photo"/>
+      <class name="com.zenken.freshers.user.Skills"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

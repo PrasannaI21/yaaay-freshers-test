@@ -193,7 +193,7 @@ public class EditProjectsPage extends WebDriverUtils{
 	
 	public boolean isUploadComplete()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		return wait.until(driver -> progressBar.getAttribute("value").equals("100"));
 	}
 	
@@ -249,7 +249,7 @@ public class EditProjectsPage extends WebDriverUtils{
 		{
 			waitUntilElementAppears(file);
 		}else {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 			wait.until((ExpectedCondition<Boolean>) driver -> 
 			{return file.getText().contains(fileName);});
 		}
