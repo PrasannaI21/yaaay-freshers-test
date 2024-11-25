@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\prasa\eclipse-workspace\YaaayFreshers\testng.xml</span>
+                    <span>C:\Users\prasa\eclipse-workspace\YaaayFreshers\trail.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,40 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  2 skipped,  3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAdditionWithFile">verifyProjectAdditionWithFile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAdditionWithFile">verifyProjectAdditionWithFile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Projects" class="method navigator-link" hash-for-method="verifyProjectAdditionWithFile">verifyProjectAdditionWithFile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -136,17 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JapanesePlacementConsentForm" class="method navigator-link" hash-for-method="verifyCFInvalidFileFormat">verifyCFInvalidFileFormat</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JapanesePlacementConsentForm" class="method navigator-link" hash-for-method="verifyCFInvalidFileSize">verifyCFInvalidFileSize</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JapanesePlacementConsentForm" class="method navigator-link" hash-for-method="verifyConsentFormDelete">verifyConsentFormDelete</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.JapanesePlacementConsentForm" class="method navigator-link" hash-for-method="verifyConsentFormDL">verifyConsentFormDL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -161,76 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.zenken.freshers.user.Projects</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyProjectAdditionWithFile">
-                  </a> <!-- verifyProjectAdditionWithFile -->
-                  <span class="method-name">verifyProjectAdditionWithFile</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (3).pdf]
-	at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:233)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(This test verifies that the project is added with file)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.zenken.freshers.user.Projects</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyProjectAdditionWithFile">
-                  </a> <!-- verifyProjectAdditionWithFile -->
-                  <span class="method-name">verifyProjectAdditionWithFile</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (2).pdf]
-	at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:233)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(This test verifies that the project is added with file)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyProjectAdditionWithFile">
-                  </a> <!-- verifyProjectAdditionWithFile -->
-                  <span class="method-name">verifyProjectAdditionWithFile</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Sample_Project.pdf] but found [Sample_Project (1).pdf]
-	at com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile(Projects.java:233)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(This test verifies that the project is added with file)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -239,29 +126,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCFInvalidFileFormat">
-                  </a> <!-- verifyCFInvalidFileFormat -->
-                  <span class="method-name">verifyCFInvalidFileFormat</span>
+                  <a name="verifyConsentFormDL">
+                  </a> <!-- verifyConsentFormDL -->
+                  <span class="method-name">verifyConsentFormDL</span>
                   <em>
-(This test verifies that validation error for invalid consent form file format occurs)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCFInvalidFileSize">
-                  </a> <!-- verifyCFInvalidFileSize -->
-                  <span class="method-name">verifyCFInvalidFileSize</span>
-                  <em>
-(This test verifies that validation error for invalid size for consent form file occurs)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyConsentFormDelete">
-                  </a> <!-- verifyConsentFormDelete -->
-                  <span class="method-name">verifyConsentFormDelete</span>
-                  <em>
-(This test verifies that the consent form can be deleted)                  </em>
+(This test verifies that consent form can be downloaded successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,7 +138,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prasa\eclipse-workspace\YaaayFreshers\testng.xml</span>
+            <span class="header-content">C:\Users\prasa\eclipse-workspace\YaaayFreshers\trail.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -282,16 +151,9 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Projects&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyProjectAdditionWithFile&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Projects --&gt;
       &lt;class name=&quot;com.zenken.freshers.user.JapanesePlacementConsentForm&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyCFInvalidFileFormat&quot;/&gt;
-          &lt;include name=&quot;verifyCFInvalidFileSize&quot;/&gt;
-          &lt;include name=&quot;verifyConsentFormDelete&quot;/&gt;
+          &lt;include name=&quot;verifyConsentFormDL&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.zenken.freshers.user.JapanesePlacementConsentForm --&gt;
     &lt;/classes&gt;
@@ -307,7 +169,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -333,36 +195,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyProjectAdditionWithFile')
-data.setCell(0, 2, 'com.zenken.freshers.user.Projects')
-data.setCell(0, 3, 38875);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyProjectAdditionWithFile')
-data.setCell(1, 2, 'com.zenken.freshers.user.Projects')
-data.setCell(1, 3, 38471);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyProjectAdditionWithFile')
-data.setCell(2, 2, 'com.zenken.freshers.user.Projects')
-data.setCell(2, 3, 36015);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyCFInvalidFileSize')
-data.setCell(3, 2, 'com.zenken.freshers.user.JapanesePlacementConsentForm')
-data.setCell(3, 3, 6584);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyCFInvalidFileFormat')
-data.setCell(4, 2, 'com.zenken.freshers.user.JapanesePlacementConsentForm')
-data.setCell(4, 3, 4743);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyConsentFormDelete')
-data.setCell(5, 2, 'com.zenken.freshers.user.JapanesePlacementConsentForm')
-data.setCell(5, 3, 4101);
+data.setCell(0, 1, 'verifyConsentFormDL')
+data.setCell(0, 2, 'com.zenken.freshers.user.JapanesePlacementConsentForm')
+data.setCell(0, 3, 2642);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -377,96 +219,29 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">41 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.zenken.freshers.user.Projects</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyProjectPlaceholders</span>
-                <br/>
-                <span class="ignored-method-name">verifyDefaultProjectName</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCountExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCharCount</span>
-                <br/>
-                <span class="ignored-method-name">verifyStartYearRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyEndMonthRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectEditUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectsNewUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCancelEditRed</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidFileSize</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectTitleCharExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectDelete</span>
-                <br/>
-                <span class="ignored-method-name">verifyBeforeEndDateError</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectPageTitle</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectDetailsCharExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectDeletePopUp</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectTitleRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyMaxFilesUpload</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAdditionWithDetails</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidProjectLinkError</span>
-                <br/>
-                <span class="ignored-method-name">verifyStartMonthRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectEndDateDdDisable</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectLink</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAdditionWithLink</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectLinkCharExceed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectFileDelete</span>
-                <br/>
-                <span class="ignored-method-name">verifyEndYearRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidFileFormat</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectFilesUpload</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectSavedData</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectFileUpload</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectCancelNewRed</span>
-                <br/>
-                <span class="ignored-method-name">verifyProjectAddition</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.zenken.freshers.user.JapanesePlacementConsentForm</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyConsentFormDL</span>
-                <br/>
-                <span class="ignored-method-name">verifyConsentFormUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyConsentFormTitle</span>
-                <br/>
-                <span class="ignored-method-name">verifyIsCFSaved</span>
-                <br/>
-                <span class="ignored-method-name">verifyCFUploadAndDl</span>
-                <br/>
                 <span class="ignored-method-name">verifyCFReqToApply</span>
                 <br/>
                 <span class="ignored-method-name">verifyCFCancelRed</span>
+                <br/>
+                <span class="ignored-method-name">verifyCFUploadAndDl</span>
+                <br/>
+                <span class="ignored-method-name">verifyCFInvalidFileFormat</span>
+                <br/>
+                <span class="ignored-method-name">verifyConsentFormTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifyCFInvalidFileSize</span>
+                <br/>
+                <span class="ignored-method-name">verifyConsentFormUrl</span>
+                <br/>
+                <span class="ignored-method-name">verifyIsCFSaved</span>
+                <br/>
+                <span class="ignored-method-name">verifyConsentFormDelete</span>
                 <br/>
                 <span class="ignored-method-name">verifyAgreeCBReqToSave</span>
                 <br/>
@@ -480,122 +255,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Projects</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zenken.freshers.user.JapanesePlacementConsentForm</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.Inter...)</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyConsentFormDL() throws java....)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.JapanesePlacementConsentForm</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyConsentFormDelete())</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Projects</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUpTest</span>
-                <span class="method-start">1935 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.JapanesePlacementConsentForm</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">1936 ms</span>
+                <span class="method-start">3176 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyConsentFormDelete</span>
-                <span class="method-start">16576 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Projects</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyProjectAdditionWithFile</span>
-                <span class="method-start">16655 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.JapanesePlacementConsentForm</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20693 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyCFInvalidFileFormat())</span>
-                <span class="method-start">20960 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">22187 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCFInvalidFileFormat</span>
-                <span class="method-start">33238 ms</span>
+                <span class="method-name">verifyConsentFormDL</span>
+                <span class="method-start">11152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37984 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.JapanesePlacementConsentForm.verifyCFInvalidFileSize())</span>
-                <span class="method-start">38190 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">39390 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCFInvalidFileSize</span>
-                <span class="method-start">48296 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54880 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Projects</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">55534 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.Inter...)</span>
-                <span class="method-start">55795 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">56969 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyProjectAdditionWithFile</span>
-                <span class="method-start">64713 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">100730 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Projects.verifyProjectAdditionWithFile() throws java.lang.Inter...)</span>
-                <span class="method-start">101003 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">102105 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyProjectAdditionWithFile</span>
-                <span class="method-start">109074 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">148141 ms</span>
+                <span class="method-start">13799 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -7,11 +7,19 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Projects"/>
-      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm"/>
+      <class name="com.zenken.freshers.user.BasicInformation"/>
       <class name="com.zenken.freshers.user.Certifications"/>
+      <class name="com.zenken.freshers.user.CommonParts"/>
       <class name="com.zenken.freshers.user.Photo"/>
       <class name="com.zenken.freshers.user.Skills"/>
+      <class name="com.zenken.freshers.user.Projects"/>
+      <class name="com.zenken.freshers.user.JapanesePlacementConsentForm"/>
+      <class name="com.zenken.freshers.user.FieldOfStudy"/>
+      <class name="com.zenken.freshers.user.Internships"/>
+      <class name="com.zenken.freshers.user.JobPreferences"/>
+      <class name="com.zenken.freshers.user.Login"/>
+      <class name="com.zenken.freshers.user.Registration"/>
+      <class name="com.zenken.freshers.user.Settings"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
