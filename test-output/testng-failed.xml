@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.Projects">
+      <class name="com.zenken.freshers.user.Photo">
         <methods>
-          <include name="verifyProjectAdditionWithFile"/>
           <include name="setUpTest"/>
+          <include name="verifyImageResize"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Projects -->
+      </class> <!-- com.zenken.freshers.user.Photo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

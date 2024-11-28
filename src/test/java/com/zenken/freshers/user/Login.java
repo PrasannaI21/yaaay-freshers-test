@@ -1,11 +1,14 @@
 package com.zenken.freshers.user;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.UUID;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,7 +35,7 @@ public class Login extends BaseTest{
 	UUID uuid;
 	String passwordResetLink;
 	String emailAddress = "23e51ed7-f1d2-405c-8380-67b86ca0956b@mailslurp.net";
-	String resetPass = "Password_1";//実行する前に現在のパスワードを確認
+	private String resetPass;
 	
 	@BeforeMethod
 	public void setUpTest(ITestResult result) throws IOException
@@ -47,6 +50,14 @@ public class Login extends BaseTest{
 		forgotPassword = new ForgotPasswordPage(driver);
 		resetPasswordComplete = new ResetPasswordCompletePage(driver);
 		properties = getProperties();
+	}
+	
+	@BeforeClass
+	public void generatePass()
+	{
+		String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+		resetPass = "Password_" + timestamp;
+		System.out.println("Generated password: " + resetPass);
 	}
 	
 	@Test(description="This test verifies that Login page title is correct")

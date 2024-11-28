@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,7 @@ public class Settings extends BaseTest{
 	ProfilePreviewPage profilePreview;
 	EditSettingsPage settings;
 	Properties properties;
+//	private boolean isLoggedIn = false;
 	
 	@BeforeMethod
 	public void setUpTest() throws IOException
@@ -23,9 +25,23 @@ public class Settings extends BaseTest{
 		profilePreview = new ProfilePreviewPage(driver);
 		settings = new EditSettingsPage(driver);
 		properties = getProperties();
+//		if(!isLoggedIn) {
+//			navigateTo("/");
+//			profilePreview.login("prasanna.inamdar@zenken.co.jp", "Password_1");
+//			isLoggedIn = true;
+//		}
 		navigateTo("/");
 		profilePreview.login("prasanna.inamdar@zenken.co.jp", "Password_1");
 	}
+	
+//	@AfterMethod
+//	public void doThis()
+//	{
+//		String url = driver.getCurrentUrl();
+//		if(url.contains("edit/settings")) {
+//			driver.get(properties.getProperty("url2"));
+//		}
+//	}
 	
 	@Test(description="This test verifies that user is redirected to 'Settings' edit page")
 	public void verifySettingsUrl() throws InterruptedException
