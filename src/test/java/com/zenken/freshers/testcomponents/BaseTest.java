@@ -154,9 +154,9 @@ public class BaseTest {
 	{
 		TakesScreenshot screenshot = (TakesScreenshot)driver;
 		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
-		File destFile = new File(System.getProperty("user.dir")+"\\reports\\"+fileName+".png");
+		File destFile = new File(System.getProperty("user.dir")+File.separator+"reports"+File.separator+fileName+".png");
 		FileUtils.copyFile(srcFile, destFile);
-		return System.getProperty("user.dir")+"\\reports\\"+fileName+".png";// return file path in string
+		return System.getProperty("user.dir")+File.separator+"reports"+File.separator+fileName+".png";// return file path in string
 	}
 	
 	public void log(String message)
