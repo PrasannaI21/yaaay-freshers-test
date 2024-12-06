@@ -8,7 +8,7 @@ public class ExtentReporter {
 	
 	public static ExtentReports getReportObject()
 	{
-		String path = System.getProperty("user.dir")+"\\reports\\index.html";
+		String path = System.getProperty("user.dir")+"/reports/index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("テスト結果");
 		reporter.config().setDocumentTitle("Freshers Automation Test Results");
