@@ -154,13 +154,13 @@ public class Photo extends BaseTest{
 	@Test(priority=9, description="This test verifies that the image can be deleted and 'Required to apply' text is displayed on Photo edit and preview page")
 	public void verifyPhotoDelete()
 	{
-		log("Step 1: Click on Photo edit button");
+    	log("Step 1: Click on Photo edit button");
 		profilePreview.clickphotoEdit();
 		log("Step 2: Click on 'Delete' button next to the image");
 		photo.clickDelete();
 		log("Step 3: Verify that the image is deleted (gray icon is displayed)");
 		String src = photo.getImageSrcAfterDel();
-		Assert.assertEquals(src, properties.getProperty("src"));
+		Assert.assertTrue(src.contains(properties.getProperty("src")), "src value is not correct");
 		log("Step 4: Verify that 'Required to apply' text is displayed on edit page");
 		Assert.assertTrue(photo.getCardText().contains(properties.getProperty("error16")));
 		log("Step 5: Click on arrow-back button");

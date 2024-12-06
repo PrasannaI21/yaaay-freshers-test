@@ -10,9 +10,9 @@
       <class name="com.zenken.freshers.user.Photo">
         <methods>
           <include name="setUpTest"/>
-          <include name="verifyImageResize"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyPhotoDelete"/>
         </methods>
       </class> <!-- com.zenken.freshers.user.Photo -->
     </classes>
