@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T15:37:18 IST" name="Default suite" finished-at="2024-12-06T15:37:31 IST" duration-ms="12342">
+  <suite started-at="2024-12-06T16:28:54 IST" name="Default suite" finished-at="2024-12-06T16:29:07 IST" duration-ms="13557">
     <groups>
     </groups>
-    <test started-at="2024-12-06T15:37:18 IST" name="Default test" finished-at="2024-12-06T15:37:31 IST" duration-ms="12342">
+    <test started-at="2024-12-06T16:28:54 IST" name="Default test" finished-at="2024-12-06T16:29:07 IST" duration-ms="13557">
       <class name="com.zenken.freshers.user.Photo">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T15:37:18 IST" name="setup" finished-at="2024-12-06T15:37:20 IST" duration-ms="2051" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T16:28:54 IST" name="setup" finished-at="2024-12-06T16:28:55 IST" duration-ms="1568" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyImageResize()]]>
+                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoDelete()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T15:37:20 IST" name="setUpTest" finished-at="2024-12-06T15:37:29 IST" duration-ms="8418" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T16:28:55 IST" name="setUpTest" finished-at="2024-12-06T16:29:02 IST" duration-ms="6855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifyImageResize()[pri:4, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T15:37:29 IST" name="verifyImageResize" description="This test verifies that the uploaded image can be resized" finished-at="2024-12-06T15:37:30 IST" duration-ms="1651" status="PASS">
+        <test-method signature="verifyPhotoDelete()[pri:9, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T16:29:02 IST" name="verifyPhotoDelete" description="This test verifies that the image can be deleted and &#039;Required to apply&#039; text is displayed on Photo edit and preview page" finished-at="2024-12-06T16:29:07 IST" duration-ms="4949" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyImageResize -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T15:37:30 IST" name="tearDown" finished-at="2024-12-06T15:37:31 IST" duration-ms="178" status="PASS">
+        </test-method> <!-- verifyPhotoDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@3bd82cf5]" started-at="2024-12-06T16:29:07 IST" name="tearDown" finished-at="2024-12-06T16:29:07 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
