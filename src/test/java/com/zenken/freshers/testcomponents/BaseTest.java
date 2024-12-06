@@ -187,7 +187,8 @@ public class BaseTest {
 	public Properties getProperties() throws IOException
 	{
 		properties = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\zenken\\freshers\\resources\\UserTexts.properties");
+//		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\zenken\\freshers\\resources\\UserTexts.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/zenken/freshers/resources/UserTexts.properties");
 		properties.load(fis);
 		return properties;
 	}
