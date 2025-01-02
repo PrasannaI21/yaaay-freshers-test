@@ -347,7 +347,7 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	public String getAnchorLinkAttribute(WebElement ele)
 	{
-		String attribute = ele.getAttribute("class");
+		String attribute = ele.getDomProperty("class");
 		return attribute;
 	}
 	
@@ -857,7 +857,7 @@ public class ProfilePreviewPage extends WebDriverUtils{
 			}
 		}
 		waitUntilElementAppears(photoAlt);
-		return photoAlt.getAttribute("src");
+		return photoAlt.getDomProperty("src");
 	}
 	
 	//Method to check if the required mark is present and displayed

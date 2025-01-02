@@ -1,5 +1,7 @@
 package com.zenken.frehsers.abstractcomponents;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -16,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zenken.freshers.pages.user.LoginPage;
 
 public class WebDriverUtils {
@@ -74,13 +78,13 @@ public class WebDriverUtils {
 	
 	public String getImageAttribute()
 	{
-		String imgSrc = headerImage.getAttribute("src");
+		String imgSrc = headerImage.getDomProperty("src");
 		return imgSrc;
 	}
 	
 	public String getAltAttribute()
 	{
-		String imageAlt = headerImage.getAttribute("alt");
+		String imageAlt = headerImage.getDomProperty("alt");
 		return imageAlt;
 	}
 	

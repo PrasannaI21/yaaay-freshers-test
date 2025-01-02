@@ -63,7 +63,7 @@ public class FieldOfStudy extends BaseTest{
 		log("Step 2: Select 'Core' option from 'What is your main area of research and study?' dropdown");
 		editField.selectFieldDropdown(1);
 		String placeholder = editField.getCoreOtherPlaceholder();
-		log("Step 3: Verify that placeholder equals "+ "\""+placeholder+"\"");
+		log("Step 3: Verify that placeholder equals "+ "\""+"Describe Your Core Field"+"\"");
 		Assert.assertEquals(placeholder, properties.getProperty("corePlaceholder"), "Core placeholder is incorrect");
 	}
 	
@@ -90,7 +90,7 @@ public class FieldOfStudy extends BaseTest{
 		log("Step 2: Select 'IT' option from 'What is your main area of research and study?' dropdown");
 		editField.selectFieldDropdown(2);
 		String placeholder = editField.getITOtherPlaceholder();
-		log("Step 3: Verify that placeholder equals "+ "\""+placeholder+"\"");
+		log("Step 3: Verify that placeholder equals "+ "\""+"Describe Your IT Field"+"\"");
 		Assert.assertTrue(placeholder.equals(properties.getProperty("itPlaceholder")), "IT placeholder is incorrect");
 	}
 	

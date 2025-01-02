@@ -24,10 +24,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
-import org.testng.ITestContext;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -179,15 +176,11 @@ public class BaseTest {
 				reuseBrowserSession = true;//ブラウザを再利用するようにフラグを設定
 			}
 		}
-//		if(extent != null) {
-//			extent.flush();
-//		}
 	}
 	
 	public Properties getProperties() throws IOException
 	{
 		properties = new Properties();
-//		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\zenken\\freshers\\resources\\UserTexts.properties");
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/zenken/freshers/resources/UserTexts.properties");
 		properties.load(fis);
 		return properties;

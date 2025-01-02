@@ -88,7 +88,7 @@ public class EditPhotoPage extends WebDriverUtils{
 	
 	public String getCropBoxStyle()
 	{
-		return cropBox.getAttribute("style");
+		return cropBox.getDomProperty("style");
 	}
 	
 	public void resizePhoto()
@@ -110,7 +110,7 @@ public class EditPhotoPage extends WebDriverUtils{
 	
 	public String getImageSrc()
 	{
-		return photoAlt.getAttribute("src");
+		return photoAlt.getDomProperty("src");
 	}
 	
 	public void clickDelete()
@@ -126,7 +126,7 @@ public class EditPhotoPage extends WebDriverUtils{
 	public String getImageSrcAfterDel()
 	{
 		waitUntilElementAppears(reqError);
-		return photoAlt.getAttribute("src");
+		return photoAlt.getDomProperty("src");
 	}
 	
 	public void clickBack()
