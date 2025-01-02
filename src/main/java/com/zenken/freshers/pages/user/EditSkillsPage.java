@@ -65,7 +65,7 @@ public class EditSkillsPage extends WebDriverUtils{
 	
 	public String getSkillsPlaceholder()
 	{
-		return skillsTb.getAttribute("placeholder");
+		return skillsTb.getDomProperty("placeholder");
 	}
 	
 	public void enterSkills(String skill)

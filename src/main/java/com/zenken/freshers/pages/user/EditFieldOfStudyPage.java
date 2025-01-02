@@ -78,7 +78,7 @@ public class EditFieldOfStudyPage extends WebDriverUtils{
 	
 	public String getCoreOtherPlaceholder()
 	{
-		return coreOtherTb.getAttribute("placeholder");
+		return coreOtherTb.getDomProperty("placeholder");
 	}
 	
 	public String getITOptionsTexts()
@@ -88,7 +88,7 @@ public class EditFieldOfStudyPage extends WebDriverUtils{
 	
 	public String getITOtherPlaceholder()
 	{
-		return itOtherTb.getAttribute("placeholder");
+		return itOtherTb.getDomProperty("placeholder");
 	}
 	
 	public List<Boolean> getCoreRadioTextBoxStates()

@@ -70,14 +70,14 @@ public class CommonParts extends BaseTest{
 			+ "in a separate tab")
 	public void verifyPolicy()
 	{
-		log("Step 1: Click on 'Privacy Policy' link on the footer");
+//		log("Step 1: Click on 'Privacy Policy' link on the footer");
 		utils.clickPolicy();
 		ArrayList<String> tabs = utils.switchTabs(1);
-		log("Step 2: Verify that new tab is opened");
+//		log("Step 2: Verify that new tab is opened");
 		Assert.assertEquals(tabs.size(), 2, "A new tab did not open");
 		String expectedPdfUrl = properties.getProperty("policy");
 		String currentUrl = driver.getCurrentUrl();
-		log("Step 3: Verify that Privacy Policy url is correct");
+//		log("Step 3: Verify that Privacy Policy url is correct");
 		Assert.assertEquals(currentUrl, expectedPdfUrl, "The opened URL is not the expected one.");
 	}
 	

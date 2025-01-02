@@ -88,7 +88,7 @@ public class EditInternshipsPage extends WebDriverUtils{
 	
 	public String getIntPlaceholder()
 	{
-		return intDetailsTb.getAttribute("placeholder");
+		return intDetailsTb.getDomProperty("placeholder");
 	}
 	
 	public void clickEndDateCheckbox()

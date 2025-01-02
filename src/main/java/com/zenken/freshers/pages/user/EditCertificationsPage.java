@@ -78,8 +78,8 @@ public class EditCertificationsPage extends WebDriverUtils{
 	public List<String> getCertPlaceholders()
 	{
 		List<String> attributes = new ArrayList<String>();
-		attributes.add(certNameTb.getAttribute("placeholder"));
-		attributes.add(certDetailsTb.getAttribute("placeholder"));
+		attributes.add(certNameTb.getDomProperty("placeholder"));
+		attributes.add(certDetailsTb.getDomProperty("placeholder"));
 		return attributes;
 	}
 	
@@ -115,7 +115,7 @@ public class EditCertificationsPage extends WebDriverUtils{
 	public boolean isUploadComplete()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		return wait.until(driver -> progressBar.getAttribute("value").equals("100"));
+		return wait.until(driver -> progressBar.getDomProperty("value").equals("100"));
 	}
 	
 	public String getFileNameText()
@@ -131,7 +131,7 @@ public class EditCertificationsPage extends WebDriverUtils{
 	
 	public String getCertNameText()
 	{
-		return certNameTb.getAttribute("value");
+		return certNameTb.getDomProperty("value");
 	}
 	
 	public void clearProjectDetails()
