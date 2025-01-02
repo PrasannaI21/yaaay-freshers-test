@@ -29,11 +29,19 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
+		String methodName = result.getMethod().getMethodName();
 		String description = result.getMethod().getDescription();
+		String testSteps = TestDescription.getDescription(methodName);
 		String featureName = result.getTestClass().getRealClass().getSimpleName();
-		test = extent.createTest(result.getMethod().getMethodName(), description);
+		test = extent.createTest(methodName, description);
 		test.assignCategory(featureName);
 		extentTest.set(test);
+		if(testSteps != null && !testSteps.isEmpty()) {
+			String[] steps = testSteps.split("\n");
+			for(String step : steps) {
+				log(step);
+			}
+		}
 		if(!isBrowserInfoSet) {
 			try {
 				driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
@@ -80,7 +88,7 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		if(result.wasRetried()) {
-			extentTest.get().skip("<span style='color:orange; font-weight:bold;'>Retry Attempt</span>: Test was retried");
+			extentTest.get().warning("<span style='color:orange; font-weight:bold;'>Retry Attempt</span>: Test was retried");
 		}else {
 			extentTest.get().skip(result.getThrowable());
 		}	

@@ -78,9 +78,9 @@ public class EditJobPreferencesPage extends WebDriverUtils{
 	public List<String> getPlaceholderTexts()
 	{
 		List<String> texts = new ArrayList<>();
-		texts.add(firstPreferenceOtherTb.getAttribute("placeholder"));
-		texts.add(secondPreferenceOtherTb.getAttribute("placeholder"));
-		texts.add(thirdPreferenceOtherTb.getAttribute("placeholder"));
+		texts.add(firstPreferenceOtherTb.getDomProperty("placeholder"));
+		texts.add(secondPreferenceOtherTb.getDomProperty("placeholder"));
+		texts.add(thirdPreferenceOtherTb.getDomProperty("placeholder"));
 		return texts;
 	}
 	

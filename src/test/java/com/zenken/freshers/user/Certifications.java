@@ -110,7 +110,7 @@ public class Certifications extends BaseTest{
 		log("Step 1: Click on 'Add Certification' button");
 		profilePreview.clickAddCertification();
 		log("Step 2: Upload a sample PDF file");
-		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\Sample_Project.pdf");
+		certification.uploadFile(System.getProperty("user.dir")+"/test-data/Sample_Project.pdf");
 		log("Step 3: Verify that the file is uploaded successfully");
 		Assert.assertTrue(certification.isProgressBarDisplayed(), "Progress bar is not displayed");
 		Assert.assertTrue(certification.isUploadComplete(), "File upload did not complete successfully");
@@ -136,7 +136,7 @@ public class Certifications extends BaseTest{
 		log("Step 2: Enter 'Certification Name'");
 		certification.enterCertName("Microsoft Certified: Azure Fundamentals");
 		log("Step 3: Upload a sample PDF file");
-		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\Sample_Project-pdf.pdf");
+		certification.uploadFile(System.getProperty("user.dir")+"/test-data/Sample_Project-pdf.pdf");
 		certification.getFileNameText();
 		log("Step 4: Click on 'Save' button");
 		certification.clickSave();
@@ -301,7 +301,7 @@ public class Certifications extends BaseTest{
 		log("Step 1: Click on 'Add Certification' button");
 		profilePreview.clickAddCertification();
 		log("Step 2: Upload a file in doc format");
-		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\file-sample-doc.doc");
+		certification.uploadFile(System.getProperty("user.dir")+"/test-data/file-sample-doc.doc");
 		log("Step 3: Verify that validation error corresponds to file type: pdf");
 		Assert.assertTrue(certification.getCertFileErrorText().contains(properties.getProperty("error29")));
 	}
@@ -312,7 +312,7 @@ public class Certifications extends BaseTest{
 		log("Step 1: Click on 'Add Certification' button");
 		profilePreview.clickAddCertification();
 		log("Step 2: Upload a PDF file having size more than 2mb");
-		certification.uploadFile(System.getProperty("user.dir")+"\\test-data\\samplepdf-above2mb.pdf");
+		certification.uploadFile(System.getProperty("user.dir")+"/test-data/samplepdf-above2mb.pdf");
 		log("Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes");
 		Assert.assertTrue(certification.getCertFileErrorText().contains(properties.getProperty("error27")));
 	}

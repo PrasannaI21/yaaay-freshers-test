@@ -226,11 +226,11 @@ public class EditBasicInformationPage extends WebDriverUtils{
 	public List<Object> getSavedData()
 	{
 		List<Object> obj = new ArrayList<>();
-		obj.add(firstNameTb.getAttribute("value"));
-		obj.add(lastNameTb.getAttribute("value"));
-		obj.add(emailTb.getAttribute("value"));
+		obj.add(firstNameTb.getDomProperty("value"));
+		obj.add(lastNameTb.getDomProperty("value"));
+		obj.add(emailTb.getDomProperty("value"));
 		obj.add(getDropdownText(collegeDd));
-		obj.add(usnTb.getAttribute("value"));
+		obj.add(usnTb.getDomProperty("value"));
 		obj.add(getDropdownText(yearDd));
 		obj.add(interest3.isSelected());
 		return obj;
@@ -244,7 +244,7 @@ public class EditBasicInformationPage extends WebDriverUtils{
 		List<String> attributes = new ArrayList<>();
 		for(WebElement element: textBoxes)
 		{
-			String text = element.getAttribute("placeholder");
+			String text = element.getDomProperty("placeholder");
 			attributes.add(text);
 		}
 		return attributes;

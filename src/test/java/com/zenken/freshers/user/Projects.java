@@ -183,7 +183,7 @@ public class Projects extends BaseTest{
 		log("Step 1: Click on 'Add Project' button");
 		profilePreview.clickAddProject();
 		log("Step 2: Upload a sample PDF file");
-		projects.uploadFile(System.getProperty("user.dir")+"\\test-data\\Sample_Project.pdf");
+		projects.uploadFile(System.getProperty("user.dir")+"/test-data/Sample_Project.pdf");
 		log("Step 3: Verify that the file is uploaded successfully");
 		Assert.assertTrue(projects.isProgressBarDisplayed(), "Progress bar is not displayed");
 		Assert.assertTrue(projects.isUploadComplete(), "File upload did not complete successfully");
@@ -214,7 +214,7 @@ public class Projects extends BaseTest{
 		log("Step 5: Select checkbox for End Date");
 		projects.clickEndDateCheckBox();
 		log("Step 6: Upload a sample PDF file");
-		projects.uploadFile(System.getProperty("user.dir")+"\\test-data\\Sample_Project.pdf");
+		projects.uploadFile(System.getProperty("user.dir")+"/test-data/Sample_Project.pdf");
 		projects.getFileNameText();
 		log("Step 7: Click on 'Save' button");
 		projects.clickSave();
@@ -284,9 +284,9 @@ public class Projects extends BaseTest{
 	{
 		log("Step 1: Click on 'Add Project' button");
 		profilePreview.clickAddProject();
-		String[] paths = {System.getProperty("user.dir")+"\\test-data\\file-sample-doc.doc", 
-				System.getProperty("user.dir")+"\\test-data\\file-sample-docx.docx", 
-				System.getProperty("user.dir")+"\\test-data\\file-sample-rtf.rtf"};
+		String[] paths = {System.getProperty("user.dir")+"/test-data/file-sample-doc.doc", 
+				System.getProperty("user.dir")+"/test-data/file-sample-docx.docx", 
+				System.getProperty("user.dir")+"/test-data/file-sample-rtf.rtf"};
 		log("Step 2: Upload sample files with doc, docx, and rtf formats");
 		log("Step 3: Verify that the files are uploaded");
 		String firstPath = paths[0];
@@ -543,7 +543,7 @@ public class Projects extends BaseTest{
 		log("Step 1: Click on 'Add Project' button");
 		profilePreview.clickAddProject();
 		log("Step 2: Upload a file in txt format");
-		projects.uploadFile(System.getProperty("user.dir")+"\\test-data\\file-sample-txt.txt");
+		projects.uploadFile(System.getProperty("user.dir")+"/test-data/file-sample-txt.txt");
 		log("Step 3: Verify that validation error corresponds to file type: doc, docx, rtf, pdf");
 		Assert.assertTrue(projects.getProjectFileErrorText().contains(properties.getProperty("error26")));
 	}
@@ -554,7 +554,7 @@ public class Projects extends BaseTest{
 		log("Step 1: Click on 'Add Project' button");
 		profilePreview.clickAddProject();
 		log("Step 2: Upload a file having size more than 2mb");
-		projects.uploadFile(System.getProperty("user.dir")+"\\test-data\\samplepdf-above2mb.pdf");
+		projects.uploadFile(System.getProperty("user.dir")+"/test-data/samplepdf-above2mb.pdf");
 		log("Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes");
 		Assert.assertTrue(projects.getProjectFileErrorText().contains(properties.getProperty("error27")));
 	}
@@ -580,9 +580,9 @@ public class Projects extends BaseTest{
 	{
 		log("Step 1: Click on 'Add Project' button");
 		profilePreview.clickAddProject();
-		String[] paths = {System.getProperty("user.dir")+"\\test-data\\Sample_Project.pdf", System.getProperty("user.dir")+"\\test-data\\file-sample-doc.doc",
-				System.getProperty("user.dir")+"\\test-data\\file-sample-docx.docx", System.getProperty("user.dir")+"\\test-data\\file-sample-rtf.rtf",
-				System.getProperty("user.dir")+"\\test-data\\Sample_Project-pdf.pdf"};
+		String[] paths = {System.getProperty("user.dir")+"/test-data/Sample_Project.pdf", System.getProperty("user.dir")+"/test-data/file-sample-doc.doc",
+				System.getProperty("user.dir")+"/test-data/file-sample-docx.docx", System.getProperty("user.dir")+"/test-data/file-sample-rtf.rtf",
+				System.getProperty("user.dir")+"/test-data/Sample_Project-pdf.pdf"};
 		String firstPath = paths[0];
 		log("Step 2: Upload five sample project files");
 		for(String path : paths)

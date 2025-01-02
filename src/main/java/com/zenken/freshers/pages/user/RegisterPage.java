@@ -135,7 +135,7 @@ public class RegisterPage extends WebDriverUtils{
 		List<String> attributes = new ArrayList<>();
 		for(WebElement element: textBoxes)
 		{
-			String text = element.getAttribute("placeholder");
+			String text = element.getDomProperty("placeholder");
 			attributes.add(text);
 		}
 		return attributes;

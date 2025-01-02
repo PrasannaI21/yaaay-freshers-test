@@ -115,7 +115,7 @@ public class EditProjectsPage extends WebDriverUtils{
 		List<String> attributes = new ArrayList<String>();
 		for(WebElement element :  textBoxes)
 		{
-			String text = element.getAttribute("placeholder");
+			String text = element.getDomProperty("placeholder");
 			attributes.add(text);
 		}
 		return attributes;
@@ -194,7 +194,7 @@ public class EditProjectsPage extends WebDriverUtils{
 	public boolean isUploadComplete()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		return wait.until(driver -> progressBar.getAttribute("value").equals("100"));
+		return wait.until(driver -> progressBar.getDomProperty("value").equals("100"));
 	}
 	
 	public String getFileNameText()
@@ -205,7 +205,7 @@ public class EditProjectsPage extends WebDriverUtils{
 	
 	public String getProjectTitleText()
 	{
-		return titleTb.getAttribute("value");
+		return titleTb.getDomProperty("value");
 	}
 	
 	public String getStartMonthOption()

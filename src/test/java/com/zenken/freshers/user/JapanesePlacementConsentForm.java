@@ -99,7 +99,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		log("Step 2: Upload consent form PDF file");
-		consentForm.uploadFile(System.getProperty("user.dir")+"\\test-data\\sample-cform.pdf");
+		consentForm.uploadFile(System.getProperty("user.dir")+"/test-data/sample-cform.pdf");
 		log("Step 3: Verify that the file is uploaded successfully");
 		Assert.assertTrue(consentForm.isProgressBarDisplayed(), "Progress bar is not displayed");
 		Assert.assertTrue(consentForm.isUploadComplete(), "File upload did not complete successfully");
@@ -176,7 +176,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		log("Step 2: Upload a file in doc format");
-		consentForm.uploadFile(System.getProperty("user.dir")+"\\test-data\\file-sample-doc.doc");
+		consentForm.uploadFile(System.getProperty("user.dir")+"/test-data/file-sample-doc.doc");
 		log("Step 3: Verify that validation error corresponds to file type: pdf");
 		Assert.assertTrue(consentForm.getCFErrorText().contains(properties.getProperty("error29")));
 	}
@@ -187,7 +187,7 @@ public class JapanesePlacementConsentForm extends BaseTest{
 		log("Step 1: Click on Consent Form edit button");
 		profilePreview.clickFormEdit();
 		log("Step 2: Upload a PDF file having size more than 2mb");
-		consentForm.uploadFile(System.getProperty("user.dir")+"\\test-data\\samplepdf-above2mb.pdf");
+		consentForm.uploadFile(System.getProperty("user.dir")+"/test-data/samplepdf-above2mb.pdf");
 		log("Step 3: Verify that validation error corresponds to file size less than 2048 kilobytes");
 		Assert.assertTrue(consentForm.getCFErrorText().contains(properties.getProperty("error27")));
 	}

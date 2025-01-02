@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 06 16:58:33 IST 2024</td>
+<td>Started on:</td><td>Tue Dec 31 14:22:23 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>198 seconds (198993 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59413 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,95 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoDelete()'><b>verifyPhotoDelete</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the image can be deleted and 'Required to apply' text is displayed on Photo edit and preview page</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.delete-button&quot;}
-  (Session info: chrome=131.0.6778.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91f964a47414b4b888af255a3fe5b5ff, findElement {value=.delete-button, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65036/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91f964a47414b4b888af255a3fe5b5ff
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at com.zenken.freshers.pages.user.EditPhotoPage.clickDelete(EditPhotoPage.java:118)
-	at com.zenken.freshers.user.Photo.verifyPhotoDelete(Photo.java:160)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1503375372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1503375372'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.delete-button&quot;}
-  (Session info: chrome=131.0.6778.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91f964a47414b4b888af255a3fe5b5ff, findElement {value=.delete-button, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65036/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91f964a47414b4b888af255a3fe5b5ff
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at com.zenken.freshers.pages.user.EditPhotoPage.clickDelete(EditPhotoPage.java:118)
-	at com.zenken.freshers.user.Photo.verifyPhotoDelete(Photo.java:160)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -165,181 +76,40 @@ Session ID: 91f964a47414b4b888af255a3fe5b5ff
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoUrl()'><b>verifyPhotoUrl</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that user is redirected to Photo edit page</td>
+<td title='com.zenken.freshers.user.Jobs.verifyJobsWarningText()'><b>verifyJobsWarningText</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that the warning text displayed below the Jobs page is correct</td>
 <td></td>
 <td>0</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoChange()'><b>verifyPhotoChange</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the uploaded image can be changed</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoTitle()'><b>verifyPhotoTitle</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the Photo page title is correct</td>
+<td title='com.zenken.freshers.user.Jobs.verifyJobsPageTitle()'><b>verifyJobsPageTitle</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that expected Jobs page title is displayed</td>
 <td></td>
 <td>0</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoImage()'><b>verifyPhotoImage</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the uploaded image is same and 'Required to apply' text is not displayed on preview and Photo edit page</td>
+<td title='com.zenken.freshers.user.Jobs.verifyJobsUrl()'><b>verifyJobsUrl</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that user is redirected to Jobs page</td>
 <td></td>
-<td>55</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoUpload()'><b>verifyPhotoUpload</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the image can be uploaded successfully</td>
-<td></td>
-<td>5</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoInvalidSize()'><b>verifyPhotoInvalidSize</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that validation error occurs when image size is more than 5MB</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoInvalidFile()'><b>verifyPhotoInvalidFile</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that validation error occurs for invalid file format</td>
-<td></td>
-<td>3</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyUploadModalDisplay()'><b>verifyUploadModalDisplay</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that upload modal appears when upload icon is clicked</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyImageDrag()'><b>verifyImageDrag</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the uploaded image can be dragged</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyImageResize()'><b>verifyImageResize</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the uploaded image can be resized</td>
-<td></td>
-<td>1</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoDelete()'><b>verifyPhotoDelete</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the image can be deleted and 'Required to apply' text is displayed on Photo edit and preview page</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.delete-button&quot;}
-  (Session info: chrome=131.0.6778.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c7690fd2143b990d1e0fd6c8de0734e, findElement {value=.delete-button, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65001}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65001/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c7690fd2143b990d1e0fd6c8de0734e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at com.zenken.freshers.pages.user.EditPhotoPage.clickDelete(EditPhotoPage.java:118)
-	at com.zenken.freshers.user.Photo.verifyPhotoDelete(Photo.java:160)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134013734", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1134013734'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.delete-button&quot;}
-  (Session info: chrome=131.0.6778.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c7690fd2143b990d1e0fd6c8de0734e, findElement {value=.delete-button, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65001}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65001/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c7690fd2143b990d1e0fd6c8de0734e
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at com.zenken.freshers.pages.user.EditPhotoPage.clickDelete(EditPhotoPage.java:118)
-	at com.zenken.freshers.user.Photo.verifyPhotoDelete(Photo.java:160)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
 <td>0</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
 <tr>
-<td title='com.zenken.freshers.user.Photo.verifyPhotoDelete()'><b>verifyPhotoDelete</b><br>Test class: com.zenken.freshers.user.Photo<br>Test method: This test verifies that the image can be deleted and 'Required to apply' text is displayed on Photo edit and preview page</td>
-<td><div><pre>java.lang.AssertionError: expected [https://cdn-freshers.dspf-dev.com/assets/20241001-055210/build/assets/icon-person-gray-nIV7_seK.svg] but found [https://cdn-freshers.dspf-dev.com/assets/20241205-055027/build/assets/icon-person-gray-nIV7_seK.svg]
-	at com.zenken.freshers.user.Photo.verifyPhotoDelete(Photo.java:163)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1457083499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1457083499'><pre>java.lang.AssertionError: expected [https://cdn-freshers.dspf-dev.com/assets/20241001-055210/build/assets/icon-person-gray-nIV7_seK.svg] but found [https://cdn-freshers.dspf-dev.com/assets/20241205-055027/build/assets/icon-person-gray-nIV7_seK.svg]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.zenken.freshers.user.Photo.verifyPhotoDelete(Photo.java:163)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>3</td>
-<td>com.zenken.freshers.user.Photo@1ebea008</td></tr>
+<td title='com.zenken.freshers.user.Jobs.verifyJobsValues()'><b>verifyJobsValues</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that the Jobs page is updated and expected values are displayed as they had been set in Admin account</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Jobs.verifyCondtionsAnchor()'><b>verifyCondtionsAnchor</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that user is navigated to Condtions section upon clicking on "Condtions" anchor link</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Jobs.verifyCompanyOverviewAnchor()'><b>verifyCompanyOverviewAnchor</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that user is navigated to Company Overview section upon clicking on "Company Overview" anchor link</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
+<tr>
+<td title='com.zenken.freshers.user.Jobs.verifyJobDetailAnchor()'><b>verifyJobDetailAnchor</b><br>Test class: com.zenken.freshers.user.Jobs<br>Test method: This test verifies that user is navigated to Job Details section upon clicking on "Job Detail" anchor link</td>
+<td></td>
+<td>0</td>
+<td>com.zenken.freshers.user.Jobs@7905a0b8</td></tr>
 </table><p>
 </body>
 </html>
