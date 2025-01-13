@@ -263,4 +263,13 @@ public class WebDriverUtils {
 		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
 	}
 	
+	public boolean isElementPresent(WebElement element)
+	{
+		try {
+			return element.isDisplayed();
+		}catch(Exception e) {
+			return false;
+		}
+	}
+	
 }

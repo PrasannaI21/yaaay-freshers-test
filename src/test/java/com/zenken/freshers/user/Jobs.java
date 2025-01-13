@@ -38,15 +38,15 @@ public class Jobs extends BaseTest{
 	{
 		adminEditJob = new AdminEditJobsPage(driver);
 		adminLogin = new AdminLoginPage(driver);
+		properties = getProperties();
 		if(!isJdUpdated) {
 			navigateTo("/admin/");
 			adminLogin.loginAdmin();
 			driver.get("https://freshers.dspf-dev.com/admin/events/116/jobs/295/edit/");
 			adminEditJob.restoreJob();
-			dataset = adminEditJob.updateJob();
+			dataset = adminEditJob.updateJob(properties.getProperty("datasetIndex"), "datasetIndex");
 			isJdUpdated = true;
 		}
-		properties = getProperties();
 		navigateTo("/jobs/9df004f4/");
 		jobs = new JobsPage(driver);
 		
@@ -207,7 +207,7 @@ public class Jobs extends BaseTest{
 						}
 					}
 					for(String expValue : displayedHolidays) {
-						Assert.assertTrue(ele.getText().contains(expValue), "Holiday not found :" + expValue);
+						Assert.assertTrue(ele.getText().contains(expValue), "Holiday not found: " + expValue);
 					}
 				}else {
 					if("true".equals(groupedValues.get(0))) {

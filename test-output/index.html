@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse--2035522632\testng-customsuite.xml</span>
+                    <span>C:\Users\prasa\AppData\Local\Temp\testng-eclipse-1656662076\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.Jobs" class="method navigator-link" hash-for-method="verifyCompaniesUrl">verifyCompaniesUrl</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.zenken.freshers.user.Companies" class="method navigator-link" hash-for-method="verifyComImages">verifyComImages</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,16 +121,16 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.zenken.freshers.user.Jobs</span>
+              <span class="class-name">com.zenken.freshers.user.Companies</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCompaniesUrl">
-                  </a> <!-- verifyCompaniesUrl -->
-                  <span class="method-name">verifyCompaniesUrl</span>
+                  <a name="verifyComImages">
+                  </a> <!-- verifyComImages -->
+                  <span class="method-name">verifyComImages</span>
                   <em>
-(This test verifies that user is redirected to Companies page)                  </em>
+(This test verifies that the images uploaded for company logo and header images in Admin account are displayed accrodingly)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse--2035522632\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prasa\AppData\Local\Temp\testng-eclipse-1656662076\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +147,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Jobs&quot;&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.Companies&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyCompaniesUrl&quot;/&gt;
+          &lt;include name=&quot;verifyComImages&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Jobs --&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Companies --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -193,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCompaniesUrl')
-data.setCell(0, 2, 'com.zenken.freshers.user.Jobs')
-data.setCell(0, 3, 772);
+data.setCell(0, 1, 'verifyComImages')
+data.setCell(0, 2, 'com.zenken.freshers.user.Companies')
+data.setCell(0, 3, 48);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 772 ms</span>
+              <span class="suite-total-time">Total running time: 48 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -215,25 +215,21 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.zenken.freshers.user.Jobs</span>
+              <span class="ignored-class-name">com.zenken.freshers.user.Companies</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyJobsPageTitle</span>
+                <span class="ignored-method-name">verifyComAnchorLink</span>
                 <br/>
-                <span class="ignored-method-name">verifyJobsUrl</span>
+                <span class="ignored-method-name">verifyComUrl</span>
                 <br/>
-                <span class="ignored-method-name">verifyJobDetailAnchor</span>
+                <span class="ignored-method-name">verifyComPageTitle</span>
                 <br/>
-                <span class="ignored-method-name">verifyCondtionsAnchor</span>
+                <span class="ignored-method-name">verifyCompWebSite</span>
                 <br/>
-                <span class="ignored-method-name">verifyJobsValues</span>
-                <br/>
-                <span class="ignored-method-name">verifyJobsWarningText</span>
-                <br/>
-                <span class="ignored-method-name">verifyCompanyOverviewAnchor</span>
+                <span class="ignored-method-name">verifyComValues</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -245,22 +241,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Jobs</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zenken.freshers.user.Companies</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Jobs.verifyCompaniesUrl())</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Companies.verifyComImages() throws java.io.IOException)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setupJobs</span>
-                <span class="method-start">1964 ms</span>
+                <span class="method-name">setupCom</span>
+                <span class="method-start">1913 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCompaniesUrl</span>
-                <span class="method-start">6363 ms</span>
+                <span class="method-name">verifyComImages</span>
+                <span class="method-start">24069 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7142 ms</span>
+                <span class="method-start">24125 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
