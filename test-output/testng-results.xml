@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-31T15:12:42 IST" name="Default suite" finished-at="2024-12-31T15:12:49 IST" duration-ms="7314">
+  <suite started-at="2025-01-13T15:21:35 IST" name="Default suite" finished-at="2025-01-13T15:21:59 IST" duration-ms="24476">
     <groups>
     </groups>
-    <test started-at="2024-12-31T15:12:42 IST" name="Default test" finished-at="2024-12-31T15:12:49 IST" duration-ms="7314">
-      <class name="com.zenken.freshers.user.Jobs">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Jobs@7d20d0b]" started-at="2024-12-31T15:12:42 IST" name="setup" finished-at="2024-12-31T15:12:44 IST" duration-ms="1963" status="PASS">
+    <test started-at="2025-01-13T15:21:35 IST" name="Default test" finished-at="2025-01-13T15:21:59 IST" duration-ms="24476">
+      <class name="com.zenken.freshers.user.Companies">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:35 IST" name="setup" finished-at="2025-01-13T15:21:37 IST" duration-ms="1912" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Jobs.verifyCompaniesUrl()]]>
+                <![CDATA[public void com.zenken.freshers.user.Companies.verifyComImages() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupJobs()[pri:0, instance:com.zenken.freshers.user.Jobs@7d20d0b]" started-at="2024-12-31T15:12:44 IST" name="setupJobs" finished-at="2024-12-31T15:12:48 IST" duration-ms="4399" status="PASS">
+        <test-method is-config="true" signature="setupCom()[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:37 IST" name="setupCom" finished-at="2025-01-13T15:21:59 IST" duration-ms="22156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupJobs -->
-        <test-method signature="verifyCompaniesUrl()[pri:0, instance:com.zenken.freshers.user.Jobs@7d20d0b]" started-at="2024-12-31T15:12:48 IST" name="verifyCompaniesUrl" description="This test verifies that user is redirected to Companies page" finished-at="2024-12-31T15:12:49 IST" duration-ms="772" status="PASS">
+        </test-method> <!-- setupCom -->
+        <test-method signature="verifyComImages()[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:59 IST" name="verifyComImages" description="This test verifies that the images uploaded for company logo and header images in Admin account are displayed accrodingly" finished-at="2025-01-13T15:21:59 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCompaniesUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Jobs@7d20d0b]" started-at="2024-12-31T15:12:49 IST" name="tearDown" finished-at="2024-12-31T15:12:49 IST" duration-ms="129" status="PASS">
+        </test-method> <!-- verifyComImages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:59 IST" name="tearDown" finished-at="2025-01-13T15:21:59 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Jobs -->
+      </class> <!-- com.zenken.freshers.user.Companies -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -14,71 +14,59 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
 import com.zenken.freshers.data.DataReader;
 
-public class AdminEditJobsPage extends WebDriverUtils {
+public class AdminEditCompaniesPage extends WebDriverUtils{
 
 	WebDriver driver;
 	
-	public AdminEditJobsPage(WebDriver driver)
-	{
+	public AdminEditCompaniesPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css="[name=jobTitle]")
-	WebElement jobTitleDd;
-	
-	@FindBy(id="jobTitleDetails")
-	WebElement jobTitleDetailsTb;
-
-	@FindBy(css="[type=radio]")
-	WebElement radios;
-
 	@FindBy(css="select, input, textarea")
-	List<WebElement> jobUpdate;
+	List<WebElement> elements;
 	
-	public JsonNode updateJob(String indexValue, String indexKey) throws IOException
+	public JsonNode updateCompany(String indexValue, String indexKey) throws IOException
 	{
 		JsonNode jsonObj = DataReader.getDataSet(System.getProperty("user.dir")+
-				"/src/main/java/com/zenken/freshers/data/jd.json", indexValue, indexKey);
+				"/src/main/java/com/zenken/freshers/data/companies.json", indexValue, indexKey);
 		JsonNode values = jsonObj.get("values");
-		List<WebElement> elements = jobUpdate.stream().filter(e -> e.isDisplayed() && e.getDomAttribute("id") != null)
-				.collect(Collectors.toList());
-		for(int i=0; i<elements.size(); i++) {
-			WebElement element = elements.get(i);
+		List<WebElement> eles = elements.stream().filter(e -> e.isDisplayed() && e.getDomAttribute("id") != null)
+		.collect(Collectors.toList());
+		for(int i=0; i<eles.size(); i++) {
+			WebElement ele = eles.get(i);
 			String value = values.get(i).asText(null);
 			if(value == null) {
 				continue;
 			}
-			switch(element.getDomAttribute("class")) {
-			case "uk-select " :
-				selectDropdown(element, value);
-				break;
+			switch(ele.getDomAttribute("class")) {
 			case "uk-input " :
 			case "uk-textarea " :
 			case "u-w-320 uk-input " :
 				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("arguments[0].value=arguments[1]", element, value);
+				js.executeScript("arguments[0].value=arguments[1]", ele, value);
 				break;
-			case "uk-radio" :
-			case "uk-checkbox" :
+			case "uk-select " :
+				selectDropdown(ele, value);
+				break;
+			case "uk-checkbox" : 
 				if(value.equals("true")) {
-					clickByJavaScript(element);
+					clickByJavaScript(ele);
 				}
-			}			
+			}
 		}
 		clickSave();
-		return values;	
+		return values;
 	}
 	
-	public void restoreJob()
+	public void restoreCompany()
 	{
 		String script = "document.querySelectorAll('input, textarea').forEach(el => {"
-				+ "if(el.className === 'uk-input ' || el.tagName === 'TEXTAREA' || el.id === 'locationOther'){"
+				+ "if(el.className === 'uk-input ' || el.tagName === 'TEXTAREA' || el.id === 'officialLanguageOther'){"
 				+ "el.value = '';}"
-				+ "else if(el.type === 'checkbox' || el.type === 'radio'){"
+				+ "else if(el.type === 'checkbox'){"
 				+ "el.checked = false;}})";
 		((JavascriptExecutor)driver).executeScript(script);
 	}
-	
 }

@@ -197,15 +197,6 @@ public class JobsPage extends WebDriverUtils{
 		return groupRules;
 	}
 	
-	private boolean isElementPresent(WebElement element)
-	{
-		try {
-			return element.isDisplayed();
-		}catch(Exception e) {
-			return false;
-		}
-	}
-	
 	public List<SimpleEntry<WebElement,List<Integer>>> getElementIndexMapping()
 	{
 		return Arrays.asList(

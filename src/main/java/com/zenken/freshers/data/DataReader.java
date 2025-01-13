@@ -12,38 +12,36 @@ import java.io.FileOutputStream;
 
 public class DataReader {
 
-//	private static final String FILE_PATH = System.getProperty("user.dir")+
-//			"/src/test/java/com/zenken/freshers/data/jd.json";
 	static String propFile = System.getProperty("user.dir") + 
 			"/src/main/java/com/zenken/freshers/resources/UserTexts.properties";
 	
-	public static JsonNode getDataSet(String filePath) throws IOException
+	public static JsonNode getDataSet(String filePath, String indexValue, String indexKey) throws IOException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		JsonNode rootNode = mapper.readTree(new File(filePath));
 		JsonNode datasets = rootNode.get("datasets");
-		int datasetIndex = readIndex();
+		int datasetIndex = readIndex(indexValue);
 		JsonNode dataset = datasets.get(datasetIndex % datasets.size());
 		datasetIndex++;
-		saveIndex(datasetIndex);
+		saveIndex(datasetIndex, indexKey);
 		return dataset;
 	}
 	
-	public static int readIndex() throws IOException
+	public static int readIndex(String indexValue) throws IOException
 	{
 		InputStream inputStream = new FileInputStream(propFile);
 		Properties properties = new Properties();
 		properties.load(inputStream);
-		return Integer.parseInt(properties.getProperty("datasetIndex"));
+		return Integer.parseInt(indexValue);
 	}
 	
-	public static void saveIndex(int index) throws IOException
+	public static void saveIndex(int index, String indexKey) throws IOException
 	{
 		InputStream inputStream = new FileInputStream(propFile);
 		Properties properties = new Properties();
 		properties.load(inputStream);
 		OutputStream outputStream = new FileOutputStream(propFile);
-		properties.setProperty("datasetIndex", String.valueOf(index));
+		properties.setProperty(indexKey, String.valueOf(index));
 		properties.store(outputStream, null);
 	}
 }
