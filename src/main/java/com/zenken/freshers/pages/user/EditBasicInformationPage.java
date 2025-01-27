@@ -191,20 +191,35 @@ public class EditBasicInformationPage extends WebDriverUtils{
 	@FindBy(id="beBTechBranchLabel")
 	WebElement beBTech;
 	
-	@FindBy(id="beBTechCgpaLabel")
+	@FindBy(id="beBTechBranch")
+	WebElement beBTechDd;
+	
+	@FindBy(id="beBTechCgpa")
 	WebElement beBTechCgpa;
 	
 	@FindBy(id="planForContinuedEducationLabel")
 	WebElement planForEducation;
 	
+	@FindBy(id="planForContinuedEducation-3")
+	WebElement planForEducationRadio3;
+	
 	@FindBy(id="hasActiveBacklogLabel")
 	WebElement hasBacklog;
+	
+	@FindBy(id="hasActiveBacklog1")
+	WebElement hasBacklogRadio1;
 	
 	@FindBy(id="englishLevelLabel")
 	WebElement english;
 	
+	@FindBy(id="englishLevel")
+	WebElement englishDd;
+	
 	@FindBy(id="japaneseLevelLabel")
 	WebElement japanese;
+	
+	@FindBy(id="japaneseLevel")
+	WebElement japaneseDd;
 	
 	@FindBy(css="[role='alert']")
 	WebElement alert;
@@ -482,6 +497,22 @@ public class EditBasicInformationPage extends WebDriverUtils{
 		usnTb.sendKeys("123456789");
 		selectDropdown(yearDd, "2024");
 		clickByJavaScript(interest3);
+	}
+	
+	public void enterBasicInfo()
+	{
+		enterPhone("911234567891");
+		selectDateOfBirth("19", "June", "1995");
+		selectSex();
+		selectNationality("Hungarian");
+		selectTimeInJapan("10+ years");
+		selectDropdown(beBTechDd, "Mechatronics");
+		beBTechCgpa.sendKeys("5");
+		clickByJavaScript(planForEducationRadio3);
+		clickByJavaScript(hasBacklogRadio1);
+		selectDropdown(englishDd, "Beginner / Basic Communication");
+		selectDropdown(japaneseDd, "Mother Tongue / Native Language");
+		clickSave();
 	}
 	
 //	public boolean isSectionComplete()

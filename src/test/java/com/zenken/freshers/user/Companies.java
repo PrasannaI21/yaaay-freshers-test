@@ -164,8 +164,7 @@ public class Companies extends BaseTest{
 			Assert.assertEquals(driver.getCurrentUrl(), properties.get("site1"));
 		}else {
 			Assert.assertEquals(driver.getCurrentUrl(), properties.get("site2"));
-		}
-		
+		}		
 	}
 	
 	@Test(description="This test verifies that the images uploaded for company logo and"
@@ -185,7 +184,7 @@ public class Companies extends BaseTest{
 				if(i < imgSrc.size()) {
 					companies.clickArrow();
 				}
-			}while(i < imgSrc.size());	
+			}while(i < imgSrc.size());
 		}
 	}
 	

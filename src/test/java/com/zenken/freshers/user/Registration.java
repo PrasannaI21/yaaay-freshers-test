@@ -209,7 +209,7 @@ public class Registration extends BaseTest{
 		email = waitForControllerApi.waitForLatestEmail(inboxId, TIMEOUT_MILLIS, true, null, null, null, null);
 		String subject = email.getSubject();
 		log("Step 2: Verify that mail's subject equals \"Please verify your email\"");
-		Assert.assertEquals(subject, "Please verify your email", "Subject is not correct");
+		Assert.assertEquals(subject, properties.get("subject2"), "Subject is not correct");
 	}
 	
 	@Test(priority=3, description="This test verifies that expected text for headline "

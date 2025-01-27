@@ -228,7 +228,7 @@ public class Login extends BaseTest{
 		email = waitForControllerApi.waitForLatestEmail(uuid, 30000L, true, null, null, null, null);
 		String subject = email.getSubject();
 		log("Step 2: Verify that subject of the email received is \"Reset Password\"");
-		Assert.assertEquals(subject, properties.getProperty("subject"), "Subject is not correct");
+		Assert.assertEquals(subject, properties.getProperty("subject1"), "Subject is not correct");
 	}
 	
 	@Test(priority=4, description="This test verifies that the link contained in the email"

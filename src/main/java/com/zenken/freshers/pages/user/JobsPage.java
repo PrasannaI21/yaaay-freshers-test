@@ -1,11 +1,11 @@
 package com.zenken.freshers.pages.user;
 
 import java.util.AbstractMap;
+import java.util.AbstractMap.SimpleEntry;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.AbstractMap.SimpleEntry;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -163,6 +163,24 @@ public class JobsPage extends WebDriverUtils{
 	@FindBy(css="[class='u-c-gray']")
 	WebElement companyLink;
 	
+	@FindBy(css="[class*='sticky']")
+	WebElement applyArea;
+	
+	@FindBy(css=".u-fz-14.u-fw-b")
+	WebElement appDeadline;
+	
+	@FindBy(css="[role=dialog]")
+	WebElement applyPopUp;
+	
+	@FindBy(css="[class*='n -p']")
+	WebElement applyBt;
+	
+	@FindBy(css="[class*='-small -p']")
+	WebElement popupBt;
+	
+	@FindBy(css="[role=alert]")
+	WebElement applySnackbar;
+	
 	public String getJobTitle()
 	{
 		return jobTitle.getText();
@@ -277,6 +295,49 @@ public class JobsPage extends WebDriverUtils{
 	
 	public void clickCompanyLink() {
 		companyLink.click();
+	}
+	
+	public boolean isApplyAreaDisplayed()
+	{
+		return isElementPresent(applyArea);
+	}
+	
+	public String getApplyAreaText()
+	{
+		return applyArea.getText();
+	}
+	
+	public String getAppDeadlineText()
+	{
+		return appDeadline.getText();
+	}
+	
+	public String getApplyPopupText()
+	{
+		waitUntilElementAppears(applyPopUp);
+		return applyPopUp.getText();
+	}
+	
+	public void clickApply()
+	{
+		applyBt.click();
+	}
+	
+	public void clickPopupButton()
+	{
+		waitUntilElementAppears(applyPopUp);
+		popupBt.click();
+	}
+	
+	public String getApplySnackbarText()
+	{
+		waitUntilElementAppears(applySnackbar);
+		return applySnackbar.getText();
+	}
+	
+	public String getCompanyName()
+	{
+		return companyLink.getText();
 	}
 
 }
