@@ -41,13 +41,6 @@ public class BasicInformation extends BaseTest{
 		properties = getProperties();
 	}
 	
-//	@Test  //Test for preview page
-//	public void verifyHeadlineText()
-//	{
-//		String headline = profilePreview.getHeadlineText();
-//		Assert.assertTrue(headline.equals(properties.getProperty("text7")), "Profile page's headline is incorrect");
-//	}
-	
 	@Test(description="This test verifies that user is redirected to Basic Information edit page")
 	public void verifyEditUrl()
 	{

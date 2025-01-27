@@ -3,9 +3,14 @@ package com.zenken.frehsers.abstractcomponents;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -261,6 +266,19 @@ public class WebDriverUtils {
 	public boolean isSectionComplete()
 	{
 		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
+	}
+	
+	public String convertJSTtoIST(String inputDateTime)
+	{
+		DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a", Locale.ENGLISH);
+		String cleanedDateTime = inputDateTime.replace("\t", " ");
+		cleanedDateTime = cleanedDateTime.substring(0, cleanedDateTime.length()-1)
+				+ (inputDateTime.endsWith("1") ? " AM" : " PM");
+		LocalDateTime jstDateTime = LocalDateTime.parse(cleanedDateTime, inputFormatter);
+		ZonedDateTime jstZoned = jstDateTime.atZone(ZoneId.of("Asia/Tokyo"));
+		ZonedDateTime istZoned = jstZoned.withZoneSameInstant(ZoneId.of("Asia/Kolkata"));
+		DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("MMMM d, yyyy, hh:mma z", Locale.ENGLISH);
+		return istZoned.format(outputFormatter);
 	}
 	
 	public boolean isElementPresent(WebElement element)

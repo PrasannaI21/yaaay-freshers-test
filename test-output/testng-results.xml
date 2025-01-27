@@ -1,36 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T15:21:35 IST" name="Default suite" finished-at="2025-01-13T15:21:59 IST" duration-ms="24476">
+  <suite started-at="2025-01-24T18:03:58 IST" name="Suite" finished-at="2025-01-24T18:10:49 IST" duration-ms="411753">
     <groups>
     </groups>
-    <test started-at="2025-01-13T15:21:35 IST" name="Default test" finished-at="2025-01-13T15:21:59 IST" duration-ms="24476">
-      <class name="com.zenken.freshers.user.Companies">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:35 IST" name="setup" finished-at="2025-01-13T15:21:37 IST" duration-ms="1912" status="PASS">
+    <test started-at="2025-01-24T18:03:58 IST" name="Test" finished-at="2025-01-24T18:10:49 IST" duration-ms="411753">
+      <class name="com.zenken.freshers.user.JobsApply">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:03:58 IST" name="setup" finished-at="2025-01-24T18:04:00 IST" duration-ms="1949" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Companies.verifyComImages() throws java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplicationDeadline() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCom()[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:37 IST" name="setupCom" finished-at="2025-01-13T15:21:59 IST" duration-ms="22156" status="PASS">
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:00 IST" name="setupJobsApply" finished-at="2025-01-24T18:04:18 IST" duration-ms="18401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupCom -->
-        <test-method signature="verifyComImages()[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:59 IST" name="verifyComImages" description="This test verifies that the images uploaded for company logo and header images in Admin account are displayed accrodingly" finished-at="2025-01-13T15:21:59 IST" duration-ms="48" status="PASS">
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplicationDeadline()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:18 IST" name="verifyApplicationDeadline" description="This test verifies that the application deadline (date and time) displayed on Apply area is in expected format and in IST" finished-at="2025-01-24T18:04:41 IST" duration-ms="23405" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Companies@7d20d0b]" started-at="2025-01-13T15:21:59 IST" name="tearDown" finished-at="2025-01-13T15:21:59 IST" duration-ms="303" status="PASS">
+        </test-method> <!-- verifyApplicationDeadline -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:41 IST" name="tearDown" finished-at="2025-01-24T18:04:42 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Companies -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:42 IST" name="setup" finished-at="2025-01-24T18:04:43 IST" duration-ms="1390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyAreaDisplay()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:43 IST" name="setupJobsApply" finished-at="2025-01-24T18:04:48 IST" duration-ms="4831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyAreaDisplay()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:48 IST" name="verifyApplyAreaDisplay" description="This test verifies that apply area is not displayed when the user has not logged in" finished-at="2025-01-24T18:04:51 IST" duration-ms="2694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyAreaDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:51 IST" name="tearDown" finished-at="2025-01-24T18:04:51 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:51 IST" name="setup" finished-at="2025-01-24T18:04:52 IST" duration-ms="1273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyAreaText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:52 IST" name="setupJobsApply" finished-at="2025-01-24T18:04:57 IST" duration-ms="5074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyAreaText()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:04:57 IST" name="verifyApplyAreaText" description="This test verifies that expected text is displayed on apply frame when application period has not started/has ended" finished-at="2025-01-24T18:05:01 IST" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyAreaText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:01 IST" name="tearDown" finished-at="2025-01-24T18:05:02 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:02 IST" name="setup" finished-at="2025-01-24T18:05:03 IST" duration-ms="1380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyNotAllowed1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:03 IST" name="setupJobsApply" finished-at="2025-01-24T18:05:06 IST" duration-ms="3297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyNotAllowed1()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:06 IST" name="verifyApplyNotAllowed1" description="This test verifies that user is redirected to job details page when user tries to directly access the apply form URL when user&#039;s profile is incomplete" finished-at="2025-01-24T18:05:14 IST" duration-ms="7702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyNotAllowed1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:14 IST" name="tearDown" finished-at="2025-01-24T18:05:14 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:14 IST" name="setup" finished-at="2025-01-24T18:05:15 IST" duration-ms="1256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyProfileCompletePopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:15 IST" name="setupJobsApply" finished-at="2025-01-24T18:05:19 IST" duration-ms="3432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyProfileCompletePopup()[pri:1, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:19 IST" name="verifyProfileCompletePopup" description="This test verifies that the popup prompting to complete the profile is displayed after clicking on &#039;Apply&#039; when user&#039;s profile is incomplete" finished-at="2025-01-24T18:05:24 IST" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfileCompletePopup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:24 IST" name="tearDown" finished-at="2025-01-24T18:05:24 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:24 IST" name="setup" finished-at="2025-01-24T18:05:25 IST" duration-ms="1283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyProfilePageURL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:25 IST" name="setupJobsApply" finished-at="2025-01-24T18:05:32 IST" duration-ms="6750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyProfilePageURL()[pri:2, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:32 IST" name="verifyProfilePageURL" description="This test verifies that user is redirected to profile preview page after clicking on &#039;Edit Profile&#039; on the popup" finished-at="2025-01-24T18:05:38 IST" duration-ms="6397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfilePageURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:38 IST" name="tearDown" finished-at="2025-01-24T18:05:39 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:39 IST" name="setup" finished-at="2025-01-24T18:05:40 IST" duration-ms="1179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyFinalConfPopup1() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:40 IST" name="setupJobsApply" finished-at="2025-01-24T18:05:43 IST" duration-ms="3402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyFinalConfPopup1()[pri:3, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:05:43 IST" name="verifyFinalConfPopup1" description="This test verifies that the final confirmation popup is displayed after clicking on &#039;Apply&#039; when user&#039;s profile is complete" finished-at="2025-01-24T18:07:13 IST" duration-ms="90205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFinalConfPopup1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:13 IST" name="tearDown" finished-at="2025-01-24T18:07:14 IST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:14 IST" name="setup" finished-at="2025-01-24T18:07:15 IST" duration-ms="1261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyJobApplication1() throws com.mailslurp.clients.ApiException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:15 IST" name="setupJobsApply" finished-at="2025-01-24T18:07:19 IST" duration-ms="3878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyJobApplication1()[pri:4, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:19 IST" name="verifyJobApplication1" description="This test verifies that user is successfully able to apply to the job" finished-at="2025-01-24T18:07:32 IST" duration-ms="13077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJobApplication1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:32 IST" name="tearDown" finished-at="2025-01-24T18:07:32 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:32 IST" name="setup" finished-at="2025-01-24T18:07:33 IST" duration-ms="1214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyMailReception1() throws com.mailslurp.clients.ApiException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:33 IST" name="setupJobsApply" finished-at="2025-01-24T18:07:40 IST" duration-ms="6376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyMailReception1()[pri:5, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:40 IST" name="verifyApplyMailReception1" description="This test verifies that the user receives an expected email after applying to the job and that the mail content is correct" finished-at="2025-01-24T18:07:42 IST" duration-ms="2088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyMailReception1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:42 IST" name="tearDown" finished-at="2025-01-24T18:07:42 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:42 IST" name="setup" finished-at="2025-01-24T18:07:43 IST" duration-ms="1194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyNotAllowed2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:43 IST" name="setupJobsApply" finished-at="2025-01-24T18:07:52 IST" duration-ms="8273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyNotAllowed2()[pri:6, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:07:52 IST" name="verifyApplyNotAllowed2" description="This test verifies that user is redirected to job details page when user tries to directly access the apply form URL for 募集期間外 case" finished-at="2025-01-24T18:08:00 IST" duration-ms="8137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyNotAllowed2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:00 IST" name="tearDown" finished-at="2025-01-24T18:08:00 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:00 IST" name="setup" finished-at="2025-01-24T18:08:01 IST" duration-ms="1182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyFormURL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:01 IST" name="setupJobsApply" finished-at="2025-01-24T18:08:08 IST" duration-ms="7026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyFormURL()[pri:7, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:08 IST" name="verifyApplyFormURL" description="This test verifies that the user is redirected to Apply Form page upon clicking on &#039;Apply&#039; when user&#039;s profile is complete" finished-at="2025-01-24T18:08:23 IST" duration-ms="14600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyFormURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:23 IST" name="tearDown" finished-at="2025-01-24T18:08:23 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:23 IST" name="setup" finished-at="2025-01-24T18:08:24 IST" duration-ms="1259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyFormText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:24 IST" name="setupJobsApply" finished-at="2025-01-24T18:08:28 IST" duration-ms="3930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyFormText()[pri:8, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:28 IST" name="verifyApplyFormText" description="This test verifies that the fixed text and the free text set by CS displayed on application form page are correct" finished-at="2025-01-24T18:08:36 IST" duration-ms="7771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyFormText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:36 IST" name="tearDown" finished-at="2025-01-24T18:08:36 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:36 IST" name="setup" finished-at="2025-01-24T18:08:37 IST" duration-ms="1201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyFormCancel()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:37 IST" name="setupJobsApply" finished-at="2025-01-24T18:08:41 IST" duration-ms="3601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyFormCancel()[pri:9, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:41 IST" name="verifyApplyFormCancel" description="This test verifies that user is redirected to job details page upon clicking on &#039;Cancel&#039; on application form page" finished-at="2025-01-24T18:08:51 IST" duration-ms="10198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyFormCancel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:51 IST" name="tearDown" finished-at="2025-01-24T18:08:51 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:51 IST" name="setup" finished-at="2025-01-24T18:08:53 IST" duration-ms="1328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyFormMandatoryFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:53 IST" name="setupJobsApply" finished-at="2025-01-24T18:08:56 IST" duration-ms="3541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyFormMandatoryFields()[pri:10, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:08:56 IST" name="verifyApplyFormMandatoryFields" description="This test verifies that validation error occurs when user tries to apply without filling in mandatory fields" finished-at="2025-01-24T18:09:12 IST" duration-ms="15414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyFormMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:12 IST" name="tearDown" finished-at="2025-01-24T18:09:12 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:12 IST" name="setup" finished-at="2025-01-24T18:09:13 IST" duration-ms="1245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyFormCharExceed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:13 IST" name="setupJobsApply" finished-at="2025-01-24T18:09:16 IST" duration-ms="3092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyFormCharExceed()[pri:11, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:16 IST" name="verifyApplyFormCharExceed" description="This test verifies that validation error occurs when more than 5000 characters are entered in the text box on application form page" finished-at="2025-01-24T18:09:32 IST" duration-ms="15944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyFormCharExceed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:32 IST" name="tearDown" finished-at="2025-01-24T18:09:32 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:32 IST" name="setup" finished-at="2025-01-24T18:09:34 IST" duration-ms="1204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyFinalConfPopup2() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:34 IST" name="setupJobsApply" finished-at="2025-01-24T18:09:38 IST" duration-ms="4441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyFinalConfPopup2()[pri:12, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:38 IST" name="verifyFinalConfPopup2" description="This test verifies that the final confirmation popup is displayed after clicking on &#039;Apply&#039; when application form is filled with valid inputs" finished-at="2025-01-24T18:09:52 IST" duration-ms="13873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFinalConfPopup2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:52 IST" name="tearDown" finished-at="2025-01-24T18:09:52 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:52 IST" name="setup" finished-at="2025-01-24T18:09:53 IST" duration-ms="1197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyJobApplication2() throws com.mailslurp.clients.ApiException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:09:53 IST" name="setupJobsApply" finished-at="2025-01-24T18:10:00 IST" duration-ms="6142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyJobApplication2()[pri:13, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:00 IST" name="verifyJobApplication2" description="This test verifies that user is successfully able to apply to the jobfrom application form page" finished-at="2025-01-24T18:10:20 IST" duration-ms="20356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJobApplication2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:20 IST" name="tearDown" finished-at="2025-01-24T18:10:20 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:20 IST" name="setup" finished-at="2025-01-24T18:10:21 IST" duration-ms="1249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyMailReception2() throws com.mailslurp.clients.ApiException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:21 IST" name="setupJobsApply" finished-at="2025-01-24T18:10:28 IST" duration-ms="6225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyMailReception2()[pri:14, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:28 IST" name="verifyApplyMailReception2" description="This test verifies that the user receives an expected email after applying to the job and that the mail content is correct" finished-at="2025-01-24T18:10:30 IST" duration-ms="2291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyMailReception2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:30 IST" name="tearDown" finished-at="2025-01-24T18:10:30 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:30 IST" name="setup" finished-at="2025-01-24T18:10:31 IST" duration-ms="1183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.JobsApply.verifyApplyNotAllowed3()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupJobsApply()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:31 IST" name="setupJobsApply" finished-at="2025-01-24T18:10:39 IST" duration-ms="7631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupJobsApply -->
+        <test-method signature="verifyApplyNotAllowed3()[pri:15, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:39 IST" name="verifyApplyNotAllowed3" description="This test verifies that user is redirected to job details page when user tries to directly access the apply form URL for already applied job" finished-at="2025-01-24T18:10:49 IST" duration-ms="10078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyNotAllowed3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.JobsApply@478db956]" started-at="2025-01-24T18:10:49 IST" name="tearDown" finished-at="2025-01-24T18:10:49 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.user.JobsApply -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
