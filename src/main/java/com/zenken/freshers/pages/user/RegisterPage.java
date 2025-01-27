@@ -323,4 +323,17 @@ public class RegisterPage extends WebDriverUtils{
 		return text;
 	}
 	
+	public void registerUser(String email)
+	{
+		enterName("ApplyTest");
+		enterLastName("User");
+		selectCollege("CMRIT (CMR Institute of Technology)");
+		enterUsn("68492471");
+		selectYear("2028");
+		clickByJavaScript(radio2);
+		enterEmail(email);
+		enterPassword("Password_1");
+		clickTermsCheckbox();
+		clickSubmit();
+	}
 }

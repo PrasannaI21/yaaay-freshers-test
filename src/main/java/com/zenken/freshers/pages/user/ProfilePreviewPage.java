@@ -347,7 +347,7 @@ public class ProfilePreviewPage extends WebDriverUtils{
 	
 	public String getAnchorLinkAttribute(WebElement ele)
 	{
-		String attribute = ele.getDomProperty("class");
+		String attribute = ele.getDomAttribute("class");
 		return attribute;
 	}
 	

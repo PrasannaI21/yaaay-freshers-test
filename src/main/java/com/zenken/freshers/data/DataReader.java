@@ -44,4 +44,14 @@ public class DataReader {
 		properties.setProperty(indexKey, String.valueOf(index));
 		properties.store(outputStream, null);
 	}
+	
+	public static void saveProperty(String key, String value) throws IOException
+	{
+		InputStream inputStream = new FileInputStream(propFile);
+		Properties properties = new Properties();
+		properties.load(inputStream);
+		OutputStream outputStream = new FileOutputStream(propFile);
+		properties.setProperty(key, value);
+		properties.store(outputStream, null);
+	}
 }
