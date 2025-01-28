@@ -1,6 +1,7 @@
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Certifications.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Skills.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\BasicInformation.java
+C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Jobs.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Settings.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\FieldOfStudy.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Login.java
@@ -10,10 +11,14 @@ C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\features\TestRunner
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Internships.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\JobPreferences.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\testcomponents\Retry.java
+C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\JobsApply.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\stepDefinitions\LoginSteps.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Photo.java
+C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Companies.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\Projects.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\testcomponents\BaseTest.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\testcomponents\Listeners.java
+C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\testcomponents\TestDescription.java
+C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\company\Login.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\testcomponents\RetryListener.java
 C:\Users\prasa\eclipse-workspace\YaaayFreshers\src\test\java\com\zenken\freshers\user\JapanesePlacementConsentForm.java

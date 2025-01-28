@@ -1,84 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="18" passed="16" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-26T15:12:35 IST" name="Suite" finished-at="2024-11-26T15:16:36 IST" duration-ms="240772">
+  <suite started-at="2025-01-28T12:57:31 IST" name="Suite" finished-at="2025-01-28T12:57:41 IST" duration-ms="9829">
     <groups>
     </groups>
-    <test started-at="2024-11-26T15:12:35 IST" name="Test" finished-at="2024-11-26T15:16:36 IST" duration-ms="240772">
-      <class name="com.zenken.freshers.user.Photo">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:12:35 IST" name="setup" finished-at="2024-11-26T15:12:37 IST" duration-ms="1649" status="PASS">
+    <test started-at="2025-01-28T12:57:31 IST" name="Test" finished-at="2025-01-28T12:57:41 IST" duration-ms="9829">
+      <class name="com.zenken.freshers.user.Login">
+        <test-method is-config="true" signature="generatePass()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:31 IST" name="generatePass" finished-at="2025-01-28T12:57:31 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generatePass -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:31 IST" name="setup" finished-at="2025-01-28T12:57:32 IST" duration-ms="1482" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoUrl()]]>
+                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:12:37 IST" name="setUpTest" finished-at="2024-11-26T15:12:55 IST" duration-ms="17806" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoUrl()[pri:1, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:12:55 IST" name="verifyPhotoUrl" description="This test verifies that user is redirected to Photo edit page" finished-at="2024-11-26T15:12:56 IST" duration-ms="996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:12:56 IST" name="tearDown" finished-at="2024-11-26T15:12:56 IST" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:12:56 IST" name="setup" finished-at="2024-11-26T15:12:57 IST" duration-ms="864" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:32 IST" name="setUpTest" finished-at="2025-01-28T12:57:34 IST" duration-ms="1707" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoTitle()]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:12:57 IST" name="setUpTest" finished-at="2024-11-26T15:13:13 IST" duration-ms="16537" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoTitle()[pri:2, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:13 IST" name="verifyPhotoTitle" description="This test verifies that the Photo page title is correct" finished-at="2024-11-26T15:13:15 IST" duration-ms="1158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:15 IST" name="tearDown" finished-at="2024-11-26T15:13:15 IST" duration-ms="323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:15 IST" name="setup" finished-at="2024-11-26T15:13:16 IST" duration-ms="863" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyUploadModalDisplay()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:16 IST" name="setUpTest" finished-at="2024-11-26T15:13:31 IST" duration-ms="15323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method retried="true" signature="verifyUploadModalDisplay()[pri:3, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:31 IST" name="verifyUploadModalDisplay" description="This test verifies that upload modal appears when upload icon is clicked" finished-at="2024-11-26T15:13:34 IST" duration-ms="2779" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method retried="true" signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:34 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-28T12:57:34 IST" duration-ms="138" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Upload modal should have been displayed expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3be082ed76bbe57667dc0d4285099e06, findElement {using=css selector, value=[class*='ib']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53440/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be082ed76bbe57667dc0d4285099e06]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Upload modal should have been displayed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.zenken.freshers.user.Photo.verifyUploadModalDisplay(Photo.java:57)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3be082ed76bbe57667dc0d4285099e06, findElement {using=css selector, value=[class*='ib']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53440/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be082ed76bbe57667dc0d4285099e06
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
+at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -97,339 +93,195 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUploadModalDisplay -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:34 IST" name="tearDown" finished-at="2024-11-26T15:13:34 IST" duration-ms="265" status="PASS">
+        </test-method> <!-- verifyInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:34 IST" name="tearDown" finished-at="2025-01-28T12:57:34 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:34 IST" name="setup" finished-at="2024-11-26T15:13:35 IST" duration-ms="846" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:34 IST" name="setup" finished-at="2025-01-28T12:57:35 IST" duration-ms="726" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyUploadModalDisplay()]]>
+                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:35 IST" name="setUpTest" finished-at="2024-11-26T15:13:48 IST" duration-ms="12685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyUploadModalDisplay()[pri:3, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:48 IST" name="verifyUploadModalDisplay" description="This test verifies that upload modal appears when upload icon is clicked" finished-at="2024-11-26T15:13:50 IST" duration-ms="2267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUploadModalDisplay -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:50 IST" name="tearDown" finished-at="2024-11-26T15:13:52 IST" duration-ms="1763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:52 IST" name="setup" finished-at="2024-11-26T15:13:53 IST" duration-ms="1323" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:35 IST" name="setUpTest" finished-at="2025-01-28T12:57:37 IST" duration-ms="1690" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyImageResize()]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method retried="true" signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:37 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-28T12:57:37 IST" duration-ms="143" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0073f8df4313bfbb1c5e3d6db86e03f1, findElement {using=css selector, value=[class*='ib']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53462/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0073f8df4313bfbb1c5e3d6db86e03f1, findElement {using=css selector, value=[class*='ib']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53462/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
+at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:37 IST" name="tearDown" finished-at="2025-01-28T12:57:37 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:37 IST" name="setup" finished-at="2025-01-28T12:57:38 IST" duration-ms="715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:13:53 IST" name="setUpTest" finished-at="2024-11-26T15:14:03 IST" duration-ms="9966" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyImageResize()[pri:4, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:03 IST" name="verifyImageResize" description="This test verifies that the uploaded image can be resized" finished-at="2024-11-26T15:14:06 IST" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyImageResize -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:06 IST" name="tearDown" finished-at="2024-11-26T15:14:07 IST" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:07 IST" name="setup" finished-at="2024-11-26T15:14:08 IST" duration-ms="987" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:38 IST" name="setUpTest" finished-at="2025-01-28T12:57:39 IST" duration-ms="1667" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyImageDrag()]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:08 IST" name="setUpTest" finished-at="2024-11-26T15:14:19 IST" duration-ms="11398" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifyImageDrag()[pri:5, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:19 IST" name="verifyImageDrag" description="This test verifies that the uploaded image can be dragged" finished-at="2024-11-26T15:14:22 IST" duration-ms="3108" status="PASS">
+        <test-method signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:39 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-28T12:57:39 IST" duration-ms="153" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b5d4aff8fe6776307c6323c466a6b84, findElement {using=css selector, value=[class*='ib']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53483/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b5d4aff8fe6776307c6323c466a6b84]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b5d4aff8fe6776307c6323c466a6b84, findElement {using=css selector, value=[class*='ib']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53483/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b5d4aff8fe6776307c6323c466a6b84
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
+at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyImageDrag -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:22 IST" name="tearDown" finished-at="2024-11-26T15:14:22 IST" duration-ms="390" status="PASS">
+        </test-method> <!-- verifyInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:40 IST" name="tearDown" finished-at="2025-01-28T12:57:41 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:22 IST" name="setup" finished-at="2024-11-26T15:14:23 IST" duration-ms="860" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoUpload()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:23 IST" name="setUpTest" finished-at="2024-11-26T15:14:32 IST" duration-ms="8967" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoUpload()[pri:6, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:32 IST" name="verifyPhotoUpload" description="This test verifies that the image can be uploaded successfully" finished-at="2024-11-26T15:14:40 IST" duration-ms="7580" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoUpload -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:40 IST" name="tearDown" finished-at="2024-11-26T15:14:40 IST" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:40 IST" name="setup" finished-at="2024-11-26T15:14:41 IST" duration-ms="873" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoImage() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:41 IST" name="setUpTest" finished-at="2024-11-26T15:14:48 IST" duration-ms="7364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoImage()[pri:7, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:14:48 IST" name="verifyPhotoImage" description="This test verifies that the uploaded image is same and &#039;Required to apply&#039; text is not displayed on preview and Photo edit page" finished-at="2024-11-26T15:15:40 IST" duration-ms="51693" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoImage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:40 IST" name="tearDown" finished-at="2024-11-26T15:15:40 IST" duration-ms="273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:40 IST" name="setup" finished-at="2024-11-26T15:15:41 IST" duration-ms="793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoChange()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:41 IST" name="setUpTest" finished-at="2024-11-26T15:15:51 IST" duration-ms="9816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoChange()[pri:8, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:51 IST" name="verifyPhotoChange" description="This test verifies that the uploaded image can be changed" finished-at="2024-11-26T15:15:53 IST" duration-ms="2488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:53 IST" name="tearDown" finished-at="2024-11-26T15:15:54 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:54 IST" name="setup" finished-at="2024-11-26T15:15:54 IST" duration-ms="868" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoDelete()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:15:54 IST" name="setUpTest" finished-at="2024-11-26T15:16:04 IST" duration-ms="9690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoDelete()[pri:9, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:04 IST" name="verifyPhotoDelete" description="This test verifies that the image can be deleted and &#039;Required to apply&#039; text is displayed on Photo edit and preview page" finished-at="2024-11-26T15:16:09 IST" duration-ms="4960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:09 IST" name="tearDown" finished-at="2024-11-26T15:16:09 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:09 IST" name="setup" finished-at="2024-11-26T15:16:10 IST" duration-ms="802" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoInvalidFile()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:10 IST" name="setUpTest" finished-at="2024-11-26T15:16:19 IST" duration-ms="8821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoInvalidFile()[pri:10, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:19 IST" name="verifyPhotoInvalidFile" description="This test verifies that validation error occurs for invalid file format" finished-at="2024-11-26T15:16:23 IST" duration-ms="4535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoInvalidFile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:23 IST" name="tearDown" finished-at="2024-11-26T15:16:24 IST" duration-ms="209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:24 IST" name="setup" finished-at="2024-11-26T15:16:24 IST" duration-ms="892" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyPhotoInvalidSize()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:24 IST" name="setUpTest" finished-at="2024-11-26T15:16:34 IST" duration-ms="9533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyPhotoInvalidSize()[pri:11, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:34 IST" name="verifyPhotoInvalidSize" description="This test verifies that validation error occurs when image size is more than 5MB" finished-at="2024-11-26T15:16:36 IST" duration-ms="1775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhotoInvalidSize -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@36804139]" started-at="2024-11-26T15:16:36 IST" name="tearDown" finished-at="2024-11-26T15:16:36 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Photo -->
-      <class name="com.zenken.freshers.user.Settings">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:12:35 IST" name="setup" finished-at="2024-11-26T15:12:37 IST" duration-ms="1649" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Settings.verifySetDesTexts()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:12:37 IST" name="setUpTest" finished-at="2024-11-26T15:12:56 IST" duration-ms="19197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySetDesTexts()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:12:56 IST" name="verifySetDesTexts" description="This test verifies that the texts describing &#039;Yaaay Midcareer&#039; and &#039;Zenken Newsletter&#039; are correct" finished-at="2024-11-26T15:12:57 IST" duration-ms="971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySetDesTexts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:12:57 IST" name="tearDown" finished-at="2024-11-26T15:12:57 IST" duration-ms="236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:12:57 IST" name="setup" finished-at="2024-11-26T15:12:58 IST" duration-ms="913" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Settings.verifySetNotSelected()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:12:58 IST" name="setUpTest" finished-at="2024-11-26T15:13:17 IST" duration-ms="18537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySetNotSelected()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:17 IST" name="verifySetNotSelected" description="This test verifies that appropriate texts are displayed on preview page when checkboxes for &#039;Yaaay Midcareer&#039; and &#039;Zenken Newsletter&#039; are NOT selected" finished-at="2024-11-26T15:13:26 IST" duration-ms="9597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySetNotSelected -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:26 IST" name="tearDown" finished-at="2024-11-26T15:13:27 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:27 IST" name="setup" finished-at="2024-11-26T15:13:27 IST" duration-ms="862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Settings.verifySetSelected()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:27 IST" name="setUpTest" finished-at="2024-11-26T15:13:45 IST" duration-ms="17318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySetSelected()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:45 IST" name="verifySetSelected" description="This test verifies that appropriate texts are displayed on preview page when checkboxes for &#039;Yaaay Midcareer&#039; and &#039;Zenken Newsletter&#039; are selected" finished-at="2024-11-26T15:13:54 IST" duration-ms="9178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySetSelected -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:54 IST" name="tearDown" finished-at="2024-11-26T15:13:54 IST" duration-ms="273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:54 IST" name="setup" finished-at="2024-11-26T15:13:55 IST" duration-ms="863" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Settings.verifySettingsTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:13:55 IST" name="setUpTest" finished-at="2024-11-26T15:14:09 IST" duration-ms="13428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySettingsTitle()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:14:09 IST" name="verifySettingsTitle" description="This test verifies that Settings page title is correct" finished-at="2024-11-26T15:14:10 IST" duration-ms="1076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySettingsTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:14:10 IST" name="tearDown" finished-at="2024-11-26T15:14:10 IST" duration-ms="262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:14:10 IST" name="setup" finished-at="2024-11-26T15:14:11 IST" duration-ms="942" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.user.Settings.verifySettingsUrl() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:14:11 IST" name="setUpTest" finished-at="2024-11-26T15:14:23 IST" duration-ms="12546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifySettingsUrl()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:14:23 IST" name="verifySettingsUrl" description="This test verifies that user is redirected to &#039;Settings&#039; edit page" finished-at="2024-11-26T15:14:25 IST" duration-ms="1217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySettingsUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Settings@4f0f2942]" started-at="2024-11-26T15:14:25 IST" name="tearDown" finished-at="2024-11-26T15:14:25 IST" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Settings -->
+      </class> <!-- com.zenken.freshers.user.Login -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

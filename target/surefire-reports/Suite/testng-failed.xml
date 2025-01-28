@@ -7,14 +7,15 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
     <classes>
-      <class name="com.zenken.freshers.user.Photo">
+      <class name="com.zenken.freshers.user.Login">
         <methods>
           <include name="setUpTest"/>
+          <include name="generatePass"/>
           <include name="tearDown"/>
-          <include name="verifyUploadModalDisplay"/>
+          <include name="verifyInvalidEmail"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.Photo -->
+      </class> <!-- com.zenken.freshers.user.Login -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

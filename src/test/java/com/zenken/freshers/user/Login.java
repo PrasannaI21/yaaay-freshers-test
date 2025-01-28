@@ -118,7 +118,7 @@ public class Login extends BaseTest{
 		log("Step 2: Enter password \"Password_1\"");
 		login.enterPassword("Password_1");
 		log("Step 3: Click on 'Log In' button");
-		login.clickLogIn();
+//		login.clickLogIn();
 		String text = login.getInvalidEmailText();
 		log("Step 4: Verify that validation error message for an invalid email is displayed");
 		Assert.assertEquals(text, properties.getProperty("error5"));

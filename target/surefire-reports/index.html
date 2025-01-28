@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods,  1 skipped,  16 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="verifyInvalidEmail">verifyInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -103,99 +117,15 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyUploadModalDisplay">verifyUploadModalDisplay</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="verifyInvalidEmail">verifyInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="verifyInvalidEmail">verifyInvalidEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyImageDrag">verifyImageDrag</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyImageResize">verifyImageResize</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoChange">verifyPhotoChange</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoDelete">verifyPhotoDelete</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoImage">verifyPhotoImage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoInvalidFile">verifyPhotoInvalidFile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoInvalidSize">verifyPhotoInvalidSize</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoTitle">verifyPhotoTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoUpload">verifyPhotoUpload</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyPhotoUrl">verifyPhotoUrl</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySetDesTexts">verifySetDesTexts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySetNotSelected">verifySetNotSelected</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySetSelected">verifySetSelected</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySettingsTitle">verifySettingsTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Settings" class="method navigator-link" hash-for-method="verifySettingsUrl">verifySettingsUrl</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Photo" class="method navigator-link" hash-for-method="verifyUploadModalDisplay">verifyUploadModalDisplay</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -207,19 +137,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.zenken.freshers.user.Photo</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.zenken.freshers.user.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUploadModalDisplay">
-                  </a> <!-- verifyUploadModalDisplay -->
-                  <span class="method-name">verifyUploadModalDisplay</span>
-                  <div class="stack-trace">java.lang.AssertionError: Upload modal should have been displayed expected [true] but found [false]
-	at com.zenken.freshers.user.Photo.verifyUploadModalDisplay(Photo.java:57)
+                  <a name="verifyInvalidEmail">
+                  </a> <!-- verifyInvalidEmail -->
+                  <span class="method-name">verifyInvalidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;ib&apos;]&quot;}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b5d4aff8fe6776307c6323c466a6b84, findElement {using=css selector, value=[class*=&apos;ib&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53483/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b5d4aff8fe6776307c6323c466a6b84
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
+	at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
@@ -228,171 +181,101 @@
 ... Removed 14 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(This test verifies that upload modal appears when upload icon is clicked)                  </em>
+(This test verifies that validation error occurs when invalid email is entered)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.zenken.freshers.user.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidEmail">
+                  </a> <!-- verifyInvalidEmail -->
+                  <span class="method-name">verifyInvalidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;ib&apos;]&quot;}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3be082ed76bbe57667dc0d4285099e06, findElement {using=css selector, value=[class*=&apos;ib&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53440/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be082ed76bbe57667dc0d4285099e06
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
+	at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that validation error occurs when invalid email is entered)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidEmail">
+                  </a> <!-- verifyInvalidEmail -->
+                  <span class="method-name">verifyInvalidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;ib&apos;]&quot;}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0073f8df4313bfbb1c5e3d6db86e03f1, findElement {using=css selector, value=[class*=&apos;ib&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53462/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
+	at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that validation error occurs when invalid email is entered)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zenken.freshers.user.Photo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyImageDrag">
-                  </a> <!-- verifyImageDrag -->
-                  <span class="method-name">verifyImageDrag</span>
-                  <em>
-(This test verifies that the uploaded image can be dragged)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyImageResize">
-                  </a> <!-- verifyImageResize -->
-                  <span class="method-name">verifyImageResize</span>
-                  <em>
-(This test verifies that the uploaded image can be resized)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoChange">
-                  </a> <!-- verifyPhotoChange -->
-                  <span class="method-name">verifyPhotoChange</span>
-                  <em>
-(This test verifies that the uploaded image can be changed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoDelete">
-                  </a> <!-- verifyPhotoDelete -->
-                  <span class="method-name">verifyPhotoDelete</span>
-                  <em>
-(This test verifies that the image can be deleted and 'Required to apply' text is displayed on Photo edit and preview page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoImage">
-                  </a> <!-- verifyPhotoImage -->
-                  <span class="method-name">verifyPhotoImage</span>
-                  <em>
-(This test verifies that the uploaded image is same and 'Required to apply' text is not displayed on preview and Photo edit page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoInvalidFile">
-                  </a> <!-- verifyPhotoInvalidFile -->
-                  <span class="method-name">verifyPhotoInvalidFile</span>
-                  <em>
-(This test verifies that validation error occurs for invalid file format)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoInvalidSize">
-                  </a> <!-- verifyPhotoInvalidSize -->
-                  <span class="method-name">verifyPhotoInvalidSize</span>
-                  <em>
-(This test verifies that validation error occurs when image size is more than 5MB)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoTitle">
-                  </a> <!-- verifyPhotoTitle -->
-                  <span class="method-name">verifyPhotoTitle</span>
-                  <em>
-(This test verifies that the Photo page title is correct)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoUpload">
-                  </a> <!-- verifyPhotoUpload -->
-                  <span class="method-name">verifyPhotoUpload</span>
-                  <em>
-(This test verifies that the image can be uploaded successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPhotoUrl">
-                  </a> <!-- verifyPhotoUrl -->
-                  <span class="method-name">verifyPhotoUrl</span>
-                  <em>
-(This test verifies that user is redirected to Photo edit page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUploadModalDisplay">
-                  </a> <!-- verifyUploadModalDisplay -->
-                  <span class="method-name">verifyUploadModalDisplay</span>
-                  <em>
-(This test verifies that upload modal appears when upload icon is clicked)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zenken.freshers.user.Settings</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySetDesTexts">
-                  </a> <!-- verifySetDesTexts -->
-                  <span class="method-name">verifySetDesTexts</span>
-                  <em>
-(This test verifies that the texts describing 'Yaaay Midcareer' and 'Zenken Newsletter' are correct)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySetNotSelected">
-                  </a> <!-- verifySetNotSelected -->
-                  <span class="method-name">verifySetNotSelected</span>
-                  <em>
-(This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are NOT selected)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySetSelected">
-                  </a> <!-- verifySetSelected -->
-                  <span class="method-name">verifySetSelected</span>
-                  <em>
-(This test verifies that appropriate texts are displayed on preview page when checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter' are selected)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySettingsTitle">
-                  </a> <!-- verifySettingsTitle -->
-                  <span class="method-name">verifySettingsTitle</span>
-                  <em>
-(This test verifies that Settings page title is correct)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySettingsUrl">
-                  </a> <!-- verifySettingsUrl -->
-                  <span class="method-name">verifySettingsUrl</span>
-                  <em>
-(This test verifies that user is redirected to 'Settings' edit page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -407,10 +290,13 @@
     &lt;listener class-name=&quot;com.zenken.freshers.testcomponents.Listeners&quot;/&gt;
     &lt;listener class-name=&quot;com.zenken.freshers.testcomponents.RetryListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Settings&quot;/&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Photo&quot;/&gt;
+      &lt;class name=&quot;com.zenken.freshers.user.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyInvalidEmail&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Login --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -424,7 +310,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -450,80 +336,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPhotoImage')
-data.setCell(0, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(0, 3, 51693);
+data.setCell(0, 1, 'verifyInvalidEmail')
+data.setCell(0, 2, 'com.zenken.freshers.user.Login')
+data.setCell(0, 3, 153);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySetNotSelected')
-data.setCell(1, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(1, 3, 9597);
+data.setCell(1, 1, 'verifyInvalidEmail')
+data.setCell(1, 2, 'com.zenken.freshers.user.Login')
+data.setCell(1, 3, 143);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySetSelected')
-data.setCell(2, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(2, 3, 9178);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyPhotoUpload')
-data.setCell(3, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(3, 3, 7580);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyPhotoDelete')
-data.setCell(4, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(4, 3, 4960);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyPhotoInvalidFile')
-data.setCell(5, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(5, 3, 4535);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyImageResize')
-data.setCell(6, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(6, 3, 3325);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyImageDrag')
-data.setCell(7, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(7, 3, 3108);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyUploadModalDisplay')
-data.setCell(8, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(8, 3, 2779);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyPhotoChange')
-data.setCell(9, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(9, 3, 2488);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyUploadModalDisplay')
-data.setCell(10, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(10, 3, 2267);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyPhotoInvalidSize')
-data.setCell(11, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(11, 3, 1775);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifySettingsUrl')
-data.setCell(12, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(12, 3, 1217);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyPhotoTitle')
-data.setCell(13, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(13, 3, 1158);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifySettingsTitle')
-data.setCell(14, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(14, 3, 1076);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyPhotoUrl')
-data.setCell(15, 2, 'com.zenken.freshers.user.Photo')
-data.setCell(15, 3, 996);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verifySetDesTexts')
-data.setCell(16, 2, 'com.zenken.freshers.user.Settings')
-data.setCell(16, 3, 971);
+data.setCell(2, 1, 'verifyInvalidEmail')
+data.setCell(2, 2, 'com.zenken.freshers.user.Login')
+data.setCell(2, 3, 138);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 434 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -538,9 +368,68 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">27 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zenken.freshers.user.Login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyEmailRequired</span>
+                <br/>
+                <span class="ignored-method-name">verifyLogInAfterPasswordChange</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidPassword3</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidPassword1</span>
+                <br/>
+                <span class="ignored-method-name">verifySameMailSendWithinMinute</span>
+                <br/>
+                <span class="ignored-method-name">verifyLogInUrl</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordReset</span>
+                <br/>
+                <span class="ignored-method-name">verifyCredentialsMismatch</span>
+                <br/>
+                <span class="ignored-method-name">verifyCreateAccountUrl</span>
+                <br/>
+                <span class="ignored-method-name">verifySamePassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyEmailRequiredOnForgotPasswordPage</span>
+                <br/>
+                <span class="ignored-method-name">verifyForgotPasswordPageTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifyNonExistentEmail</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidPassword4</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidPassword2</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidEmailOnForgotPasswordPage</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordResetLink</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordRequired</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidToken</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordResetMailSend</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordResetCompleteHeadline</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordResetEmail</span>
+                <br/>
+                <span class="ignored-method-name">verifyHeadLineText</span>
+                <br/>
+                <span class="ignored-method-name">verifyUserLogIn</span>
+                <br/>
+                <span class="ignored-method-name">verifyForgotPasswordUrl</span>
+                <br/>
+                <span class="ignored-method-name">verifyTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifyForgotPasswordPageHeadline</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -549,329 +438,60 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySetDesTexts())</span>
+              <div class="chronological-class-name">com.zenken.freshers.user.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">generatePass</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoUrl())</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Login.verifyInvalidEmail())</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">1650 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">1650 ms</span>
+                <span class="method-name">setUpTest([TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken....)</span>
+                <span class="method-start">1502 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyPhotoUrl</span>
-                <span class="method-start">19456 ms</span>
+                <span class="method-name">verifyInvalidEmail</span>
+                <span class="method-start">3211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20459 ms</span>
+                <span class="method-start">3351 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoTitle())</span>
-                <span class="method-start">20706 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Login.verifyInvalidEmail())</span>
+                <span class="method-start">3486 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySetDesTexts</span>
-                <span class="method-start">20847 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">21570 ms</span>
+                <span class="method-name">setUpTest([TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken....)</span>
+                <span class="method-start">4212 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidEmail</span>
+                <span class="method-start">5902 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21818 ms</span>
+                <span class="method-start">6046 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySetNotSelected())</span>
-                <span class="method-start">22059 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.user.Login.verifyInvalidEmail())</span>
+                <span class="method-start">6194 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">22972 ms</span>
+                <span class="method-name">setUpTest([TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken....)</span>
+                <span class="method-start">6909 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyPhotoTitle</span>
-                <span class="method-start">38115 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyInvalidEmail</span>
+                <span class="method-start">8576 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39276 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyUploadModalDisplay())</span>
-                <span class="method-start">39600 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">40464 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySetNotSelected</span>
-                <span class="method-start">41509 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">51108 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySetSelected())</span>
-                <span class="method-start">51317 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">52179 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyUploadModalDisplay</span>
-                <span class="method-start">55787 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">58568 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyUploadModalDisplay())</span>
-                <span class="method-start">58836 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">59682 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySetSelected</span>
-                <span class="method-start">69497 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyUploadModalDisplay</span>
-                <span class="method-start">72367 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">74640 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyImageResize())</span>
-                <span class="method-start">76403 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">77730 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">78676 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsTitle())</span>
-                <span class="method-start">78949 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">79812 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyImageResize</span>
-                <span class="method-start">87696 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">91023 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyImageDrag())</span>
-                <span class="method-start">91274 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">92261 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySettingsTitle</span>
-                <span class="method-start">93240 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">94316 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Settings.verifySettingsUrl() throws java.lang.InterruptedExcept...)</span>
-                <span class="method-start">94579 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">95521 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyImageDrag</span>
-                <span class="method-start">103659 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">106774 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoUpload())</span>
-                <span class="method-start">107164 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">108024 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Settings</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySettingsUrl</span>
-                <span class="method-start">108067 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">109288 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Photo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyPhotoUpload</span>
-                <span class="method-start">116991 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">124571 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoImage() throws java.lang.InterruptedException)</span>
-                <span class="method-start">124757 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">125630 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPhotoImage</span>
-                <span class="method-start">132994 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">184687 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoChange())</span>
-                <span class="method-start">184960 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">185753 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPhotoChange</span>
-                <span class="method-start">195570 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">198058 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoDelete())</span>
-                <span class="method-start">198274 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">199142 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPhotoDelete</span>
-                <span class="method-start">208832 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">213793 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoInvalidFile())</span>
-                <span class="method-start">213934 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">214736 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPhotoInvalidFile</span>
-                <span class="method-start">223558 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">228094 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Photo.verifyPhotoInvalidSize())</span>
-                <span class="method-start">228304 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpTest</span>
-                <span class="method-start">229196 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPhotoInvalidSize</span>
-                <span class="method-start">238730 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">240506 ms</span>
+                <span class="method-start">9685 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
