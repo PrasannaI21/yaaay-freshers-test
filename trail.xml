@@ -5,7 +5,7 @@
 <listener class-name="com.zenken.freshers.testcomponents.Listeners"></listener>
 <listener class-name="com.zenken.freshers.testcomponents.RetryListener"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="3" name="Test">
     <classes>
       <class name="com.zenken.freshers.user.JobsApply"/>
       <class name="com.zenken.freshers.user.Registration"/>
