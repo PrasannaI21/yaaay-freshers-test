@@ -8,6 +8,10 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.zenken.freshers.user.JobsApply"/>
+      <class name="com.zenken.freshers.user.Registration"/>
+      <class name="com.zenken.freshers.user.Companies"/>
+      <class name="com.zenken.freshers.user.Jobs"/>
+      <class name="com.zenken.freshers.user.Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
