@@ -153,7 +153,7 @@ public class BaseTest {
 		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
 		File destFile = new File(System.getProperty("user.dir")+File.separator+"reports"+File.separator+fileName+".jpg");
 		FileUtils.copyFile(srcFile, destFile);
-		return System.getProperty("user.dir")+File.separator+"reports"+File.separator+fileName+".png";// return file path in string
+		return System.getProperty("user.dir")+File.separator+"reports"+File.separator+fileName+".jpg";// return file path in string
 	}
 	
 	public void log(String message)
