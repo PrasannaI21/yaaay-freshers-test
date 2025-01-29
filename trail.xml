@@ -10,6 +10,7 @@
       <class name="com.zenken.freshers.user.Login">
         <methods>
           <include name="verifyInvalidEmail"></include>
+          <include name="verifyEmailRequired"></include>
         </methods>
       </class>  
     </classes>
