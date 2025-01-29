@@ -118,7 +118,7 @@ public class Login extends BaseTest{
 		log("Step 2: Enter password \"Password_1\"");
 		login.enterPassword("Password_1");
 		log("Step 3: Click on 'Log In' button");
-//		login.clickLogIn();
+		login.clickLogIn();
 		String text = login.getInvalidEmailText();
 		log("Step 4: Verify that validation error message for an invalid email is displayed");
 		Assert.assertEquals(text, properties.getProperty("error5"));
@@ -131,7 +131,7 @@ public class Login extends BaseTest{
 		log("Step 1: Enter password \"Password_1\"");
 		login.enterPassword("Password_1");
 		log("Step 2: Click on 'Log In' button");
-//		login.clickLogIn();
+		login.clickLogIn();
 		String text = login.getRequiredText();
 		log("Step 3: Verify that a validation error message stating 'Email is required' is displayed");
 		Assert.assertEquals(text, properties.getProperty("error1"));
@@ -315,7 +315,7 @@ public class Login extends BaseTest{
 		log("Step 2: Enter email \"sample123@orkut.com\"");
 		forgotPassword.enterEmail("sample123@orkut.com");
 		log("Step 3: Click on 'Send' button");
-//		forgotPassword.clickSend();
+		forgotPassword.clickSend();
 		String text = forgotPassword.getErrorText();
 		log("Step 4: Verify that expected validation error message is displayed for 'Email' field");
 		Assert.assertEquals(text, properties.getProperty("error14"));
