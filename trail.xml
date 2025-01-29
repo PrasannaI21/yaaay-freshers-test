@@ -11,6 +11,7 @@
         <methods>
           <include name="verifyInvalidEmail"></include>
           <include name="verifyEmailRequired"></include>
+          <include name="verifyNonExistentEmail"></include>
         </methods>
       </class>  
     </classes>
