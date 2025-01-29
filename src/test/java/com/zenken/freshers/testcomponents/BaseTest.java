@@ -25,7 +25,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
@@ -51,6 +53,15 @@ public class BaseTest {
 	{
 		url = "https://" + username + ":" + password + "@" + domain + uri;
 		driver.get(url);
+	}
+	
+	@BeforeSuite
+	public void startDocker() throws IOException
+	{
+		System.out.println("Starting Docker Desktop...");
+		ProcessBuilder processBuilder = new ProcessBuilder("C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe");
+		processBuilder.start();
+		System.out.println("Docker Desktop started successfully.");
 	}
 	
 	@BeforeMethod
@@ -178,6 +189,15 @@ public class BaseTest {
 				reuseBrowserSession = true;//ブラウザを再利用するようにフラグを設定
 			}
 		}
+	}
+	
+	@AfterSuite
+	public void stopDocker() throws IOException
+	{
+		System.out.println("Stopping Docker Desktop...");
+		ProcessBuilder processBuilder = new ProcessBuilder("taskkill", "/F", "/IM", "Docker Desktop.exe");
+		processBuilder.start();
+		System.out.println("Docker Desktop stopped successfully.");
 	}
 	
 	public Properties getProperties() throws IOException
