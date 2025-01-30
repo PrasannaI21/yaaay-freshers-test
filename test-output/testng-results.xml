@@ -1,55 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-29T15:12:32 IST" name="Default suite" finished-at="2025-01-29T15:12:38 IST" duration-ms="6352">
+  <suite started-at="2025-01-30T10:32:48 IST" name="Suite" finished-at="2025-01-30T10:33:05 IST" duration-ms="17046">
     <groups>
     </groups>
-    <test started-at="2025-01-29T15:12:32 IST" name="Default test" finished-at="2025-01-29T15:12:38 IST" duration-ms="6352">
+    <test started-at="2025-01-30T10:32:48 IST" name="Test" finished-at="2025-01-30T10:33:05 IST" duration-ms="17046">
       <class name="com.zenken.freshers.user.Login">
-        <test-method is-config="true" signature="startDocker()[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:32 IST" name="startDocker" finished-at="2025-01-29T15:12:32 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:48 IST" name="start" finished-at="2025-01-30T10:32:48 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startDocker -->
-        <test-method is-config="true" signature="generatePass()[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:32 IST" name="generatePass" finished-at="2025-01-29T15:12:32 IST" duration-ms="39" status="PASS">
+        </test-method> <!-- start -->
+        <test-method is-config="true" signature="generatePass()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:48 IST" name="generatePass" finished-at="2025-01-30T10:32:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generatePass -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:32 IST" name="setup" finished-at="2025-01-29T15:12:34 IST" duration-ms="1927" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:48 IST" name="setup" finished-at="2025-01-30T10:32:51 IST" duration-ms="3236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyHeadLineText()]]>
+                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:34 IST" name="setUpTest" finished-at="2025-01-29T15:12:38 IST" duration-ms="4101" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:51 IST" name="setUpTest" finished-at="2025-01-30T10:32:53 IST" duration-ms="2055" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyHeadLineText()[pri:0, instance:com.zenken.freshers.user.Login@6f45df59] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="verifyHeadLineText()[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:38 IST" name="verifyHeadLineText" description="This test verifies that expected headline is displayed on Login page" finished-at="2025-01-29T15:12:38 IST" duration-ms="56" status="PASS">
+        <test-method signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:53 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-30T10:32:54 IST" duration-ms="1532" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeadLineText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:38 IST" name="tearDown" finished-at="2025-01-29T15:12:38 IST" duration-ms="177" status="PASS">
+        </test-method> <!-- verifyInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:54 IST" name="tearDown" finished-at="2025-01-30T10:32:55 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="stopDocker()[pri:0, instance:com.zenken.freshers.user.Login@6f45df59]" started-at="2025-01-29T15:12:38 IST" name="stopDocker" finished-at="2025-01-29T15:12:38 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:55 IST" name="setup" finished-at="2025-01-30T10:32:56 IST" duration-ms="1188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Login.verifyEmailRequired()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:56 IST" name="setUpTest" finished-at="2025-01-30T10:32:58 IST" duration-ms="1861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyEmailRequired()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyEmailRequired()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:58 IST" name="verifyEmailRequired" description="This test verifies that validation error occurs when &#039;Email&#039; field is left blank" finished-at="2025-01-30T10:32:59 IST" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailRequired -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:59 IST" name="tearDown" finished-at="2025-01-30T10:32:59 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:32:59 IST" name="setup" finished-at="2025-01-30T10:33:00 IST" duration-ms="1142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.user.Login.verifyNonExistentEmail()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:33:00 IST" name="setUpTest" finished-at="2025-01-30T10:33:02 IST" duration-ms="1895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyNonExistentEmail()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verifyNonExistentEmail()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:33:02 IST" name="verifyNonExistentEmail" description="This test verifies that validation error occurs when email entered in &#039;Email&#039; field does not exist on Forgot Password page" finished-at="2025-01-30T10:33:04 IST" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNonExistentEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:33:04 IST" name="tearDown" finished-at="2025-01-30T10:33:05 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="stopDocker()[pri:0, instance:com.zenken.freshers.user.Login@723e88f9]" started-at="2025-01-30T10:33:05 IST" name="stopDocker" finished-at="2025-01-30T10:33:05 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDocker -->
       </class> <!-- com.zenken.freshers.user.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

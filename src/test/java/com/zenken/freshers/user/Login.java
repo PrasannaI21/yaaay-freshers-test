@@ -71,7 +71,7 @@ public class Login extends BaseTest{
 	@Test(description="This test verifies that expected headline is displayed on Login page")
 	public void verifyHeadLineText()
 	{
-//		log("Step 1: Verify that \"Welcome Back\" text is displayed");
+		log("Step 1: Verify that \"Welcome Back\" text is displayed");
 		String headline = login.getHeadLineText();
 		Assert.assertEquals(headline, properties.getProperty("text3"), "Headline is not correct");
 	}
