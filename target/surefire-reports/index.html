@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="verifyInvalidEmail">verifyInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.company.CompanyLogin" class="method navigator-link" hash-for-method="verifyComBlankEmail">verifyComBlankEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,12 +117,12 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="verifyInvalidEmail">verifyInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.company.CompanyLogin" class="method navigator-link" hash-for-method="verifyComBlankEmail">verifyComBlankEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.user.Login" class="method navigator-link" hash-for-method="verifyInvalidEmail">verifyInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.zenken.freshers.company.CompanyLogin" class="method navigator-link" hash-for-method="verifyComBlankEmail">verifyComBlankEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -140,39 +140,16 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.zenken.freshers.user.Login</span>
+              <span class="class-name">com.zenken.freshers.company.CompanyLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyInvalidEmail">
-                  </a> <!-- verifyInvalidEmail -->
-                  <span class="method-name">verifyInvalidEmail</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;ib&apos;]&quot;}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b5d4aff8fe6776307c6323c466a6b84, findElement {using=css selector, value=[class*=&apos;ib&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53483/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b5d4aff8fe6776307c6323c466a6b84
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
-	at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+                  <a name="verifyComBlankEmail">
+                  </a> <!-- verifyComBlankEmail -->
+                  <span class="method-name">verifyComBlankEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+	at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
@@ -181,7 +158,7 @@ Session ID: 9b5d4aff8fe6776307c6323c466a6b84
 ... Removed 14 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(This test verifies that validation error occurs when invalid email is entered)                  </em>
+(This test verifies that validation error occurs when email field is left blank on Forgot Password page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,39 +166,16 @@ Session ID: 9b5d4aff8fe6776307c6323c466a6b84
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.zenken.freshers.user.Login</span>
+              <span class="class-name">com.zenken.freshers.company.CompanyLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyInvalidEmail">
-                  </a> <!-- verifyInvalidEmail -->
-                  <span class="method-name">verifyInvalidEmail</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;ib&apos;]&quot;}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3be082ed76bbe57667dc0d4285099e06, findElement {using=css selector, value=[class*=&apos;ib&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53440/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3be082ed76bbe57667dc0d4285099e06
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
-	at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+                  <a name="verifyComBlankEmail">
+                  </a> <!-- verifyComBlankEmail -->
+                  <span class="method-name">verifyComBlankEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+	at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
@@ -230,39 +184,16 @@ Session ID: 3be082ed76bbe57667dc0d4285099e06
 ... Removed 14 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(This test verifies that validation error occurs when invalid email is entered)                  </em>
+(This test verifies that validation error occurs when email field is left blank on Forgot Password page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyInvalidEmail">
-                  </a> <!-- verifyInvalidEmail -->
-                  <span class="method-name">verifyInvalidEmail</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;ib&apos;]&quot;}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0073f8df4313bfbb1c5e3d6db86e03f1, findElement {using=css selector, value=[class*=&apos;ib&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53462/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
-	at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+                  <a name="verifyComBlankEmail">
+                  </a> <!-- verifyComBlankEmail -->
+                  <span class="method-name">verifyComBlankEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+	at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
@@ -271,7 +202,7 @@ Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1
 ... Removed 14 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(This test verifies that validation error occurs when invalid email is entered)                  </em>
+(This test verifies that validation error occurs when email field is left blank on Forgot Password page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -292,11 +223,11 @@ Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenken.freshers.user.Login&quot;&gt;
+      &lt;class name=&quot;com.zenken.freshers.company.CompanyLogin&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyInvalidEmail&quot;/&gt;
+          &lt;include name=&quot;verifyComBlankEmail&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zenken.freshers.user.Login --&gt;
+      &lt;/class&gt; &lt;!-- com.zenken.freshers.company.CompanyLogin --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -338,22 +269,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyInvalidEmail')
-data.setCell(0, 2, 'com.zenken.freshers.user.Login')
-data.setCell(0, 3, 153);
+data.setCell(0, 1, 'verifyComBlankEmail')
+data.setCell(0, 2, 'com.zenken.freshers.company.CompanyLogin')
+data.setCell(0, 3, 2146);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyInvalidEmail')
-data.setCell(1, 2, 'com.zenken.freshers.user.Login')
-data.setCell(1, 3, 143);
+data.setCell(1, 1, 'verifyComBlankEmail')
+data.setCell(1, 2, 'com.zenken.freshers.company.CompanyLogin')
+data.setCell(1, 3, 2030);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyInvalidEmail')
-data.setCell(2, 2, 'com.zenken.freshers.user.Login')
-data.setCell(2, 3, 138);
+data.setCell(2, 1, 'verifyComBlankEmail')
+data.setCell(2, 2, 'com.zenken.freshers.company.CompanyLogin')
+data.setCell(2, 3, 2000);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 434 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -368,65 +299,43 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">27 ignored methods</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.zenken.freshers.user.Login</span>
+              <span class="ignored-class-name">com.zenken.freshers.company.CompanyLogin</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyEmailRequired</span>
+                <span class="ignored-method-name">verifyComPasswordChange</span>
                 <br/>
-                <span class="ignored-method-name">verifyLogInAfterPasswordChange</span>
+                <span class="ignored-method-name">verifyComInvalidEmail</span>
                 <br/>
-                <span class="ignored-method-name">verifyInvalidPassword3</span>
+                <span class="ignored-method-name">verifyComInvalidEmail2</span>
                 <br/>
-                <span class="ignored-method-name">verifyInvalidPassword1</span>
+                <span class="ignored-method-name">verifyComInvalidEmail3</span>
                 <br/>
-                <span class="ignored-method-name">verifySameMailSendWithinMinute</span>
+                <span class="ignored-method-name">verifyComTitle</span>
                 <br/>
-                <span class="ignored-method-name">verifyLogInUrl</span>
+                <span class="ignored-method-name">verifyComForgotPasswordLink</span>
                 <br/>
-                <span class="ignored-method-name">verifyPasswordReset</span>
+                <span class="ignored-method-name">verifyComPasswordSet</span>
                 <br/>
-                <span class="ignored-method-name">verifyCredentialsMismatch</span>
+                <span class="ignored-method-name">verifyComBlankPassword</span>
                 <br/>
-                <span class="ignored-method-name">verifyCreateAccountUrl</span>
+                <span class="ignored-method-name">verifyAdminPassTextChange</span>
                 <br/>
-                <span class="ignored-method-name">verifySamePassword</span>
+                <span class="ignored-method-name">verifyComMailSend</span>
                 <br/>
-                <span class="ignored-method-name">verifyEmailRequiredOnForgotPasswordPage</span>
+                <span class="ignored-method-name">verifyComLogout</span>
                 <br/>
-                <span class="ignored-method-name">verifyForgotPasswordPageTitle</span>
+                <span class="ignored-method-name">verifyComIncorrectPass</span>
                 <br/>
-                <span class="ignored-method-name">verifyNonExistentEmail</span>
+                <span class="ignored-method-name">verifyComBlankEmailAndPass</span>
                 <br/>
-                <span class="ignored-method-name">verifyInvalidPassword4</span>
+                <span class="ignored-method-name">verifyComLogin</span>
                 <br/>
-                <span class="ignored-method-name">verifyInvalidPassword2</span>
+                <span class="ignored-method-name">verifyComMailSendAgain</span>
                 <br/>
-                <span class="ignored-method-name">verifyInvalidEmailOnForgotPasswordPage</span>
-                <br/>
-                <span class="ignored-method-name">verifyPasswordResetLink</span>
-                <br/>
-                <span class="ignored-method-name">verifyPasswordRequired</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidToken</span>
-                <br/>
-                <span class="ignored-method-name">verifyPasswordResetMailSend</span>
-                <br/>
-                <span class="ignored-method-name">verifyPasswordResetCompleteHeadline</span>
-                <br/>
-                <span class="ignored-method-name">verifyPasswordResetEmail</span>
-                <br/>
-                <span class="ignored-method-name">verifyHeadLineText</span>
-                <br/>
-                <span class="ignored-method-name">verifyUserLogIn</span>
-                <br/>
-                <span class="ignored-method-name">verifyForgotPasswordUrl</span>
-                <br/>
-                <span class="ignored-method-name">verifyTitle</span>
-                <br/>
-                <span class="ignored-method-name">verifyForgotPasswordPageHeadline</span>
+                <span class="ignored-method-name">verifyComInvalidPasswords</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -438,60 +347,60 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zenken.freshers.user.Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zenken.freshers.company.CompanyLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">generatePass</span>
+                <span class="method-name">generateComUser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Login.verifyInvalidEmail())</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail())</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest([TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken....)</span>
-                <span class="method-start">1502 ms</span>
+                <span class="method-name">setupCLogin([TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com...)</span>
+                <span class="method-start">1624 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyInvalidEmail</span>
-                <span class="method-start">3211 ms</span>
+                <span class="method-name">verifyComBlankEmail</span>
+                <span class="method-start">9127 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3351 ms</span>
+                <span class="method-start">11130 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Login.verifyInvalidEmail())</span>
-                <span class="method-start">3486 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail())</span>
+                <span class="method-start">11311 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest([TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken....)</span>
-                <span class="method-start">4212 ms</span>
+                <span class="method-name">setupCLogin([TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com...)</span>
+                <span class="method-start">12034 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyInvalidEmail</span>
-                <span class="method-start">5902 ms</span>
+                <span class="method-name">verifyComBlankEmail</span>
+                <span class="method-start">16869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6046 ms</span>
+                <span class="method-start">19016 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.zenken.freshers.user.Login.verifyInvalidEmail())</span>
-                <span class="method-start">6194 ms</span>
+                <span class="method-name">setup(public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail())</span>
+                <span class="method-start">19138 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest([TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken....)</span>
-                <span class="method-start">6909 ms</span>
+                <span class="method-name">setupCLogin([TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com...)</span>
+                <span class="method-start">19876 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyInvalidEmail</span>
-                <span class="method-start">8576 ms</span>
+                <span class="method-name">verifyComBlankEmail</span>
+                <span class="method-start">25478 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9685 ms</span>
+                <span class="method-start">28710 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

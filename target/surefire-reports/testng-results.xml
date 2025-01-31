@@ -2,79 +2,48 @@
 <testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-28T12:57:31 IST" name="Suite" finished-at="2025-01-28T12:57:41 IST" duration-ms="9829">
+  <suite started-at="2025-01-31T17:24:41 IST" name="Suite" finished-at="2025-01-31T17:25:10 IST" duration-ms="28931">
     <groups>
     </groups>
-    <test started-at="2025-01-28T12:57:31 IST" name="Test" finished-at="2025-01-28T12:57:41 IST" duration-ms="9829">
-      <class name="com.zenken.freshers.user.Login">
-        <test-method is-config="true" signature="generatePass()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:31 IST" name="generatePass" finished-at="2025-01-28T12:57:31 IST" duration-ms="16" status="PASS">
+    <test started-at="2025-01-31T17:24:41 IST" name="Test" finished-at="2025-01-31T17:25:10 IST" duration-ms="28931">
+      <class name="com.zenken.freshers.company.CompanyLogin">
+        <test-method is-config="true" signature="generateComUser()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:41 IST" name="generateComUser" finished-at="2025-01-31T17:24:41 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generatePass -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:31 IST" name="setup" finished-at="2025-01-28T12:57:32 IST" duration-ms="1482" status="PASS">
+        </test-method> <!-- generateComUser -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:41 IST" name="setup" finished-at="2025-01-31T17:24:43 IST" duration-ms="1608" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
+                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:32 IST" name="setUpTest" finished-at="2025-01-28T12:57:34 IST" duration-ms="1707" status="PASS">
+        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:43 IST" name="setupCLogin" finished-at="2025-01-31T17:24:51 IST" duration-ms="7502" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method retried="true" signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:34 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-28T12:57:34 IST" duration-ms="138" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setupCLogin -->
+        <test-method retried="true" signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:51 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T17:24:53 IST" duration-ms="2000" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3be082ed76bbe57667dc0d4285099e06, findElement {using=css selector, value=[class*='ib']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53440/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3be082ed76bbe57667dc0d4285099e06]]>
+              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3be082ed76bbe57667dc0d4285099e06, findElement {using=css selector, value=[class*='ib']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53440/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3be082ed76bbe57667dc0d4285099e06
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
-at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -93,78 +62,47 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:34 IST" name="tearDown" finished-at="2025-01-28T12:57:34 IST" duration-ms="135" status="PASS">
+        </test-method> <!-- verifyComBlankEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:53 IST" name="tearDown" finished-at="2025-01-31T17:24:53 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:34 IST" name="setup" finished-at="2025-01-28T12:57:35 IST" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:53 IST" name="setup" finished-at="2025-01-31T17:24:53 IST" duration-ms="723" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
+                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:35 IST" name="setUpTest" finished-at="2025-01-28T12:57:37 IST" duration-ms="1690" status="PASS">
+        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:53 IST" name="setupCLogin" finished-at="2025-01-31T17:24:58 IST" duration-ms="4835" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method retried="true" signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:37 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-28T12:57:37 IST" duration-ms="143" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setupCLogin -->
+        <test-method retried="true" signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:24:58 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T17:25:00 IST" duration-ms="2146" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0073f8df4313bfbb1c5e3d6db86e03f1, findElement {using=css selector, value=[class*='ib']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53462/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1]]>
+              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0073f8df4313bfbb1c5e3d6db86e03f1, findElement {using=css selector, value=[class*='ib']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53462/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0073f8df4313bfbb1c5e3d6db86e03f1
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
-at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -183,78 +121,47 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:37 IST" name="tearDown" finished-at="2025-01-28T12:57:37 IST" duration-ms="147" status="PASS">
+        </test-method> <!-- verifyComBlankEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:25:00 IST" name="tearDown" finished-at="2025-01-31T17:25:01 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:37 IST" name="setup" finished-at="2025-01-28T12:57:38 IST" duration-ms="715" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:25:01 IST" name="setup" finished-at="2025-01-31T17:25:01 IST" duration-ms="738" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Login.verifyInvalidEmail()]]>
+                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:38 IST" name="setUpTest" finished-at="2025-01-28T12:57:39 IST" duration-ms="1667" status="PASS">
+        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:25:01 IST" name="setupCLogin" finished-at="2025-01-31T17:25:07 IST" duration-ms="5602" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Login.verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyInvalidEmail()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:39 IST" name="verifyInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered" finished-at="2025-01-28T12:57:39 IST" duration-ms="153" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setupCLogin -->
+        <test-method signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:25:07 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T17:25:09 IST" duration-ms="2030" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b5d4aff8fe6776307c6323c466a6b84, findElement {using=css selector, value=[class*='ib']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53483/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b5d4aff8fe6776307c6323c466a6b84]]>
+              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='ib']"}
-  (Session info: chrome=131.0.6778.267)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b5d4aff8fe6776307c6323c466a6b84, findElement {using=css selector, value=[class*='ib']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\prasa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53483/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b5d4aff8fe6776307c6323c466a6b84
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-at com.zenken.freshers.pages.user.LoginPage.getInvalidEmailText(LoginPage.java:93)
-at com.zenken.freshers.user.Login.verifyInvalidEmail(Login.java:122)
+              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -273,15 +180,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Login@4f49f6af]" started-at="2025-01-28T12:57:40 IST" name="tearDown" finished-at="2025-01-28T12:57:41 IST" duration-ms="113" status="PASS">
+        </test-method> <!-- verifyComBlankEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@3b35a229]" started-at="2025-01-31T17:25:10 IST" name="tearDown" finished-at="2025-01-31T17:25:10 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Login -->
+      </class> <!-- com.zenken.freshers.company.CompanyLogin -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -42,16 +42,16 @@ public class CompanyLogin extends BaseTest{
 		cLogin = new CLoginPage(driver);
 		initialPass = new InitialPasswordPage(driver);
 		properties = getProperties();	
-//		if(!isCompanyCreated) {
-//			navigateTo("/admin/");
-//			adminLogin.loginAdmin();
-//			navigateTo("/admin/companies/98/company-users/new/");
-//			companyUserCreate.enterComUserName("Prasanna");
-//			companyUserCreate.enterComUserEmail(companyUserEmail);
-//			companyUserCreate.clickSave();
-//			password = companyDetails.getComUserPassword();
-//			isCompanyCreated = true;
-//		}
+		if(!isCompanyCreated) {
+			navigateTo("/admin/");
+			adminLogin.loginAdmin();
+			navigateTo("/admin/companies/98/company-users/new/");
+			companyUserCreate.enterComUserName("Prasanna");
+			companyUserCreate.enterComUserEmail(companyUserEmail);
+			companyUserCreate.clickSave();
+			password = companyDetails.getComUserPassword();
+			isCompanyCreated = true;
+		}
 		String testName = result.getMethod().getMethodName();
 		if(!"verifyComBlankPassword".equals(testName) || !"verifyComInvalidPasswords".equals(testName)
 				|| !"verifyComPasswordChange".equals(testName) || !"verifyComLogout".equals(testName)) {

@@ -85,7 +85,6 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 		boolean isDocker = new File("/proc/1/cgroup").exists();	
 		File screenshotFile = new File(filePath);
 		String ssPath = isDocker ? filePath : screenshotFile.getAbsolutePath();
-		System.out.println(ssPath);
 		extentTest.get().addScreenCaptureFromPath(ssPath, result.getMethod().getMethodName());
 	}
 
