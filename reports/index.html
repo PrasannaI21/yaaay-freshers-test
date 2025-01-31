@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">テスト結果</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 30, 2025 10:32:53 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 31, 2025 04:28:26 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,8 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,38 +85,38 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Login</a>
+<a class="dropdown-item" href="#">CompanyLogin</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="warning" test-id="1"
           author=""
-          tag="Login"
+          tag="CompanyLogin"
           device="">
           <div class="test-detail">
-            <p class="name">verifyInvalidEmail</p>
+            <p class="name">verifyComBlankEmail</p>
             <p class="text-sm">
-              <span>10:32:53 AM</span> / <span>00:00:01:518</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>4:28:26 PM</span> / <span>00:00:02:972</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyInvalidEmail</h5>
-<span class='badge badge-success'>01.30.2025 10:32:53 AM</span>
-<span class='badge badge-danger'>01.30.2025 10:32:54 AM</span>
-<span class='badge badge-default'>00:00:01:518</span>
+<h5 class="test-status text-warning">verifyComBlankEmail</h5>
+<span class='badge badge-success'>01.31.2025 4:28:26 PM</span>
+<span class='badge badge-danger'>01.31.2025 4:28:29 PM</span>
+<span class='badge badge-default'>00:00:02:972</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Login</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when invalid email is entered</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when email field is left blank on Forgot Password page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -118,44 +124,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>4:28:26 PM</td>
         <td>
-          No detailed description provided
+          Step 1: Click on 'パスワード再設定' link
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>4:28:26 PM</td>
         <td>
-          Step 1: Enter email "prasanna.inamdar@zenken.co."
+          Step 2: Leave 'メールアドレス' field blank
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>4:28:26 PM</td>
         <td>
-          Step 2: Enter password "Password_1"
+          Step 3: Click on 'メールを送信' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>4:28:26 PM</td>
         <td>
-          Step 3: Click on 'Log In' button
+          Step 4: Verify that expected validation error message is shown
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:54 AM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>4:28:29 PM</td>
         <td>
-          Step 4: Verify that validation error message for an invalid email is displayed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:32:54 AM</td>
-        <td>
-          Test Passed
+          <span style='color:orange; font-weight:bold;'>Retry Attempt</span>: Test was retried
         </td>
       </tr>
   </tbody>
@@ -163,32 +162,32 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="warning" test-id="2"
           author=""
-          tag="Login"
+          tag="CompanyLogin"
           device="">
           <div class="test-detail">
-            <p class="name">verifyEmailRequired</p>
+            <p class="name">verifyComBlankEmail</p>
             <p class="text-sm">
-              <span>10:32:58 AM</span> / <span>00:00:01:509</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>4:28:34 PM</span> / <span>00:00:01:805</span>
+              <span class="badge warning-bg log float-right">Warning</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyEmailRequired</h5>
-<span class='badge badge-success'>01.30.2025 10:32:58 AM</span>
-<span class='badge badge-danger'>01.30.2025 10:32:59 AM</span>
-<span class='badge badge-default'>00:00:01:509</span>
+<h5 class="test-status text-warning">verifyComBlankEmail</h5>
+<span class='badge badge-success'>01.31.2025 4:28:34 PM</span>
+<span class='badge badge-danger'>01.31.2025 4:28:36 PM</span>
+<span class='badge badge-default'>00:00:01:805</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Login</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when 'Email' field is left blank</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when email field is left blank on Forgot Password page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -196,37 +195,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:58 AM</td>
+        <td>4:28:34 PM</td>
         <td>
-          No detailed description provided
+          Step 1: Click on 'パスワード再設定' link
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:58 AM</td>
+        <td>4:28:34 PM</td>
         <td>
-          Step 1: Enter password "Password_1"
+          Step 2: Leave 'メールアドレス' field blank
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:58 AM</td>
+        <td>4:28:34 PM</td>
         <td>
-          Step 2: Click on 'Log In' button
+          Step 3: Click on 'メールを送信' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:59 AM</td>
+        <td>4:28:34 PM</td>
         <td>
-          Step 3: Verify that a validation error message stating 'Email is required' is displayed
+          Step 4: Verify that expected validation error message is shown
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:32:59 AM</td>
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>4:28:36 PM</td>
         <td>
-          Test Passed
+          <span style='color:orange; font-weight:bold;'>Retry Attempt</span>: Test was retried
         </td>
       </tr>
   </tbody>
@@ -234,77 +233,100 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
-          tag="Login"
+          tag="CompanyLogin"
           device="">
           <div class="test-detail">
-            <p class="name">verifyNonExistentEmail</p>
+            <p class="name">verifyComBlankEmail</p>
             <p class="text-sm">
-              <span>10:33:02 AM</span> / <span>00:00:02:116</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>4:28:42 PM</span> / <span>00:00:02:527</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyNonExistentEmail</h5>
-<span class='badge badge-success'>01.30.2025 10:33:02 AM</span>
-<span class='badge badge-danger'>01.30.2025 10:33:04 AM</span>
-<span class='badge badge-default'>00:00:02:116</span>
+<h5 class="test-status text-fail">verifyComBlankEmail</h5>
+<span class='badge badge-success'>01.31.2025 4:28:42 PM</span>
+<span class='badge badge-danger'>01.31.2025 4:28:44 PM</span>
+<span class='badge badge-default'>00:00:02:527</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Login</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when email entered in 'Email' field does not exist on Forgot Password page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when email field is left blank on Forgot Password page</div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\prasa\eclipse-workspace\YaaayFreshers\verifyComBlankEmail.png' src="C:\Users\prasa\eclipse-workspace\YaaayFreshers\verifyComBlankEmail.png">
+  
+    <div class="title">verifyComBlankEmail</div>
+
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:02 AM</td>
+        <td>4:28:42 PM</td>
         <td>
-          No detailed description provided
+          Step 1: Click on 'パスワード再設定' link
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:02 AM</td>
+        <td>4:28:42 PM</td>
         <td>
-          Step 1: Click on 'Forgot your password?' link
+          Step 2: Leave 'メールアドレス' field blank
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:03 AM</td>
+        <td>4:28:42 PM</td>
         <td>
-          Step 2: Enter email "sample123@orkut.com"
+          Step 3: Click on 'メールを送信' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:03 AM</td>
+        <td>4:28:42 PM</td>
         <td>
-          Step 3: Click on 'Send' button
+          Step 4: Verify that expected validation error message is shown
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:04 AM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:28:44 PM</td>
         <td>
-          Step 4: Verify that expected validation error message is displayed for 'Email' field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:33:04 AM</td>
-        <td>
-          Test Passed
+          <textarea readonly class="code-block">java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -321,10 +343,10 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
 <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
@@ -332,15 +354,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">Login</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Login</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -351,25 +373,76 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:32:53 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:28:42 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>verifyInvalidEmail</a>
+<a href="#" class="linked" test-id='3' id='3'>verifyComBlankEmail</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:32:58 AM</td>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-warning'>2</span>
+</span>
+<p class="name">CompanyLogin</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>CompanyLogin</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-warning'>2 others</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>16:28:26 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyEmailRequired</a>
+<a href="#" class="linked" test-id='1' id='1'>verifyComBlankEmail</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:02 AM</td>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>16:28:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>verifyNonExistentEmail</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyComBlankEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:28:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>verifyComBlankEmail</a>
 </td>
 </tr>
 </tbody>
@@ -389,25 +462,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 30, 2025 10:32:53 AM</h3>
+<h3>Jan 31, 2025 04:28:26 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 30, 2025 10:33:04 AM</h3>
+<h3>Jan 31, 2025 04:28:44 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -423,13 +496,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='33%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='66%'>2</b> others
 </small>
 </div>
 </div>
@@ -446,9 +519,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='17%'><b>3</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='6%'><b>1</b> events failed,
 <b data-tooltip='%'>14</b> others
 </small>
 </div>
@@ -465,7 +538,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyInvalidEmail":1.518,"verifyEmailRequired":1.509,"verifyNonExistentEmail":2.116
+"verifyComBlankEmail":2.972,"verifyComBlankEmail":1.805,"verifyComBlankEmail":2.527
 };
 </script>
 <div class="row">
@@ -475,12 +548,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>Login</td>
-<td>3</td>
+<td>CompanyLogin</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>2</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -514,7 +587,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Total Execution Time</td>
-<td>00:00:17</td>
+<td>00:00:22</td>
 </tr>
 </tbody>
 </table></div>
@@ -525,9 +598,9 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
-warningParent: 0,
+passParent: 0,
+failParent: 1,
+warningParent: 2,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
@@ -542,11 +615,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 3,
-failEvents: 0,
-warningEvents: 0,
+passEvents: 0,
+failEvents: 1,
+warningEvents: 2,
 skipEvents: 0,
-infoEvents: 14
+infoEvents: 12
 };
 </script>        </div>
       </div>

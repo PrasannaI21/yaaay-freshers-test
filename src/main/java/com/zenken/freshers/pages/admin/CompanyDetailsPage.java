@@ -7,30 +7,22 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
 
-public class SettingsNew extends WebDriverUtils{
+public class CompanyDetailsPage extends WebDriverUtils{
 
 	WebDriver driver;
 	
-	public SettingsNew(WebDriver driver)
+	public CompanyDetailsPage(WebDriver driver)
 	{
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css="[name=name]")
-	WebElement companyTb;
+	@FindBy(css="tbody tr:nth-child(1) td:nth-child(4)")
+	WebElement password;
 	
-	@FindBy(id="email")
-	WebElement emailTb;
-	
-	public void enterComName(String name)
+	public String getComUserPassword()
 	{
-		companyTb.sendKeys(name);
-	}
-	
-	public void enterComEmail(String email)
-	{
-		emailTb.sendKeys(email);
+		return password.getText();
 	}
 }
