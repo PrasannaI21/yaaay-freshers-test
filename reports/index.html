@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">テスト結果</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 30, 2025 10:32:53 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 31, 2025 03:20:04 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,8 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +86,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Login</a>
+<a class="dropdown-item" href="#">CompanyLogin</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +94,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="Login"
+          tag="CompanyLogin"
           device="">
           <div class="test-detail">
-            <p class="name">verifyInvalidEmail</p>
+            <p class="name">verifyComBlankEmail</p>
             <p class="text-sm">
-              <span>10:32:53 AM</span> / <span>00:00:01:518</span>
+              <span>3:20:04 PM</span> / <span>00:00:02:043</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,17 +107,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyInvalidEmail</h5>
-<span class='badge badge-success'>01.30.2025 10:32:53 AM</span>
-<span class='badge badge-danger'>01.30.2025 10:32:54 AM</span>
-<span class='badge badge-default'>00:00:01:518</span>
+<h5 class="test-status text-pass">verifyComBlankEmail</h5>
+<span class='badge badge-success'>01.31.2025 3:20:04 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:06 PM</span>
+<span class='badge badge-default'>00:00:02:043</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Login</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when invalid email is entered</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when email field is left blank on Forgot Password page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -118,42 +125,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>3:20:04 PM</td>
         <td>
-          No detailed description provided
+          Step 1: Click on 'パスワード再設定' link
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>3:20:04 PM</td>
         <td>
-          Step 1: Enter email "prasanna.inamdar@zenken.co."
+          Step 2: Leave 'メールアドレス' field blank
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>3:20:04 PM</td>
         <td>
-          Step 2: Enter password "Password_1"
+          Step 3: Click on 'メールを送信' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:53 AM</td>
+        <td>3:20:04 PM</td>
         <td>
-          Step 3: Click on 'Log In' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:54 AM</td>
-        <td>
-          Step 4: Verify that validation error message for an invalid email is displayed
+          Step 4: Verify that expected validation error message is shown
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:32:54 AM</td>
+        <td>3:20:06 PM</td>
         <td>
           Test Passed
         </td>
@@ -165,12 +165,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag="Login"
+          tag="CompanyLogin"
           device="">
           <div class="test-detail">
-            <p class="name">verifyEmailRequired</p>
+            <p class="name">verifyComBlankEmailAndPass</p>
             <p class="text-sm">
-              <span>10:32:58 AM</span> / <span>00:00:01:509</span>
+              <span>3:20:11 PM</span> / <span>00:00:02:605</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -178,17 +178,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyEmailRequired</h5>
-<span class='badge badge-success'>01.30.2025 10:32:58 AM</span>
-<span class='badge badge-danger'>01.30.2025 10:32:59 AM</span>
-<span class='badge badge-default'>00:00:01:509</span>
+<h5 class="test-status text-pass">verifyComBlankEmailAndPass</h5>
+<span class='badge badge-success'>01.31.2025 3:20:11 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:14 PM</span>
+<span class='badge badge-default'>00:00:02:605</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Login</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when 'Email' field is left blank</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation errors occur when email and password fields are left blank on Company's Login page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -196,35 +196,63 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:58 AM</td>
+        <td>3:20:11 PM</td>
         <td>
-          No detailed description provided
+          Step 1: Leave 'メールアドレス' field blank
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:58 AM</td>
+        <td>3:20:11 PM</td>
         <td>
-          Step 1: Enter password "Password_1"
+          Step 2: Enter password "Password_1"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:58 AM</td>
+        <td>3:20:11 PM</td>
         <td>
-          Step 2: Click on 'Log In' button
+          Step 3: Click on 'ログイン' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:32:59 AM</td>
+        <td>3:20:11 PM</td>
         <td>
-          Step 3: Verify that a validation error message stating 'Email is required' is displayed
+          Step 4: Verify that expected validation error message is shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:11 PM</td>
+        <td>
+          Step 5: Enter email ID provided by CS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:11 PM</td>
+        <td>
+          Step 6: Leave 'パスワード' field blank
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:11 PM</td>
+        <td>
+          Step 7: Click on 'ログイン' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:11 PM</td>
+        <td>
+          Step 8: Verify that expected validation error message is shown
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:32:59 AM</td>
+        <td>3:20:14 PM</td>
         <td>
           Test Passed
         </td>
@@ -236,12 +264,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag="Login"
+          tag="CompanyLogin"
           device="">
           <div class="test-detail">
-            <p class="name">verifyNonExistentEmail</p>
+            <p class="name">verifyComIncorrectPass</p>
             <p class="text-sm">
-              <span>10:33:02 AM</span> / <span>00:00:02:116</span>
+              <span>3:20:19 PM</span> / <span>00:00:02:575</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -249,17 +277,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyNonExistentEmail</h5>
-<span class='badge badge-success'>01.30.2025 10:33:02 AM</span>
-<span class='badge badge-danger'>01.30.2025 10:33:04 AM</span>
-<span class='badge badge-default'>00:00:02:116</span>
+<h5 class="test-status text-pass">verifyComIncorrectPass</h5>
+<span class='badge badge-success'>01.31.2025 3:20:19 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:22 PM</span>
+<span class='badge badge-default'>00:00:02:575</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Login</span></div>
-<div class="m-t-10 m-l-5">This test verifies that validation error occurs when email entered in 'Email' field does not exist on Forgot Password page</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when password entered is incorrect on Company's Login page</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -267,42 +295,1155 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:02 AM</td>
+        <td>3:20:19 PM</td>
         <td>
-          No detailed description provided
+          Step 1: Enter email ID provided by CS
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:02 AM</td>
+        <td>3:20:19 PM</td>
         <td>
-          Step 1: Click on 'Forgot your password?' link
+          Step 2: Enter incorrect password "password_1#"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:03 AM</td>
+        <td>3:20:19 PM</td>
         <td>
-          Step 2: Enter email "sample123@orkut.com"
+          Step 3: Click on 'ログイン' button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:03 AM</td>
+        <td>3:20:19 PM</td>
         <td>
-          Step 3: Click on 'Send' button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:33:04 AM</td>
-        <td>
-          Step 4: Verify that expected validation error message is displayed for 'Email' field
+          Step 4: Verify that expected validation error message is displayed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:33:04 AM</td>
+        <td>3:20:22 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComInvalidEmail</p>
+            <p class="text-sm">
+              <span>3:20:32 PM</span> / <span>00:00:01:457</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComInvalidEmail</h5>
+<span class='badge badge-success'>01.31.2025 3:20:32 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:33 PM</span>
+<span class='badge badge-default'>00:00:01:457</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when invalid email is entered on Company's Login page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:32 PM</td>
+        <td>
+          Step 1: Enter email "prasanna.inamdar@zenken.co."
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:32 PM</td>
+        <td>
+          Step 2: Enter password "Password_1"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:32 PM</td>
+        <td>
+          Step 3: Click on 'ログイン' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:32 PM</td>
+        <td>
+          Step 4: Verify that validation error message for an invalid email is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:20:33 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComInvalidEmail2</p>
+            <p class="text-sm">
+              <span>3:20:39 PM</span> / <span>00:00:02:739</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComInvalidEmail2</h5>
+<span class='badge badge-success'>01.31.2025 3:20:39 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:42 PM</span>
+<span class='badge badge-default'>00:00:02:739</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when an invalid email is entered on Forgot Password page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:39 PM</td>
+        <td>
+          Step 1: Click on 'パスワード再設定' link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:39 PM</td>
+        <td>
+          Step 2: Enter an invalid email "prasanna.inamdar+zenken.co.jp"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:39 PM</td>
+        <td>
+          Step 3: Click on 'メールを送信' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:39 PM</td>
+        <td>
+          Step 4: Verify that expected validation error message is shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:20:42 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComInvalidEmail3</p>
+            <p class="text-sm">
+              <span>3:20:49 PM</span> / <span>00:00:01:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComInvalidEmail3</h5>
+<span class='badge badge-success'>01.31.2025 3:20:49 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:51 PM</span>
+<span class='badge badge-default'>00:00:01:966</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when the email entered does not exist on Forgot Password page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:49 PM</td>
+        <td>
+          Step 1: Click on 'パスワード再設定' link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:49 PM</td>
+        <td>
+          Step 2: Enter an email "sample123@orkut.com"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:49 PM</td>
+        <td>
+          Step 3: Click on 'メールを送信' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:49 PM</td>
+        <td>
+          Step 4: Verify that expected alert message is shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:20:51 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComTitle</p>
+            <p class="text-sm">
+              <span>3:20:55 PM</span> / <span>00:00:00:045</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComTitle</h5>
+<span class='badge badge-success'>01.31.2025 3:20:55 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:20:55 PM</span>
+<span class='badge badge-default'>00:00:00:045</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that company's Login page title is correct</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:55 PM</td>
+        <td>
+          Step 1: Verify that Company's Login page title name is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:55 PM</td>
+        <td>
+          Step 2: Verify that 見出し text is "企業ログイン"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:20:55 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComPasswordSet</p>
+            <p class="text-sm">
+              <span>3:20:59 PM</span> / <span>00:00:03:303</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComPasswordSet</h5>
+<span class='badge badge-success'>01.31.2025 3:20:59 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:21:02 PM</span>
+<span class='badge badge-default'>00:00:03:303</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that Company user is redirected to Initial Password Set page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:59 PM</td>
+        <td>
+          Step 1: Login into CS account
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:59 PM</td>
+        <td>
+          Step 2: Go to 企業アカウント追加 page (Company ID: 98)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:59 PM</td>
+        <td>
+          Step 3: Create a company user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:59 PM</td>
+        <td>
+          Step 4: Login with the company user with the email and initial password provided by CS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:59 PM</td>
+        <td>
+          Step 5: Verify that the URL loaded is for 企業初期パスワード page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:20:59 PM</td>
+        <td>
+          Step 6: Verify that the headline text is "新しいパスワードを設定"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:21:02 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComBlankPassword</p>
+            <p class="text-sm">
+              <span>3:21:04 PM</span> / <span>00:00:01:217</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComBlankPassword</h5>
+<span class='badge badge-success'>01.31.2025 3:21:04 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:21:05 PM</span>
+<span class='badge badge-default'>00:00:01:217</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when password field is left blank on Initial Password page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:04 PM</td>
+        <td>
+          Step 1: Leave password field blank
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:04 PM</td>
+        <td>
+          Step 2: Click on 'パスワードを変更' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:04 PM</td>
+        <td>
+          Step 3: Verify that expected validation error message is shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:21:05 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComInvalidPasswords</p>
+            <p class="text-sm">
+              <span>3:21:07 PM</span> / <span>00:00:09:338</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComInvalidPasswords</h5>
+<span class='badge badge-success'>01.31.2025 3:21:07 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:21:16 PM</span>
+<span class='badge badge-default'>00:00:09:338</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation errors occur when invalid passwords are entered on Initial Password page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:07 PM</td>
+        <td>
+          Step 1: Enter invalid passwords (8文字なし・数字なし・大文字なし・記号なし)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:07 PM</td>
+        <td>
+          Step 2: Click on 'パスワードを変更' button after entering each password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:07 PM</td>
+        <td>
+          Step 3: Verify that expected validation error messages are shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:21:16 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComPasswordChange</p>
+            <p class="text-sm">
+              <span>3:21:18 PM</span> / <span>00:00:03:506</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComPasswordChange</h5>
+<span class='badge badge-success'>01.31.2025 3:21:18 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:21:21 PM</span>
+<span class='badge badge-default'>00:00:03:506</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that company user is successfully able to change the initial password</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:18 PM</td>
+        <td>
+          Step 1: Enter password "Password_1"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:18 PM</td>
+        <td>
+          Step 2: Click on 'パスワードを変更' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:18 PM</td>
+        <td>
+          Step 3: Verify that headline text is "パスワードの変更が完了しました。"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:18 PM</td>
+        <td>
+          Step 4: Click on "ログイン" button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:18 PM</td>
+        <td>
+          Step 5: Verify that user is redirected to Company Login page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:21:21 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="12"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyAdminPassTextChange</p>
+            <p class="text-sm">
+              <span>3:21:26 PM</span> / <span>00:00:13:893</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">verifyAdminPassTextChange</h5>
+<span class='badge badge-success'>01.31.2025 3:21:26 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:21:40 PM</span>
+<span class='badge badge-default'>00:00:13:893</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that 初回パスワード text changes to "初回パスワード変更済み" on 企業の詳細 page in CS after company user sets the password</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:26 PM</td>
+        <td>
+          Step 1: Login into CS account
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:26 PM</td>
+        <td>
+          Step 2: Go to 企業の詳細 page (Company ID: 98)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:26 PM</td>
+        <td>
+          Step 3: Verify that password text has been changed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>3:21:40 PM</td>
+        <td>
+          <span style='color:orange; font-weight:bold;'>Retry Attempt</span>: Test was retried
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="13"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyAdminPassTextChange</p>
+            <p class="text-sm">
+              <span>3:21:44 PM</span> / <span>00:00:13:653</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">verifyAdminPassTextChange</h5>
+<span class='badge badge-success'>01.31.2025 3:21:44 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:21:58 PM</span>
+<span class='badge badge-default'>00:00:13:653</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that 初回パスワード text changes to "初回パスワード変更済み" on 企業の詳細 page in CS after company user sets the password</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:44 PM</td>
+        <td>
+          Step 1: Login into CS account
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:44 PM</td>
+        <td>
+          Step 2: Go to 企業の詳細 page (Company ID: 98)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:21:44 PM</td>
+        <td>
+          Step 3: Verify that password text has been changed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>3:21:58 PM</td>
+        <td>
+          <span style='color:orange; font-weight:bold;'>Retry Attempt</span>: Test was retried
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyAdminPassTextChange</p>
+            <p class="text-sm">
+              <span>3:22:02 PM</span> / <span>00:00:14:327</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyAdminPassTextChange</h5>
+<span class='badge badge-success'>01.31.2025 3:22:02 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:22:16 PM</span>
+<span class='badge badge-default'>00:00:14:327</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that 初回パスワード text changes to "初回パスワード変更済み" on 企業の詳細 page in CS after company user sets the password</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='verifyAdminPassTextChange.png' src="verifyAdminPassTextChange.png">
+  
+    <div class="title">verifyAdminPassTextChange</div>
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:02 PM</td>
+        <td>
+          Step 1: Login into CS account
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:02 PM</td>
+        <td>
+          Step 2: Go to 企業の詳細 page (Company ID: 98)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:02 PM</td>
+        <td>
+          Step 3: Verify that password text has been changed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:15 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [初回パスワード変更済み] but found [初回パスワード変更済]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange(CompanyLogin.java:138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComLogin</p>
+            <p class="text-sm">
+              <span>3:22:25 PM</span> / <span>00:00:03:657</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComLogin</h5>
+<span class='badge badge-success'>01.31.2025 3:22:25 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:22:29 PM</span>
+<span class='badge badge-default'>00:00:03:657</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that company user is able to login with the updated password</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:25 PM</td>
+        <td>
+          Step 1: Login into 企業 account with the updated password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:25 PM</td>
+        <td>
+          Step 2: Click on 'ログイン' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:25 PM</td>
+        <td>
+          Step 3: Verify that user is redirected to イベント一覧 page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:25 PM</td>
+        <td>
+          Step 4: Verify that headline text is "イベント一覧"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:29 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComLogout</p>
+            <p class="text-sm">
+              <span>3:22:30 PM</span> / <span>00:00:01:325</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComLogout</h5>
+<span class='badge badge-success'>01.31.2025 3:22:30 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:22:32 PM</span>
+<span class='badge badge-default'>00:00:01:325</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that company user is able to logout</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:30 PM</td>
+        <td>
+          Step 1: Click on "ログアウト" button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:30 PM</td>
+        <td>
+          Step 2: Verify that user is redirected to 企業ログイン page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:32 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComForgotPasswordLink</p>
+            <p class="text-sm">
+              <span>3:22:37 PM</span> / <span>00:00:00:701</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComForgotPasswordLink</h5>
+<span class='badge badge-success'>01.31.2025 3:22:37 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:22:38 PM</span>
+<span class='badge badge-default'>00:00:00:701</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that company user is redirected to Forgot Password page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:37 PM</td>
+        <td>
+          Step 1: Click on 'パスワード再設定' link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:37 PM</td>
+        <td>
+          Step 2: Verify that user is redirected to Forgot Password page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:37 PM</td>
+        <td>
+          Step 3: Verify that headline text is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:38 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComMailSend</p>
+            <p class="text-sm">
+              <span>3:22:48 PM</span> / <span>00:00:03:207</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComMailSend</h5>
+<span class='badge badge-success'>01.31.2025 3:22:48 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:22:51 PM</span>
+<span class='badge badge-default'>00:00:03:207</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that company user is able to send the mail for resetting the password</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:48 PM</td>
+        <td>
+          Step 1: Click on 'パスワード再設定' link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:48 PM</td>
+        <td>
+          Step 2: Enter email ID provided by CS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:48 PM</td>
+        <td>
+          Step 3: Click on 'メールを送信' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:48 PM</td>
+        <td>
+          Step 4: Verify that expected alert message is shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:51 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="CompanyLogin"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyComMailSendAgain</p>
+            <p class="text-sm">
+              <span>3:22:58 PM</span> / <span>00:00:02:946</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyComMailSendAgain</h5>
+<span class='badge badge-success'>01.31.2025 3:22:58 PM</span>
+<span class='badge badge-danger'>01.31.2025 3:23:01 PM</span>
+<span class='badge badge-default'>00:00:02:946</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CompanyLogin</span></div>
+<div class="m-t-10 m-l-5">This test verifies that validation error occurs when company user tries to send email again within one minute</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:58 PM</td>
+        <td>
+          Step 1: Click on 'パスワード再設定' link
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:58 PM</td>
+        <td>
+          Step 2: Enter email ID provided by CS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:58 PM</td>
+        <td>
+          Step 3: Click on 'メールを送信' button within one minute
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:58 PM</td>
+        <td>
+          Step 4: Verify that expected alert message is shown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:01 PM</td>
         <td>
           Test Passed
         </td>
@@ -321,7 +1462,56 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>verifyAdminPassTextChange</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -332,15 +1522,19 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>16</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-warning'>2</span>
 </span>
-<p class="name">Login</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">CompanyLogin</p>
+<p class="duration text-sm">19 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Login</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>CompanyLogin</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-warning'>2 others</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -353,23 +1547,135 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:32:53 AM</td>
+<td>15:20:04 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>verifyInvalidEmail</a>
+<a href="#" class="linked" test-id='1' id='1'>verifyComBlankEmail</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:32:58 AM</td>
+<td>15:20:11 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyEmailRequired</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyComBlankEmailAndPass</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:33:02 AM</td>
+<td>15:20:19 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>verifyNonExistentEmail</a>
+<a href="#" class="linked" test-id='3' id='3'>verifyComIncorrectPass</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:20:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>verifyComInvalidEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:20:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>verifyComInvalidEmail2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:20:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>verifyComInvalidEmail3</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:20:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>verifyComTitle</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:20:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>verifyComPasswordSet</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:21:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>verifyComBlankPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:21:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>verifyComInvalidPasswords</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:21:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>verifyComPasswordChange</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>15:21:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>verifyAdminPassTextChange</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>15:21:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>verifyAdminPassTextChange</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>verifyAdminPassTextChange</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>verifyComLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>verifyComLogout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>verifyComForgotPasswordLink</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>verifyComMailSend</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>verifyComMailSendAgain</a>
 </td>
 </tr>
 </tbody>
@@ -389,25 +1695,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 30, 2025 10:32:53 AM</h3>
+<h3>Jan 31, 2025 03:20:04 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 30, 2025 10:33:04 AM</h3>
+<h3>Jan 31, 2025 03:23:01 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>16</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -423,13 +1729,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> tests passed
+<div><small data-tooltip='84%'>
+<b>16</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='5%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='10%'>2</b> others
 </small>
 </div>
 </div>
@@ -446,10 +1752,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='17%'><b>3</b> events passed</small></div>
+<div><small data-tooltip='17%'><b>16</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>14</b> others
+<small data-tooltip='1%'><b>1</b> events failed,
+<b data-tooltip='%'>75</b> others
 </small>
 </div>
 </div>
@@ -465,7 +1771,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyInvalidEmail":1.518,"verifyEmailRequired":1.509,"verifyNonExistentEmail":2.116
+"verifyComBlankEmail":2.043,"verifyComBlankEmailAndPass":2.605,"verifyComIncorrectPass":2.575,"verifyComInvalidEmail":1.457,"verifyComInvalidEmail2":2.739,"verifyComInvalidEmail3":1.966,"verifyComTitle":0.045,"verifyComPasswordSet":3.303,"verifyComBlankPassword":1.217,"verifyComInvalidPasswords":9.338,"verifyComPasswordChange":3.506,"verifyAdminPassTextChange":13.893,"verifyAdminPassTextChange":13.653,"verifyAdminPassTextChange":14.327,"verifyComLogin":3.657,"verifyComLogout":1.325,"verifyComForgotPasswordLink":0.701,"verifyComMailSend":3.207,"verifyComMailSendAgain":2.946
 };
 </script>
 <div class="row">
@@ -475,12 +1781,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>Login</td>
-<td>3</td>
+<td>CompanyLogin</td>
+<td>16</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>2</td>
+<td>84.211%</td>
 </tr>
 </tbody>
 </table></div>
@@ -514,7 +1820,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Total Execution Time</td>
-<td>00:00:17</td>
+<td>00:03:29</td>
 </tr>
 </tbody>
 </table></div>
@@ -525,9 +1831,9 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
-warningParent: 0,
+passParent: 16,
+failParent: 1,
+warningParent: 2,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
@@ -542,11 +1848,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 3,
-failEvents: 0,
-warningEvents: 0,
+passEvents: 16,
+failEvents: 1,
+warningEvents: 2,
 skipEvents: 0,
-infoEvents: 14
+infoEvents: 73
 };
 </script>        </div>
       </div>

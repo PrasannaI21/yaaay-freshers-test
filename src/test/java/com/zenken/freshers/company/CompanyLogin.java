@@ -129,13 +129,13 @@ public class CompanyLogin extends BaseTest{
 	}
 	
 	@Test(priority=5, description="This test verifies that 初回パスワード text changes to "
-			+ "\"初回パスワード変更済み\" on 企業の詳細 page in CS after company user sets the password")
+			+ "\"初回パスワード変更済\" on 企業の詳細 page in CS after company user sets the password")
 	public void verifyAdminPassTextChange()
 	{
 		navigateTo("/admin/");
 		adminLogin.loginAdmin();
 		navigateTo("/admin/companies/98/");
-		Assert.assertEquals(companyDetails.getComUserPassword(), "初回パスワード変更済み");
+		Assert.assertEquals(companyDetails.getComUserPassword(), "初回パスワード変更済");
 	}
 	
 	@Test(priority=6, description="This test verifies that company user is able to login"
@@ -221,13 +221,9 @@ public class CompanyLogin extends BaseTest{
 			+ "email is entered on Company's Login page")
 	public void verifyComInvalidEmail()
 	{
-//		log("Step 1: Enter email \"prasanna.inamdar@zenken.co.\"");
 		cLogin.enterComEmail("prasanna.inamdar@zenken.co.");
-//		log("Step 2: Enter password \"Password_1\"");
 		cLogin.enterComPassword("Password_1");
-//		log("Step 3: Click on 'Log In' button");
 		cLogin.clickSave();
-//		log("Step 4: Verify that validation error message for an invalid email is displayed");
 		Assert.assertTrue(cLogin.getMailBoxText().contains(properties.getProperty("error36"))
 				, "Validation error text is not correct");
 	}
@@ -252,11 +248,8 @@ public class CompanyLogin extends BaseTest{
 			+ "entered is incorrect on Company's Login page")
 	public void verifyComIncorrectPass()
 	{
-//		log("Step 1: Enter email \"prasanna.inamdar@zenken.co.jp\"");
 		cLogin.enterComEmail(companyUserEmail);
-//		log("Step 2: Enter password \"password_1#\"");
 		cLogin.enterComPassword("password_1#");
-//		log("Step 3: Click on 'Log In' button");
 		cLogin.clickSave();
 		Assert.assertEquals(forgotPassword.getComAlertText(), properties.get("alert12"));
 	}
