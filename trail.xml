@@ -7,11 +7,9 @@
 </listeners>
   <test thread-count="3" name="Test">
     <classes>
-      <class name="com.zenken.freshers.user.Login">
+      <class name="com.zenken.freshers.company.CompanyLogin">
         <methods>
-          <include name="verifyInvalidEmail"></include>
-          <include name="verifyEmailRequired"></include>
-          <include name="verifyNonExistentEmail"></include>
+          <include name="verifyComBlankEmail"></include>
         </methods>
       </class>  
     </classes>

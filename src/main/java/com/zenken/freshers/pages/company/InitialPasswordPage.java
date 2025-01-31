@@ -7,33 +7,30 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
 
-public class CLoginPage extends WebDriverUtils{
+public class InitialPasswordPage extends WebDriverUtils{
 
 	WebDriver driver;
 	
-	public CLoginPage(WebDriver driver)
+	public InitialPasswordPage(WebDriver driver)
 	{
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="email")
-	WebElement emailTb;
+	@FindBy(xpath="//h2[contains(.,'新')]")
+	WebElement headline;
 	
 	@FindBy(id="password")
 	WebElement passwordTb;
 	
-	@FindBy(css="[class*='500']")
-	WebElement headline;
+	@FindBy(xpath="//h2[contains(.,'変更が完了')]")
+	WebElement headline2;
 	
-	@FindBy(linkText="パスワード再設定")
-	WebElement resetLink;
+	@FindBy(xpath="//a[.='ログイン']")
+	WebElement loginBt;
 	
-	@FindBy(xpath="(//div)[8]")
-	WebElement mailBox;
-	
-	@FindBy(css="[class*='m-c']")
+	@FindBy(css="form [class=u-mt-20]")
 	WebElement passwordBox;
 	
 	public String getComHeadline()
@@ -41,24 +38,19 @@ public class CLoginPage extends WebDriverUtils{
 		return headline.getText();
 	}
 	
-	public void enterComEmail(String email)
-	{
-		emailTb.sendKeys(email);
-	}
-	
 	public void enterComPassword(String password)
 	{
 		passwordTb.sendKeys(password);
 	}
 	
-	public void clickResetLink()
+	public String getComHeadline2()
 	{
-		resetLink.click();
+		return headline2.getText();
 	}
 	
-	public String getMailBoxText()
+	public void clickLogin()
 	{
-		return mailBox.getText();
+		loginBt.click();
 	}
 	
 	public String getPasswordBoxText()

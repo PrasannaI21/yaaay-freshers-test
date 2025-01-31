@@ -1,5 +1,6 @@
 package com.zenken.freshers.testcomponents;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -81,7 +82,10 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+		File screenshotFile = new File(filePath);
+		String absolutePath = screenshotFile.getAbsolutePath();
+		System.out.println(absolutePath);
+		extentTest.get().addScreenCaptureFromPath(absolutePath, result.getMethod().getMethodName());
 	}
 
 	@Override

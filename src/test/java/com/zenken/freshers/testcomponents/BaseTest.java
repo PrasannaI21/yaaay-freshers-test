@@ -55,15 +55,6 @@ public class BaseTest {
 		driver.get(url);
 	}
 	
-	@BeforeSuite
-	public void start() throws IOException
-	{
-		System.out.println("Starting Jenkins...");
-		ProcessBuilder processBuilder = new ProcessBuilder("C:\\Program Files\\Java\\jdk-21\\bin\\java.exe", "-jar", "C:\\Users\\prasa\\Downloads\\jenkins.war");
-		processBuilder.directory(new File("C:\\Users\\prasa\\Downloads"));
-		processBuilder.start();		
-	}
-	
 	@BeforeMethod
 	public void setup(Method method) throws IOException
 	{
@@ -191,15 +182,6 @@ public class BaseTest {
 		}
 	}
 	
-	@AfterSuite
-	public void stopDocker() throws IOException
-	{
-		System.out.println("Stopping Docker Desktop...");
-		ProcessBuilder processBuilder = new ProcessBuilder("taskkill", "/F", "/IM", "Docker Desktop.exe");
-		processBuilder.start();
-		System.out.println("Docker Desktop stopped successfully.");
-	}
-	
 	public Properties getProperties() throws IOException
 	{
 		properties = new Properties();
@@ -223,7 +205,8 @@ public class BaseTest {
 		String testName = getCurrentTestMethod();
 		return testName.equals("verifyUserRegistration") || testName.equals("verifyEmail") || testName.equals("verifyEmailPageTitle")
 				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend") || testName.equals("verifyPasswordReset")
-				|| testName.equals("verifyPasswordResetCompleteHeadline");
+				|| testName.equals("verifyPasswordResetCompleteHeadline") || testName.equals("verifyComPasswordSet") || 
+				testName.equals("verifyComBlankPassword") || testName.equals("verifyComInvalidPasswords") || testName.equals("verifyComLogin");
 	}
 	
 	public void assertTextBoxStates(Map<String, Boolean> states)

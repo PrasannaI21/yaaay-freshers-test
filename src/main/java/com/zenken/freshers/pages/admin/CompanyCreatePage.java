@@ -7,28 +7,30 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
 
-public class AdminLoginPage extends WebDriverUtils{
+public class CompanyCreatePage extends WebDriverUtils{
 
 	WebDriver driver;
 	
-	public AdminLoginPage(WebDriver driver)
+	public CompanyCreatePage(WebDriver driver)
 	{
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(css="[name=name]")
+	WebElement companyTb;
+	
 	@FindBy(id="email")
 	WebElement emailTb;
 	
-	@FindBy(id="password")
-	WebElement passwordTb;
-	
-	public void loginAdmin()
+	public void enterComName(String name)
 	{
-		emailTb.sendKeys("admin@example.com");
-		passwordTb.sendKeys("Password_1");
-		clickSave();
+		companyTb.sendKeys(name);
 	}
-
+	
+	public void enterComEmail(String email)
+	{
+		emailTb.sendKeys(email);
+	}
 }

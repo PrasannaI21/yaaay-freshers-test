@@ -1,4 +1,4 @@
-package com.zenken.freshers.pages.admin;
+package com.zenken.freshers.pages.company;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,28 +7,30 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.zenken.frehsers.abstractcomponents.WebDriverUtils;
 
-public class AdminLoginPage extends WebDriverUtils{
+public class EventsPage extends WebDriverUtils{
 
 	WebDriver driver;
 	
-	public AdminLoginPage(WebDriver driver)
+	public EventsPage(WebDriver driver)
 	{
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="email")
-	WebElement emailTb;
+	@FindBy(css="h1")
+	WebElement headline;
 	
-	@FindBy(id="password")
-	WebElement passwordTb;
+	@FindBy(css="[class='u-d-f u-ai-c']")
+	WebElement logoutBt;
 	
-	public void loginAdmin()
+	public String getComEventsHeadline()
 	{
-		emailTb.sendKeys("admin@example.com");
-		passwordTb.sendKeys("Password_1");
-		clickSave();
+		return headline.getText();
 	}
-
+	
+	public void clickLogout()
+	{
+		logoutBt.click();
+	}
 }

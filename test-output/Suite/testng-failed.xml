@@ -7,15 +7,15 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.zenken.freshers.user.JobsApply">
+      <class name="com.zenken.freshers.company.CompanyLogin">
         <methods>
-          <include name="setupJobsApply"/>
-          <include name="verifyJobApplication1"/>
+          <include name="generateComUser"/>
+          <include name="verifyComBlankEmail"/>
           <include name="tearDown"/>
-          <include name="verifyFinalConfPopup1"/>
           <include name="setup"/>
+          <include name="setupCLogin"/>
         </methods>
-      </class> <!-- com.zenken.freshers.user.JobsApply -->
+      </class> <!-- com.zenken.freshers.company.CompanyLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
