@@ -156,7 +156,7 @@ public class Login extends BaseTest{
 	{
 		log("Step 1: Enter email \"prasanna.inamdar@zenken.co.jp\"");
 		login.enterEmailId("prasanna.inamdar@zenken.co.jp");
-		log("Step 2: Enter password \"password_1\"");
+		log("Step 2: Enter password \"password_1#\"");
 		login.enterPassword("password_1#");
 		log("Step 3: Click on 'Log In' button");
 		login.clickLogIn();
