@@ -44,12 +44,11 @@ public class Jobs extends BaseTest{
 			adminLogin.loginAdmin();
 			driver.get("https://freshers.dspf-dev.com/admin/events/116/jobs/295/edit/");
 			adminEditJob.restoreJob();
-			dataset = adminEditJob.updateJob(properties.getProperty("datasetIndex"), "datasetIndex");
+			dataset = adminEditJob.updateJob(properties.getProperty("jobsIndex"), "jobsIndex");
 			isJdUpdated = true;
 		}
 		navigateTo("/jobs/9df004f4/");
-		jobs = new JobsPage(driver);
-		
+		jobs = new JobsPage(driver);	
 	}
 	
 	@Test(description="This test verifies that expected Jobs page title is displayed")
