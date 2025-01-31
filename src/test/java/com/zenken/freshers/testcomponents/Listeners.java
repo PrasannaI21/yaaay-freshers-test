@@ -82,10 +82,11 @@ public class Listeners extends BaseTest implements ITestListener, IConfiguration
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		boolean isDocker = new File("/proc/1/cgroup").exists();	
 		File screenshotFile = new File(filePath);
-		String absolutePath = screenshotFile.getAbsolutePath();
-		System.out.println(absolutePath);
-		extentTest.get().addScreenCaptureFromPath(absolutePath, result.getMethod().getMethodName());
+		String ssPath = isDocker ? filePath : screenshotFile.getAbsolutePath();
+		System.out.println(ssPath);
+		extentTest.get().addScreenCaptureFromPath(ssPath, result.getMethod().getMethodName());
 	}
 
 	@Override
