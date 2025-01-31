@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="21" passed="16" failed="1" skipped="0">
+<testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T15:19:32 IST" name="Suite" finished-at="2025-01-31T15:23:02 IST" duration-ms="209575">
+  <suite started-at="2025-01-31T16:28:22 IST" name="Suite" finished-at="2025-01-31T16:28:45 IST" duration-ms="22706">
     <groups>
     </groups>
-    <test started-at="2025-01-31T15:19:32 IST" name="Test" finished-at="2025-01-31T15:23:02 IST" duration-ms="209575">
+    <test started-at="2025-01-31T16:28:22 IST" name="Test" finished-at="2025-01-31T16:28:45 IST" duration-ms="22706">
       <class name="com.zenken.freshers.company.CompanyLogin">
-        <test-method is-config="true" signature="generateComUser()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:19:32 IST" name="generateComUser" finished-at="2025-01-31T15:19:32 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="generateComUser()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:22 IST" name="generateComUser" finished-at="2025-01-31T16:28:22 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateComUser -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:19:32 IST" name="setup" finished-at="2025-01-31T15:19:35 IST" duration-ms="2450" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:22 IST" name="setup" finished-at="2025-01-31T16:28:24 IST" duration-ms="1784" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,361 +22,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:19:35 IST" name="setupCLogin" finished-at="2025-01-31T15:20:04 IST" duration-ms="28944" status="PASS">
+        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:24 IST" name="setupCLogin" finished-at="2025-01-31T16:28:26 IST" duration-ms="2275" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:04 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T15:20:06 IST" duration-ms="2119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComBlankEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:06 IST" name="tearDown" finished-at="2025-01-31T15:20:06 IST" duration-ms="310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:06 IST" name="setup" finished-at="2025-01-31T15:20:07 IST" duration-ms="1487" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmailAndPass()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:07 IST" name="setupCLogin" finished-at="2025-01-31T15:20:11 IST" duration-ms="3600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmailAndPass()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComBlankEmailAndPass()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:11 IST" name="verifyComBlankEmailAndPass" description="This test verifies that validation errors occur when email and password fields are left blank on Company&#039;s Login page" finished-at="2025-01-31T15:20:14 IST" duration-ms="2605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComBlankEmailAndPass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:14 IST" name="tearDown" finished-at="2025-01-31T15:20:14 IST" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:14 IST" name="setup" finished-at="2025-01-31T15:20:15 IST" duration-ms="1414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComIncorrectPass()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:15 IST" name="setupCLogin" finished-at="2025-01-31T15:20:19 IST" duration-ms="4167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComIncorrectPass()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComIncorrectPass()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:19 IST" name="verifyComIncorrectPass" description="This test verifies that validation error occurs when password entered is incorrect on Company&#039;s Login page" finished-at="2025-01-31T15:20:22 IST" duration-ms="2582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComIncorrectPass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:22 IST" name="tearDown" finished-at="2025-01-31T15:20:22 IST" duration-ms="156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:22 IST" name="setup" finished-at="2025-01-31T15:20:23 IST" duration-ms="1239" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComInvalidEmail()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:23 IST" name="setupCLogin" finished-at="2025-01-31T15:20:32 IST" duration-ms="8581" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComInvalidEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComInvalidEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:32 IST" name="verifyComInvalidEmail" description="This test verifies that validation error occurs when invalid email is entered on Company&#039;s Login page" finished-at="2025-01-31T15:20:33 IST" duration-ms="1461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:33 IST" name="tearDown" finished-at="2025-01-31T15:20:35 IST" duration-ms="1887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:35 IST" name="setup" finished-at="2025-01-31T15:20:37 IST" duration-ms="1268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComInvalidEmail2()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:37 IST" name="setupCLogin" finished-at="2025-01-31T15:20:39 IST" duration-ms="2295" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComInvalidEmail2()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComInvalidEmail2()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:39 IST" name="verifyComInvalidEmail2" description="This test verifies that validation error occurs when an invalid email is entered on Forgot Password page" finished-at="2025-01-31T15:20:42 IST" duration-ms="2739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComInvalidEmail2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:42 IST" name="tearDown" finished-at="2025-01-31T15:20:42 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:42 IST" name="setup" finished-at="2025-01-31T15:20:43 IST" duration-ms="1431" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComInvalidEmail3()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:43 IST" name="setupCLogin" finished-at="2025-01-31T15:20:49 IST" duration-ms="6088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComInvalidEmail3()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComInvalidEmail3()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:49 IST" name="verifyComInvalidEmail3" description="This test verifies that validation error occurs when the email entered does not exist on Forgot Password page" finished-at="2025-01-31T15:20:51 IST" duration-ms="1966" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComInvalidEmail3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:51 IST" name="tearDown" finished-at="2025-01-31T15:20:51 IST" duration-ms="149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:51 IST" name="setup" finished-at="2025-01-31T15:20:53 IST" duration-ms="1191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:53 IST" name="setupCLogin" finished-at="2025-01-31T15:20:55 IST" duration-ms="2269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComTitle()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComTitle()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:55 IST" name="verifyComTitle" description="This test verifies that company&#039;s Login page title is correct" finished-at="2025-01-31T15:20:55 IST" duration-ms="45" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:55 IST" name="tearDown" finished-at="2025-01-31T15:20:55 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:55 IST" name="setup" finished-at="2025-01-31T15:20:56 IST" duration-ms="1263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComPasswordSet()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:56 IST" name="setupCLogin" finished-at="2025-01-31T15:20:59 IST" duration-ms="2180" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComPasswordSet()[pri:1, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComPasswordSet()[pri:1, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:20:59 IST" name="verifyComPasswordSet" description="This test verifies that Company user is redirected to Initial Password Set page" finished-at="2025-01-31T15:21:02 IST" duration-ms="3304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComPasswordSet -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:02 IST" name="tearDown" finished-at="2025-01-31T15:21:02 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:02 IST" name="setupCLogin" finished-at="2025-01-31T15:21:04 IST" duration-ms="1702" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankPassword()[pri:2, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:02 IST" name="setup" finished-at="2025-01-31T15:21:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankPassword()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyComBlankPassword()[pri:2, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:04 IST" name="verifyComBlankPassword" description="This test verifies that validation error occurs when password field is left blank on Initial Password page" finished-at="2025-01-31T15:21:05 IST" duration-ms="1217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComBlankPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:05 IST" name="tearDown" finished-at="2025-01-31T15:21:05 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:05 IST" name="setup" finished-at="2025-01-31T15:21:05 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComInvalidPasswords()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:05 IST" name="setupCLogin" finished-at="2025-01-31T15:21:07 IST" duration-ms="1952" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComInvalidPasswords()[pri:3, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComInvalidPasswords()[pri:3, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:07 IST" name="verifyComInvalidPasswords" description="This test verifies that validation errors occur when invalid passwords are entered on Initial Password page" finished-at="2025-01-31T15:21:16 IST" duration-ms="9340" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComInvalidPasswords -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:16 IST" name="tearDown" finished-at="2025-01-31T15:21:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:16 IST" name="setup" finished-at="2025-01-31T15:21:16 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComPasswordChange()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:16 IST" name="setupCLogin" finished-at="2025-01-31T15:21:18 IST" duration-ms="1689" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComPasswordChange()[pri:4, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComPasswordChange()[pri:4, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:18 IST" name="verifyComPasswordChange" description="This test verifies that company user is successfully able to change the initial password" finished-at="2025-01-31T15:21:21 IST" duration-ms="3511" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComPasswordChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:21 IST" name="tearDown" finished-at="2025-01-31T15:21:21 IST" duration-ms="214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:21 IST" name="setup" finished-at="2025-01-31T15:21:23 IST" duration-ms="1319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:23 IST" name="setupCLogin" finished-at="2025-01-31T15:21:26 IST" duration-ms="3379" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyAdminPassTextChange()[pri:5, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method retried="true" signature="verifyAdminPassTextChange()[pri:5, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:26 IST" name="verifyAdminPassTextChange" description="This test verifies that 初回パスワード text changes to &quot;初回パスワード変更済み&quot; on 企業の詳細 page in CS after company user sets the password" finished-at="2025-01-31T15:21:40 IST" duration-ms="13888" status="SKIP">
+        <test-method retried="true" signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:26 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T16:28:29 IST" duration-ms="2987" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [初回パスワード変更済み] but found [初回パスワード変更済]]]>
+              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [初回パスワード変更済み] but found [初回パスワード変更済]
+              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange(CompanyLogin.java:138)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -398,47 +65,44 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdminPassTextChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:40 IST" name="tearDown" finished-at="2025-01-31T15:21:40 IST" duration-ms="295" status="PASS">
+        </test-method> <!-- verifyComBlankEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:29 IST" name="tearDown" finished-at="2025-01-31T16:28:29 IST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:40 IST" name="setup" finished-at="2025-01-31T15:21:42 IST" duration-ms="1269" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:29 IST" name="setup" finished-at="2025-01-31T16:28:30 IST" duration-ms="1089" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange()]]>
+                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:42 IST" name="setupCLogin" finished-at="2025-01-31T15:21:44 IST" duration-ms="2312" status="PASS">
+        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:30 IST" name="setupCLogin" finished-at="2025-01-31T16:28:34 IST" duration-ms="4061" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyAdminPassTextChange()[pri:5, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCLogin -->
-        <test-method retried="true" signature="verifyAdminPassTextChange()[pri:5, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:44 IST" name="verifyAdminPassTextChange" description="This test verifies that 初回パスワード text changes to &quot;初回パスワード変更済み&quot; on 企業の詳細 page in CS after company user sets the password" finished-at="2025-01-31T15:21:58 IST" duration-ms="13653" status="SKIP">
+        <test-method retried="true" signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:34 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T16:28:36 IST" duration-ms="1806" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [初回パスワード変更済み] but found [初回パスワード変更済]]]>
+              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [初回パスワード変更済み] but found [初回パスワード変更済]
+              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange(CompanyLogin.java:138)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -460,47 +124,44 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdminPassTextChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:58 IST" name="tearDown" finished-at="2025-01-31T15:21:58 IST" duration-ms="302" status="PASS">
+        </test-method> <!-- verifyComBlankEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:36 IST" name="tearDown" finished-at="2025-01-31T16:28:36 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:58 IST" name="setup" finished-at="2025-01-31T15:21:59 IST" duration-ms="1307" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:36 IST" name="setup" finished-at="2025-01-31T16:28:37 IST" duration-ms="1095" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange()]]>
+                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:21:59 IST" name="setupCLogin" finished-at="2025-01-31T15:22:02 IST" duration-ms="2505" status="PASS">
+        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:37 IST" name="setupCLogin" finished-at="2025-01-31T16:28:42 IST" duration-ms="4470" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyAdminPassTextChange()[pri:5, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyAdminPassTextChange()[pri:5, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:02 IST" name="verifyAdminPassTextChange" description="This test verifies that 初回パスワード text changes to &quot;初回パスワード変更済み&quot; on 企業の詳細 page in CS after company user sets the password" finished-at="2025-01-31T15:22:15 IST" duration-ms="13683" status="FAIL">
+        <test-method signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:42 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T16:28:44 IST" duration-ms="1899" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [初回パスワード変更済み] but found [初回パスワード変更済]]]>
+              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [初回パスワード変更済み] but found [初回パスワード変更済]
+              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.zenken.freshers.company.CompanyLogin.verifyAdminPassTextChange(CompanyLogin.java:138)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -522,158 +183,8 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdminPassTextChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:16 IST" name="tearDown" finished-at="2025-01-31T15:22:18 IST" duration-ms="2022" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:18 IST" name="setup" finished-at="2025-01-31T15:22:19 IST" duration-ms="1334" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComLogin()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:19 IST" name="setupCLogin" finished-at="2025-01-31T15:22:25 IST" duration-ms="5737" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComLogin()[pri:6, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComLogin()[pri:6, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:25 IST" name="verifyComLogin" description="This test verifies that company user is able to login with the updated password" finished-at="2025-01-31T15:22:29 IST" duration-ms="3661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:29 IST" name="tearDown" finished-at="2025-01-31T15:22:29 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:29 IST" name="setupCLogin" finished-at="2025-01-31T15:22:30 IST" duration-ms="1349" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComLogout()[pri:7, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:29 IST" name="setup" finished-at="2025-01-31T15:22:29 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComLogout()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyComLogout()[pri:7, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:30 IST" name="verifyComLogout" description="This test verifies that company user is able to logout" finished-at="2025-01-31T15:22:32 IST" duration-ms="1332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:32 IST" name="tearDown" finished-at="2025-01-31T15:22:32 IST" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:32 IST" name="setup" finished-at="2025-01-31T15:22:33 IST" duration-ms="1344" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComForgotPasswordLink()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:33 IST" name="setupCLogin" finished-at="2025-01-31T15:22:37 IST" duration-ms="3763" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComForgotPasswordLink()[pri:8, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComForgotPasswordLink()[pri:8, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:37 IST" name="verifyComForgotPasswordLink" description="This test verifies that company user is redirected to Forgot Password page" finished-at="2025-01-31T15:22:38 IST" duration-ms="702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComForgotPasswordLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:38 IST" name="tearDown" finished-at="2025-01-31T15:22:38 IST" duration-ms="149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:38 IST" name="setup" finished-at="2025-01-31T15:22:39 IST" duration-ms="1236" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComMailSend()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:39 IST" name="setupCLogin" finished-at="2025-01-31T15:22:48 IST" duration-ms="8777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComMailSend()[pri:9, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComMailSend()[pri:9, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:48 IST" name="verifyComMailSend" description="This test verifies that company user is able to send the mail for resetting the password" finished-at="2025-01-31T15:22:51 IST" duration-ms="3207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComMailSend -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:51 IST" name="tearDown" finished-at="2025-01-31T15:22:53 IST" duration-ms="2004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:53 IST" name="setup" finished-at="2025-01-31T15:22:54 IST" duration-ms="1243" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComMailSendAgain()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:54 IST" name="setupCLogin" finished-at="2025-01-31T15:22:58 IST" duration-ms="4288" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComMailSendAgain()[pri:10, instance:com.zenken.freshers.company.CompanyLogin@2663e964] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComMailSendAgain()[pri:10, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:22:58 IST" name="verifyComMailSendAgain" description="This test verifies that validation error occurs when company user tries to send email again within one minute" finished-at="2025-01-31T15:23:01 IST" duration-ms="2946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComMailSendAgain -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2663e964]" started-at="2025-01-31T15:23:01 IST" name="tearDown" finished-at="2025-01-31T15:23:02 IST" duration-ms="184" status="PASS">
+        </test-method> <!-- verifyComBlankEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T16:28:44 IST" name="tearDown" finished-at="2025-01-31T16:28:45 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -10,7 +10,7 @@
       <class name="com.zenken.freshers.company.CompanyLogin">
         <methods>
           <include name="generateComUser"/>
-          <include name="verifyAdminPassTextChange"/>
+          <include name="verifyComBlankEmail"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="setupCLogin"/>
