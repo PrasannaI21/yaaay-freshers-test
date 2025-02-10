@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -197,6 +198,12 @@ public class EditBasicInformationPage extends WebDriverUtils{
 	@FindBy(id="beBTechCgpa")
 	WebElement beBTechCgpa;
 	
+	@FindBy(id="mcaMTechBranch")
+	WebElement mcaMTechDd;
+	
+	@FindBy(id="mcaMTechCgpa")
+	WebElement mcaMTechCgpaTb;
+	
 	@FindBy(id="planForContinuedEducationLabel")
 	WebElement planForEducation;
 	
@@ -208,6 +215,12 @@ public class EditBasicInformationPage extends WebDriverUtils{
 	
 	@FindBy(id="hasActiveBacklog1")
 	WebElement hasBacklogRadio1;
+	
+	@FindBy(id="hasActiveBacklog0")
+	WebElement hasBacklogRadio2;
+	
+	@FindBy(id="activeBacklogCount")
+	WebElement backlogDd;
 	
 	@FindBy(id="englishLevelLabel")
 	WebElement english;
@@ -515,17 +528,53 @@ public class EditBasicInformationPage extends WebDriverUtils{
 		clickSave();
 	}
 	
-//	public boolean isSectionComplete()
-//	{
-//		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
-//		try {
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//			List<WebElement> marks = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("[class*=card] [class=u-c-red]")));
-//			return !marks.isEmpty() && marks.get(0).isDisplayed();
-//		}
-//		catch(TimeoutException e) {
-//			return false;
-//		}
-//	}
+	public void enterInfoForCsv1()
+	{
+		enterFirstName("name (Dana)");
+		enterMiddleName("name (Schroeder)");
+		enterLastName("name (13)");
+		clickByJavaScript(sex1);
+		selectDropdown(collegeDd, "JIT (Jyothy Institute of Technology)");
+		selectDropdown(yearDd, "2024");
+		selectDropdown(beBTechDd, "AI&ML");
+		beBTechCgpa.clear();
+		beBTechCgpa.sendKeys("8.12");		
+		selectDropdown(mcaMTechDd, "CSE");
+		mcaMTechCgpaTb.clear();
+		mcaMTechCgpaTb.sendKeys("5");
+		clickByJavaScript(hasBacklogRadio2);
+		clickByJavaScript(interest1);
+		clickSave();
+	}
+	
+	public void enterInfoForCsv2()
+	{
+		enterFirstName("Dana");
+		enterMiddleName("Schroeder");
+		enterLastName("13");
+		clickByJavaScript(sex2);
+		selectDropdown(collegeDd, "Karpagam (Karpagam Institutions)");
+		selectDropdown(yearDd, "2030");
+		selectDropdown(beBTechDd, "Data Science");
+		beBTechCgpa.clear();
+		beBTechCgpa.sendKeys("4.69");		
+		selectDropdown(mcaMTechDd, "EEE");
+		mcaMTechCgpaTb.clear();
+		mcaMTechCgpaTb.sendKeys("10");
+		clickByJavaScript(hasBacklogRadio1);
+		selectDropdown(backlogDd, "4");
+		clickByJavaScript(interest3);
+		clickSave();
+	}
+	
+	public void resetBasicInfo()
+	{
+		String script = "document.querySelectorAll('input, textarea').forEach(el => {"
+				+ "if(el.className === 'uk-input ' || el.tagName === 'TEXTAREA'){"
+				+ "el.value = '';}"
+				+ "else if(el.type === 'checkbox' || el.type === 'radio'){"
+				+ "el.checked = false;}})";
+		((JavascriptExecutor)driver).executeScript(script);
+	}
 	
 }

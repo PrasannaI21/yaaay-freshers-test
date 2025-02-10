@@ -659,13 +659,6 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		return monitorDownloadLink(maxRetries, projectDlLinks);
 	}
 	
-	public int getFileCount()
-	{
-		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
-		int initialFileCount = downloadFolder.listFiles().length;
-		return initialFileCount;
-	}
-	
 	public boolean isFileDownloaded(int initialFileCount)
 	{
 		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
@@ -682,19 +675,6 @@ public class ProfilePreviewPage extends WebDriverUtils{
 		return false;
 		});
 		return isDownloaded;
-	}
-	
-	public String getDownloadedFileName()
-	{
-		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
-		File[] files = downloadFolder.listFiles();
-		if(files != null && files.length > 0)
-		{
-			Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
-			return files[0].getName();
-		}else {
-			return null;
-		}
 	}
 	
 	public void clickProjectEdit(int index)

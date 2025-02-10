@@ -58,6 +58,13 @@ public class TestDescription {
 		map.put("verifyComInvalidEmail", "Step 1: Enter email \"prasanna.inamdar@zenken.co.\"\nStep 2: Enter password \"Password_1\"\nStep 3: Click on 'ログイン' button\nStep 4: Verify that validation error message for an invalid email is displayed");
 		map.put("verifyComBlankEmailAndPass", "Step 1: Leave 'メールアドレス' field blank\nStep 2: Enter password \"Password_1\"\nStep 3: Click on 'ログイン' button\nStep 4: Verify that expected validation error message is shown\nStep 5: Enter email ID provided by CS\nStep 6: Leave 'パスワード' field blank\nStep 7: Click on 'ログイン' button\nStep 8: Verify that expected validation error message is shown");
 		map.put("verifyComIncorrectPass", "Step 1: Enter email ID provided by CS\nStep 2: Enter incorrect password \"password_1#\"\nStep 3: Click on 'ログイン' button\nStep 4: Verify that expected validation error message is displayed");
+		map.put("verifyCsvDlLink", "Step 1: Verify that the text of the link to download the CSV file is \"応募者一覧 CSVダウンロード\"");
+		map.put("verifyCsvDlPopup", "Step 1: Click CSV download link\nStep 2: Verify that the title on the popup is correct");
+		map.put("verifyCsvDl", "Step 1: Login into CS account\nStep 2: Update 最終結果 of the candidate (ID: 15, event ID: 10) from 〇 to △ or from △ to 〇\nStep 3: Login into 人材 account with the user \"applied_user_13@example.com\"\nStep 4: Update profile information (Basic info, skills, internships, certifications, projects)\nStep 5: Login into 企業 account (Company ID: 94)\nStep 6: Download CSV file (ID: bbcfc68b)\nStep 7: Verify that expected alert is displayed and the file is downloaded in zip format\nStep 8: Extract the files\nStep 9: Verify that file names (candidates_求人名.csv) are correct");
+		map.put("verifyCsvHeader1", "Step 1: Open CSV files\nStep 2: Verify that the field names in CSV files are correct");
+		map.put("verifyCsvNoApplicant", "Step 1: Verify that CSV files have no data for 応募者");
+		map.put("verifyCsvHeader2", "Step 1: Login into 企業 account (Company ID: 11)\nStep 2: Download the CSV file (event ID: 878fca2e)\nStep 3: Verify that the field names in CSV files are correct (最終結果 is included)");
+		map.put("verifyCsvValues", "Step 1: Open CSV files\nStep 2: Verify that the values are updated in all CSV files as expected (応募者ID: 8)");
 	}
 	
 	public static String getDescription(String methodName)

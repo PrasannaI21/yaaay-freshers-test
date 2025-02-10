@@ -1,194 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T17:21:07 IST" name="Suite" finished-at="2025-01-31T17:21:28 IST" duration-ms="20999">
+  <suite started-at="2025-02-10T17:06:17 IST" name="Suite" finished-at="2025-02-10T17:08:27 IST" duration-ms="129816">
     <groups>
     </groups>
-    <test started-at="2025-01-31T17:21:07 IST" name="Test" finished-at="2025-01-31T17:21:28 IST" duration-ms="20999">
-      <class name="com.zenken.freshers.company.CompanyLogin">
-        <test-method is-config="true" signature="generateComUser()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:07 IST" name="generateComUser" finished-at="2025-01-31T17:21:07 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateComUser -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:07 IST" name="setup" finished-at="2025-01-31T17:21:10 IST" duration-ms="2813" status="PASS">
+    <test started-at="2025-02-10T17:06:17 IST" name="Test" finished-at="2025-02-10T17:08:27 IST" duration-ms="129816">
+      <class name="com.zenken.freshers.company.ApplicantListCsv">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:06:17 IST" name="setup" finished-at="2025-02-10T17:06:19 IST" duration-ms="1835" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvDlLink()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:10 IST" name="setupCLogin" finished-at="2025-01-31T17:21:12 IST" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:06:19 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:07:29 IST" duration-ms="69482" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvDlLink()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method retried="true" signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:12 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T17:21:15 IST" duration-ms="2517" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvDlLink()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:29 IST" name="verifyCsvDlLink" description="This test verifies that the text of the link to download the CSV file is correct" finished-at="2025-02-10T17:07:29 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComBlankEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:15 IST" name="tearDown" finished-at="2025-01-31T17:21:15 IST" duration-ms="176" status="PASS">
+        </test-method> <!-- verifyCsvDlLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:29 IST" name="tearDown" finished-at="2025-02-10T17:07:29 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:15 IST" name="setup" finished-at="2025-01-31T17:21:16 IST" duration-ms="1208" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:29 IST" name="setup" finished-at="2025-02-10T17:07:30 IST" duration-ms="1200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvDlPopup()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:16 IST" name="setupCLogin" finished-at="2025-01-31T17:21:19 IST" duration-ms="2166" status="PASS">
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:30 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:07:37 IST" duration-ms="6932" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvDlPopup()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method retried="true" signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:19 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T17:21:21 IST" duration-ms="2598" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvDlPopup()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:37 IST" name="verifyCsvDlPopup" description="This test verifies that an expected popup is displayed after clicking on the CSV download link" finished-at="2025-02-10T17:07:37 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComBlankEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:21 IST" name="tearDown" finished-at="2025-01-31T17:21:21 IST" duration-ms="136" status="PASS">
+        </test-method> <!-- verifyCsvDlPopup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:37 IST" name="tearDown" finished-at="2025-02-10T17:07:37 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:21 IST" name="setup" finished-at="2025-01-31T17:21:23 IST" duration-ms="1204" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:37 IST" name="setup" finished-at="2025-02-10T17:07:39 IST" duration-ms="1170" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail()]]>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvDl() throws java.io.FileNotFoundException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupCLogin(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:23 IST" name="setupCLogin" finished-at="2025-01-31T17:21:25 IST" duration-ms="2368" status="PASS">
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:39 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:07:47 IST" duration-ms="8434" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CompanyLogin.verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvDl()[pri:1, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupCLogin -->
-        <test-method signature="verifyComBlankEmail()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:25 IST" name="verifyComBlankEmail" description="This test verifies that validation error occurs when email field is left blank on Forgot Password page" finished-at="2025-01-31T17:21:28 IST" duration-ms="2700" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Validation text is not correct expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Validation text is not correct expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.zenken.freshers.company.CompanyLogin.verifyComBlankEmail(CompanyLogin.java:186)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvDl()[pri:1, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:47 IST" name="verifyCsvDl" description="This test verifies that the CSV file is downloaded in zip format and that the zip file name and CSV file names are correct" finished-at="2025-02-10T17:07:49 IST" duration-ms="1919" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComBlankEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.CompanyLogin@2205a05d]" started-at="2025-01-31T17:21:28 IST" name="tearDown" finished-at="2025-01-31T17:21:28 IST" duration-ms="153" status="PASS">
+        </test-method> <!-- verifyCsvDl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:49 IST" name="tearDown" finished-at="2025-02-10T17:07:49 IST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.company.CompanyLogin -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:49 IST" name="setup" finished-at="2025-02-10T17:07:50 IST" duration-ms="1126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvHeader1() throws java.io.FileNotFoundException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:50 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:07:57 IST" duration-ms="6668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvHeader1()[pri:2, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvHeader1()[pri:2, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:57 IST" name="verifyCsvHeader1" description="This test verifies that the header (field names) of all extractedCSV files are correct (応募者なし)" finished-at="2025-02-10T17:07:57 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCsvHeader1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:57 IST" name="tearDown" finished-at="2025-02-10T17:07:57 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:57 IST" name="setup" finished-at="2025-02-10T17:07:58 IST" duration-ms="1174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvNoApplicant() throws java.io.UnsupportedEncodingException,java.io.FileNotFoundException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:07:58 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:08:07 IST" duration-ms="8524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvNoApplicant()[pri:3, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvNoApplicant()[pri:3, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:07 IST" name="verifyCsvNoApplicant" description="This test verifies that the CSV files do not have any candidate records" finished-at="2025-02-10T17:08:07 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCsvNoApplicant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:07 IST" name="tearDown" finished-at="2025-02-10T17:08:07 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:07 IST" name="setup" finished-at="2025-02-10T17:08:08 IST" duration-ms="1192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvHeader2() throws java.io.FileNotFoundException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:08 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:08:17 IST" duration-ms="8365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvHeader2()[pri:4, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvHeader2()[pri:4, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:17 IST" name="verifyCsvHeader2" description="This test verifies that the header (field names) of all extracted CSV files are correct (応募者あり)" finished-at="2025-02-10T17:08:18 IST" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCsvHeader2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:18 IST" name="tearDown" finished-at="2025-02-10T17:08:18 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:18 IST" name="setup" finished-at="2025-02-10T17:08:19 IST" duration-ms="1137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvValues() throws java.io.UnsupportedEncodingException,java.io.FileNotFoundException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:19 IST" name="setupApplicantListCsv" finished-at="2025-02-10T17:08:27 IST" duration-ms="7438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvValues()[pri:5, instance:com.zenken.freshers.company.ApplicantListCsv@478db956] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApplicantListCsv -->
+        <test-method signature="verifyCsvValues()[pri:5, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:27 IST" name="verifyCsvValues" description="This test verifies that the values are updated in all CSV files after profile is updated (Company ID: 878fca2e, 応募者ID: 8)" finished-at="2025-02-10T17:08:27 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCsvValues -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@478db956]" started-at="2025-02-10T17:08:27 IST" name="tearDown" finished-at="2025-02-10T17:08:27 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.company.ApplicantListCsv -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

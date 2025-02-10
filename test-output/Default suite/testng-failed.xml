@@ -3,18 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zenken.freshers.company.CompanyLogin">
+      <class name="com.zenken.freshers.company.ApplicantListCsv">
         <methods>
-          <include name="generateComUser"/>
-          <include name="verifyComBlankEmail"/>
-          <include name="verifyAdminPassTextChange"/>
-          <include name="verifyComInvalidEmail2"/>
+          <include name="verifyCsvValues"/>
+          <include name="setupApplicantListCsv"/>
           <include name="tearDown"/>
-          <include name="verifyComLogout"/>
           <include name="setup"/>
-          <include name="setupCLogin"/>
         </methods>
-      </class> <!-- com.zenken.freshers.company.CompanyLogin -->
+      </class> <!-- com.zenken.freshers.company.ApplicantListCsv -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

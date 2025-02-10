@@ -1,17 +1,27 @@
 package com.zenken.frehsers.abstractcomponents;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,12 +29,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zenken.freshers.pages.user.LoginPage;
 
 public class WebDriverUtils {
@@ -268,6 +277,44 @@ public class WebDriverUtils {
 		return !requiredToApplyMarks.isEmpty() && requiredToApplyMarks.get(0).isDisplayed();
 	}
 	
+	public int getFileCount()
+	{
+		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
+		int initialFileCount = downloadFolder.listFiles().length;
+		return initialFileCount;
+	}
+	
+	public boolean isFileDownloaded(int initialFileCount, String extension)
+	{
+		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		boolean isDownloaded = wait.until((ExpectedCondition<Boolean>) driver -> 
+		{int currentFileCount = downloadFolder.listFiles().length;
+		if(currentFileCount > initialFileCount) {
+			File[] files = downloadFolder.listFiles();
+			if(files != null && files.length > 0) {
+				Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+				return files[0].getName().endsWith(extension);
+			}
+		}
+		return false;
+		});
+		return isDownloaded;
+	}
+	
+	public String getDownloadedFileName()
+	{
+		File downloadFolder = new File(System.getProperty("user.dir")+File.separator+"downloads");
+		File[] files = downloadFolder.listFiles();
+		if(files != null && files.length > 0)
+		{
+			Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+			return files[0].getName();
+		}else {
+			return null;
+		}
+	}
+	
 	public String convertJSTtoIST(String inputDateTime)
 	{
 		DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a", Locale.ENGLISH);
@@ -279,6 +326,73 @@ public class WebDriverUtils {
 		ZonedDateTime istZoned = jstZoned.withZoneSameInstant(ZoneId.of("Asia/Kolkata"));
 		DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("MMMM d, yyyy, hh:mma z", Locale.ENGLISH);
 		return istZoned.format(outputFormatter);
+	}
+	
+	public void unzip(File zipFile) throws FileNotFoundException, IOException
+	{
+		File destDir = new File(System.getProperty("user.dir")+"/downloads/extracted");
+		destDir.mkdir();
+		try(ZipInputStream zis = new ZipInputStream(new FileInputStream(zipFile))){
+			ZipEntry entry;
+			while((entry = zis.getNextEntry()) != null){
+				File extractedFile = new File(destDir, entry.getName());
+				try(FileOutputStream fos = new FileOutputStream(extractedFile)){
+					byte[] buffer = new byte[1024];
+					int lenght;
+					while((lenght = zis.read(buffer)) > 0) {
+						fos.write(buffer, 0, lenght);
+					}
+				}
+				zis.closeEntry();
+			}
+		}
+	}
+	
+	public String getCsvHeader(String filePath) throws FileNotFoundException, IOException
+	{
+		try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filePath), "Shift_JIS"))){
+			String firstLine = reader.readLine();
+			return firstLine;
+		}
+	}
+	
+	public String getCsvFirstLine(String filePath) throws UnsupportedEncodingException, FileNotFoundException, IOException
+	{
+		try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filePath), "Shift_JIS"))){
+			reader.readLine();
+			String firstLine = reader.readLine();
+			return firstLine;
+		}
+	}
+	
+	public String[] santizeArray(String[] array)
+	{
+		return Arrays.stream(array).map(value -> value.replaceAll("^\"|\"$", ""))
+				.toArray(String[]::new);
+	}
+	
+	public String[] getCsvRowById(File csvFile, String targetId) throws IOException
+	{
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader
+				(new FileInputStream(String.valueOf(csvFile)), "Shift_JIS"))) {
+			String header = reader.readLine();
+			String[] headers = header.split(",");
+			int idColumnIndex = -1;
+			for(int i=0; i<headers.length; i++) {
+				if(headers[i].equals("求職者ID")) {
+					idColumnIndex = i;
+					break;
+				}
+			}
+			String line;
+			while((line = reader.readLine()) != null) {
+				String [] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+				if(values[idColumnIndex].equals(targetId)) {
+					return values;
+				}
+			}
+		}
+		return null;
 	}
 	
 	public boolean isElementPresent(WebElement element)
