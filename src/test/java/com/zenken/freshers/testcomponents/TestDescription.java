@@ -122,6 +122,18 @@ public class TestDescription {
 		map.put("verifyCertInvalidFileSize", "Step 1: Click on 'Add Certification' button\nStep 2: Upload a PDF file having size more than 2mb\nStep 3: Verify that validation error corresponds to file size less than 2048 kilobytes");
 		map.put("verifyCertCancelNewRed", "Step 1: Click on 'Add Certification' button\nStep 2: Click on 'Cancel' button\nStep 3: Verify that user is redirected to 'Certification' section of profile page");
 		map.put("verifyCertCancelEditRed", "Step 1: Click on pen icon for first certification\nStep 2: Click on 'Cancel' button\nStep 3: Verify that user is redirected to 'Certification' section of profile page");
+		map.put("verifyHeaderImage", "Step 1: Verify that header image is displayed\nStep 2: Verify that image source contains path for Freshers logo");
+		map.put("verifyAltText", "Step 1: Verify that image alt equals \"Yaaay Freshers by Zenken\"");
+		map.put("verifyTermsPDF", "Step 1: Click on 'Terms' link on the footer\nStep 2: Verify that new tab is opened\nStep 3: Verify that PDF url is correct");
+		map.put("verifyPolicy", "Step 1: Click on 'Privacy Policy' link on the footer\nStep 2: Verify that new tab is opened\nStep 3: Verify that Privacy Policy url is correct");
+		map.put("verifyCopyrightMark", "Step 1: Verify that expected copyright mark is displayed");
+		map.put("verifyDropdown", "Step 1: Login into 人材 account\nStep 2: Hover the cursor over the profile icon\nStep 3: Verify that 'Profile' and 'Log Out' options are displayed in the dropdown");
+		map.put("verifyProfileClick", "Step 1: Login into 人材 account\nStep 2: Hover the cursor over the profile icon\nStep 3: Click on 'Profile' option\nStep 4: Verify that URL loaded is for the profile preview page");
+		map.put("verifyLogOut", "Step 1: Login into 人材 account\nStep 2: Hover the cursor over the profile icon\nStep 3: Click on 'Log Out' option\nStep 4: Verify that user is logged out and is redirected to Login page");
+		map.put("verifyHeaderImagePostLogIn", "Step 1: Login into 人材 account\nStep 2: Verify that header image is displayed\nStep 3: Verify that image source contains path for Freshers logo");
+		map.put("verifyAltTextPostLogIn", "Step 1: Login into 人材 account\nStep 2: Verify that image alt equals \"Yaaay Freshers by Zenken\"");
+		map.put("verifyTermsPDFPostLogIn", "Step 1: Login into 人材 account\nStep 2: Click on 'Terms' link on the footer\nStep 3: Verify that new tab is opened\nStep 4: Verify that PDF url is correct");
+		map.put("verifyPolicyPostLogIn", "Step 1: Login into 人材 account\nStep 2: Click on 'Privacy Policy' link on the footer\nStep 3: Verify that new tab is opened\nStep 4: Verify that Privacy Policy url is correct");
 	}
 	
 	public static String getDescription(String methodName)
