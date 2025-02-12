@@ -202,8 +202,8 @@ public class BaseTest {
 	{
 		String testName = getCurrentTestMethod();
 		return testName.equals("verifyUserRegistration") || testName.equals("verifyEmail") || testName.equals("verifyEmailPageTitle")
-				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend") || testName.equals("verifyPasswordReset")
-				|| testName.equals("verifyPasswordResetCompleteHeadline") || testName.equals("verifyComPasswordSet") || 
+				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend") || testName.equals("verifyPassReset")
+				|| testName.equals("verifyPassResetCompleteHeadline") || testName.equals("verifyComPasswordSet") || 
 				testName.equals("verifyComBlankPassword") || testName.equals("verifyComInvalidPasswords") || testName.equals("verifyComLogin");
 	}
 	

@@ -29,7 +29,7 @@ public class BasicInformation extends BaseTest{
 		navigateTo("/");
 		profilePreview = new ProfilePreviewPage(driver);
 		editBasicInfo = new EditBasicInformationPage(driver);
-		if(testName.equals("verifySavedData") || testName.equals("verifyProfileUpdate") || testName.equals("verifyRequiredToApplyTexts"))
+		if(testName.equals("verifyBasicInfoSavedData") || testName.equals("verifyBasicInfoProfileUpdate") || testName.equals("verifyRequiredToApplyTexts"))
 		{
 			profilePreview.login("prasanna.inamdar+user2@zenken.co.jp", "Password_1");
 		}
