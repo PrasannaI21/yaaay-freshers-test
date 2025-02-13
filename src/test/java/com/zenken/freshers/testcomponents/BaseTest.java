@@ -201,8 +201,8 @@ public class BaseTest {
 	public boolean shouldKeepBrowserOpen()
 	{
 		String testName = getCurrentTestMethod();
-		return testName.equals("verifyUserRegistration") || testName.equals("verifyEmail") || testName.equals("verifyEmailPageTitle")
-				|| testName.equals("verifyEmailAddress") || testName.equals("verifyEmailResend") || testName.equals("verifyPassReset")
+		return testName.equals("verifyUserRegistration") || testName.equals("verifyRegEmail") || testName.equals("verifyEmailVerPageTitle")
+				|| testName.equals("verifyRegEmailAddress") || testName.equals("verifyRegEmailResend") || testName.equals("verifyPassReset")
 				|| testName.equals("verifyPassResetCompleteHeadline") || testName.equals("verifyComPasswordSet") || 
 				testName.equals("verifyComBlankPassword") || testName.equals("verifyComInvalidPasswords") || testName.equals("verifyComLogin");
 	}
