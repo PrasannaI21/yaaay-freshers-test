@@ -65,4 +65,11 @@ public class CLoginPage extends WebDriverUtils{
 	{
 		return passwordBox.getText();
 	}
+	
+	public void loginCompany(String email, String password)
+	{
+		enterComEmail(email);
+		enterComPassword(password);
+		clickSave();
+	}
 }
