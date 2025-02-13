@@ -71,12 +71,6 @@
     <version>1.14.0</version>
 </dependency>
 
-
-  	<dependency>
-  		<groupId>ZenkenINDIA</groupId>
-  		<artifactId>YaaayFramework</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
   
   <profiles>
