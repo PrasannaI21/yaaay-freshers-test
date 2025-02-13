@@ -304,6 +304,11 @@ public class TestDescription {
 		map.put("verifyRegInvalidPass2", "Step 1: Enter \"Password_#\" in 'Password' field's text box\nStep 2: Give valid input for the rest of the mandatory fields\nStep 3: Click on 'Create Account' button\nStep 4: Verify that expected validation error message is displayed for 'Password' field");
 		map.put("verifyRegInvalidPass3", "Step 1: Enter \"password_1\" in 'Password' field's text box\nStep 2: Give valid input for the rest of the mandatory fields\nStep 3: Click on 'Create Account' button\nStep 4: Verify that expected validation error message is displayed for 'Password' field");
 		map.put("verifyRegInvalidPass4", "Step 1: Enter \"Password12\" in 'Password' field's text box\nStep 2: Give valid input for the rest of the mandatory fields\nStep 3: Click on 'Create Account' button\nStep 4: Verify that expected validation error message is displayed for 'Password' field");
+		map.put("verifySettingsUrl", "Step 1: Click on Settings edit icon\nStep 2: Verify that URL and page headline are correct");
+		map.put("verifySettingsTitle", "Step 1: Click on Settings edit icon\nStep 2: Verify that title name is correct");
+		map.put("verifySetDesTexts", "Step 1: Click on Settings edit icon\nStep 2: Verify that the description  for 'Yaaay Midcareer' displayed is correct\nStep 3: Verify that the description  for 'Zenken Newsletter' displayed is correct");
+		map.put("verifySetSelected", "Step 1: Click on Settings edit icon\nStep 2: Select checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter'\nStep 3: Click on 'Save' button\nStep 4: Verify: Snackbar, Section display, Tab selection\nStep 5: Verify that the value for 'Yaaay Midcareer' is \"Connected\"\nStep 6: Verify that the value for 'Zenken Newsletter' is \"Subscribed\"");
+		map.put("verifySetNotSelected", "Step 1: Click on Settings edit icon\nStep 2: De-Select checkboxes for 'Yaaay Midcareer' and 'Zenken Newsletter'\nStep 3: Click on 'Save' button\nStep 4: Verify: Snackbar, Section display, Tab selection\nStep 5: Verify that the value for 'Yaaay Midcareer' is \"Not Connected\"\nStep 6: Verify that the value for 'Zenken Newsletter' is \"Unsubscribed\"");
 	}
 	
 	public static String getDescription(String methodName)
