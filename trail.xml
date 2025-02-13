@@ -8,9 +8,6 @@
   <test thread-count="3" name="Test">
     <classes>
       <class name="com.zenken.freshers.company.ApplicantListCsv">
-        <methods>
-          <include name="verifyCsvDl"></include>
-        </methods>
       </class>  
     </classes>
   </test> <!-- Test -->
