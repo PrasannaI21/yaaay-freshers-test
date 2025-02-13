@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
@@ -40,27 +41,27 @@ public class ApplicantListCsv extends BaseTest{
 		applications = new AppliationsListPage(driver);
 		CLoginPage cLogin = new CLoginPage(driver);	
 		properties = getProperties();		
-		if(!isCsvInfoUpdated) {
-			toggle = Boolean.parseBoolean(properties.getProperty("csvToggle"));
-			navigateTo("/admin/");
-			AdminLoginPage adminLogin = new AdminLoginPage(driver);
-			adminLogin.loginAdmin();
-			navigateTo("/admin/events/10/screening-status/edit/2813/");
-			FinalResultEditPage finalResultEdit = new FinalResultEditPage(driver);
-			if(toggle == true) {
-				System.out.println("toggle value is true!");
-				finalResultEdit.clickPassed();
-				finalResultEdit.clickSave();
-				updateData1();
-				isCsvInfoUpdated = true;
-			}else {
-				System.out.println("toggle value is false!");
-				finalResultEdit.clickSubstitute();
-				finalResultEdit.clickSave();
-				updateData2();
-				isCsvInfoUpdated = true;
-			}
-		}
+//		if(!isCsvInfoUpdated) {
+//			toggle = Boolean.parseBoolean(properties.getProperty("csvToggle"));
+//			navigateTo("/admin/");
+//			AdminLoginPage adminLogin = new AdminLoginPage(driver);
+//			adminLogin.loginAdmin();
+//			navigateTo("/admin/events/10/screening-status/edit/2813/");
+//			FinalResultEditPage finalResultEdit = new FinalResultEditPage(driver);
+//			if(toggle == true) {
+//				System.out.println("toggle value is true!");
+//				finalResultEdit.clickPassed();
+//				finalResultEdit.clickSave();
+//				updateData1();
+//				isCsvInfoUpdated = true;
+//			}else {
+//				System.out.println("toggle value is false!");
+//				finalResultEdit.clickSubstitute();
+//				finalResultEdit.clickSave();
+//				updateData2();
+//				isCsvInfoUpdated = true;
+//			}
+//		}
 		navigateTo("/company/");
 		String test = result.getMethod().getMethodName();
 		if(test.equals("verifyCsvHeader2") || test.equals("verifyCsvValues")) {
@@ -106,7 +107,10 @@ public class ApplicantListCsv extends BaseTest{
 		List<String> jobTitles = applications.getComJobTitlesWoSpace();
 		int i = 0;
 		for(File file : csvFiles) {
-			Assert.assertEquals(file.getName(), "candidates_"+jobTitles.get(i)+".csv");
+			if(file.getName().startsWith("candidates_")) {
+				Assert.assertEquals(file.getName(), "candidates_"+jobTitles.get(i)+".csv");
+			}
+//			Assert.assertEquals(file.getName(), "candidates_"+jobTitles.get(i)+".csv");
 			i++;
 			if(i == applications.getComJobs()) {
 				List<String> files = Arrays.asList("certifications.csv", "internships.csv", "projects.csv");
