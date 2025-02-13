@@ -56,7 +56,7 @@ public class BasicInformation extends BaseTest{
 	}
 	
 	@Test(description="This test verifies that the saved data displayed is correct", 
-			dependsOnMethods="verifyProfileUpdate")
+			dependsOnMethods="verifyBasicInfoProfileUpdate")
 	public void verifyBasicInfoSavedData()//Need to login with user+2
 	{
 		List<Object> obj = editBasicInfo.getSavedData();
