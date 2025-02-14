@@ -41,27 +41,27 @@ public class ApplicantListCsv extends BaseTest{
 		applications = new AppliationsListPage(driver);
 		CLoginPage cLogin = new CLoginPage(driver);	
 		properties = getProperties();		
-//		if(!isCsvInfoUpdated) {
-//			toggle = Boolean.parseBoolean(properties.getProperty("csvToggle"));
-//			navigateTo("/admin/");
-//			AdminLoginPage adminLogin = new AdminLoginPage(driver);
-//			adminLogin.loginAdmin();
-//			navigateTo("/admin/events/10/screening-status/edit/2813/");
-//			FinalResultEditPage finalResultEdit = new FinalResultEditPage(driver);
-//			if(toggle == true) {
-//				System.out.println("toggle value is true!");
-//				finalResultEdit.clickPassed();
-//				finalResultEdit.clickSave();
-//				updateData1();
-//				isCsvInfoUpdated = true;
-//			}else {
-//				System.out.println("toggle value is false!");
-//				finalResultEdit.clickSubstitute();
-//				finalResultEdit.clickSave();
-//				updateData2();
-//				isCsvInfoUpdated = true;
-//			}
-//		}
+		if(!isCsvInfoUpdated) {
+			toggle = Boolean.parseBoolean(properties.getProperty("csvToggle"));
+			navigateTo("/admin/");
+			AdminLoginPage adminLogin = new AdminLoginPage(driver);
+			adminLogin.loginAdmin();
+			navigateTo("/admin/events/10/screening-status/edit/2813/");
+			FinalResultEditPage finalResultEdit = new FinalResultEditPage(driver);
+			if(toggle == true) {
+				System.out.println("toggle value is true!");
+				finalResultEdit.clickPassed();
+				finalResultEdit.clickSave();
+				updateData1();
+				isCsvInfoUpdated = true;
+			}else {
+				System.out.println("toggle value is false!");
+				finalResultEdit.clickSubstitute();
+				finalResultEdit.clickSave();
+				updateData2();
+				isCsvInfoUpdated = true;
+			}
+		}
 		navigateTo("/company/");
 		String test = result.getMethod().getMethodName();
 		if(test.equals("verifyCsvHeader2") || test.equals("verifyCsvValues")) {
@@ -129,18 +129,15 @@ public class ApplicantListCsv extends BaseTest{
 		File folder = new File(System.getProperty("user.dir")+"/downloads/extracted");
 		File[] csvFiles = folder.listFiles();
 		Arrays.sort(csvFiles, Comparator.comparing(File::getName));
-		for(File csv : csvFiles) {
-			System.out.println(String.valueOf(csv));
+		int csvNumber = 1;
+		for(File csvFile : csvFiles) {
+			if(csvFile.getName().startsWith("candidates_")) {
+				Assert.assertEquals(applications.getCsvHeader(String.valueOf(csvFile)), properties.get("candidatecsv"));
+			}else {
+				Assert.assertEquals(applications.getCsvHeader(String.valueOf(csvFile)), properties.get("csv" + csvNumber));
+				csvNumber++;
+			}
 		}
-//		int csvNumber = 1;
-//		for(File csvFile : csvFiles) {
-//			if(csvFile.getName().startsWith("candidates_")) {
-//				Assert.assertEquals(applications.getCsvHeader(String.valueOf(csvFile)), properties.get("candidatecsv"));
-//			}else {
-//				Assert.assertEquals(applications.getCsvHeader(String.valueOf(csvFile)), properties.get("csv" + csvNumber));
-//				csvNumber++;
-//			}
-//		}
 	}
 	
 	@Test(priority=3, description="This test verifies that the CSV files do not have any candidate records")
@@ -166,6 +163,7 @@ public class ApplicantListCsv extends BaseTest{
 		applications.unzip(zipFile);
 		File folder = new File(System.getProperty("user.dir")+"/downloads/extracted");
 		File[] csvFiles = folder.listFiles();
+		Arrays.sort(csvFiles, Comparator.comparing(File::getName));
 		int csvNumber = 1;
 		for(File csvFile : csvFiles) {
 			if(csvFile.getName().startsWith("candidates.")) {
