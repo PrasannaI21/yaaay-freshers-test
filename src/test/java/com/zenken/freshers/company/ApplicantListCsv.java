@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Properties;
 
@@ -127,6 +128,7 @@ public class ApplicantListCsv extends BaseTest{
 	{
 		File folder = new File(System.getProperty("user.dir")+"/downloads/extracted");
 		File[] csvFiles = folder.listFiles();
+		Arrays.sort(csvFiles, Comparator.comparing(File::getName));
 		for(File csv : csvFiles) {
 			System.out.println(String.valueOf(csv));
 		}
