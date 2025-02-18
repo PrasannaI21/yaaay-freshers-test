@@ -229,6 +229,7 @@ public class ApplicantListCsv extends BaseTest{
 			}			
 		}
 		DataReader.saveProperty("csvToggle", String.valueOf(!toggle));
+		System.out.println("property updated!");
 	}
 	
 	private void updateData1()
