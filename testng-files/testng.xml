@@ -23,6 +23,8 @@
       <class name="com.zenken.freshers.user.Companies"/>
       <class name="com.zenken.freshers.user.Jobs"/>
       <class name="com.zenken.freshers.user.JobsApply"/>
+      <class name="com.zenken.freshers.company.ApplicantListCsv"/>
+      <class name="com.zenken.freshers.company.CompanyLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
