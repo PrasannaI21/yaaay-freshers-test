@@ -107,7 +107,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>basic_info.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/basic_info.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -128,7 +128,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>applicant_list_csv.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/applicant_list_csv.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -149,7 +149,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>certifications.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/certifications.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -170,7 +170,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>com_login.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/com_login.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -191,7 +191,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>com_parts.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/com_parts.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -212,7 +212,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>companies.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/companies.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -233,7 +233,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>consent_form.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/consent_form.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -254,7 +254,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>field_of_study.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/field_of_study.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -275,7 +275,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>internships.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/internships.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -296,7 +296,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>job_prefs.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/job_prefs.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -317,7 +317,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>jobs_apply.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/jobs_apply.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -338,7 +338,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>jobs.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/jobs.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -359,7 +359,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>login.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/login.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -380,7 +380,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>photo.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/photo.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -401,7 +401,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>projects.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/projects.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -422,7 +422,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>registration.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/registration.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -464,7 +464,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>skills.xml</suiteXmlFile>
+            <suiteXmlFile>testng-files/skills.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
