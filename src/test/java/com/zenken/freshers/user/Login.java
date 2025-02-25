@@ -34,7 +34,8 @@ public class Login extends BaseTest{
 	WaitForControllerApi waitForControllerApi;
 	UUID uuid;
 	String passwordResetLink;
-	String emailAddress = "23e51ed7-f1d2-405c-8380-67b86ca0956b@mailslurp.net";
+//	String emailAddress = "23e51ed7-f1d2-405c-8380-67b86ca0956b@mailslurp.net";
+	String emailAddress = "user-562417e4-312f-43c2-8296-34c7db113948@mailslurp.biz";
 	private String resetPass;
 	
 	@BeforeMethod
@@ -187,7 +188,8 @@ public class Login extends BaseTest{
 		apiClient = new ApiClient();
 		apiClient.setApiKey(properties.getProperty("API_KEY"));
 		waitForControllerApi = new WaitForControllerApi(apiClient);
-		uuid = UUID.fromString("23e51ed7-f1d2-405c-8380-67b86ca0956b");
+//		uuid = UUID.fromString("23e51ed7-f1d2-405c-8380-67b86ca0956b");
+		uuid = UUID.fromString("562417e4-312f-43c2-8296-34c7db113948");
 		email = waitForControllerApi.waitForLatestEmail(uuid, 30000L, true, null, null, null, null);
 		String subject = email.getSubject();
 		Assert.assertEquals(subject, properties.getProperty("subject1"), "Subject is not correct");
