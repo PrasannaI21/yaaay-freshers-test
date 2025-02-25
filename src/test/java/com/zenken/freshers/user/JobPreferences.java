@@ -101,7 +101,7 @@ public class JobPreferences extends BaseTest{
 	}
 	
 	@Test(description="This test verifies that 'Required to apply' text is displayed")
-	public void verifyRequiredToApplyTexts()
+	public void verifyPreferencesReqTexts()
 	{
 		editJobPref.deSelectPref();
 		Assert.assertTrue(profilePreview.getTitleValue(profilePreview.jobPrefTitle).contains(properties.getProperty("error16")));

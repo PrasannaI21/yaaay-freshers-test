@@ -195,7 +195,7 @@ public class EditBasicInformationPage extends WebDriverUtils{
 	@FindBy(id="beBTechBranch")
 	WebElement beBTechDd;
 	
-	@FindBy(id="beBTechCgpa")
+	@FindBy(id="beBTechCgpaLabel")
 	WebElement beBTechCgpa;
 	
 	@FindBy(id="mcaMTechBranch")

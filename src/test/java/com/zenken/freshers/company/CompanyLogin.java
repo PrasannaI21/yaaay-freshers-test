@@ -181,7 +181,7 @@ public class CompanyLogin extends BaseTest{
 	public void verifyComBlankEmail()
 	{
 		cLogin.clickResetLink();
-		forgotPassword.enterEmail("123");
+		forgotPassword.enterEmail("");
 		cLogin.clickSave();
 		Assert.assertTrue(forgotPassword.getComEmailBoxText().contains(properties.getProperty("error35"))
 				, "Validation text is not correct");

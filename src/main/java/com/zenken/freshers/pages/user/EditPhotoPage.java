@@ -88,7 +88,7 @@ public class EditPhotoPage extends WebDriverUtils{
 	
 	public String getCropBoxStyle()
 	{
-		return cropBox.getDomProperty("style");
+		return cropBox.getDomAttribute("style");
 	}
 	
 	public void resizePhoto()

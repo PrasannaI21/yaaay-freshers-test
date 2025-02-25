@@ -419,9 +419,7 @@ public class BasicInformation extends BaseTest{
 	@Test(description="This test verifies that 応募に必須項目 show 'required to apply' text")
 	public void verifyRequiredToApplyTexts()//Need to login with user+2 having incomplete profile
 	{
-		log("Step 1: Click on Basic Information edit icon");
 		List<String> texts = editBasicInfo.getRequiredToApplyTexts();
-		log("Step 2: Verify that 'Required to apply' text is displayed for the fields which are not 'Required to save'");
 		for(int i=0;i<texts.size();i++)
 		{
 			Assert.assertTrue(texts.get(i).contains(properties.getProperty("error16")),

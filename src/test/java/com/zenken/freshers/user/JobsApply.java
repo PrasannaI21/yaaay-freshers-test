@@ -57,15 +57,23 @@ public class JobsApply extends BaseTest{
 		properties = getProperties();
 		navigateTo("/");
 		if(!isUserCreated) {
+			try {
 			ApiClient apiClient = new ApiClient();
 			apiClient.setApiKey(properties.getProperty("API_KEY"));
+			System.out.println(properties.getProperty("API_KEY"));
 			InboxControllerApi inboxCon = new InboxControllerApi(apiClient);
 			inbox = inboxCon.createInboxWithDefaults();
 			emailAddress = inbox.getEmailAddress();
 			System.out.println(emailAddress);
+			}catch(ApiException e) {
+				System.out.println(e.getMessage());
+				System.out.println(e.getCode());
+				System.out.println(e.getResponseBody());
+				e.printStackTrace();
+			}
 			navigateTo("/register/");
 			registerPage.registerUser(emailAddress);
-			wait = new WaitForControllerApi(apiClient);
+//			wait = new WaitForControllerApi(apiClient);
 			Email email = wait.waitForLatestEmail(inbox.getId(), 30000L, true, null, null, null, null);
 			jobs.openInNewTab(registerPage.extractVerificationLink(email.getBody()));
 			isUserCreated = true;
