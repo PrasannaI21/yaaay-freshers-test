@@ -25,6 +25,7 @@
       <class name="com.zenken.freshers.user.JobsApply"/>
       <class name="com.zenken.freshers.company.ApplicantListCsv"/>
       <class name="com.zenken.freshers.company.CompanyLogin"/>
+      <class name="com.zenken.freshers.company.ScreeeningProcess"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
