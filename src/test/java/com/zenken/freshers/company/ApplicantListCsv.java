@@ -39,7 +39,7 @@ public class ApplicantListCsv extends BaseTest{
 	public void setupApplicantListCsv(ITestResult result) throws IOException
 	{
 		applications = new AppliationsListPage(driver);
-		CLoginPage cLogin = new CLoginPage(driver);	
+		CLoginPage cLogin = new CLoginPage(driver);
 		properties = getProperties();		
 		if(!isCsvInfoUpdated) {
 			toggle = Boolean.parseBoolean(properties.getProperty("csvToggle"));

@@ -1,223 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-13T16:40:56 IST" name="Suite" finished-at="2025-02-13T16:43:34 IST" duration-ms="157501">
+  <suite started-at="2025-02-27T18:03:50 IST" name="Suite" finished-at="2025-02-27T18:08:04 IST" duration-ms="254282">
     <groups>
     </groups>
-    <test started-at="2025-02-13T16:40:56 IST" name="Test" finished-at="2025-02-13T16:43:34 IST" duration-ms="157501">
-      <class name="com.zenken.freshers.company.ApplicantListCsv">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:40:56 IST" name="setup" finished-at="2025-02-13T16:40:59 IST" duration-ms="3290" status="PASS">
+    <test started-at="2025-02-27T18:03:50 IST" name="Test" finished-at="2025-02-27T18:08:04 IST" duration-ms="254282">
+      <class name="com.zenken.freshers.company.ScreeeningProcess">
+        <test-method is-config="true" signature="generateEventName()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:03:50 IST" name="generateEventName" finished-at="2025-02-27T18:03:50 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateEventName -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:03:50 IST" name="setup" finished-at="2025-02-27T18:03:52 IST" duration-ms="1705" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvDlLink()]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyEventRecord()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:40:59 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:42:18 IST" duration-ms="78999" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvDlLink()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:03:52 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:04:27 IST" duration-ms="35066" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvDlLink()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:18 IST" name="verifyCsvDlLink" description="This test verifies that the text of the link to download the CSV file is correct" finished-at="2025-02-13T16:42:19 IST" duration-ms="107" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyEventRecord()[pri:1, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:27 IST" name="verifyEventRecord" description="This test verifies that the event record is added in イベント一覧 page and the values (イベント名, etc.) being displayed are correct" finished-at="2025-02-27T18:04:27 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvDlLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:19 IST" name="tearDown" finished-at="2025-02-13T16:42:19 IST" duration-ms="404" status="PASS">
+        </test-method> <!-- verifyEventRecord -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:27 IST" name="tearDown" finished-at="2025-02-27T18:04:27 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:19 IST" name="setup" finished-at="2025-02-13T16:42:20 IST" duration-ms="1275" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:27 IST" name="setup" finished-at="2025-02-27T18:04:29 IST" duration-ms="1177" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvDlPopup()]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyEventDetails()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:20 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:42:31 IST" duration-ms="11085" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvDlPopup()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:29 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:04:36 IST" duration-ms="7266" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvDlPopup()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:31 IST" name="verifyCsvDlPopup" description="This test verifies that an expected popup is displayed after clicking on the CSV download link" finished-at="2025-02-13T16:42:32 IST" duration-ms="238" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyEventDetails()[pri:2, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:36 IST" name="verifyEventDetails" description="This test verifies that event details such as イベント名、企業名、応募者 and 選考の手順 are correct" finished-at="2025-02-27T18:04:37 IST" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvDlPopup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:32 IST" name="tearDown" finished-at="2025-02-13T16:42:32 IST" duration-ms="232" status="PASS">
+        </test-method> <!-- verifyEventDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:37 IST" name="tearDown" finished-at="2025-02-27T18:04:37 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:32 IST" name="setup" finished-at="2025-02-13T16:42:33 IST" duration-ms="1224" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:37 IST" name="setup" finished-at="2025-02-27T18:04:38 IST" duration-ms="1178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvDl() throws java.io.FileNotFoundException,java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyJobNames()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:33 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:42:43 IST" duration-ms="9667" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvDl()[pri:1, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:38 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:04:48 IST" duration-ms="9463" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvDl()[pri:1, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:43 IST" name="verifyCsvDl" description="This test verifies that the CSV file is downloaded in zip format and that the zip file name and CSV file names are correct" finished-at="2025-02-13T16:42:45 IST" duration-ms="2136" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyJobNames()[pri:3, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:48 IST" name="verifyJobNames" description="This test verifies that 求人票 names are displayed as expected" finished-at="2025-02-27T18:04:48 IST" duration-ms="908" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvDl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:45 IST" name="tearDown" finished-at="2025-02-13T16:42:45 IST" duration-ms="441" status="PASS">
+        </test-method> <!-- verifyJobNames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:48 IST" name="tearDown" finished-at="2025-02-27T18:04:49 IST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:45 IST" name="setup" finished-at="2025-02-13T16:42:47 IST" duration-ms="1386" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:49 IST" name="setup" finished-at="2025-02-27T18:04:50 IST" duration-ms="1097" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvHeader1() throws java.io.FileNotFoundException,java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyNoApplicantText()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:47 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:42:55 IST" duration-ms="8635" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvHeader1()[pri:2, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:50 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:04:57 IST" duration-ms="7644" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvHeader1()[pri:2, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:55 IST" name="verifyCsvHeader1" description="This test verifies that the header (field names) of all extractedCSV files are correct (応募者なし)" finished-at="2025-02-13T16:42:55 IST" duration-ms="24" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyNoApplicantText()[pri:4, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:57 IST" name="verifyNoApplicantText" description="This test verifies that expected text is displayed when no candidate hasapplied yet" finished-at="2025-02-27T18:04:58 IST" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvHeader1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:55 IST" name="tearDown" finished-at="2025-02-13T16:42:56 IST" duration-ms="242" status="PASS">
+        </test-method> <!-- verifyNoApplicantText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:58 IST" name="tearDown" finished-at="2025-02-27T18:04:58 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:56 IST" name="setup" finished-at="2025-02-13T16:42:57 IST" duration-ms="1257" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:04:58 IST" name="setup" finished-at="2025-02-27T18:05:00 IST" duration-ms="1143" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvNoApplicant() throws java.io.UnsupportedEncodingException,java.io.FileNotFoundException,java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyScreeningEndBtState()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:42:57 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:43:08 IST" duration-ms="11128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvNoApplicant()[pri:3, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:05:00 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:05:07 IST" duration-ms="7704" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvNoApplicant()[pri:3, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:08 IST" name="verifyCsvNoApplicant" description="This test verifies that the CSV files do not have any candidate records" finished-at="2025-02-13T16:43:08 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyScreeningEndBtState()[pri:5, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:05:07 IST" name="verifyScreeningEndBtState" description="This test verifies that application deadline is correct and that 選考終了 button is inactive" finished-at="2025-02-27T18:05:08 IST" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvNoApplicant -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:08 IST" name="tearDown" finished-at="2025-02-13T16:43:08 IST" duration-ms="206" status="PASS">
+        </test-method> <!-- verifyScreeningEndBtState -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:05:08 IST" name="tearDown" finished-at="2025-02-27T18:05:08 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:08 IST" name="setup" finished-at="2025-02-13T16:43:09 IST" duration-ms="1240" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:05:08 IST" name="setup" finished-at="2025-02-27T18:05:09 IST" duration-ms="1173" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvHeader2() throws java.io.FileNotFoundException,java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyEventRecord2()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:09 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:43:19 IST" duration-ms="9728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvHeader2()[pri:4, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:05:09 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:05:19 IST" duration-ms="9850" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvHeader2()[pri:4, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:19 IST" name="verifyCsvHeader2" description="This test verifies that the header (field names) of all extracted CSV files are correct (応募者あり)" finished-at="2025-02-13T16:43:21 IST" duration-ms="1766" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyEventRecord2()[pri:6, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:05:19 IST" name="verifyEventRecord2" description="This test verifies that the event record is updated in イベント一覧 page after 実施期間 has started and candidates have applied" finished-at="2025-02-27T18:06:03 IST" duration-ms="44262" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvHeader2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:21 IST" name="tearDown" finished-at="2025-02-13T16:43:21 IST" duration-ms="288" status="PASS">
+        </test-method> <!-- verifyEventRecord2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:03 IST" name="tearDown" finished-at="2025-02-27T18:06:04 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:21 IST" name="setup" finished-at="2025-02-13T16:43:23 IST" duration-ms="1366" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:04 IST" name="setup" finished-at="2025-02-27T18:06:05 IST" duration-ms="1187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.company.ApplicantListCsv.verifyCsvValues() throws java.io.UnsupportedEncodingException,java.io.FileNotFoundException,java.io.IOException]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyEventDetails2()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupApplicantListCsv(org.testng.ITestResult)[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:23 IST" name="setupApplicantListCsv" finished-at="2025-02-13T16:43:33 IST" duration-ms="10723" status="PASS">
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:05 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:06:12 IST" duration-ms="7468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyEventDetails2()[pri:7, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:12 IST" name="verifyEventDetails2" description="This test verifies that event details such as 応募者 and 採用イベント実施日 are correct on 応募一覧 page" finished-at="2025-02-27T18:06:13 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEventDetails2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:13 IST" name="tearDown" finished-at="2025-02-27T18:06:13 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:13 IST" name="setup" finished-at="2025-02-27T18:06:15 IST" duration-ms="1094" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ApplicantListCsv.verifyCsvValues()[pri:5, instance:com.zenken.freshers.company.ApplicantListCsv@821330f] output={null}]]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyScreeningEndBtState2()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupApplicantListCsv -->
-        <test-method signature="verifyCsvValues()[pri:5, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:33 IST" name="verifyCsvValues" description="This test verifies that the values are updated in all CSV files after profile is updated (Company ID: 878fca2e, 応募者ID: 8)" finished-at="2025-02-13T16:43:33 IST" duration-ms="122" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:15 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:06:22 IST" duration-ms="7361" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCsvValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ApplicantListCsv@821330f]" started-at="2025-02-13T16:43:33 IST" name="tearDown" finished-at="2025-02-13T16:43:34 IST" duration-ms="191" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyScreeningEndBtState2()[pri:8, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:22 IST" name="verifyScreeningEndBtState2" description="This test verifies that expected text is displayed at bottom and that 選考終了 button turns active when event status is &quot;選考中&quot;" finished-at="2025-02-27T18:06:23 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScreeningEndBtState2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:23 IST" name="tearDown" finished-at="2025-02-27T18:06:23 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.company.ApplicantListCsv -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:23 IST" name="setup" finished-at="2025-02-27T18:06:24 IST" duration-ms="1128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyCandDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:24 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:06:32 IST" duration-ms="7539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyCandDetails()[pri:9, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:32 IST" name="verifyCandDetails" description="This test verifies that candidate record has expected values on 応募一覧 page" finished-at="2025-02-27T18:06:33 IST" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCandDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:33 IST" name="tearDown" finished-at="2025-02-27T18:06:33 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:33 IST" name="setup" finished-at="2025-02-27T18:06:34 IST" duration-ms="1130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyRejectAll()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:34 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:06:43 IST" duration-ms="9273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyRejectAll()[pri:10, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:43 IST" name="verifyRejectAll" description="This test verifies that company user is able to reject (不合格) all candidates at once" finished-at="2025-02-27T18:06:46 IST" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRejectAll -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:46 IST" name="tearDown" finished-at="2025-02-27T18:06:46 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:46 IST" name="setup" finished-at="2025-02-27T18:06:47 IST" duration-ms="1146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyCandDetailsLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:47 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:06:56 IST" duration-ms="9114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyCandDetailsLink()[pri:11, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:56 IST" name="verifyCandDetailsLink" description="This test verifies that company user is redirected to 応募詳細 pageafter clicking on the link of the name" finished-at="2025-02-27T18:06:59 IST" duration-ms="2980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCandDetailsLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:59 IST" name="tearDown" finished-at="2025-02-27T18:06:59 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:06:59 IST" name="setup" finished-at="2025-02-27T18:07:01 IST" duration-ms="1133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyApplicationDate()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:01 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:07:08 IST" duration-ms="7317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyApplicationDate()[pri:12, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:08 IST" name="verifyApplicationDate" description="This test verifies that application date displayed on 応募詳細 page is correct" finished-at="2025-02-27T18:07:11 IST" duration-ms="2870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationDate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:11 IST" name="tearDown" finished-at="2025-02-27T18:07:11 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:11 IST" name="setup" finished-at="2025-02-27T18:07:12 IST" duration-ms="1173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyScreeningPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:12 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:07:22 IST" duration-ms="9555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyScreeningPopup()[pri:13, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:22 IST" name="verifyScreeningPopup" description="This test verifies that expected popup is displayed when company user tries to completethe screening when no candidate is 合格 or 補欠" finished-at="2025-02-27T18:07:24 IST" duration-ms="2311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScreeningPopup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:24 IST" name="tearDown" finished-at="2025-02-27T18:07:24 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:24 IST" name="setup" finished-at="2025-02-27T18:07:25 IST" duration-ms="1120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyScreeningEnd()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:25 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:07:35 IST" duration-ms="9311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyScreeningEnd()[pri:14, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:35 IST" name="verifyScreeningEnd" description="This test verifies that company user is successfully able to complete the screening (選考終了) of the candidates" finished-at="2025-02-27T18:07:53 IST" duration-ms="17923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScreeningEnd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:53 IST" name="tearDown" finished-at="2025-02-27T18:07:53 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:53 IST" name="setup" finished-at="2025-02-27T18:07:54 IST" duration-ms="1126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyPostScreeningDisplay()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:07:54 IST" name="setupScreeeningProcess" finished-at="2025-02-27T18:08:03 IST" duration-ms="9327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyPostScreeningDisplay()[pri:15, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:08:03 IST" name="verifyPostScreeningDisplay" description="This test verifies that 応募一覧 page is displayed as expected after 選考終了" finished-at="2025-02-27T18:08:04 IST" duration-ms="936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostScreeningDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@24959ca4]" started-at="2025-02-27T18:08:04 IST" name="tearDown" finished-at="2025-02-27T18:08:04 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenken.freshers.company.ScreeeningProcess -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

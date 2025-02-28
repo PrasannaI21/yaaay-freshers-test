@@ -7,15 +7,28 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
     <classes>
-      <class name="com.zenken.freshers.company.CompanyLogin">
+      <class name="com.zenken.freshers.company.ScreeeningProcess">
         <methods>
-          <include name="generateComUser"/>
-          <include name="verifyComBlankEmail"/>
-          <include name="tearDown"/>
-          <include name="setupCLogin"/>
+          <include name="verifyJobNames"/>
+          <include name="setupScreeeningProcess"/>
+          <include name="verifyRejectAll"/>
+          <include name="verifyNoApplicantText"/>
+          <include name="generateEventName"/>
+          <include name="verifyScreeningEndBtState2"/>
+          <include name="verifyPostScreeningDisplay"/>
+          <include name="verifyEventDetails2"/>
+          <include name="verifyApplicationDate"/>
+          <include name="verifyCandDetailsLink"/>
+          <include name="verifyEventRecord"/>
+          <include name="verifyCandDetails"/>
+          <include name="verifyScreeningEndBtState"/>
+          <include name="verifyScreeningEnd"/>
+          <include name="verifyEventRecord2"/>
+          <include name="verifyScreeningPopup"/>
+          <include name="verifyEventDetails"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.zenken.freshers.company.CompanyLogin -->
+      </class> <!-- com.zenken.freshers.company.ScreeeningProcess -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

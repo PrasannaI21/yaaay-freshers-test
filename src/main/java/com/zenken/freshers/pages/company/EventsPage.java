@@ -1,5 +1,7 @@
 package com.zenken.freshers.pages.company;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +26,12 @@ public class EventsPage extends WebDriverUtils{
 	@FindBy(css="[class='u-d-f u-ai-c']")
 	WebElement logoutBt;
 	
+	@FindBy(xpath="(//tr[last()])[2]")
+	WebElement lastEvent;
+	
+	@FindBy(css="td a")
+	List<WebElement> eventLinks;
+	
 	public String getComEventsHeadline()
 	{
 		return headline.getText();
@@ -32,5 +40,16 @@ public class EventsPage extends WebDriverUtils{
 	public void clickLogout()
 	{
 		logoutBt.click();
+	}
+	
+	public String getLastEvent()
+	{
+		return lastEvent.getText();
+	}
+	
+	public void clickEvent()
+	{
+		clickByJavaScript(eventLinks.get(eventLinks.size() - 1));
+		
 	}
 }
