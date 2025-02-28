@@ -45,6 +45,7 @@ public class JobsApply extends BaseTest{
 	String companyName;
 	String jobTitle;
 	String jobTitle1;
+	ApiClient apiClient;
 	
 	@BeforeMethod
 	public void setupJobsApply() throws IOException, ApiException
@@ -58,7 +59,7 @@ public class JobsApply extends BaseTest{
 		navigateTo("/");
 		if(!isUserCreated) {
 			try {
-			ApiClient apiClient = new ApiClient();
+			apiClient = new ApiClient();
 			apiClient.setApiKey(properties.getProperty("API_KEY"));
 			System.out.println(properties.getProperty("API_KEY"));
 			InboxControllerApi inboxCon = new InboxControllerApi(apiClient);
@@ -73,7 +74,7 @@ public class JobsApply extends BaseTest{
 			}
 			navigateTo("/register/");
 			registerPage.registerUser(emailAddress);
-//			wait = new WaitForControllerApi(apiClient);
+			wait = new WaitForControllerApi(apiClient);
 			Email email = wait.waitForLatestEmail(inbox.getId(), 30000L, true, null, null, null, null);
 			jobs.openInNewTab(registerPage.extractVerificationLink(email.getBody()));
 			isUserCreated = true;

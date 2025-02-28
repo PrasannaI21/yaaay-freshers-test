@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
+<testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-25T11:15:24 IST" name="Default suite" finished-at="2025-02-25T11:15:34 IST" duration-ms="9877">
+  <suite started-at="2025-02-27T17:58:55 IST" name="Default suite" finished-at="2025-02-27T17:59:19 IST" duration-ms="24670">
     <groups>
     </groups>
-    <test started-at="2025-02-25T11:15:24 IST" name="Default test" finished-at="2025-02-25T11:15:34 IST" duration-ms="9877">
-      <class name="com.zenken.freshers.user.Photo">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.user.Photo@bccb269]" started-at="2025-02-25T11:15:24 IST" name="setup" finished-at="2025-02-25T11:15:26 IST" duration-ms="1837" status="PASS">
+    <test started-at="2025-02-27T17:58:55 IST" name="Default test" finished-at="2025-02-27T17:59:19 IST" duration-ms="24670">
+      <class name="com.zenken.freshers.company.ScreeeningProcess">
+        <test-method is-config="true" signature="generateEventName()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@6db9f5a4]" started-at="2025-02-27T17:58:55 IST" name="generateEventName" finished-at="2025-02-27T17:58:55 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateEventName -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@6db9f5a4]" started-at="2025-02-27T17:58:55 IST" name="setup" finished-at="2025-02-27T17:58:57 IST" duration-ms="1973" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zenken.freshers.user.Photo.verifyImageDrag()]]>
+                <![CDATA[public void com.zenken.freshers.company.ScreeeningProcess.verifyEventRecord2()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.zenken.freshers.user.Photo@bccb269]" started-at="2025-02-25T11:15:26 IST" name="setUpTest" finished-at="2025-02-25T11:15:32 IST" duration-ms="6371" status="PASS">
+        <test-method is-config="true" signature="setupScreeeningProcess()[pri:0, instance:com.zenken.freshers.company.ScreeeningProcess@6db9f5a4]" started-at="2025-02-27T17:58:57 IST" name="setupScreeeningProcess" finished-at="2025-02-27T17:59:06 IST" duration-ms="8704" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="verifyImageDrag()[pri:5, instance:com.zenken.freshers.user.Photo@bccb269]" started-at="2025-02-25T11:15:32 IST" name="verifyImageDrag" description="This test verifies that the uploaded image can be dragged" finished-at="2025-02-25T11:15:33 IST" duration-ms="1395" status="PASS">
+        </test-method> <!-- setupScreeeningProcess -->
+        <test-method signature="verifyEventRecord2()[pri:6, instance:com.zenken.freshers.company.ScreeeningProcess@6db9f5a4]" started-at="2025-02-27T17:59:06 IST" name="verifyEventRecord2" description="This test verifies that the event record is updated in イベント一覧 page after 実施期間 has started and candidates have applied" finished-at="2025-02-27T17:59:19 IST" duration-ms="13904" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyImageDrag -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenken.freshers.user.Photo@bccb269]" started-at="2025-02-25T11:15:33 IST" name="tearDown" finished-at="2025-02-25T11:15:34 IST" duration-ms="222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zenken.freshers.user.Photo -->
+        </test-method> <!-- verifyEventRecord2 -->
+      </class> <!-- com.zenken.freshers.company.ScreeeningProcess -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
